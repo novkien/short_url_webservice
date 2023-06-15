@@ -41,8 +41,16 @@ Gem::get('/checkout/{id}/{type}/tax', 'Subscription@tax')->middleware('Auth')->n
 // Custom Page
 Gem::get('/page/{page}', 'Page@index')->name('page')->middleware('CheckDomain')->middleware('CheckMaintenance');
 Gem::get('/qr-codes', 'Page@qr')->name('page.qr')->middleware('CheckDomain')->middleware('CheckMaintenance');
+
+//// paste form
 Gem::get('/paste', 'Page@paste')->name('paste')->middleware('CheckDomain')->middleware('CheckMaintenance');
+Gem::post('/paste_text', 'Paste@paste_text')->name('paste_text')->middleware('BlockBot')->middleware('ShortenThrottle')->middleware('ValidateLoggedCaptcha');
+
+
+
 Gem::get('/bio-profiles', 'Page@bio')->name('page.bio')->middleware('CheckDomain')->middleware('CheckMaintenance');
+
+
 
 // Contact Page
 Gem::get('/contact', 'Page@contact')->name('contact')->middleware('CheckDomain');
@@ -62,9 +70,6 @@ Gem::group('/blog', function(){
 });
 
 Gem::post('/shorten', 'Link@shorten')->name('shorten')->middleware('BlockBot')->middleware('ShortenThrottle')->middleware('ValidateLoggedCaptcha');
-
-//// paste form
-Gem::post('/paste_text', 'Paste@paste_text')->name('paste_text')->middleware('BlockBot')->middleware('ShortenThrottle')->middleware('ValidateLoggedCaptcha');
 
 Gem::get('/faq', 'Page@faq')->name('faq')->middleware('CheckDomain');
 
