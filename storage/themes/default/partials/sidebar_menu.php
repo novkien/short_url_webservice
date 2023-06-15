@@ -54,6 +54,12 @@
             <i class="align-middle" data-feather="calendar"></i> <span class="align-middle"><?php ee('Expired Links') ?></span>
         </a>
     </li>    
+<?php
+
+
+/*
+
+
     <?php plug('usermenu.medium') ?>
     <?php if($user->has('bundle')): ?>
     <li class="sidebar-item">
@@ -62,6 +68,10 @@
         </a>
     </li>    
     <?php endif ?>
+*/
+
+
+?>
     <?php if($user->has('splash')): ?>
     <li class="sidebar-item">
         <a class="sidebar-link" href="<?php echo route('splash') ?>">
