@@ -14,6 +14,13 @@
  * @author GemPixel (https://gempixel.com)
  * @license https://gempixel.com/licenses
  * @link https://gempixel.com  
+ * 
+ * 
+ * 
+ * 
+ * this route is following by a structure that
+ *                              Gem::get('/paste', 'Page@paste')->name('paste')->middleware('CheckDomain')->middleware('CheckMaintenance');
+ * will direct users to https://domain.name/paste but actual root/storage/themes/default/paste.php
  */
 use Core\Helper;
 use Core\Localization;
@@ -22,6 +29,8 @@ use Core\Localization;
 
 // Homepage
 Gem::get('/', 'Home@index')->name('home')->middleware('CheckDomain')->middleware('CheckMaintenance')->middleware('CheckPrivate');
+Gem::get('/paste', 'Page@paste')->name('paste')->middleware('CheckDomain')->middleware('CheckMaintenance');
+
 // Pricing Page
 Gem::get('/pricing', 'Subscription@pricing')->name('pricing')->middleware('CheckDomain')->middleware('CheckMaintenance');
 Gem::get('/checkout/{id}/{type}', 'Subscription@checkout')->name('checkout');

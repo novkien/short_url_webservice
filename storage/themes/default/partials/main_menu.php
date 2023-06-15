@@ -1,6 +1,6 @@
 <ul class="navbar-nav ml-lg-auto">
     <li class="nav-item nav-item-spaced d-lg-block">
-        <a class="nav-link" href="<?php echo route('home') ?>"><?php ee('Home') ?></a>
+        <a class="nav-link" href="<?php echo route('paste') ?>"><?php ee('Paste') ?></a>
     </li>   
 
 
