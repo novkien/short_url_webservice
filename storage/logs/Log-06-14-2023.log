@@ -1,0 +1,32 @@
+[2023-06-14T23:27:32.742134+08:00] system.ERROR: PHP Startup: Unable to load dynamic library 'php_curl.dll' (tried: /usr/lib/php/20190902/php_curl.dll (/usr/lib/php/20190902/php_curl.dll: cannot open shared object file: No such file or directory), /usr/lib/php/20190902/php_curl.dll.so (/usr/lib/php/20190902/php_curl.dll.so: cannot open shared object file: No such file or directory)) -> http://www.rutgonurl.click/  
+
+[2023-06-14T23:27:34.396076+08:00] system.ERROR: PHP Startup: Unable to load dynamic library 'php_curl.dll' (tried: /usr/lib/php/20190902/php_curl.dll (/usr/lib/php/20190902/php_curl.dll: cannot open shared object file: No such file or directory), /usr/lib/php/20190902/php_curl.dll.so (/usr/lib/php/20190902/php_curl.dll.so: cannot open shared object file: No such file or directory)) -> http://www.rutgonurl.click/  
+
+[2023-06-14T23:31:07.376124+08:00] system.ERROR: PHP Startup: Unable to load dynamic library 'php_curl.dll' (tried: /usr/lib/php/20190902/php_curl.dll (/usr/lib/php/20190902/php_curl.dll: cannot open shared object file: No such file or directory), /usr/lib/php/20190902/php_curl.dll.so (/usr/lib/php/20190902/php_curl.dll.so: cannot open shared object file: No such file or directory)) -> http://rutgonurl.click/wp-load.php?bb1cca=79402  
+
+[2023-06-14T23:31:23.210969+08:00] system.ERROR: PHP Startup: Unable to load dynamic library 'php_curl.dll' (tried: /usr/lib/php/20190902/php_curl.dll (/usr/lib/php/20190902/php_curl.dll: cannot open shared object file: No such file or directory), /usr/lib/php/20190902/php_curl.dll.so (/usr/lib/php/20190902/php_curl.dll.so: cannot open shared object file: No such file or directory)) -> http://www.rutgonurl.click/  
+
+[2023-06-14T23:33:00.014953+08:00] system.ERROR: PHP Startup: Unable to load dynamic library 'php_curl.dll' (tried: /usr/lib/php/20190902/php_curl.dll (/usr/lib/php/20190902/php_curl.dll: cannot open shared object file: No such file or directory), /usr/lib/php/20190902/php_curl.dll.so (/usr/lib/php/20190902/php_curl.dll.so: cannot open shared object file: No such file or directory)) -> http://www.rutgonurl.click/  
+
+[2023-06-14T23:33:39.742424+08:00] system.ERROR: PHP Startup: Unable to load dynamic library 'php_curl.dll' (tried: /usr/lib/php/20190902/php_curl.dll (/usr/lib/php/20190902/php_curl.dll: cannot open shared object file: No such file or directory), /usr/lib/php/20190902/php_curl.dll.so (/usr/lib/php/20190902/php_curl.dll.so: cannot open shared object file: No such file or directory)) -> http://www.rutgonurl.click/  
+
+[2023-06-14T23:36:07.802450+08:00] system.ERROR: PHP Startup: Unable to load dynamic library 'php_curl.dll' (tried: /usr/lib/php/20190902/php_curl.dll (/usr/lib/php/20190902/php_curl.dll: cannot open shared object file: No such file or directory), /usr/lib/php/20190902/php_curl.dll.so (/usr/lib/php/20190902/php_curl.dll.so: cannot open shared object file: No such file or directory)) -> http://rutgonurl.click/wp-load.php?8129c5=78329  
+
+[2023-06-14T23:36:56.119994+08:00] system.ERROR: Undefined variable: code occurred in /var/www/url-shorten/app/controllers/SetupController.php:181 -> http://www.rutgonurl.click/validate  
+
+[2023-06-14T23:38:04.281272+08:00] system.ERROR: Array to string conversion occurred in /var/www/url-shorten/core/support/ORM.class.php:513 -> http://www.rutgonurl.click/database  
+
+[2023-06-14T15:49:25.611355+00:00] system.ERROR: Trying to get property 'enabled' of non-object occurred in /var/www/url-shorten/storage/themes/default/admin/settings/advanced.php:45 -> http://www.rutgonurl.click/admin/settings/advanced  
+
+[2023-06-14T15:49:25.611483+00:00] system.ERROR: Trying to get property 'key' of non-object occurred in /var/www/url-shorten/storage/themes/default/admin/settings/advanced.php:52 -> http://www.rutgonurl.click/admin/settings/advanced  
+
+[2023-06-14T16:25:05.428317+00:00] system.ERROR: unlink(/var/www/url-shorten/public/content/): Is a directory occurred in /var/www/url-shorten/app/controllers/admin/SettingsController.php:120 -> http://www.rutgonurl.click/admin/settings/save  
+
+[2023-06-14T16:25:05.428475+00:00] system.ERROR: unlink(/var/www/url-shorten/public/content/): Is a directory occurred in /var/www/url-shorten/app/controllers/admin/SettingsController.php:127 -> http://www.rutgonurl.click/admin/settings/save  
+
+[2023-06-14T23:26:07.777649+07:00] system.ERROR: Undefined property: stdClass::$force occurred in /var/www/url-shorten/storage/themes/default/admin/settings/app.php:93 -> http://www.rutgonurl.click/admin/settings/app  
+
+[2023-06-14T23:29:28.932681+07:00] system.ERROR: Trying to get property 'enabled' of non-object occurred in /var/www/url-shorten/storage/themes/default/admin/settings/advanced.php:45 -> http://www.rutgonurl.click/admin/settings/advanced  
+
+[2023-06-14T23:29:28.932887+07:00] system.ERROR: Trying to get property 'key' of non-object occurred in /var/www/url-shorten/storage/themes/default/admin/settings/advanced.php:52 -> http://www.rutgonurl.click/admin/settings/advanced  
+

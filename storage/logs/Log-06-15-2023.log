@@ -1,0 +1,46 @@
+[2023-06-15T01:02:18.616760+07:00] system.ERROR: Trying to get property 'host' of non-object occurred in /var/www/url-shorten/storage/themes/default/admin/settings/mail.php:21 -> http://www.rutgonurl.click/admin/settings/mail  
+
+[2023-06-15T01:02:18.616963+07:00] system.ERROR: Trying to get property 'security' of non-object occurred in /var/www/url-shorten/storage/themes/default/admin/settings/mail.php:28 -> http://www.rutgonurl.click/admin/settings/mail  
+
+[2023-06-15T01:02:18.616992+07:00] system.ERROR: Trying to get property 'security' of non-object occurred in /var/www/url-shorten/storage/themes/default/admin/settings/mail.php:29 -> http://www.rutgonurl.click/admin/settings/mail  
+
+[2023-06-15T01:02:18.617009+07:00] system.ERROR: Trying to get property 'security' of non-object occurred in /var/www/url-shorten/storage/themes/default/admin/settings/mail.php:30 -> http://www.rutgonurl.click/admin/settings/mail  
+
+[2023-06-15T01:02:18.617023+07:00] system.ERROR: Trying to get property 'port' of non-object occurred in /var/www/url-shorten/storage/themes/default/admin/settings/mail.php:37 -> http://www.rutgonurl.click/admin/settings/mail  
+
+[2023-06-15T01:02:18.617035+07:00] system.ERROR: Trying to get property 'user' of non-object occurred in /var/www/url-shorten/storage/themes/default/admin/settings/mail.php:43 -> http://www.rutgonurl.click/admin/settings/mail  
+
+[2023-06-15T01:02:18.617048+07:00] system.ERROR: Trying to get property 'pass' of non-object occurred in /var/www/url-shorten/storage/themes/default/admin/settings/mail.php:47 -> http://www.rutgonurl.click/admin/settings/mail  
+
+[2023-06-15T01:04:35.687697+07:00] system.ERROR: Undefined property: stdClass::$hero occurred in /var/www/url-shorten/storage/themes/default/class/themeSettings.php:220 -> http://www.rutgonurl.click/admin/themes/settings/update  
+
+[2023-06-15T01:23:08.279931+07:00] system.ERROR: PHP Startup: Unable to load dynamic library 'php_curl.dll' (tried: /usr/lib/php/20190902/php_curl.dll (/usr/lib/php/20190902/php_curl.dll: cannot open shared object file: No such file or directory), /usr/lib/php/20190902/php_curl.dll.so (/usr/lib/php/20190902/php_curl.dll.so: cannot open shared object file: No such file or directory)) -> http://www.rutgonurl.click/admin/languages  
+
+[2023-06-15T01:23:17.719210+07:00] system.ERROR: PHP Startup: Unable to load dynamic library 'php_curl.dll' (tried: /usr/lib/php/20190902/php_curl.dll (/usr/lib/php/20190902/php_curl.dll: cannot open shared object file: No such file or directory), /usr/lib/php/20190902/php_curl.dll.so (/usr/lib/php/20190902/php_curl.dll.so: cannot open shared object file: No such file or directory)) -> http://www.rutgonurl.click/admin/languages/upload  
+
+[2023-06-15T03:06:51.888254+07:00] system.ERROR: Method not allowed -> http://rutgonurl.click/?cf9981=45379  
+
+[2023-06-15T03:06:53.135741+07:00] system.ERROR: Method not allowed -> http://rutgonurl.click/?575aba=83417  
+
+[2023-06-15T03:06:54.290082+07:00] system.ERROR: Method not allowed -> http://rutgonurl.click/?d7a715=63699  
+
+[2023-06-15T03:06:58.155589+07:00] system.ERROR: Method not allowed -> http://rutgonurl.click/?2d5c17=65592  
+
+[2023-06-15T03:06:58.710026+07:00] system.ERROR: Method not allowed -> http://rutgonurl.click/?0b5307=3284  
+
+[2023-06-15T03:06:59.220663+07:00] system.ERROR: Method not allowed -> http://rutgonurl.click/?29746b=94204  
+
+[2023-06-15T08:10:44.343454+07:00] system.ERROR: Trying to get property 'host' of non-object occurred in /var/www/url-shorten/storage/themes/default/admin/settings/mail.php:21 -> http://www.rutgonurl.click/admin/settings/mail  
+
+[2023-06-15T08:10:44.344019+07:00] system.ERROR: Trying to get property 'security' of non-object occurred in /var/www/url-shorten/storage/themes/default/admin/settings/mail.php:28 -> http://www.rutgonurl.click/admin/settings/mail  
+
+[2023-06-15T08:10:44.344056+07:00] system.ERROR: Trying to get property 'security' of non-object occurred in /var/www/url-shorten/storage/themes/default/admin/settings/mail.php:29 -> http://www.rutgonurl.click/admin/settings/mail  
+
+[2023-06-15T08:10:44.344073+07:00] system.ERROR: Trying to get property 'security' of non-object occurred in /var/www/url-shorten/storage/themes/default/admin/settings/mail.php:30 -> http://www.rutgonurl.click/admin/settings/mail  
+
+[2023-06-15T08:10:44.344098+07:00] system.ERROR: Trying to get property 'port' of non-object occurred in /var/www/url-shorten/storage/themes/default/admin/settings/mail.php:37 -> http://www.rutgonurl.click/admin/settings/mail  
+
+[2023-06-15T08:10:44.344119+07:00] system.ERROR: Trying to get property 'user' of non-object occurred in /var/www/url-shorten/storage/themes/default/admin/settings/mail.php:43 -> http://www.rutgonurl.click/admin/settings/mail  
+
+[2023-06-15T08:10:44.344138+07:00] system.ERROR: Trying to get property 'pass' of non-object occurred in /var/www/url-shorten/storage/themes/default/admin/settings/mail.php:47 -> http://www.rutgonurl.click/admin/settings/mail  
+
