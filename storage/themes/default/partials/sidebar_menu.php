@@ -90,10 +90,6 @@
         </a>
     </li>    
     <?php endif ?>
-    */
-
-?>
-
     
     <?php if($user->has('pixels')): ?>
     <li class="sidebar-item">
@@ -102,6 +98,8 @@
         </a>
     </li>    
     <?php endif ?>
+
+
     <?php if($user->has('domain')): ?>
     <li class="sidebar-item">
         <a class="sidebar-link" href="<?php echo route('domain') ?>">
@@ -109,6 +107,9 @@
         </a>
     </li>    
     <?php endif ?>    
+    
+
+
     <?php if($user->has('team')): ?>
     <li class="sidebar-item">
         <a class="sidebar-link" href="<?php echo route('team') ?>">
@@ -116,7 +117,11 @@
         </a>
     </li>    
     <?php endif ?>   
-    <?php plug('usermenu') ?>
+    */
+?>
+
+
+    <?php //plug('usermenu') ?>
     <li class="sidebar-item">        
         <a class="sidebar-link collapsed" data-bs-target="#nav-tool" data-bs-toggle="collapse">
             <i class="align-middle" data-feather="terminal"></i> <span class="align-middle"><?php ee('Tools & Integrations') ?></span>
