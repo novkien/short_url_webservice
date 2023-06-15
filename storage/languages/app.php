@@ -719,7 +719,7 @@
     'Shopify Campaign' => 'Chiến dịch Shopify',
     'Numerical or alphanumerical values only' => 'Chỉ giá trị số hoặc chữ số',
     'Quora Pixels' => 'Quora Pixels',
-    'Google Tag Manager allows you to combine hundreds of pixels into a single pixel. Please make sure to add the correct &quot;Container ID&quot; otherwise events will not be tracked!' => 'Trình quản lý thẻ của Google cho phép bạn kết hợp hàng trăm pixel thành một pixel. Vui lòng đảm bảo thêm đúng 'ID vùng chứa' nếu không các sự kiện sẽ không được theo dõi!',
+    'Google Tag Manager allows you to combine hundreds of pixels into a single pixel. Please make sure to add the correct &quot;Container ID&quot; otherwise events will not be tracked!' => 'Trình quản lý thẻ của Google cho phép bạn kết hợp hàng trăm pixel thành một pixel. Vui lòng đảm bảo thêm đúng \'ID vùng chứa\' nếu không các sự kiện sẽ không được theo dõi!',
     'Quora Pixel Tag' => 'Thẻ pixel Quora',
     'The Quora Pixel is a tool that is placed in your website code to track traffic and conversions. When someone clicks on your ad and lands on your website, the Quora Pixel allows you to identify how many people are visiting your website and what actions they are taking.' => 'Quora Pixel là một công cụ được đặt trong mã trang web của bạn để theo dõi lưu lượng truy cập và chuyển đổi. Khi ai đó nhấp vào quảng cáo của bạn và truy cập trang web của bạn, Quora Pixel sẽ giúp bạn xác định có bao nhiêu người truy cập trang web của bạn và những hành động họ thực hiện.',
     'Back to Profile' => 'Quay lại hồ sơ',
