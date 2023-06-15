@@ -16,7 +16,7 @@
             <div class="col-lg-6">
                 <div class="card">
                     <div class="card-body">
-                        <form id="form-paste" method="post" action="<?php echo route('paste.send') ?>" data-trigger="paste-form">
+                        <form id="form-paste" method="post" action="<?php echo route('paste_send') ?>" data-trigger="paste-form">
                             <div class="form-group">
                                 <label class="form-control-label" for="paste-author"><?php ee("Name") ?></label>
                                 <input class="form-control form-control-lg" type="text" placeholder="<?php ee("Name") ?>" id="paste-author" name="name" value="<?php echo \Core\Auth::logged() ? \Core\Auth::user()->username : '' ?>" data-error="<?php ee('Please enter a valid name.') ?>">
