@@ -79,6 +79,10 @@
         </a>
     </li>    
     <?php endif ?>
+
+<?php
+
+    /*
     <?php if($user->has('overlay')): ?>
     <li class="sidebar-item">
         <a class="sidebar-link" href="<?php echo route('overlay') ?>">
@@ -86,6 +90,11 @@
         </a>
     </li>    
     <?php endif ?>
+    */
+
+?>
+
+    
     <?php if($user->has('pixels')): ?>
     <li class="sidebar-item">
         <a class="sidebar-link" href="<?php echo route('pixel') ?>">
