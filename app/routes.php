@@ -63,6 +63,9 @@ Gem::group('/blog', function(){
 
 Gem::post('/shorten', 'Link@shorten')->name('shorten')->middleware('BlockBot')->middleware('ShortenThrottle')->middleware('ValidateLoggedCaptcha');
 
+//// paste form
+Gem::post('/paste_text', 'Paste@paste_text')->name('paste_text')->middleware('BlockBot')->middleware('ShortenThrottle')->middleware('ValidateLoggedCaptcha');
+
 Gem::get('/faq', 'Page@faq')->name('faq')->middleware('CheckDomain');
 
 Gem::get('/affiliate', 'Page@affiliate')->name('affiliate')->middleware('CheckDomain');   
