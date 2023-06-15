@@ -1,5771 +1,1760 @@
 <?php
-/**
- * English language for the frontend
- */
-return [
-    /**
-     * Language Information
-     */
-    "code" => "en",
-    "region" => "en_US",
-    "name" => "Sample",
-    "author" => "GemPixel",
-    "link" => "https://gempixel.com",
-    "date" => "07/08/2022",
-    "rtl" => false,
-    /**
-     * Language Data
-     */
-    "data" => [
-        #: app/controllers/BlogController.php:54 storage/themes/default/blog.php:6
-        #: storage/themes/default/partials/main_menu.php:88
-        "Blog" => "",
-
-        #: app/controllers/LinkController.php:57
-        #: app/controllers/LinkController.php:444
-        #: app/controllers/LinkController.php:468
-        #: app/controllers/LinkController.php:491
-        #: app/controllers/LinkController.php:520
-        #: app/controllers/LinkController.php:547
-        #: app/controllers/LinkController.php:576
-        #: app/controllers/LinkController.php:604
-        #: app/controllers/LinkController.php:648
-        #: app/controllers/user/AccountController.php:44
-        #: app/controllers/user/BioController.php:99
-        #: app/controllers/user/BioController.php:185
-        #: app/controllers/user/BioController.php:361
-        #: app/controllers/user/BioController.php:390
-        #: app/controllers/user/BioController.php:518
-        #: app/controllers/user/BioController.php:708
-        #: app/controllers/user/BioController.php:736
-        #: app/controllers/user/BioController.php:806
-        #: app/controllers/user/CampaignsController.php:79
-        #: app/controllers/user/CampaignsController.php:123
-        #: app/controllers/user/CampaignsController.php:170
-        #: app/controllers/user/ChannelsController.php:152
-        #: app/controllers/user/ChannelsController.php:184
-        #: app/controllers/user/ChannelsController.php:216
-        #: app/controllers/user/ChannelsController.php:301
-        #: app/controllers/user/DomainsController.php:71
-        #: app/controllers/user/DomainsController.php:97
-        #: app/controllers/user/DomainsController.php:148
-        #: app/controllers/user/DomainsController.php:175
-        #: app/controllers/user/DomainsController.php:202
-        #: app/controllers/user/ExportController.php:50
-        #: app/controllers/user/ExportController.php:85
-        #: app/controllers/user/ExportController.php:118
-        #: app/controllers/user/ExportController.php:153
-        #: app/controllers/user/OverlayController.php:78
-        #: app/controllers/user/OverlayController.php:109
-        #: app/controllers/user/OverlayController.php:136
-        #: app/controllers/user/OverlayController.php:164
-        #: app/controllers/user/OverlayController.php:1625
-        #: app/controllers/user/PixelsController.php:73
-        #: app/controllers/user/PixelsController.php:105
-        #: app/controllers/user/PixelsController.php:159
-        #: app/controllers/user/PixelsController.php:183
-        #: app/controllers/user/PixelsController.php:224
-        #: app/controllers/user/QRController.php:85
-        #: app/controllers/user/QRController.php:219
-        #: app/controllers/user/QRController.php:332
-        #: app/controllers/user/QRController.php:407
-        #: app/controllers/user/QRController.php:521
-        #: app/controllers/user/QRController.php:554
-        #: app/controllers/user/SplashController.php:74
-        #: app/controllers/user/SplashController.php:100
-        #: app/controllers/user/SplashController.php:175
-        #: app/controllers/user/SplashController.php:201
-        #: app/controllers/user/SplashController.php:281
-        #: app/controllers/user/TeamsController.php:75
-        "You do not have this permission. Please contact your team administrator." => "",
-
-        #: app/controllers/LinkController.php:141
-        "The password is invalid or does not match." => "",
-
-        #: app/controllers/LinkController.php:448
-        #: app/controllers/LinkController.php:918
-        #: app/controllers/user/AccountController.php:441
-        #: app/controllers/user/AccountController.php:449
-        #: app/controllers/user/AccountController.php:474
-        #: app/controllers/user/BioController.php:365
-        #: app/controllers/user/CampaignsController.php:174
-        #: app/controllers/user/ChannelsController.php:222
-        #: app/controllers/user/DomainsController.php:207
-        #: app/controllers/user/OverlayController.php:122
-        #: app/controllers/user/OverlayController.php:149
-        #: app/controllers/user/OverlayController.php:179
-        #: app/controllers/user/OverlayController.php:1629
-        #: app/controllers/user/PixelsController.php:228
-        #: app/controllers/user/QRController.php:527
-        #: app/controllers/user/TeamsController.php:172
-        "An unexpected error occurred. Please try again." => "",
-
-        #: app/controllers/LinkController.php:452
-        "Link not found. Please try again." => "",
-
-        #: app/controllers/LinkController.php:455
-        "Link has been deleted." => "",
-
-        #: app/controllers/LinkController.php:473
-        "No link was selected. Please try again." => "",
-
-        #: app/controllers/LinkController.php:479
-        "Selected Links have been deleted." => "",
-
-        #: app/controllers/LinkController.php:499
-        #: app/controllers/LinkController.php:528
-        #: app/controllers/LinkController.php:555
-        #: app/controllers/LinkController.php:584
-        #: app/controllers/LinkController.php:686
-        #: app/controllers/user/ChannelsController.php:258
-        "You need to select at least 1 link." => "",
-
-        #: app/controllers/LinkController.php:507
-        "Selected links have been archived." => "",
-
-        #: app/controllers/LinkController.php:535
-        "Selected links have been removed from archive." => "",
-
-        #: app/controllers/LinkController.php:563
-        "Selected links have been set to public." => "",
-
-        #: app/controllers/LinkController.php:591
-        "Selected links have been set to private." => "",
-
-        #: app/controllers/LinkController.php:607
-        #: app/controllers/LinkController.php:923
-        #: app/controllers/user/ExportController.php:89
-        "Link does not exist." => "",
-
-        #: app/controllers/LinkController.php:609
-        #: storage/themes/default/user/edit.php:4
-        #: storage/themes/default/user/edit.php:7
-        #: storage/themes/default/user/edit.php:231
-        "Update Link" => "",
-
-        #: app/controllers/LinkController.php:651
-        "URL does not exist." => "",
-
-        #: app/controllers/LinkController.php:663
-        "Link has been updated successfully." => "",
-
-        #: app/controllers/LinkController.php:675
-        "Invalid campaign. Please choose a valid campaign." => "",
-
-        #: app/controllers/LinkController.php:693
-        "Selected links have been added to the {c} campaign." => "",
-
-        #: app/controllers/LinkController.php:693
-        "Selected links have been removed from campaigns." => "",
-
-        #: app/controllers/LinkController.php:775
-        "This has been disabled in demo." => "",
-
-        #: app/controllers/LinkController.php:777
-        "You need to be logged in to use this feature." => "",
-
-        #: app/controllers/LinkController.php:889
-        "You have to make your profile public or set a default bio for this page to be accessible." => "",
-
-        #: app/controllers/LinkController.php:932
-        "Statistics have been successfully reset." => "",
-
-        #: app/controllers/PageController.php:76
-        #: storage/themes/default/pages/contact.php:6
-        #: storage/themes/default/partials/footer.php:80
-        "Contact Us" => "",
-
-        #: app/controllers/PageController.php:96
-        #: app/controllers/PageController.php:159
-        #: app/controllers/UsersController.php:269
-        #: app/controllers/UsersController.php:353
-        #: app/controllers/user/AccountController.php:322
-        #: app/controllers/user/OverlayController.php:302
-        #: app/controllers/user/OverlayController.php:462 app/helpers/Gate.php:383
-        #: app/helpers/Gate.php:409 storage/themes/default/auth/register.php:30
-        #: storage/themes/default/pages/contact.php:26
-        #: storage/themes/default/pages/report.php:22
-        "Please enter a valid email." => "",
-
-        #: app/controllers/PageController.php:124
-        "Your message has been sent. We will reply you as soon as possible." => "",
-
-        #: app/controllers/PageController.php:140
-        "Report Link" => "",
-
-        #: app/controllers/PageController.php:167
-        #: storage/themes/default/pages/report.php:26
-        "Please enter a valid link." => "",
-
-        #: app/controllers/PageController.php:204
-        "Thank you. We will review this link and take action." => "",
-
-        #: app/controllers/PageController.php:239
-        #: storage/themes/default/pages/affiliate.php:22
-        #: storage/themes/default/pages/faq.php:6
-        #: storage/themes/default/pricing/index.php:99
-        "Frequently Asked Questions" => "",
-
-        #: app/controllers/PageController.php:254
-        #: storage/themes/default/pages/api.php:49
-        "API Reference for Developers" => "",
-
-        #: app/controllers/PageController.php:299
-        #: storage/themes/default/partials/footer.php:77
-        "Affiliate Program" => "",
-
-        #: app/controllers/PageController.php:312
-        #: app/controllers/user/QRController.php:70
-        #: storage/themes/default/index.php:311 storage/themes/default/pages/qr.php:6
-        #: storage/themes/default/partials/footer.php:59
-        #: storage/themes/default/partials/main_menu.php:58
-        #: storage/themes/default/partials/sidebar_menu.php:17
-        #: storage/themes/default/pricing/index.php:54
-        #: storage/themes/default/qr/index.php:3
-        #: storage/themes/default/qr/index.php:75
-        #: storage/themes/default/teams/edit.php:19
-        #: storage/themes/default/teams/index.php:127
-        #: storage/themes/default/user/billing.php:78
-        #: storage/themes/default/user/channel.php:17
-        "QR Codes" => "",
-
-        #: app/controllers/PageController.php:314 storage/themes/default/index.php:313
-        #: storage/themes/default/pages/qr.php:9
-        "Easy to use, dynamic and customizable QR codes for your marketing campaigns. Analyze statistics and optimize your marketing strategy and increase engagement." => "",
-
-        #: app/controllers/PageController.php:327
-        #: storage/themes/default/pages/bio.php:6
-        #: storage/themes/default/partials/footer.php:60
-        #: storage/themes/default/partials/main_menu.php:66
-        #: storage/themes/default/pricing/index.php:53
-        #: storage/themes/default/user/billing.php:77
-        "Bio Profiles" => "",
-
-        #: app/controllers/PageController.php:329
-        #: storage/themes/default/pages/bio.php:9
-        "Convert your followers by creating beautiful pages that group all of your important links on the single page." => "",
-
-        #: app/controllers/PageController.php:347
-        #: storage/themes/default/pages/consent.php:6
-        "Cookie Policy Consent" => "",
-
-        #: app/controllers/StatsController.php:62
-        #: app/controllers/StatsController.php:67
-        #: app/controllers/StatsController.php:242
-        #: app/controllers/StatsController.php:247
-        #: app/controllers/StatsController.php:471
-        #: app/controllers/StatsController.php:476
-        #: app/controllers/StatsController.php:628
-        #: app/controllers/StatsController.php:633
-        #: app/controllers/StatsController.php:783
-        #: app/controllers/StatsController.php:788
-        #: app/controllers/StatsController.php:939
-        #: app/controllers/StatsController.php:944
-        "This link is private and only the creator can access the stats. If you are the creator, please login to access it." => "",
-
-        #: app/controllers/StatsController.php:90
-        #: app/controllers/StatsController.php:268
-        #: app/controllers/StatsController.php:497
-        #: app/controllers/StatsController.php:654
-        #: app/controllers/StatsController.php:809
-        #: app/controllers/StatsController.php:965 app/helpers/App.php:716
-        #: storage/themes/default/user/settings.php:84
-        "Direct" => "",
-
-        #: app/controllers/StatsController.php:94
-        #: app/controllers/StatsController.php:99
-        #: app/controllers/StatsController.php:104
-        #: app/controllers/StatsController.php:275
-        #: app/controllers/StatsController.php:504
-        #: app/controllers/StatsController.php:661
-        #: app/controllers/StatsController.php:816
-        #: app/controllers/StatsController.php:987
-        "Stats for" => "",
-
-        #: app/controllers/StatsController.php:105
-        "Advanced statistics page for the short URL" => "",
-
-        #: app/controllers/StatsController.php:117
-        #: app/controllers/StatsController.php:293
-        #: app/controllers/StatsController.php:520
-        #: app/controllers/StatsController.php:674
-        #: app/controllers/StatsController.php:829
-        #: app/controllers/user/CampaignsController.php:203
-        #: app/controllers/user/StatsController.php:47
-        #: storage/themes/default/pricing/checkout.php:100
-        "Apply" => "",
-
-        #: app/controllers/StatsController.php:118
-        #: app/controllers/StatsController.php:294
-        #: app/controllers/StatsController.php:521
-        #: app/controllers/StatsController.php:675
-        #: app/controllers/StatsController.php:830
-        #: app/controllers/user/CampaignsController.php:204
-        #: app/controllers/user/StatsController.php:48
-        #: storage/themes/default/bio/index.php:109
-        #: storage/themes/default/bio/index.php:127
-        #: storage/themes/default/bio/index.php:154
-        #: storage/themes/default/domains/index.php:94
-        #: storage/themes/default/layouts/dashboard.php:129
-        #: storage/themes/default/overlay/create.php:60
-        #: storage/themes/default/overlay/index.php:94
-        #: storage/themes/default/pixels/index.php:92
-        #: storage/themes/default/qr/index.php:106
-        #: storage/themes/default/qr/index.php:124
-        #: storage/themes/default/qr/index.php:151
-        #: storage/themes/default/splash/index.php:94
-        #: storage/themes/default/teams/index.php:97
-        #: storage/themes/default/teams/index.php:184
-        #: storage/themes/default/user/campaigns.php:142
-        #: storage/themes/default/user/campaigns.php:181
-        #: storage/themes/default/user/campaigns.php:201
-        #: storage/themes/default/user/campaignstats.php:111
-        #: storage/themes/default/user/channel.php:66
-        #: storage/themes/default/user/channels.php:101
-        #: storage/themes/default/user/channels.php:143
-        #: storage/themes/default/user/channels.php:163
-        #: storage/themes/default/user/index.php:188
-        #: storage/themes/default/user/index.php:205
-        #: storage/themes/default/user/index.php:278
-        #: storage/themes/default/user/index.php:306
-        #: storage/themes/default/user/links.php:94
-        #: storage/themes/default/user/links.php:111
-        #: storage/themes/default/user/links.php:184
-        #: storage/themes/default/user/links.php:212
-        #: storage/themes/default/user/settings.php:239
-        #: storage/themes/default/user/settings.php:260
-        #: storage/themes/default/user/settings.php:292
-        #: storage/themes/default/user/stats.php:70
-        "Cancel" => "",
-
-        #: app/controllers/StatsController.php:119
-        #: app/controllers/StatsController.php:295
-        #: app/controllers/StatsController.php:522
-        #: app/controllers/StatsController.php:676
-        #: app/controllers/StatsController.php:831
-        #: app/controllers/user/CampaignsController.php:205
-        #: app/controllers/user/StatsController.php:49
-        "From" => "",
-
-        #: app/controllers/StatsController.php:120
-        #: app/controllers/StatsController.php:296
-        #: app/controllers/StatsController.php:523
-        #: app/controllers/StatsController.php:677
-        #: app/controllers/StatsController.php:832
-        #: app/controllers/user/CampaignsController.php:206
-        #: app/controllers/user/StatsController.php:50
-        "To" => "",
-
-        #: app/controllers/StatsController.php:121
-        #: app/controllers/StatsController.php:297
-        #: app/controllers/StatsController.php:524
-        #: app/controllers/StatsController.php:678
-        #: app/controllers/StatsController.php:833
-        #: app/controllers/user/CampaignsController.php:207
-        #: app/controllers/user/StatsController.php:51
-        #: storage/themes/default/index.php:26
-        #: storage/themes/default/partials/shortener.php:60
-        #: storage/themes/default/user/edit.php:298
-        "Custom" => "",
-
-        #: app/controllers/StatsController.php:122
-        #: app/controllers/StatsController.php:298
-        #: app/controllers/StatsController.php:525
-        #: app/controllers/StatsController.php:679
-        #: app/controllers/StatsController.php:834
-        #: app/controllers/user/CampaignsController.php:208
-        #: app/controllers/user/StatsController.php:52
-        "Su" => "",
-
-        #: app/controllers/StatsController.php:122
-        #: app/controllers/StatsController.php:298
-        #: app/controllers/StatsController.php:525
-        #: app/controllers/StatsController.php:679
-        #: app/controllers/StatsController.php:834
-        #: app/controllers/user/CampaignsController.php:208
-        #: app/controllers/user/StatsController.php:52
-        "Mo" => "",
-
-        #: app/controllers/StatsController.php:122
-        #: app/controllers/StatsController.php:298
-        #: app/controllers/StatsController.php:525
-        #: app/controllers/StatsController.php:679
-        #: app/controllers/StatsController.php:834
-        #: app/controllers/user/CampaignsController.php:208
-        #: app/controllers/user/StatsController.php:52
-        "Tu" => "",
-
-        #: app/controllers/StatsController.php:122
-        #: app/controllers/StatsController.php:298
-        #: app/controllers/StatsController.php:525
-        #: app/controllers/StatsController.php:679
-        #: app/controllers/StatsController.php:834
-        #: app/controllers/user/CampaignsController.php:208
-        #: app/controllers/user/StatsController.php:52
-        "We" => "",
-
-        #: app/controllers/StatsController.php:122
-        #: app/controllers/StatsController.php:298
-        #: app/controllers/StatsController.php:525
-        #: app/controllers/StatsController.php:679
-        #: app/controllers/StatsController.php:834
-        #: app/controllers/user/CampaignsController.php:208
-        #: app/controllers/user/StatsController.php:52
-        "Th" => "",
-
-        #: app/controllers/StatsController.php:122
-        #: app/controllers/StatsController.php:298
-        #: app/controllers/StatsController.php:525
-        #: app/controllers/StatsController.php:679
-        #: app/controllers/StatsController.php:834
-        #: app/controllers/user/CampaignsController.php:208
-        #: app/controllers/user/StatsController.php:52
-        "Fr" => "",
-
-        #: app/controllers/StatsController.php:122
-        #: app/controllers/StatsController.php:298
-        #: app/controllers/StatsController.php:525
-        #: app/controllers/StatsController.php:679
-        #: app/controllers/StatsController.php:834
-        #: app/controllers/user/CampaignsController.php:208
-        #: app/controllers/user/StatsController.php:52
-        "Sa" => "",
-
-        #: app/controllers/StatsController.php:123
-        #: app/controllers/StatsController.php:299
-        #: app/controllers/StatsController.php:526
-        #: app/controllers/StatsController.php:680
-        #: app/controllers/StatsController.php:835
-        #: app/controllers/user/CampaignsController.php:209
-        #: app/controllers/user/StatsController.php:53
-        "January" => "",
-
-        #: app/controllers/StatsController.php:123
-        #: app/controllers/StatsController.php:299
-        #: app/controllers/StatsController.php:526
-        #: app/controllers/StatsController.php:680
-        #: app/controllers/StatsController.php:835
-        #: app/controllers/user/CampaignsController.php:209
-        #: app/controllers/user/StatsController.php:53
-        "February" => "",
-
-        #: app/controllers/StatsController.php:123
-        #: app/controllers/StatsController.php:299
-        #: app/controllers/StatsController.php:526
-        #: app/controllers/StatsController.php:680
-        #: app/controllers/StatsController.php:835
-        #: app/controllers/user/CampaignsController.php:209
-        #: app/controllers/user/StatsController.php:53
-        "March" => "",
-
-        #: app/controllers/StatsController.php:123
-        #: app/controllers/StatsController.php:299
-        #: app/controllers/StatsController.php:526
-        #: app/controllers/StatsController.php:680
-        #: app/controllers/StatsController.php:835
-        #: app/controllers/user/CampaignsController.php:209
-        #: app/controllers/user/StatsController.php:53
-        "April" => "",
-
-        #: app/controllers/StatsController.php:123
-        #: app/controllers/StatsController.php:299
-        #: app/controllers/StatsController.php:526
-        #: app/controllers/StatsController.php:680
-        #: app/controllers/StatsController.php:835
-        #: app/controllers/user/CampaignsController.php:209
-        #: app/controllers/user/StatsController.php:53
-        "May" => "",
-
-        #: app/controllers/StatsController.php:123
-        #: app/controllers/StatsController.php:299
-        #: app/controllers/StatsController.php:526
-        #: app/controllers/StatsController.php:680
-        #: app/controllers/StatsController.php:835
-        #: app/controllers/user/CampaignsController.php:209
-        #: app/controllers/user/StatsController.php:53
-        "June" => "",
-
-        #: app/controllers/StatsController.php:123
-        #: app/controllers/StatsController.php:299
-        #: app/controllers/StatsController.php:526
-        #: app/controllers/StatsController.php:680
-        #: app/controllers/StatsController.php:835
-        #: app/controllers/user/CampaignsController.php:209
-        #: app/controllers/user/StatsController.php:53
-        "July" => "",
-
-        #: app/controllers/StatsController.php:123
-        #: app/controllers/StatsController.php:299
-        #: app/controllers/StatsController.php:526
-        #: app/controllers/StatsController.php:680
-        #: app/controllers/StatsController.php:835
-        #: app/controllers/user/CampaignsController.php:209
-        #: app/controllers/user/StatsController.php:53
-        "August" => "",
-
-        #: app/controllers/StatsController.php:123
-        #: app/controllers/StatsController.php:299
-        #: app/controllers/StatsController.php:526
-        #: app/controllers/StatsController.php:680
-        #: app/controllers/StatsController.php:835
-        #: app/controllers/user/CampaignsController.php:209
-        #: app/controllers/user/StatsController.php:53
-        "September" => "",
-
-        #: app/controllers/StatsController.php:123
-        #: app/controllers/StatsController.php:299
-        #: app/controllers/StatsController.php:526
-        #: app/controllers/StatsController.php:680
-        #: app/controllers/StatsController.php:835
-        #: app/controllers/user/CampaignsController.php:209
-        #: app/controllers/user/StatsController.php:53
-        "October" => "",
-
-        #: app/controllers/StatsController.php:123
-        #: app/controllers/StatsController.php:299
-        #: app/controllers/StatsController.php:526
-        #: app/controllers/StatsController.php:680
-        #: app/controllers/StatsController.php:835
-        #: app/controllers/user/CampaignsController.php:209
-        #: app/controllers/user/StatsController.php:53
-        "November" => "",
-
-        #: app/controllers/StatsController.php:123
-        #: app/controllers/StatsController.php:299
-        #: app/controllers/StatsController.php:526
-        #: app/controllers/StatsController.php:680
-        #: app/controllers/StatsController.php:835
-        #: app/controllers/user/CampaignsController.php:209
-        #: app/controllers/user/StatsController.php:53
-        "December" => "",
-
-        #: app/controllers/StatsController.php:131
-        #: app/controllers/StatsController.php:307
-        #: app/controllers/StatsController.php:534
-        #: app/controllers/StatsController.php:688
-        #: app/controllers/StatsController.php:843
-        #: app/controllers/user/CampaignsController.php:216
-        #: app/controllers/user/StatsController.php:60
-        "Last 7 Days" => "",
-
-        #: app/controllers/StatsController.php:132
-        #: app/controllers/StatsController.php:308
-        #: app/controllers/StatsController.php:535
-        #: app/controllers/StatsController.php:689
-        #: app/controllers/StatsController.php:844
-        #: app/controllers/user/CampaignsController.php:217
-        #: app/controllers/user/StatsController.php:61
-        "Last 30 Days" => "",
-
-        #: app/controllers/StatsController.php:133
-        #: app/controllers/StatsController.php:309
-        #: app/controllers/StatsController.php:536
-        #: app/controllers/StatsController.php:690
-        #: app/controllers/StatsController.php:845
-        #: app/controllers/user/CampaignsController.php:218
-        #: app/controllers/user/StatsController.php:62
-        "This Month" => "",
-
-        #: app/controllers/StatsController.php:134
-        #: app/controllers/StatsController.php:310
-        #: app/controllers/StatsController.php:537
-        #: app/controllers/StatsController.php:691
-        #: app/controllers/StatsController.php:846
-        #: app/controllers/user/CampaignsController.php:219
-        #: app/controllers/user/StatsController.php:63
-        "Last Month" => "",
-
-        #: app/controllers/StatsController.php:135
-        #: app/controllers/StatsController.php:311
-        #: app/controllers/StatsController.php:538
-        #: app/controllers/StatsController.php:692
-        #: app/controllers/StatsController.php:847
-        #: app/controllers/user/CampaignsController.php:220
-        #: app/controllers/user/StatsController.php:64
-        "Last 3 Months" => "",
-
-        #: app/controllers/StatsController.php:166
-        #: app/controllers/StatsController.php:449
-        #: app/controllers/user/CampaignsController.php:255
-        #: app/controllers/user/DashboardController.php:204
-        #: app/controllers/user/StatsController.php:110
-        #: storage/themes/default/index.php:645
-        #: storage/themes/default/partials/links.php:83
-        #: storage/themes/default/stats/index.php:18
-        #: storage/themes/default/stats/partial.php:32
-        #: storage/themes/default/user/campaignstats.php:37
-        #: storage/themes/default/user/index.php:18
-        #: storage/themes/default/user/stats.php:24
-        "Clicks" => "",
-
-        #: app/controllers/StatsController.php:271
-        #: app/controllers/StatsController.php:278
-        "Country Stats for" => "",
-
-        #: app/controllers/StatsController.php:281
-        #: app/controllers/StatsController.php:993
-        "Country statistics page for the short URL" => "",
-
-        #: app/controllers/StatsController.php:386
-        #: app/controllers/StatsController.php:914
-        #: storage/themes/default/stats/partial.php:47
-        #: storage/themes/default/stats/partial.php:55
-        "Unknown" => "",
-
-        #: app/controllers/StatsController.php:445
-        #: storage/themes/default/stats/index.php:44
-        #: storage/themes/default/user/index.php:147
-        "Somewhere from" => "",
-
-        #: app/controllers/StatsController.php:500
-        #: app/controllers/StatsController.php:507
-        "Platform Stats for" => "",
-
-        #: app/controllers/StatsController.php:509
-        "Platform statistics page for the short URL" => "",
-
-        #: app/controllers/StatsController.php:657
-        #: app/controllers/StatsController.php:664
-        "Browser Stats for" => "",
-
-        #: app/controllers/StatsController.php:666
-        "Browser statistics page for the short URL" => "",
-
-        #: app/controllers/StatsController.php:812
-        #: app/controllers/StatsController.php:819
-        "Language Stats for" => "",
-
-        #: app/controllers/StatsController.php:821
-        "Language statistics page for the short URL" => "",
-
-        #: app/controllers/StatsController.php:983
-        #: app/controllers/StatsController.php:990
-        "Referrers Stats for" => "",
-
-        #: app/controllers/SubscriptionController.php:86
-        #: app/controllers/SubscriptionController.php:143
-        "Current" => "",
-
-        #: app/controllers/SubscriptionController.php:89
-        #: app/controllers/SubscriptionController.php:93
-        #: app/controllers/SubscriptionController.php:146
-        #: app/controllers/SubscriptionController.php:150
-        "{d}-Day Free Trial" => "",
-
-        #: app/controllers/SubscriptionController.php:89
-        #: app/controllers/SubscriptionController.php:146
-        #: storage/themes/default/partials/topbar_menu.php:9
-        "Upgrade" => "",
-
-        #: app/controllers/SubscriptionController.php:93
-        #: app/controllers/SubscriptionController.php:150
-        #: storage/themes/default/index.php:88 storage/themes/default/index.php:316
-        #: storage/themes/default/index.php:396 storage/themes/default/index.php:587
-        #: storage/themes/default/pages/bio.php:12
-        #: storage/themes/default/pages/bio.php:46
-        #: storage/themes/default/pages/bio.php:64
-        #: storage/themes/default/pages/qr.php:12
-        #: storage/themes/default/pages/qr.php:29
-        #: storage/themes/default/pages/qr.php:47
-        #: storage/themes/default/partials/footer.php:15
-        #: storage/themes/default/partials/main_menu.php:135
-        #: storage/themes/default/partials/main_menu.php:152
-        "Get Started" => "",
-
-        #: app/controllers/SubscriptionController.php:163
-        "Premium Plan Pricing" => "",
-
-        #: app/controllers/SubscriptionController.php:199 app/helpers/Gate.php:421
-        #: app/helpers/payments/Stripe.php:444
-        "You have been successfully subscribed." => "",
-
-        #: app/controllers/SubscriptionController.php:205
-        "You have already used a trial." => "",
-
-        #: app/controllers/SubscriptionController.php:234
-        "You already subscribed to this plan. If you want to upgrade, please choose another plan." => "",
-
-        #: app/controllers/SubscriptionController.php:330
-        "Promo code has expired. Please try again." => "",
-
-        #: app/controllers/SubscriptionController.php:333
-        #: app/controllers/SubscriptionController.php:352
-        #: app/controllers/SubscriptionController.php:367
-        "Please enter a valid promo code." => "",
-
-        #: app/controllers/UsersController.php:50
-        #: storage/themes/default/gates/domain.php:14
-        "Login to your account" => "",
-
-        #: app/controllers/UsersController.php:71
-        "You have been blocked for 1 hour due to many unsuccessful login attempts." => "",
-
-        #: app/controllers/UsersController.php:74
-        "Please enter a valid email or username." => "",
-
-        #: app/controllers/UsersController.php:76
-        #: app/controllers/UsersController.php:86
-        #: app/controllers/UsersController.php:165 core/Auth.class.php:123
-        #: core/Auth.class.php:196
-        "Wrong email and password combination." => "",
-
-        #: app/controllers/UsersController.php:103
-        #: app/controllers/UsersController.php:605
-        #: app/controllers/UsersController.php:682
-        #: app/controllers/UsersController.php:799
-        "You have been banned due to abuse. Please contact us for clarification." => "",
-
-        #: app/controllers/UsersController.php:107
-        #: app/controllers/UsersController.php:609
-        #: app/controllers/UsersController.php:686
-        #: app/controllers/UsersController.php:803
-        "You haven't activated your account. Please check your email for the activation link. If you haven't received any emails from us, please contact us." => "",
-
-        #: app/controllers/UsersController.php:129
-        "Please enter the 2FA access code to login." => "",
-
-        #: app/controllers/UsersController.php:152
-        #: app/controllers/UsersController.php:322
-        #: app/controllers/UsersController.php:325
-        "You have been successfully registered." => "",
-
-        #: app/controllers/UsersController.php:178
-        #: storage/themes/default/auth/2fa.php:14
-        "Enter your 2FA access code" => "",
-
-        #: app/controllers/UsersController.php:199
-        #: app/controllers/UsersController.php:204
-        #: app/controllers/UsersController.php:208
-        #: app/controllers/user/AccountController.php:454
-        "Invalid token. Please try again." => "",
-
-        #: app/controllers/UsersController.php:225
-        "You have been successfully logged." => "",
-
-        #: app/controllers/UsersController.php:240
-        #: app/controllers/UsersController.php:260
-        "We are not accepting users at this time." => "",
-
-        #: app/controllers/UsersController.php:242
-        "Register and manage your urls" => "",
-
-        #: app/controllers/UsersController.php:243
-        "Register an account and gain control over your urls. Manage them, edit them or remove them without hassle." => "",
-
-        #: app/controllers/UsersController.php:265
-        "The email, the username and the password are required." => "",
-
-        #: app/controllers/UsersController.php:271
-        #: app/controllers/user/AccountController.php:327
-        "An account is already associated with this email." => "",
-
-        #: app/controllers/UsersController.php:275
-        #: app/controllers/UsersController.php:500
-        #: app/controllers/user/AccountController.php:340
-        "Please enter a valid username." => "",
-
-        #: app/controllers/UsersController.php:276
-        #: app/controllers/UsersController.php:502
-        "Username already exists." => "",
-
-        #: app/controllers/UsersController.php:280
-        #: app/controllers/UsersController.php:506
-        "This username cannot be used or already exists. Please choose another username" => "",
-
-        #: app/controllers/UsersController.php:282
-        #: app/controllers/UsersController.php:422
-        #: app/controllers/UsersController.php:508
-        "Password must be at least 5 characters." => "",
-
-        #: app/controllers/UsersController.php:284
-        #: app/controllers/UsersController.php:424
-        #: app/controllers/UsersController.php:510
-        #: app/controllers/user/AccountController.php:354
-        "Passwords don't match." => "",
-
-        #: app/controllers/UsersController.php:286
-        #: app/controllers/UsersController.php:512
-        "You must agree to our terms of service." => "",
-
-        #: app/controllers/UsersController.php:314
-        "An email has been sent to activate your account. Please check your spam folder if you didn't receive it." => "",
-
-        #: app/controllers/UsersController.php:337
-        #: app/controllers/UsersController.php:392
-        #: storage/themes/default/auth/forgot.php:14
-        #: storage/themes/default/auth/forgot.php:32
-        #: storage/themes/default/auth/reset.php:14
-        #: storage/themes/default/auth/reset.php:39
-        "Reset Password" => "",
-
-        #: app/controllers/UsersController.php:338
-        #: storage/themes/default/auth/forgot.php:15
-        "If you forgot your password, you can request a link to reset your password." => "",
-
-        #: app/controllers/UsersController.php:363
-        "If an active account is associated with this email, you should receive an email shortly." => "",
-
-        #: app/controllers/UsersController.php:378
-        #: app/controllers/UsersController.php:385
-        #: app/controllers/UsersController.php:389
-        #: app/controllers/UsersController.php:408
-        #: app/controllers/UsersController.php:415
-        #: app/controllers/UsersController.php:419
-        #: app/controllers/UsersController.php:452
-        "Token has expired, please request another link." => "",
-
-        #: app/controllers/UsersController.php:427
-        "Your new password cannot be the same as the old password." => "",
-
-        #: app/controllers/UsersController.php:438
-        "Your password has been changed." => "",
-
-        #: app/controllers/UsersController.php:462
-        "Your email has been successfully verified." => "",
-
-        #: app/controllers/UsersController.php:476
-        #: app/controllers/UsersController.php:497
-        "The invitation link has expired or is currently unavailable. Please contact administrator." => "",
-
-        #: app/controllers/UsersController.php:479
-        #: storage/themes/default/auth/invite.php:14
-        "Join Team" => "",
-
-        #: app/controllers/UsersController.php:522
-        "Your account has been successfully activated." => "",
-
-        #: app/controllers/UsersController.php:533
-        "You have been successfully logged out." => "",
-
-        #: app/controllers/UsersController.php:546
-        "Sorry, Facebook connect is not available right now." => "",
-
-        #: app/controllers/UsersController.php:548
-        "You must grant access to this application to use your facebook account." => "",
-
-        #: app/controllers/UsersController.php:565
-        #: app/controllers/UsersController.php:570
-        "An error has occurred. Please try again later." => "",
-
-        #: app/controllers/UsersController.php:580
-        "You must grant permission to this application to use your profile information." => "",
-
-        #: app/controllers/UsersController.php:584
-        #: app/controllers/UsersController.php:667
-        #: app/controllers/UsersController.php:784
-        "The email linked to your account has been already used. If you have used that, please login to your existing account otherwise please contact us." => "",
-
-        #: app/controllers/UsersController.php:635
-        #: app/controllers/UsersController.php:717
-        #: app/controllers/UsersController.php:835
-        #: app/controllers/UsersController.php:868
-        #: app/controllers/UsersController.php:893
-        "Welcome! You have been successfully logged in." => "",
-
-        #: app/controllers/UsersController.php:646
-        #: app/controllers/UsersController.php:730
-        "Sorry, Twitter connect is not available right now." => "",
-
-        #: app/controllers/UsersController.php:649
-        "You must grant permission to this application to use your twitter account." => "",
-
-        #: app/controllers/UsersController.php:664
-        "And error occurred, please try again later." => "",
-
-        #: app/controllers/UsersController.php:747
-        "An error has occurred! Please make sure that you have set up this application as instructed." => "",
-
-        #: app/controllers/UsersController.php:760
-        #: app/controllers/UsersController.php:775
-        "Sorry, Google connect is not available right now." => "",
-
-        #: app/controllers/UsersController.php:781
-        "You must grant permission to this application to use your Google account." => "",
-
-        #: app/controllers/UsersController.php:849
-        "Token has expired, please login manually." => "",
-
-        #: app/controllers/UsersController.php:856
-        #: app/controllers/UsersController.php:860
-        "Token has expired, please login manually" => "",
-
-        #: app/controllers/api/LinksController.php:177
-        #: app/controllers/api/QRController.php:180
-        "Direct, email and other" => "",
-
-        #: app/controllers/user/AccountController.php:56
-        #: storage/themes/default/partials/main_menu.php:114
-        #: storage/themes/default/partials/topbar_menu.php:61
-        #: storage/themes/default/user/billing.php:1
-        "Billing" => "",
-
-        #: app/controllers/user/AccountController.php:73
-        "Wow there. You are an admin. You can't cancel your membership." => "",
-
-        #: app/controllers/user/AccountController.php:77 app/helpers/Slack.php:105
-        "Something went wrong, please try again." => "",
-
-        #: app/controllers/user/AccountController.php:81
-        #: app/controllers/user/AccountController.php:87
-        #: app/controllers/user/AccountController.php:185
-        #: app/controllers/user/AccountController.php:191
-        "Your password is incorrect." => "",
-
-        #: app/controllers/user/AccountController.php:95
-        "Your trial has been canceled." => "",
-
-        #: app/controllers/user/AccountController.php:129
-        "Your subscription has been canceled." => "",
-
-        #: app/controllers/user/AccountController.php:145
-        "Payment not found. Please try again." => "",
-
-        #: app/controllers/user/AccountController.php:160
-        #: storage/themes/default/user/billing.php:57
-        "View Invoice" => "",
-
-        #: app/controllers/user/AccountController.php:181
-        "As an admin, you cannot delete your account form this page." => "",
-
-        #: app/controllers/user/AccountController.php:227
-        "Your account has been deleted successfully and your data has been wiped out. If you have any questions please don't hesitate to contact us." => "",
-
-        #: app/controllers/user/AccountController.php:231
-        "Your account has been terminated." => "",
-
-        #: app/controllers/user/AccountController.php:254
-        "Your account has been successfully terminated." => "",
-
-        #: app/controllers/user/AccountController.php:303
-        #: storage/themes/default/partials/main_menu.php:119
-        #: storage/themes/default/partials/topbar_menu.php:66
-        #: storage/themes/default/user/settings.php:1
-        "Settings" => "",
-
-        #: app/controllers/user/AccountController.php:342
-        "This username has already been used. Please try again." => "",
-
-        #: app/controllers/user/AccountController.php:352
-        "Password must contain at least 5 characters." => "",
-
-        #: app/controllers/user/AccountController.php:358
-        "Passwords is the same as the old password." => "",
-
-        #: app/controllers/user/AccountController.php:370
-        #: app/controllers/user/AccountController.php:372
-        #: app/controllers/user/BioController.php:227
-        #: app/controllers/user/BioController.php:577
-        "Avatar must be either a PNG or a JPEG (Max 500kb)." => "",
-
-        #: app/controllers/user/AccountController.php:376
-        #: app/controllers/user/SplashController.php:131
-        #: app/controllers/user/SplashController.php:232
-        "Avatar must be either a PNG or a JPEG with a recommended dimension of 200x200." => "",
-
-        #: app/controllers/user/AccountController.php:416
-        #: app/controllers/user/AccountController.php:425
-        "Account has been successfully updated." => "",
-
-        #: app/controllers/user/AccountController.php:416
-        "You have changed your email. Please check your email before logging out and activate your account." => "",
-
-        #: app/controllers/user/AccountController.php:460
-        "2FA has been activated on your account. Please make sure to backup the secret key or the QR code." => "",
-
-        #: app/controllers/user/AccountController.php:471
-        "2FA has been disabled on your account." => "",
-
-        #: app/controllers/user/AccountController.php:493
-        "API key has been regenerated successfully. Please do not forget to update your application." => "",
-
-        #: app/controllers/user/BioController.php:78
-        "Import" => "",
-
-        #: app/controllers/user/BioController.php:78
-        "We have detected that you have an old bio page. Do you want to import it?<br><br><a href=\\\"?importoldbio=true\\\" class=\\\"btn btn-primary\\\">" => "",
-
-        #: app/controllers/user/BioController.php:81
-        #: storage/themes/default/bio/index.php:3
-        #: storage/themes/default/bio/index.php:77
-        #: storage/themes/default/partials/sidebar_menu.php:10
-        #: storage/themes/default/teams/edit.php:26
-        #: storage/themes/default/teams/index.php:134
-        #: storage/themes/default/user/channel.php:15
-        "Bio Pages" => "",
-
-        #: app/controllers/user/BioController.php:113
-        #: storage/themes/default/bio/index.php:7
-        #: storage/themes/default/bio/index.php:67
-        #: storage/themes/default/bio/new.php:3
-        #: storage/themes/default/teams/edit.php:27
-        #: storage/themes/default/teams/index.php:135
-        "Create Bio" => "",
-
-        #: app/controllers/user/BioController.php:118
-        #: app/controllers/user/BioController.php:438
-        "Icon" => "",
-
-        #: app/controllers/user/BioController.php:119
-        #: app/controllers/user/BioController.php:439
-        #: storage/themes/default/bio/edit.php:382
-        #: storage/themes/default/bio/edit.php:477
-        #: storage/themes/default/bio/edit.php:480
-        #: storage/themes/default/bio/edit.php:493
-        #: storage/themes/default/bio/edit.php:612
-        #: storage/themes/default/bio/edit.php:703
-        #: storage/themes/default/bio/edit.php:712
-        #: storage/themes/default/bio/new.php:336
-        #: storage/themes/default/bio/new.php:431
-        #: storage/themes/default/bio/new.php:434
-        #: storage/themes/default/bio/new.php:447
-        #: storage/themes/default/bio/new.php:566
-        #: storage/themes/default/bio/new.php:657
-        #: storage/themes/default/bio/new.php:666
-        #: storage/themes/default/qr/edit.php:30 storage/themes/default/qr/new.php:12
-        #: storage/themes/default/qr/new.php:57
-        "Text" => "",
-
-        #: app/controllers/user/BioController.php:120
-        #: app/controllers/user/BioController.php:440
-        #: storage/themes/default/invoice.php:57
-        #: storage/themes/default/overlay/create_coupon.php:87
-        #: storage/themes/default/overlay/create_newsletter.php:108
-        #: storage/themes/default/overlay/edit_newsletter.php:108
-        #: storage/themes/default/pages/api.php:162
-        #: storage/themes/default/partials/shortener.php:93
-        #: storage/themes/default/user/channels.php:83
-        #: storage/themes/default/user/channels.php:125
-        #: storage/themes/default/user/edit.php:320
-        "Description" => "",
-
-        #: app/controllers/user/BioController.php:121
-        #: app/controllers/user/BioController.php:441
-        #: storage/themes/default/bio/edit.php:497
-        #: storage/themes/default/bio/new.php:451
-        #: storage/themes/default/overlay/create_image.php:18
-        #: storage/themes/default/overlay/edit_image.php:18
-        #: storage/themes/default/qr/edit.php:43 storage/themes/default/qr/new.php:24
-        #: storage/themes/default/qr/new.php:68
-        "Link" => "",
-
-        #: app/controllers/user/BioController.php:122
-        #: app/controllers/user/BioController.php:442
-        #: storage/themes/default/bio/edit.php:503
-        #: storage/themes/default/bio/edit.php:616
-        #: storage/themes/default/bio/edit.php:642
-        #: storage/themes/default/bio/new.php:457
-        #: storage/themes/default/bio/new.php:570
-        #: storage/themes/default/bio/new.php:596
-        "Color" => "",
-
-        #: app/controllers/user/BioController.php:123
-        #: app/controllers/user/BioController.php:443
-        #: storage/themes/default/bio/edit.php:198
-        #: storage/themes/default/bio/edit.php:210
-        #: storage/themes/default/bio/edit.php:509
-        #: storage/themes/default/bio/new.php:199
-        #: storage/themes/default/bio/new.php:212
-        #: storage/themes/default/bio/new.php:463
-        #: storage/themes/default/qr/edit.php:377
-        #: storage/themes/default/qr/edit.php:395
-        #: storage/themes/default/qr/new.php:384 storage/themes/default/qr/new.php:402
-        "Background" => "",
-
-        #: app/controllers/user/BioController.php:124
-        #: app/controllers/user/BioController.php:444
-        #: storage/themes/default/bio/edit.php:515
-        #: storage/themes/default/bio/new.php:469
-        "Style" => "",
-
-        #: app/controllers/user/BioController.php:125
-        #: app/controllers/user/BioController.php:445
-        #: storage/themes/default/bio/edit.php:517
-        #: storage/themes/default/bio/new.php:471
-        "Rectangular" => "",
-
-        #: app/controllers/user/BioController.php:126
-        #: app/controllers/user/BioController.php:446
-        #: storage/themes/default/bio/edit.php:518
-        #: storage/themes/default/bio/new.php:472
-        #: storage/themes/default/qr/edit.php:490
-        #: storage/themes/default/qr/new.php:497
-        "Rounded" => "",
-
-        #: app/controllers/user/BioController.php:127
-        #: app/controllers/user/BioController.php:447
-        #: app/controllers/user/OverlayController.php:290
-        #: app/controllers/user/OverlayController.php:450
-        #: storage/themes/default/auth/forgot.php:22
-        #: storage/themes/default/auth/invite.php:22
-        #: storage/themes/default/bio/edit.php:670
-        #: storage/themes/default/bio/edit.php:716
-        #: storage/themes/default/bio/new.php:624
-        #: storage/themes/default/bio/new.php:670
-        #: storage/themes/default/gates/profile.php:128
-        #: storage/themes/default/overlay/create_contact.php:69
-        #: storage/themes/default/overlay/create_contact.php:162
-        #: storage/themes/default/pages/contact.php:25
-        #: storage/themes/default/pages/contact.php:26
-        #: storage/themes/default/pages/report.php:21
-        #: storage/themes/default/pages/report.php:22
-        #: storage/themes/default/qr/edit.php:56 storage/themes/default/qr/edit.php:60
-        #: storage/themes/default/qr/edit.php:157
-        #: storage/themes/default/qr/edit.php:236 storage/themes/default/qr/new.php:25
-        #: storage/themes/default/qr/new.php:79 storage/themes/default/qr/new.php:83
-        #: storage/themes/default/qr/new.php:183 storage/themes/default/qr/new.php:260
-        #: storage/themes/default/teams/edit.php:7
-        #: storage/themes/default/teams/index.php:115
-        #: storage/themes/default/user/settings.php:34
-        "Email" => "",
-
-        #: app/controllers/user/BioController.php:128
-        #: app/controllers/user/BioController.php:448
-        #: storage/themes/default/bio/edit.php:580
-        #: storage/themes/default/bio/new.php:534
-        #: storage/themes/default/invoice.php:59
-        #: storage/themes/default/user/billing.php:14
-        #: storage/themes/default/user/billing.php:44
-        "Amount" => "",
-
-        #: app/controllers/user/BioController.php:129
-        #: app/controllers/user/BioController.php:449
-        #: storage/themes/default/bio/edit.php:584
-        #: storage/themes/default/bio/new.php:538
-        "Currency" => "",
-
-        #: app/controllers/user/BioController.php:130
-        #: app/controllers/user/BioController.php:134
-        #: app/controllers/user/BioController.php:450
-        #: app/controllers/user/BioController.php:454
-        #: storage/themes/default/bio/edit.php:666
-        #: storage/themes/default/bio/new.php:620
-        #: storage/themes/default/qr/edit.php:77
-        #: storage/themes/default/qr/edit.php:153
-        #: storage/themes/default/qr/edit.php:232 storage/themes/default/qr/new.php:26
-        #: storage/themes/default/qr/new.php:98 storage/themes/default/qr/new.php:179
-        #: storage/themes/default/qr/new.php:256
-        "Phone" => "",
-
-        #: app/controllers/user/BioController.php:131
-        #: app/controllers/user/BioController.php:451
-        #: storage/themes/default/bio/edit.php:203
-        #: storage/themes/default/bio/edit.php:406
-        #: storage/themes/default/bio/edit.php:525
-        #: storage/themes/default/bio/edit.php:528
-        #: storage/themes/default/bio/new.php:204
-        #: storage/themes/default/bio/new.php:360
-        #: storage/themes/default/bio/new.php:479
-        #: storage/themes/default/bio/new.php:482
-        "Image" => "",
-
-        #: app/controllers/user/BioController.php:132
-        #: app/controllers/user/BioController.php:452
-        #: storage/themes/default/bio/edit.php:658
-        #: storage/themes/default/bio/new.php:612
-        #: storage/themes/default/qr/edit.php:141
-        #: storage/themes/default/qr/edit.php:220
-        #: storage/themes/default/qr/new.php:167 storage/themes/default/qr/new.php:244
-        "First Name" => "",
-
-        #: app/controllers/user/BioController.php:133
-        #: app/controllers/user/BioController.php:453
-        #: storage/themes/default/bio/edit.php:662
-        #: storage/themes/default/bio/new.php:616
-        #: storage/themes/default/qr/edit.php:145
-        #: storage/themes/default/qr/edit.php:224
-        #: storage/themes/default/qr/new.php:171 storage/themes/default/qr/new.php:248
-        "Last Name" => "",
-
-        #: app/controllers/user/BioController.php:135
-        #: app/controllers/user/BioController.php:455
-        #: storage/themes/default/bio/edit.php:674
-        #: storage/themes/default/bio/new.php:628
-        "Site" => "",
-
-        #: app/controllers/user/BioController.php:136
-        #: app/controllers/user/BioController.php:456
-        #: storage/themes/default/bio/edit.php:678
-        #: storage/themes/default/bio/new.php:632
-        #: storage/themes/default/pricing/checkout.php:34
-        #: storage/themes/default/qr/edit.php:165
-        #: storage/themes/default/qr/edit.php:244
-        #: storage/themes/default/qr/new.php:191 storage/themes/default/qr/new.php:268
-        #: storage/themes/default/user/settings.php:100
-        "Address" => "",
-
-        #: app/controllers/user/BioController.php:137
-        #: app/controllers/user/BioController.php:457
-        #: storage/themes/default/bio/edit.php:682
-        #: storage/themes/default/bio/new.php:636
-        #: storage/themes/default/pricing/checkout.php:40
-        #: storage/themes/default/qr/edit.php:175
-        #: storage/themes/default/qr/edit.php:254
-        #: storage/themes/default/qr/new.php:201 storage/themes/default/qr/new.php:278
-        #: storage/themes/default/user/settings.php:106
-        "City" => "",
-
-        #: app/controllers/user/BioController.php:138
-        #: app/controllers/user/BioController.php:458
-        #: storage/themes/default/bio/edit.php:686
-        #: storage/themes/default/bio/new.php:640
-        #: storage/themes/default/qr/edit.php:179
-        #: storage/themes/default/qr/edit.php:258
-        #: storage/themes/default/qr/new.php:205 storage/themes/default/qr/new.php:282
-        "State" => "",
-
-        #: app/controllers/user/BioController.php:139
-        #: app/controllers/user/BioController.php:459
-        #: storage/themes/default/bio/edit.php:690
-        #: storage/themes/default/bio/new.php:644
-        #: storage/themes/default/pricing/checkout.php:54
-        #: storage/themes/default/qr/edit.php:187
-        #: storage/themes/default/qr/edit.php:266
-        #: storage/themes/default/qr/new.php:213 storage/themes/default/qr/new.php:290
-        #: storage/themes/default/user/settings.php:120
-        "Country" => "",
-
-        #: app/controllers/user/BioController.php:140
-        #: app/controllers/user/BioController.php:460
-        #: storage/themes/default/bio/edit.php:625
-        #: storage/themes/default/bio/new.php:579
-        "Solid" => "",
-
-        #: app/controllers/user/BioController.php:141
-        #: app/controllers/user/BioController.php:461
-        #: storage/themes/default/bio/edit.php:626
-        #: storage/themes/default/bio/new.php:580
-        "Dotted" => "",
-
-        #: app/controllers/user/BioController.php:142
-        #: app/controllers/user/BioController.php:462
-        #: storage/themes/default/bio/edit.php:627
-        #: storage/themes/default/bio/new.php:581
-        "Dashed" => "",
-
-        #: app/controllers/user/BioController.php:196
-        #: app/controllers/user/BioController.php:527
-        "Please enter a name for your profile." => "",
-
-        #: app/controllers/user/BioController.php:201
-        #: app/controllers/user/BioController.php:532
-        "Please add at least one link." => "",
-
-        #: app/controllers/user/BioController.php:206
-        #: app/controllers/user/BioController.php:539 app/traits/Links.php:135
-        #: app/traits/Links.php:463
-        "Custom alias must be at least 3 characters." => "",
-
-        #: app/controllers/user/BioController.php:209
-        #: app/controllers/user/BioController.php:542 app/traits/Links.php:138
-        #: app/traits/Links.php:467
-        "Inappropriate aliases are not allowed." => "",
-
-        #: app/controllers/user/BioController.php:212
-        #: app/controllers/user/BioController.php:215
-        #: app/controllers/user/BioController.php:545
-        #: app/controllers/user/BioController.php:548 app/traits/Links.php:141
-        #: app/traits/Links.php:144 app/traits/Links.php:470 app/traits/Links.php:473
-        "That alias is taken. Please choose another one." => "",
-
-        #: app/controllers/user/BioController.php:218
-        #: app/controllers/user/BioController.php:551 app/traits/Links.php:147
-        #: app/traits/Links.php:476
-        "That alias is reserved. Please choose another one." => "",
-
-        #: app/controllers/user/BioController.php:221
-        #: app/controllers/user/BioController.php:554 app/traits/Links.php:150
-        #: app/traits/Links.php:479
-        "That is a premium alias and is reserved to only pro members." => "",
-
-        #: app/controllers/user/BioController.php:240
-        #: app/controllers/user/BioController.php:593
-        "Background must be either a PNG or a JPEG (Max 1mb)." => "",
-
-        #: app/controllers/user/BioController.php:273
-        #: app/controllers/user/BioController.php:283
-        #: app/controllers/user/BioController.php:644
-        #: app/controllers/user/BioController.php:658
-        "Image must be either a PNG or a JPEG (Max 500kb)." => "",
-
-        #: app/controllers/user/BioController.php:346
-        "Profile has been successfully created." => "",
-
-        #: app/controllers/user/BioController.php:369
-        #: app/controllers/user/BioController.php:394
-        #: app/controllers/user/BioController.php:522
-        #: app/controllers/user/BioController.php:714
-        #: app/controllers/user/BioController.php:818
-        "Profile does not exist." => "",
-
-        #: app/controllers/user/BioController.php:377
-        "Profile has been successfully deleted." => "",
-
-        #: app/controllers/user/BioController.php:429
-        #: storage/themes/default/bio/edit.php:4
-        "Update Bio" => "",
-
-        #: app/controllers/user/BioController.php:695
-        "Profile has been successfully updated." => "",
-
-        #: app/controllers/user/BioController.php:721
-        "Profile has been set as default and can now be access via your profile page." => "",
-
-        #: app/controllers/user/BioController.php:723
-        "Profile has been set as default and can now be access via your profile page. Your profile setting is currently set on private." => "",
-
-        #: app/controllers/user/BioController.php:825
-        #: app/controllers/user/QRController.php:587 app/traits/Overlays.php:355
-        #: storage/themes/default/bio/edit.php:337
-        #: storage/themes/default/bio/index.php:44
-        #: storage/themes/default/gates/media.php:29
-        #: storage/themes/default/index.php:17
-        #: storage/themes/default/overlay/create_coupon.php:35
-        #: storage/themes/default/overlay/create_coupon.php:93
-        #: storage/themes/default/overlay/edit_coupon.php:35
-        #: storage/themes/default/partials/links.php:79
-        #: storage/themes/default/user/affiliate.php:12
-        #: storage/themes/default/user/campaigns.php:38
-        #: storage/themes/default/user/campaigns.php:45
-        #: storage/themes/default/user/channel.php:41
-        #: storage/themes/default/user/edit.php:253
-        #: storage/themes/default/user/edit.php:256
-        #: storage/themes/default/user/index.php:240
-        #: storage/themes/default/user/links.php:146
-        #: storage/themes/default/user/settings.php:192
-        #: storage/themes/default/user/settings.php:207
-        #: storage/themes/default/user/settings.php:282
-        "Copy" => "",
-
-        #: app/controllers/user/BioController.php:846
-        #: app/controllers/user/QRController.php:598
-        "Item has been successfully duplicated." => "",
-
-        #: app/controllers/user/CampaignsController.php:60
-        #: storage/themes/default/partials/sidebar_menu.php:58
-        #: storage/themes/default/teams/edit.php:60
-        #: storage/themes/default/teams/index.php:168
-        #: storage/themes/default/user/campaigns.php:3
-        #: storage/themes/default/user/index.php:266
-        #: storage/themes/default/user/links.php:172
-        "Campaigns" => "",
-
-        #: app/controllers/user/CampaignsController.php:83
-        #: app/controllers/user/CampaignsController.php:131
-        "Campaign name cannot be empty and must have at least 2 characters." => "",
-
-        #: app/controllers/user/CampaignsController.php:87
-        #: app/controllers/user/CampaignsController.php:135
-        "You already have a campaign with that name." => "",
-
-        #: app/controllers/user/CampaignsController.php:95
-        #: app/controllers/user/CampaignsController.php:146
-        "This slug is currently not available. Please choose another one." => "",
-
-        #: app/controllers/user/CampaignsController.php:108
-        "Campaign was successfully created. You may start adding links to it now." => "",
-
-        #: app/controllers/user/CampaignsController.php:127
-        "Campaign does not exist" => "",
-
-        #: app/controllers/user/CampaignsController.php:154
-        "Campaign was updated successfully." => "",
-
-        #: app/controllers/user/CampaignsController.php:178
-        #: app/controllers/user/CampaignsController.php:195
-        "Campaign not found. Please try again." => "",
-
-        #: app/controllers/user/CampaignsController.php:183
-        "Campaign has been deleted." => "",
-
-        #: app/controllers/user/CampaignsController.php:233
-        #: storage/themes/default/user/campaignstats.php:3
-        "Campaign Statistics" => "",
-
-        #: app/controllers/user/ChannelsController.php:53
-        #: storage/themes/default/bio/index.php:143
-        #: storage/themes/default/partials/sidebar_menu.php:28
-        #: storage/themes/default/pricing/index.php:60
-        #: storage/themes/default/qr/index.php:140
-        #: storage/themes/default/teams/edit.php:60
-        #: storage/themes/default/teams/edit.php:61
-        #: storage/themes/default/teams/edit.php:62
-        #: storage/themes/default/teams/edit.php:63
-        #: storage/themes/default/teams/index.php:168
-        #: storage/themes/default/teams/index.php:169
-        #: storage/themes/default/teams/index.php:170
-        #: storage/themes/default/teams/index.php:171
-        #: storage/themes/default/user/billing.php:84
-        #: storage/themes/default/user/channels.php:3
-        #: storage/themes/default/user/index.php:295
-        #: storage/themes/default/user/links.php:201
-        "Channels" => "",
-
-        #: app/controllers/user/ChannelsController.php:135
-        "Channel" => "",
-
-        #: app/controllers/user/ChannelsController.php:156
-        #: app/controllers/user/ChannelsController.php:193
-        "Channel name cannot be empty and must have at least 2 characters." => "",
-
-        #: app/controllers/user/ChannelsController.php:169
-        "Channel was successfully created. You may start adding links to it now." => "",
-
-        #: app/controllers/user/ChannelsController.php:188
-        #: app/controllers/user/ChannelsController.php:228
-        #: app/controllers/user/ChannelsController.php:309
-        "Channel does not exist" => "",
-
-        #: app/controllers/user/ChannelsController.php:202
-        "Channel was updated successfully." => "",
-
-        #: app/controllers/user/ChannelsController.php:235
-        "Channel has been successfully deleted." => "",
-
-        #: app/controllers/user/ChannelsController.php:249
-        "You need to select at least 1 channel." => "",
-
-        #: app/controllers/user/ChannelsController.php:288
-        "Selected items have been added to the {c} channel." => "",
-
-        #: app/controllers/user/ChannelsController.php:314
-        "Item has been removed from the channel." => "",
-
-        #: app/controllers/user/DashboardController.php:41
-        #: app/helpers/payments/PaypalApi.php:336
-        #: app/helpers/payments/PaypalApi.php:399
-        "Your payment was successfully made. Thank you." => "",
-
-        #: app/controllers/user/DashboardController.php:79
-        #: storage/themes/default/partials/main_menu.php:101
-        #: storage/themes/default/partials/main_menu.php:144
-        #: storage/themes/default/partials/sidebar_menu.php:4
-        "Dashboard" => "",
-
-        #: app/controllers/user/DashboardController.php:99
-        #: app/controllers/user/StatsController.php:79
-        #: storage/themes/default/bio/edit.php:394
-        #: storage/themes/default/bio/edit.php:485
-        #: storage/themes/default/bio/new.php:348
-        #: storage/themes/default/bio/new.php:439 storage/themes/default/index.php:635
-        #: storage/themes/default/partials/sidebar_menu.php:41
-        #: storage/themes/default/teams/edit.php:13
-        #: storage/themes/default/teams/index.php:121
-        #: storage/themes/default/user/campaigns.php:56
-        #: storage/themes/default/user/channel.php:19
-        #: storage/themes/default/user/index.php:8
-        #: storage/themes/default/user/stats.php:14
-        "Links" => "",
-
-        #: app/controllers/user/DashboardController.php:106
-        "Campaign Links" => "",
-
-        #: app/controllers/user/DashboardController.php:163
-        #: storage/themes/default/partials/sidebar_menu.php:46
-        "Archived Links" => "",
-
-        #: app/controllers/user/DashboardController.php:187
-        #: storage/themes/default/partials/sidebar_menu.php:51
-        "Expired Links" => "",
-
-        #: app/controllers/user/DashboardController.php:301
-        #: storage/themes/default/layouts/api.php:67
-        #: storage/themes/default/layouts/auth.php:37
-        #: storage/themes/default/layouts/dashboard.php:124
-        #: storage/themes/default/layouts/main.php:69
-        "Keyword must be more than 3 characters!" => "",
-
-        #: app/controllers/user/DashboardController.php:317
-        "Affiliate Referrals" => "",
-
-        #: app/controllers/user/DomainsController.php:56
-        #: storage/themes/default/domains/index.php:3
-        #: storage/themes/default/partials/sidebar_menu.php:86
-        #: storage/themes/default/pricing/index.php:59
-        #: storage/themes/default/teams/edit.php:54
-        #: storage/themes/default/user/billing.php:83
-        "Branded Domains" => "",
-
-        #: app/controllers/user/DomainsController.php:79
-        #: storage/themes/default/domains/new.php:1
-        "New Domain" => "",
-
-        #: app/controllers/user/DomainsController.php:107
-        "A valid domain name is required." => "",
-
-        #: app/controllers/user/DomainsController.php:111
-        "The domain has been already used." => "",
-
-        #: app/controllers/user/DomainsController.php:117
-        "A valid url is required for the root domain." => "",
-
-        #: app/controllers/user/DomainsController.php:118
-        "A valid url is required for the 404 page." => "",
-
-        #: app/controllers/user/DomainsController.php:130
-        "A new domain was added." => "",
-
-        #: app/controllers/user/DomainsController.php:131
-        "A customer ({e}) added a new domain to the platform. Please make sure the domain is pointed correctly and is resolving as expected. Their domain name is {d}." => "",
-
-        #: app/controllers/user/DomainsController.php:134
-        "Domain has been added successfully" => "",
-
-        #: app/controllers/user/DomainsController.php:153
-        #: app/controllers/user/DomainsController.php:179
-        #: app/controllers/user/DomainsController.php:211
-        "Domain not found. Please try again." => "",
-
-        #: app/controllers/user/DomainsController.php:156
-        #: storage/themes/default/domains/edit.php:1
-        #: storage/themes/default/domains/index.php:43
-        "Edit Domain" => "",
-
-        #: app/controllers/user/DomainsController.php:186
-        "Domain has been updated successfully." => "",
-
-        #: app/controllers/user/DomainsController.php:216
-        "Domain has been deleted." => "",
-
-        #: app/controllers/user/ExportController.php:122
-        #: app/controllers/user/ExportController.php:161
-        "Please specify a range." => "",
-
-        #: app/controllers/user/IntegrationsController.php:85
-        #: storage/themes/default/integrations/slack.php:3
-        #: storage/themes/default/partials/sidebar_menu.php:104
-        "Slack Integration" => "",
-
-        #: app/controllers/user/IntegrationsController.php:100
-        #: storage/themes/default/integrations/zapier.php:4
-        #: storage/themes/default/partials/sidebar_menu.php:106
-        "Zapier Integration" => "",
-
-        #: app/controllers/user/IntegrationsController.php:115
-        #: storage/themes/default/integrations/wordpress.php:3
-        #: storage/themes/default/partials/sidebar_menu.php:108
-        "WordPress Integration" => "",
-
-        #: app/controllers/user/IntegrationsController.php:133
-        #: storage/themes/default/integrations/shortcuts.php:3
-        #: storage/themes/default/partials/sidebar_menu.php:109
-        "Shortcuts Integration" => "",
-
-        #: app/controllers/user/IntegrationsController.php:161
-        "Plugin cannot be generated. Please contact us for more information." => "",
-
-        #: app/controllers/user/OverlayController.php:63 app/helpers/App.php:726
-        #: storage/themes/default/overlay/create.php:31
-        #: storage/themes/default/overlay/index.php:3
-        #: storage/themes/default/overlay/index.php:63
-        #: storage/themes/default/partials/sidebar_menu.php:72
-        #: storage/themes/default/pricing/index.php:56
-        #: storage/themes/default/teams/edit.php:40
-        #: storage/themes/default/teams/index.php:148
-        #: storage/themes/default/user/billing.php:80
-        "CTA Overlay" => "",
-
-        #: app/controllers/user/OverlayController.php:92
-        #: storage/themes/default/overlay/create.php:3
-        #: storage/themes/default/overlay/index.php:7
-        #: storage/themes/default/overlay/index.php:52
-        "Create a CTA Overlay" => "",
-
-        #: app/controllers/user/OverlayController.php:140
-        #: app/controllers/user/OverlayController.php:168
-        "Overlay page does not exist." => "",
-
-        #: app/controllers/user/OverlayController.php:289
-        #: app/controllers/user/OverlayController.php:449
-        #: storage/themes/default/overlay/create_contact.php:12
-        #: storage/themes/default/overlay/create_contact.php:62
-        #: storage/themes/default/overlay/create_contact.php:158
-        #: storage/themes/default/overlay/create_coupon.php:12
-        #: storage/themes/default/overlay/create_image.php:12
-        #: storage/themes/default/overlay/create_message.php:12
-        #: storage/themes/default/overlay/create_newsletter.php:12
-        #: storage/themes/default/overlay/create_poll.php:12
-        #: storage/themes/default/overlay/edit_contact.php:12
-        #: storage/themes/default/overlay/edit_coupon.php:12
-        #: storage/themes/default/overlay/edit_image.php:12
-        #: storage/themes/default/overlay/edit_message.php:12
-        #: storage/themes/default/overlay/edit_newsletter.php:12
-        #: storage/themes/default/overlay/edit_poll.php:12
-        #: storage/themes/default/pages/contact.php:21
-        #: storage/themes/default/pages/contact.php:22
-        #: storage/themes/default/splash/create.php:12
-        #: storage/themes/default/splash/edit.php:12
-        #: storage/themes/default/user/campaigns.php:20
-        #: storage/themes/default/user/channels.php:79
-        #: storage/themes/default/user/channels.php:121
-        #: storage/themes/default/user/settings.php:28
-        "Name" => "",
-
-        #: app/controllers/user/OverlayController.php:291
-        #: app/controllers/user/OverlayController.php:451
-        #: storage/themes/default/gates/profile.php:132
-        #: storage/themes/default/overlay/create_contact.php:76
-        #: storage/themes/default/overlay/create_contact.php:166
-        #: storage/themes/default/pages/contact.php:29
-        #: storage/themes/default/qr/edit.php:68 storage/themes/default/qr/edit.php:98
-        #: storage/themes/default/qr/edit.php:128 storage/themes/default/qr/new.php:91
-        #: storage/themes/default/qr/new.php:117 storage/themes/default/qr/new.php:156
-        "Message" => "",
-
-        #: app/controllers/user/OverlayController.php:292
-        #: app/controllers/user/OverlayController.php:452
-        "send" => "",
-
-        #: app/controllers/user/OverlayController.php:300
-        #: app/controllers/user/OverlayController.php:460
-        #: app/controllers/user/OverlayController.php:588
-        #: app/controllers/user/OverlayController.php:730
-        #: app/controllers/user/OverlayController.php:879
-        #: app/controllers/user/OverlayController.php:1047
-        #: app/controllers/user/OverlayController.php:1171
-        #: app/controllers/user/OverlayController.php:1307
-        #: app/controllers/user/OverlayController.php:1455
-        #: app/controllers/user/OverlayController.php:1589
-        #: app/controllers/user/OverlayController.php:1736
-        #: app/controllers/user/OverlayController.php:1855
-        "The name field cannot be empty." => "",
-
-        #: app/controllers/user/OverlayController.php:334
-        #: app/controllers/user/OverlayController.php:624
-        #: app/controllers/user/OverlayController.php:925
-        #: app/controllers/user/OverlayController.php:1224
-        #: app/controllers/user/OverlayController.php:1480
-        #: app/controllers/user/OverlayController.php:1762
-        "Overlay has been successfully created." => "",
-
-        #: app/controllers/user/OverlayController.php:351
-        #: app/controllers/user/OverlayController.php:641
-        #: app/controllers/user/OverlayController.php:942
-        #: app/controllers/user/OverlayController.php:1241
-        #: app/controllers/user/OverlayController.php:1510
-        #: app/controllers/user/OverlayController.php:1779
-        #: storage/themes/default/overlay/index.php:29
-        #: storage/themes/default/partials/links.php:9
-        #: storage/themes/default/splash/index.php:31
-        #: storage/themes/default/teams/index.php:28
-        #: storage/themes/default/user/campaigns.php:58
-        #: storage/themes/default/user/channel.php:30
-        #: storage/themes/default/user/channels.php:22
-        #: storage/themes/default/user/channels.php:50
-        "Edit" => "",
-
-        #: app/controllers/user/OverlayController.php:490
-        #: app/controllers/user/OverlayController.php:761
-        #: app/controllers/user/OverlayController.php:1092
-        #: app/controllers/user/OverlayController.php:1363
-        #: app/controllers/user/OverlayController.php:1610
-        #: app/controllers/user/OverlayController.php:1877
-        "Overlay has been successfully updated." => "",
-
-        #: app/controllers/user/OverlayController.php:590
-        #: app/controllers/user/OverlayController.php:732
-        "Please enter a valid question." => "",
-
-        #: app/controllers/user/OverlayController.php:592
-        #: app/controllers/user/OverlayController.php:734
-        "A minimum of two options is required." => "",
-
-        #: app/controllers/user/OverlayController.php:606
-        #: app/controllers/user/OverlayController.php:748 app/traits/Overlays.php:272
-        #: storage/themes/default/overlay/create_poll.php:48
-        #: storage/themes/default/overlay/create_poll.php:111
-        "Vote" => "",
-
-        #: app/controllers/user/OverlayController.php:881
-        #: app/controllers/user/OverlayController.php:1049
-        #: app/controllers/user/OverlayController.php:1740
-        #: app/controllers/user/OverlayController.php:1859
-        "The message field cannot be empty." => "",
-
-        #: app/controllers/user/OverlayController.php:883
-        #: app/controllers/user/OverlayController.php:1051
-        #: app/controllers/user/OverlayController.php:1173
-        #: app/controllers/user/OverlayController.php:1309
-        #: app/controllers/user/SplashController.php:111
-        #: app/controllers/user/SplashController.php:210 app/traits/Links.php:83
-        #: app/traits/Links.php:407 storage/themes/default/layouts/api.php:60
-        #: storage/themes/default/layouts/auth.php:30
-        #: storage/themes/default/layouts/dashboard.php:115
-        #: storage/themes/default/layouts/main.php:62
-        "Please enter a valid URL." => "",
-
-        #: app/controllers/user/OverlayController.php:902
-        #: app/controllers/user/OverlayController.php:904
-        #: app/controllers/user/OverlayController.php:1070
-        #: app/controllers/user/OverlayController.php:1072
-        #: app/controllers/user/OverlayController.php:1185
-        #: app/controllers/user/OverlayController.php:1187
-        #: app/controllers/user/OverlayController.php:1321
-        #: app/controllers/user/OverlayController.php:1323
-        #: app/controllers/user/QRController.php:269
-        #: app/controllers/user/QRController.php:470
-        "Logo must be either a PNG or a JPEG (Max 500kb)." => "",
-
-        #: app/controllers/user/OverlayController.php:908
-        #: app/controllers/user/OverlayController.php:1076
-        #: app/controllers/user/OverlayController.php:1191
-        #: app/controllers/user/OverlayController.php:1327
-        "Logo must be either a PNG or a JPEG with a recommended dimension of 100x100." => "",
-
-        #: app/controllers/user/OverlayController.php:1175
-        "You need to upload your logo and/or a background." => "",
-
-        #: app/controllers/user/OverlayController.php:1201
-        #: app/controllers/user/OverlayController.php:1203
-        #: app/controllers/user/OverlayController.php:1341
-        #: app/controllers/user/OverlayController.php:1343
-        "Image must be either a PNG or a JPEG (Max 1mb)." => "",
-
-        #: app/controllers/user/OverlayController.php:1207
-        #: app/controllers/user/OverlayController.php:1347
-        "Image must be either a PNG or a JPEG with a recommended dimension of 600x150." => "",
-
-        #: app/controllers/user/OverlayController.php:1633
-        "Overlay not found. Please try again." => "",
-
-        #: app/controllers/user/OverlayController.php:1646
-        "Overlay has been deleted." => "",
-
-        #: app/controllers/user/OverlayController.php:1738
-        #: app/controllers/user/OverlayController.php:1857
-        "The coupon field cannot be empty." => "",
-
-        #: app/controllers/user/PixelsController.php:58
-        #: storage/themes/default/partials/sidebar_menu.php:79
-        #: storage/themes/default/pixels/index.php:3
-        #: storage/themes/default/teams/edit.php:47
-        #: storage/themes/default/teams/index.php:155
-        "Tracking Pixels" => "",
-
-        #: app/controllers/user/PixelsController.php:85
-        "New Pixel" => "",
-
-        #: app/controllers/user/PixelsController.php:110
-        "Pixel provider is currently not supported." => "",
-
-        #: app/controllers/user/PixelsController.php:123
-        #: app/controllers/user/PixelsController.php:194
-        "Please enter valid id." => "",
-
-        #: app/controllers/user/PixelsController.php:133
-        "A pixel with this provider and tag already exists." => "",
-
-        #: app/controllers/user/PixelsController.php:145
-        "Pixel has been added successfully" => "",
-
-        #: app/controllers/user/PixelsController.php:163
-        #: app/controllers/user/PixelsController.php:189
-        #: app/controllers/user/PixelsController.php:232
-        "Pixel not found. Please try again." => "",
-
-        #: app/controllers/user/PixelsController.php:166
-        #: storage/themes/default/pixels/index.php:28
-        "Edit Pixel" => "",
-
-        #: app/controllers/user/PixelsController.php:208
-        "Pixel has been updated successfully." => "",
-
-        #: app/controllers/user/PixelsController.php:242
-        "Pixel has been deleted." => "",
-
-        #: app/controllers/user/QRController.php:94
-        #: storage/themes/default/qr/index.php:7
-        #: storage/themes/default/qr/index.php:65 storage/themes/default/qr/new.php:1
-        #: storage/themes/default/teams/edit.php:20
-        #: storage/themes/default/teams/index.php:128
-        "Create QR" => "",
-
-        #: app/controllers/user/QRController.php:155
-        #: app/controllers/user/QRController.php:224
-        #: app/controllers/user/QRController.php:417
-        "Please enter a name for your QR code." => "",
-
-        #: app/controllers/user/QRController.php:157
-        #: app/controllers/user/QRController.php:222 app/helpers/QR.php:383
-        #: app/helpers/QR.php:412 app/helpers/QR.php:430
-        "Invalid QR format or missing data" => "",
-
-        #: app/controllers/user/QRController.php:319
-        "QR Code has been successfully generated." => "",
-
-        #: app/controllers/user/QRController.php:386
-        #: storage/themes/default/qr/edit.php:1 storage/themes/default/qr/index.php:26
-        #: storage/themes/default/teams/edit.php:21
-        #: storage/themes/default/teams/index.php:129
-        "Edit QR" => "",
-
-        #: app/controllers/user/QRController.php:507
-        "QR Code has been successfully updated." => "",
-
-        #: app/controllers/user/QRController.php:542
-        "QR has been successfully deleted." => "",
-
-        #: app/controllers/user/SplashController.php:58
-        #: storage/themes/default/splash/index.php:3
-        #: storage/themes/default/splash/index.php:64
-        "Custom Splash Pages" => "",
-
-        #: app/controllers/user/SplashController.php:84
-        #: storage/themes/default/splash/create.php:1
-        #: storage/themes/default/splash/edit.php:1
-        #: storage/themes/default/splash/index.php:7
-        #: storage/themes/default/splash/index.php:53
-        "Create a Custom Splash" => "",
-
-        #: app/controllers/user/SplashController.php:109
-        #: app/controllers/user/SplashController.php:208
-        "The name, title, message and link cannot be empty." => "",
-
-        #: app/controllers/user/SplashController.php:112
-        #: app/controllers/user/SplashController.php:211
-        "Please enter a valid counter time in seconds." => "",
-
-        #: app/controllers/user/SplashController.php:123
-        #: app/controllers/user/SplashController.php:125
-        #: app/controllers/user/SplashController.php:127
-        #: app/controllers/user/SplashController.php:226
-        #: app/controllers/user/SplashController.php:228
-        "Avatar must be either a PNG or a JPEG (Max 300kb)." => "",
-
-        #: app/controllers/user/SplashController.php:138
-        #: app/controllers/user/SplashController.php:140
-        #: app/controllers/user/SplashController.php:142
-        #: app/controllers/user/SplashController.php:246
-        #: app/controllers/user/SplashController.php:248
-        "Banner must be either a PNG or a JPEG (Max 500kb)." => "",
-
-        #: app/controllers/user/SplashController.php:146
-        #: app/controllers/user/SplashController.php:252
-        "Banner must be either a PNG or a JPEG with a recommended dimension of 980x300." => "",
-
-        #: app/controllers/user/SplashController.php:162
-        "Custom splash page has been created." => "",
-
-        #: app/controllers/user/SplashController.php:179
-        #: app/controllers/user/SplashController.php:205
-        #: app/controllers/user/SplashController.php:285
-        "Custom splash page does not exist." => "",
-
-        #: app/controllers/user/SplashController.php:184
-        "Update a Custom Splash" => "",
-
-        #: app/controllers/user/SplashController.php:267
-        "Custom splash page has been updated." => "",
-
-        #: app/controllers/user/SplashController.php:302
-        "Custom splash page has been deleted." => "",
-
-        #: app/controllers/user/StatsController.php:40
-        #: storage/themes/default/bio/index.php:30
-        #: storage/themes/default/partials/links.php:7
-        #: storage/themes/default/partials/sidebar_menu.php:24
-        #: storage/themes/default/qr/index.php:29
-        #: storage/themes/default/user/campaigns.php:60
-        #: storage/themes/default/user/channel.php:27
-        #: storage/themes/default/user/edit.php:8
-        #: storage/themes/default/user/stats.php:3
-        "Statistics" => "",
-
-        #: app/controllers/user/TeamsController.php:59
-        #: storage/themes/default/teams/index.php:3
-        "Manage Teams" => "",
-
-        #: app/controllers/user/TeamsController.php:83
-        "This is not a valid email address" => "",
-
-        #: app/controllers/user/TeamsController.php:86
-        "This user has already an account. Please use another email." => "",
-
-        #: app/controllers/user/TeamsController.php:90
-        "This email address has been invited." => "",
-
-        #: app/controllers/user/TeamsController.php:93
-        "No permission has been assigned for this user." => "",
-
-        #: app/controllers/user/TeamsController.php:115
-        "An invite has been sent to the email." => "",
-
-        #: app/controllers/user/ToolsController.php:37
-        #: storage/themes/default/partials/sidebar_menu.php:111
-        #: storage/themes/default/user/tools.php:1
-        "Tools" => "",
-
-        #: app/controllers/user/ToolsController.php:63
-        "The application has been install on your slack account. You can now use the command to shorten links directly from your conversations." => "",
-
-        #: app/controllers/user/ToolsController.php:88
-        "Your Zapier URL has been updated." => "",
-
-        #: app/helpers/App.php:715
-        "Redirection" => "",
-
-        #: app/helpers/App.php:717 storage/themes/default/user/settings.php:85
-        "Frame" => "",
-
-        #: app/helpers/App.php:718 storage/themes/default/user/settings.php:86
-        "Splash" => "",
-
-        #: app/helpers/App.php:732 storage/themes/default/partials/sidebar_menu.php:65
-        #: storage/themes/default/pricing/index.php:55
-        #: storage/themes/default/teams/edit.php:33
-        #: storage/themes/default/teams/index.php:141
-        #: storage/themes/default/user/billing.php:79
-        "Custom Splash" => "",
-
-        #: app/helpers/Captcha.php:114 app/helpers/Captcha.php:123
-        #: app/helpers/Captcha.php:193 app/helpers/Captcha.php:201
-        "The captcha did not validate. Please try again." => "",
-
-        #: app/helpers/Emails.php:72
-        "Please verify and approve this url" => "",
-
-        #: app/helpers/Emails.php:106
-        "Please verify your email" => "",
-
-        #: app/helpers/Emails.php:139
-        "Registration has been successful" => "",
-
-        #: app/helpers/Emails.php:174
-        "Password Reset Instructions" => "",
-
-        #: app/helpers/Emails.php:206
-        "Your email has been verified" => "",
-
-        #: app/helpers/Emails.php:230
-        "Your password was changed." => "",
-
-        #: app/helpers/Emails.php:237
-        "Your password was changed. If you did not change your password, please contact us as soon as possible." => "",
-
-        #: app/helpers/Emails.php:255
-        "You just got paid!" => "",
-
-        #: app/helpers/Emails.php:262
-        "You just got paid {amount} via PayPal for being an awesome affiliate!" => "",
-
-        #: app/helpers/Emails.php:287
-        "You have been invited to join our team" => "",
-
-        #: app/helpers/Emails.php:317
-        "Your subscription has been canceled" => "",
-
-        #: app/helpers/Emails.php:349
-        "Your trial will end soon!" => "",
-
-        #: app/helpers/Emails.php:377
-        "Admin notification" => "",
-
-        #: app/helpers/Gate.php:39
-        "Inactive Link" => "",
-
-        #: app/helpers/Gate.php:54
-        "Unsafe Link Detected" => "",
-
-        #: app/helpers/Gate.php:68
-        "Link Expired" => "",
-
-        #: app/helpers/Gate.php:81
-        "Enter your password to unlock this link" => "",
-
-        #: app/helpers/Gate.php:82
-        "The access to this link is restricted. Please enter your password to view it." => "",
-
-        #: app/helpers/Gate.php:88 app/helpers/Gate.php:196 app/helpers/Gate.php:327
-        "Adblock Detected" => "",
-
-        #: app/helpers/Gate.php:88 app/helpers/Gate.php:196 app/helpers/Gate.php:327
-        "Please disable Adblock and refresh the page again." => "",
-
-        #: app/helpers/Gate.php:185 app/helpers/Gate.php:187
-        "seconds" => "",
-
-        #: app/helpers/Gate.php:187 storage/themes/default/layouts/dashboard.php:118
-        "Continue" => "",
-
-        #: app/helpers/Gate.php:404
-        "Message sent successfully." => "",
-
-        #: app/helpers/Gate.php:505 storage/themes/default/user/campaigns.php:21
-        "List" => "",
-
-        #: app/helpers/QR.php:78
-        "An error internal server error ocurred. Please change the QR type." => "",
-
-        #: app/helpers/QR.php:115 app/helpers/QR.php:127
-        "QR data cannot be empty. Please fill the appropriate field." => "",
-
-        #: app/helpers/QR.php:168 app/helpers/QR.php:184 app/helpers/QR.php:200
-        #: app/helpers/QR.php:216
-        "Invalid phone number. Please try again." => "",
-
-        #: app/helpers/QR.php:277 app/helpers/QR.php:343
-        "vCard data cannot be empty. Please fill some fields" => "",
-
-        #: app/helpers/QR.php:389
-        "Please enter the Wifi SSID" => "",
-
-        #: app/helpers/QR.php:434 app/helpers/QR.php:441 app/helpers/QR.php:449
-        "Please enter a valid wallet address" => "",
-
-        #: app/helpers/QR.php:466
-        "Please choose a valid file." => "",
-
-        #: app/helpers/QR.php:468 app/helpers/QR.php:470
-        "File must be either a PNG, JPEG, GIF or a PDF (Max 2MB)" => "",
-
-        #: app/helpers/QrImagick.php:406
-        "An error occurred" => "",
-
-        #: app/helpers/Slack.php:104
-        "You need to allow this application to install the commands on your slack account." => "",
-
-        #: app/helpers/payments/Bank.php:48 app/traits/Payments.php:96
-        #: app/traits/Payments.php:97
-        "Bank Transfer" => "",
-
-        #: app/helpers/payments/Bank.php:51 app/helpers/payments/Paypal.php:53
-        #: app/helpers/payments/PaypalApi.php:55 app/helpers/payments/Stripe.php:56
-        "Enable" => "",
-
-        #: app/helpers/payments/Bank.php:53
-        "Transfer payments via your bank." => "",
-
-        #: app/helpers/payments/Bank.php:56
-        "Bank Info" => "",
-
-        #: app/helpers/payments/Bank.php:58
-        "Enter the full information where your users can send payments to via their bank." => "",
-
-        #: app/helpers/payments/Bank.php:76
-        "Bank Information" => "",
-
-        #: app/helpers/payments/Bank.php:93 app/helpers/payments/Bank.php:98
-        #: app/helpers/payments/Paypal.php:95 app/helpers/payments/Paypal.php:99
-        #: app/helpers/payments/PaypalApi.php:102
-        #: app/helpers/payments/PaypalApi.php:106 app/helpers/payments/Stripe.php:191
-        #: app/helpers/payments/Stripe.php:195 app/helpers/payments/Stripe.php:223
-        #: app/helpers/payments/Stripe.php:252 app/helpers/payments/Stripe.php:255
-        #: app/helpers/payments/Stripe.php:271 app/helpers/payments/Stripe.php:333
-        #: app/helpers/payments/Stripe.php:345 app/helpers/payments/Stripe.php:383
-        #: app/helpers/payments/Stripe.php:925 app/helpers/payments/Stripe.php:928
-        #: app/helpers/payments/Stripe.php:1009
-        "An error ocurred, please try again. You have not been charged." => "",
-
-        #: app/helpers/payments/Bank.php:102 app/helpers/payments/Stripe.php:199
-        #: app/helpers/payments/Stripe.php:888
-        "First month" => "",
-
-        #: app/helpers/payments/Bank.php:108 app/helpers/payments/Stripe.php:205
-        #: app/helpers/payments/Stripe.php:894
-        "First year" => "",
-
-        #: app/helpers/payments/Bank.php:115 app/helpers/payments/Stripe.php:212
-        #: app/helpers/payments/Stripe.php:901
-        #: storage/themes/default/pricing/index.php:18
-        "Lifetime" => "",
-
-        #: app/helpers/payments/Bank.php:156
-        "Your subscription is currently pending. Once we receive the money, we will activate your subscription." => "",
-
-        #: app/helpers/payments/Paypal.php:50
-        "Paypal Basic Checkout" => "",
-
-        #: app/helpers/payments/Paypal.php:55
-        "Collect payments via basic paypal checkout." => "",
-
-        #: app/helpers/payments/Paypal.php:59 storage/themes/default/bio/edit.php:576
-        #: storage/themes/default/bio/new.php:530
-        "PayPal Email" => "",
-
-        #: app/helpers/payments/Paypal.php:61
-        "Payments will be sent to this address. Please make sure that you enable IPN and enable notification." => "",
-
-        #: app/helpers/payments/Paypal.php:64
-        "PayPal IPN" => "",
-
-        #: app/helpers/payments/Paypal.php:66
-        "For more info <a href=\"https://developer.paypal.com/webapps/developer/docs/classic/products/instant-payment-notification/\" target=\"_blank\">click here</a>" => "",
-
-        #: app/helpers/payments/Paypal.php:145 app/helpers/payments/Paypal.php:248
-        #: app/helpers/payments/PaypalApi.php:410
-        "Your payment has been canceled." => "",
-
-        #: app/helpers/payments/Paypal.php:154
-        "Payment complete. We will upgrade your account as soon as the payment is verified." => "",
-
-        #: app/helpers/payments/PaypalApi.php:52
-        "Paypal API Payments" => "",
-
-        #: app/helpers/payments/PaypalApi.php:57
-        "Collect payments securely with PayPal API." => "",
-
-        #: app/helpers/payments/PaypalApi.php:61
-        "Client ID" => "",
-
-        #: app/helpers/payments/PaypalApi.php:63
-        "Please enter your live client ID." => "",
-
-        #: app/helpers/payments/PaypalApi.php:66
-        "Client Secret Key" => "",
-
-        #: app/helpers/payments/PaypalApi.php:68
-        "Please enter your live client secret." => "",
-
-        #: app/helpers/payments/PaypalApi.php:74
-        "You cannot enable both basic paypal and paypal api at the same time. You must choose one." => "",
-
-        #: app/helpers/payments/PaypalApi.php:177
-        #: app/helpers/payments/PaypalApi.php:242
-        #: app/helpers/payments/PaypalApi.php:245
-        #: app/helpers/payments/PaypalApi.php:341
-        #: app/helpers/payments/PaypalApi.php:344
-        #: app/helpers/payments/PaypalApi.php:358
-        #: app/helpers/payments/PaypalApi.php:362
-        #: app/helpers/payments/PaypalApi.php:404
-        #: app/helpers/payments/PaypalApi.php:407
-        "An issue occurred. You have not been charged." => "",
-
-        #: app/helpers/payments/PaypalApi.php:300
-        "An issue occurred. Please contact us for more info." => "",
-
-        #: app/helpers/payments/Stripe.php:53
-        "Stripe Payments" => "",
-
-        #: app/helpers/payments/Stripe.php:58
-        "Collect payments securely with Stripe." => "",
-
-        #: app/helpers/payments/Stripe.php:62
-        #: storage/themes/default/pricing/checkout.php:139
-        "Checkout" => "",
-
-        #: app/helpers/payments/Stripe.php:66
-        "Built-in Checkout" => "",
-
-        #: app/helpers/payments/Stripe.php:72
-        "Stripe Hosted Checkout" => "",
-
-        #: app/helpers/payments/Stripe.php:75
-        "Choose between built-in checkout or Stripe hosted checkout." => "",
-
-        #: app/helpers/payments/Stripe.php:78
-        "Stripe Publishable Key" => "",
-
-        #: app/helpers/payments/Stripe.php:80 app/helpers/payments/Stripe.php:85
-        "Get your stripe keys from here once logged in <a href=\"https://dashboard.stripe.com/account/apikeys\" target=\"_blank\">click here</a>" => "",
-
-        #: app/helpers/payments/Stripe.php:83
-        "Stripe Secret Key" => "",
-
-        #: app/helpers/payments/Stripe.php:88
-        "Webhook Signature Key" => "",
-
-        #: app/helpers/payments/Stripe.php:90
-        "Webhook signature is a security measure to verify the authenticity of the data incoming from Stripe. It is highly recommended that you add this for safety measure. You can find your key after adding a webhook. <a href=\"https://dashboard.stripe.com/account/webhooks\" target=\"_blank\">Click here to find your signature key.</a>" => "",
-
-        #: app/helpers/payments/Stripe.php:93
-        "Webhook URL" => "",
-
-        #: app/helpers/payments/Stripe.php:95
-        "You can add your webhooks <a href=\"https://dashboard.stripe.com/account/webhooks\" target=\"_blank\">here</a>. For more info, please check the docs." => "",
-
-        #: app/helpers/payments/Stripe.php:166
-        "Credit or debit card" => "",
-
-        #: app/helpers/payments/Stripe.php:372
-        "Your credit card was declined. Please check your credit card and try again later." => "",
-
-        #: app/helpers/payments/Stripe.php:432
-        "You have a new Subscriber" => "",
-
-        #: app/helpers/payments/Stripe.php:582
-        "Payment failed" => "",
-
-        #: app/middleware/Auth.php:59
-        "Please upgrade to a premium package in order to continue." => "",
-
-        #: app/middleware/CheckDomain.php:56
-        "Great! Your domain is working." => "",
-
-        #: app/middleware/CheckMaintenance.php:34
-        "Offline for Maintenance" => "",
-
-        #: app/middleware/CheckPrivate.php:40
-        "Private Use" => "",
-
-        #: app/models/Plans.php:43
-        "This feature is currently unavailable. Please contact your team administrator." => "",
-
-        #: app/models/Plans.php:46
-        "Please choose a premium package to unlock this feature." => "",
-
-        #: app/traits/Links.php:75
-        "Please create a free account or login to shorten links." => "",
-
-        #: app/traits/Links.php:77
-        "You have reached your maximum links limit. Please upgrade to another plan." => "",
-
-        #: app/traits/Links.php:80
-        "This service is meant to be used internally only." => "",
-
-        #: app/traits/Links.php:86 app/traits/Links.php:410
-        "You cannot shorten URLs of this website." => "",
-
-        #: app/traits/Links.php:89 app/traits/Links.php:413
-        "This domain name or link has been blacklisted." => "",
-
-        #: app/traits/Links.php:92 app/traits/Links.php:416
-        "This URL contains blacklisted keywords." => "",
-
-        #: app/traits/Links.php:95 app/traits/Links.php:98 app/traits/Links.php:101
-        #: app/traits/Links.php:419 app/traits/Links.php:422 app/traits/Links.php:425
-        "URL is suspected to contain malware and other harmful content." => "",
-
-        #: app/traits/Links.php:104 app/traits/Links.php:428
-        "Linking to executable files is not allowed." => "",
-
-        #: app/traits/Links.php:107 app/traits/Links.php:431
-        "The expiry date must be later than today." => "",
-
-        #: app/traits/Links.php:205 app/traits/Links.php:207 app/traits/Links.php:550
-        #: app/traits/Links.php:552
-        "Banner must be either a PNG or a JPEG (Max 200kb)." => "",
-
-        #: app/traits/Links.php:259 app/traits/Links.php:276 app/traits/Links.php:304
-        "Link has been shortened" => "",
-
-        #: app/traits/Links.php:286
-        "You have maxed your short URLs limit. Either delete existing URLs or upgrade to a premium plan." => "",
-
-        #: app/traits/Links.php:291 app/traits/Links.php:533
-        "This URL cannot be used with this redirect method because browsers will prevent it for security reasons." => "",
-
-        #: app/traits/Links.php:465
-        "Custom alias must be less than 50 characters." => "",
-
-        #: app/traits/Overlays.php:38
-        "CTA Contact" => "",
-
-        #: app/traits/Overlays.php:39
-        "Create a contact form where users will be able to contact you via email." => "",
-
-        #: app/traits/Overlays.php:48
-        "CTA Poll" => "",
-
-        #: app/traits/Overlays.php:49
-        "Create a quick poll where users will be able to answer it upon visit." => "",
-
-        #: app/traits/Overlays.php:58
-        "CTA Message" => "",
-
-        #: app/traits/Overlays.php:59
-        "Create a small popup with a message and a link to a page or a product." => "",
-
-        #: app/traits/Overlays.php:68
-        "CTA Newsletter" => "",
-
-        #: app/traits/Overlays.php:69
-        "Create a small popup form to collect emails from users." => "",
-
-        #: app/traits/Overlays.php:78
-        "CTA Image" => "",
-
-        #: app/traits/Overlays.php:79
-        "Create a small popup with an image of your choice." => "",
-
-        #: app/traits/Overlays.php:88
-        #: storage/themes/default/overlay/create_coupon.php:90
-        "Coupon" => "",
-
-        #: app/traits/Overlays.php:89
-        "Create a small popup with a coupon code that users can use." => "",
-
-        #: app/traits/Payments.php:46 app/traits/Payments.php:80
-        "PayPal" => "",
-
-        #: app/traits/Payments.php:63
-        "Credit Card" => "",
-
-        #: app/traits/Payments.php:98
-        "Transfer payments via your bank" => "",
-
-        #: app/traits/Pixels.php:143
-        "Google Ads pixel ID is not correct. Please double check." => "",
-
-        #: app/traits/Pixels.php:154
-        "LinkedIn ID is not correct. Please double check." => "",
-
-        #: app/traits/Pixels.php:165
-        "Twitter ID is not correct. Please double check." => "",
-
-        #: app/traits/Pixels.php:176
-        "AdRoll ID is not correct. Please double check." => "",
-
-        #: app/traits/Pixels.php:187
-        "Quora ID is not correct. Please double check." => "",
-
-        #: app/traits/Pixels.php:198
-        "GTM container ID is not correct. Please double check." => "",
-
-        #: app/traits/Pixels.php:209
-        "Google Analytics ID is not correct. Please double check." => "",
-
-        #: app/traits/Pixels.php:221
-        "Snapchat ID is not correct. Please double check." => "",
-
-        #: app/traits/Pixels.php:233
-        "Pinterest ID is not correct. Please double check." => "",
-
-        #: app/traits/Pixels.php:245
-        "Reddit ID is not correct. Please double check." => "",
-
-        #: app/traits/Pixels.php:257
-        "Bing ID is not correct. Please double check." => "",
-
-        #: core/Auth.class.php:143 core/Auth.class.php:199
-        "This user does not exist." => "",
-
-        #: core/Helper.class.php:340
-        "{d} {p} ago" => "",
-
-        #: core/Helper.class.php:455
-        "First" => "",
-
-        #: core/Helper.class.php:456
-        "Last" => "",
-
-        #: core/Helper.class.php:458 core/Helper.class.php:480
-        "Previous" => "",
-
-        #: core/Helper.class.php:459 core/Helper.class.php:481
-        "Next" => "",
-
-        #: storage/themes/default/auth/2fa.php:15
-        "The access code can be found on the Authenticator app. Please enter the code shown for this website. If you lost your phone or can't use the app, please contact us." => "",
-
-        #: storage/themes/default/auth/2fa.php:22
-        #: storage/themes/default/user/settings.php:286
-        "2FA Access Code" => "",
-
-        #: storage/themes/default/auth/2fa.php:31
-        "Validate" => "",
-
-        #: storage/themes/default/auth/invite.php:15
-        "Join team and collaborate on everything" => "",
-
-        #: storage/themes/default/auth/invite.php:31
-        #: storage/themes/default/auth/register.php:19
-        #: storage/themes/default/user/settings.php:43
-        "Username" => "",
-
-        #: storage/themes/default/auth/invite.php:40
-        #: storage/themes/default/auth/login.php:33
-        #: storage/themes/default/auth/register.php:39
-        #: storage/themes/default/gates/password.php:22
-        #: storage/themes/default/qr/edit.php:303
-        #: storage/themes/default/qr/new.php:325
-        #: storage/themes/default/user/billing.php:131
-        #: storage/themes/default/user/settings.php:52
-        "Password" => "",
-
-        #: storage/themes/default/auth/invite.php:49
-        #: storage/themes/default/auth/register.php:52
-        #: storage/themes/default/auth/reset.php:30
-        #: storage/themes/default/user/settings.php:59
-        #: storage/themes/default/user/settings.php:234
-        "Confirm Password" => "",
-
-        #: storage/themes/default/auth/invite.php:61
-        #: storage/themes/default/auth/register.php:66
-        "I agree to the" => "",
-
-        #: storage/themes/default/auth/invite.php:68
-        #: storage/themes/default/auth/register.php:73
-        "I agree to the terms and conditions" => "",
-
-        #: storage/themes/default/auth/invite.php:73
-        #: storage/themes/default/pages/consent.php:14
-        "Accept" => "",
-
-        #: storage/themes/default/auth/login.php:17
-        "Email or username" => "",
-
-        #: storage/themes/default/auth/login.php:26
-        #: storage/themes/default/auth/login.php:104
-        "Don't have an account?" => "",
-
-        #: storage/themes/default/auth/login.php:44
-        "Forgot Password?" => "",
-
-        #: storage/themes/default/auth/login.php:51
-        "Remember me" => "",
-
-        #: storage/themes/default/auth/login.php:57
-        #: storage/themes/default/auth/register.php:84
-        #: storage/themes/default/partials/main_menu.php:128
-        #: storage/themes/default/partials/main_menu.php:148
-        "Login" => "",
-
-        #: storage/themes/default/auth/login.php:63
-        "or" => "",
-
-        #: storage/themes/default/auth/login.php:69
-        #: storage/themes/default/auth/login.php:70
-        #: storage/themes/default/auth/login.php:77
-        #: storage/themes/default/auth/login.php:78
-        #: storage/themes/default/auth/login.php:85
-        #: storage/themes/default/auth/login.php:86
-        "Sign in with" => "",
-
-        #: storage/themes/default/auth/login.php:96
-        #: storage/themes/default/auth/register.php:87
-        #: storage/themes/default/partials/footer.php:89
-        "All Rights Reserved" => "",
-
-        #: storage/themes/default/auth/login.php:106
-        #: storage/themes/default/auth/login.php:112
-        #: storage/themes/default/auth/register.php:13
-        #: storage/themes/default/partials/footer.php:10
-        "Start your marketing campaign now and reach your customers efficiently." => "",
-
-        #: storage/themes/default/auth/login.php:108
-        #: storage/themes/default/auth/register.php:80
-        "Register" => "",
-
-        #: storage/themes/default/auth/register.php:12
-        "Create your account" => "",
-
-        #: storage/themes/default/auth/register.php:21
-        "Please enter a username" => "",
-
-        #: storage/themes/default/auth/register.php:28
-        "Email address" => "",
-
-        #: storage/themes/default/auth/register.php:43
-        "Please enter a valid password." => "",
-
-        #: storage/themes/default/auth/register.php:56
-        "Please confirm your password." => "",
-
-        #: storage/themes/default/auth/register.php:83
-        "Already have an account?" => "",
-
-        #: storage/themes/default/auth/reset.php:21
-        "New Password" => "",
-
-        #: storage/themes/default/bio/edit.php:4
-        #: storage/themes/default/bio/index.php:41
-        "Default" => "",
-
-        #: storage/themes/default/bio/edit.php:7
-        #: storage/themes/default/overlay/edit_contact.php:149
-        #: storage/themes/default/overlay/edit_coupon.php:81
-        #: storage/themes/default/overlay/edit_message.php:110
-        #: storage/themes/default/overlay/edit_newsletter.php:101
-        #: storage/themes/default/overlay/edit_poll.php:99
-        #: storage/themes/default/qr/edit.php:524
-        #: storage/themes/default/splash/edit.php:58
-        #: storage/themes/default/teams/edit.php:75
-        #: storage/themes/default/user/channels.php:144
-        "Update" => "",
-
-        #: storage/themes/default/bio/edit.php:8
-        #: storage/themes/default/bio/index.php:26
-        "View Bio" => "",
-
-        #: storage/themes/default/bio/edit.php:16
-        #: storage/themes/default/bio/new.php:13
-        "Bio Page Name" => "",
-
-        #: storage/themes/default/bio/edit.php:20
-        #: storage/themes/default/bio/new.php:17
-        "Bio Page Alias" => "",
-
-        #: storage/themes/default/bio/edit.php:24
-        #: storage/themes/default/bio/new.php:29
-        "Leave this field empty to generate a random alias." => "",
-
-        #: storage/themes/default/bio/edit.php:45
-        #: storage/themes/default/bio/new.php:46
-        "Custom Avatar" => "",
-
-        #: storage/themes/default/bio/edit.php:47
-        #: storage/themes/default/bio/new.php:48
-        "We recommend you choose a square picture with a maximum size of 300x300 and 500kb." => "",
-
-        #: storage/themes/default/bio/edit.php:55
-        #: storage/themes/default/bio/new.php:56
-        "Content" => "",
-
-        #: storage/themes/default/bio/edit.php:58
-        #: storage/themes/default/bio/edit.php:76
-        #: storage/themes/default/bio/new.php:59 storage/themes/default/bio/new.php:77
-        "Social Links" => "",
-
-        #: storage/themes/default/bio/edit.php:61
-        #: storage/themes/default/bio/edit.php:135
-        #: storage/themes/default/bio/new.php:62
-        #: storage/themes/default/bio/new.php:136
-        #: storage/themes/default/integrations/wordpress.php:61
-        "Appearance" => "",
-
-        #: storage/themes/default/bio/edit.php:64
-        #: storage/themes/default/bio/edit.php:251
-        #: storage/themes/default/bio/new.php:65
-        #: storage/themes/default/bio/new.php:253 storage/themes/default/index.php:22
-        "Advanced" => "",
-
-        #: storage/themes/default/bio/edit.php:71
-        #: storage/themes/default/bio/edit.php:366
-        #: storage/themes/default/bio/new.php:72
-        #: storage/themes/default/bio/new.php:320
-        "Add Link or Content" => "",
-
-        #: storage/themes/default/bio/edit.php:80
-        #: storage/themes/default/bio/new.php:81
-        #: storage/themes/default/qr/edit.php:194
-        #: storage/themes/default/qr/edit.php:273
-        #: storage/themes/default/qr/new.php:220 storage/themes/default/qr/new.php:297
-        "Facebook" => "",
-
-        #: storage/themes/default/bio/edit.php:81
-        #: storage/themes/default/bio/edit.php:85
-        #: storage/themes/default/bio/edit.php:89
-        #: storage/themes/default/bio/edit.php:93
-        #: storage/themes/default/bio/edit.php:97
-        #: storage/themes/default/bio/edit.php:101
-        #: storage/themes/default/bio/edit.php:105
-        #: storage/themes/default/bio/edit.php:109
-        #: storage/themes/default/bio/edit.php:113
-        #: storage/themes/default/bio/edit.php:117
-        #: storage/themes/default/bio/edit.php:121
-        #: storage/themes/default/bio/edit.php:125
-        #: storage/themes/default/bio/edit.php:129
-        #: storage/themes/default/bio/edit.php:498
-        #: storage/themes/default/bio/edit.php:651
-        #: storage/themes/default/bio/new.php:82 storage/themes/default/bio/new.php:86
-        #: storage/themes/default/bio/new.php:90 storage/themes/default/bio/new.php:94
-        #: storage/themes/default/bio/new.php:98
-        #: storage/themes/default/bio/new.php:102
-        #: storage/themes/default/bio/new.php:106
-        #: storage/themes/default/bio/new.php:110
-        #: storage/themes/default/bio/new.php:114
-        #: storage/themes/default/bio/new.php:118
-        #: storage/themes/default/bio/new.php:122
-        #: storage/themes/default/bio/new.php:126
-        #: storage/themes/default/bio/new.php:130
-        #: storage/themes/default/bio/new.php:452
-        #: storage/themes/default/bio/new.php:605
-        "Please enter a valid link" => "",
-
-        #: storage/themes/default/bio/edit.php:84
-        #: storage/themes/default/bio/new.php:85
-        #: storage/themes/default/qr/edit.php:198
-        #: storage/themes/default/qr/edit.php:277
-        #: storage/themes/default/qr/new.php:224 storage/themes/default/qr/new.php:301
-        "Twitter" => "",
-
-        #: storage/themes/default/bio/edit.php:88
-        #: storage/themes/default/bio/new.php:89
-        #: storage/themes/default/qr/edit.php:202
-        #: storage/themes/default/qr/edit.php:281
-        #: storage/themes/default/qr/new.php:228 storage/themes/default/qr/new.php:305
-        "Instagram" => "",
-
-        #: storage/themes/default/bio/edit.php:92
-        #: storage/themes/default/bio/new.php:93
-        "Tiktok" => "",
-
-        #: storage/themes/default/bio/edit.php:96
-        #: storage/themes/default/bio/new.php:97
-        "Linkedin" => "",
-
-        #: storage/themes/default/bio/edit.php:100
-        #: storage/themes/default/bio/new.php:101
-        "Youtube" => "",
-
-        #: storage/themes/default/bio/edit.php:104
-        #: storage/themes/default/bio/new.php:105
-        "Telegram" => "",
-
-        #: storage/themes/default/bio/edit.php:108
-        #: storage/themes/default/bio/new.php:109
-        "Snapchat" => "",
-
-        #: storage/themes/default/bio/edit.php:112
-        #: storage/themes/default/bio/new.php:113
-        "Discord" => "",
-
-        #: storage/themes/default/bio/edit.php:116
-        #: storage/themes/default/bio/new.php:117
-        "Twitch" => "",
-
-        #: storage/themes/default/bio/edit.php:120
-        #: storage/themes/default/bio/new.php:121
-        "Pinterest" => "",
-
-        #: storage/themes/default/bio/edit.php:124
-        #: storage/themes/default/bio/new.php:125
-        "Shopify" => "",
-
-        #: storage/themes/default/bio/edit.php:128
-        #: storage/themes/default/bio/new.php:129
-        "Amazon" => "",
-
-        #: storage/themes/default/bio/edit.php:138
-        #: storage/themes/default/bio/new.php:139
-        "Templates" => "",
-
-        #: storage/themes/default/bio/edit.php:192
-        #: storage/themes/default/bio/new.php:193
-        "Font" => "",
-
-        #: storage/themes/default/bio/edit.php:201
-        #: storage/themes/default/bio/new.php:202
-        #: storage/themes/default/qr/edit.php:368
-        #: storage/themes/default/qr/new.php:375
-        "Single Color" => "",
-
-        #: storage/themes/default/bio/edit.php:202
-        #: storage/themes/default/bio/new.php:203
-        #: storage/themes/default/qr/edit.php:369
-        #: storage/themes/default/qr/new.php:376
-        "Gradient Color" => "",
-
-        #: storage/themes/default/bio/edit.php:220
-        #: storage/themes/default/bio/new.php:222
-        #: storage/themes/default/qr/edit.php:402
-        #: storage/themes/default/qr/new.php:409
-        "Gradient Start" => "",
-
-        #: storage/themes/default/bio/edit.php:226
-        #: storage/themes/default/bio/new.php:228
-        #: storage/themes/default/qr/edit.php:406
-        #: storage/themes/default/qr/new.php:413
-        "Gradient Stop" => "",
-
-        #: storage/themes/default/bio/edit.php:235
-        #: storage/themes/default/bio/new.php:237
-        "Text Color" => "",
-
-        #: storage/themes/default/bio/edit.php:239
-        #: storage/themes/default/bio/new.php:241
-        "Button Color" => "",
-
-        #: storage/themes/default/bio/edit.php:243
-        #: storage/themes/default/bio/new.php:245
-        "Button text Color" => "",
-
-        #: storage/themes/default/bio/edit.php:255
-        #: storage/themes/default/bio/new.php:257
-        #: storage/themes/default/partials/shortener.php:131
-        #: storage/themes/default/user/edit.php:38
-        "Meta Title" => "",
-
-        #: storage/themes/default/bio/edit.php:259
-        #: storage/themes/default/bio/new.php:261
-        #: storage/themes/default/partials/shortener.php:137
-        #: storage/themes/default/user/edit.php:44
-        "Meta Description" => "",
-
-        #: storage/themes/default/bio/edit.php:263
-        #: storage/themes/default/bio/new.php:265 storage/themes/default/index.php:32
-        #: storage/themes/default/partials/shortener.php:71
-        #: storage/themes/default/user/edit.php:306
-        "Password Protection" => "",
-
-        #: storage/themes/default/bio/edit.php:264
-        #: storage/themes/default/bio/new.php:266
-        #: storage/themes/default/partials/shortener.php:72
-        "By adding a password, you can restrict the access." => "",
-
-        #: storage/themes/default/bio/edit.php:267
-        #: storage/themes/default/bio/new.php:269 storage/themes/default/index.php:33
-        #: storage/themes/default/partials/shortener.php:75
-        #: storage/themes/default/user/edit.php:309
-        "Type your password here" => "",
-
-        #: storage/themes/default/bio/edit.php:272
-        #: storage/themes/default/bio/new.php:274
-        #: storage/themes/default/partials/shortener.php:215
-        #: storage/themes/default/user/edit.php:171
-        "Targeting Pixels" => "",
-
-        #: storage/themes/default/bio/edit.php:273
-        #: storage/themes/default/bio/new.php:275
-        #: storage/themes/default/partials/shortener.php:216
-        #: storage/themes/default/user/edit.php:172
-        "Add your targeting pixels below from the list. Please make sure to enable them in the pixels settings." => "",
-
-        #: storage/themes/default/bio/edit.php:290
-        #: storage/themes/default/bio/new.php:292
-        "Custom CSS" => "",
-
-        #: storage/themes/default/bio/edit.php:321
-        #: storage/themes/default/user/index.php:224
-        #: storage/themes/default/user/links.php:130
-        "Download" => "",
-
-        #: storage/themes/default/bio/edit.php:333
-        #: storage/themes/default/pages/report.php:25
-        #: storage/themes/default/user/index.php:236
-        #: storage/themes/default/user/links.php:142
-        "Short Link" => "",
-
-        #: storage/themes/default/bio/edit.php:351
-        #: storage/themes/default/overlay/edit_newsletter.php:121
-        "Newsletter Emails" => "",
-
-        #: storage/themes/default/bio/edit.php:354
-        #: storage/themes/default/overlay/edit_newsletter.php:124
-        "Collected {c} emails in total" => "",
-
-        #: storage/themes/default/bio/edit.php:355
-        #: storage/themes/default/overlay/edit_newsletter.php:125
-        "Download as CSV" => "",
-
-        #: storage/themes/default/bio/edit.php:376
-        #: storage/themes/default/bio/edit.php:601
-        #: storage/themes/default/bio/new.php:330
-        #: storage/themes/default/bio/new.php:555
-        "Heading" => "",
-
-        #: storage/themes/default/bio/edit.php:388
-        #: storage/themes/default/bio/edit.php:621
-        #: storage/themes/default/bio/new.php:342
-        #: storage/themes/default/bio/new.php:575
-        "Divider" => "",
-
-        #: storage/themes/default/bio/edit.php:400
-        #: storage/themes/default/bio/new.php:354
-        "HTML" => "",
-
-        #: storage/themes/default/bio/edit.php:412
-        #: storage/themes/default/bio/edit.php:647
-        #: storage/themes/default/bio/edit.php:650
-        #: storage/themes/default/bio/new.php:366
-        #: storage/themes/default/bio/new.php:601
-        #: storage/themes/default/bio/new.php:604
-        "RSS Feed" => "",
-
-        #: storage/themes/default/bio/edit.php:418
-        #: storage/themes/default/bio/edit.php:700
-        #: storage/themes/default/bio/new.php:372
-        #: storage/themes/default/bio/new.php:654
-        #: storage/themes/default/overlay/create_newsletter.php:107
-        #: storage/themes/default/overlay/edit_newsletter.php:107
-        #: storage/themes/default/user/settings.php:165
-        "Newsletter" => "",
-
-        #: storage/themes/default/bio/edit.php:424
-        #: storage/themes/default/bio/new.php:378
-        "Contact Form" => "",
-
-        #: storage/themes/default/bio/edit.php:430
-        #: storage/themes/default/bio/edit.php:655
-        #: storage/themes/default/bio/new.php:384
-        #: storage/themes/default/bio/new.php:609
-        #: storage/themes/default/qr/edit.php:137
-        #: storage/themes/default/qr/edit.php:216 storage/themes/default/qr/new.php:23
-        #: storage/themes/default/qr/new.php:163 storage/themes/default/qr/new.php:240
-        "vCard" => "",
-
-        #: storage/themes/default/bio/edit.php:436
-        #: storage/themes/default/bio/edit.php:695
-        #: storage/themes/default/bio/new.php:390
-        #: storage/themes/default/bio/new.php:649
-        "Product" => "",
-
-        #: storage/themes/default/bio/edit.php:442
-        #: storage/themes/default/bio/edit.php:533
-        #: storage/themes/default/bio/new.php:396
-        #: storage/themes/default/bio/new.php:487
-        "Youtube Video" => "",
-
-        #: storage/themes/default/bio/edit.php:448
-        #: storage/themes/default/bio/edit.php:541
-        #: storage/themes/default/bio/new.php:402
-        #: storage/themes/default/bio/new.php:495
-        "WhatsApp Call" => "",
-
-        #: storage/themes/default/bio/edit.php:454
-        #: storage/themes/default/bio/edit.php:553
-        #: storage/themes/default/bio/new.php:408
-        #: storage/themes/default/bio/new.php:507
-        "Spotify Embed" => "",
-
-        #: storage/themes/default/bio/edit.php:460
-        #: storage/themes/default/bio/edit.php:561
-        #: storage/themes/default/bio/new.php:414
-        #: storage/themes/default/bio/new.php:515
-        "Apple Music Embed" => "",
-
-        #: storage/themes/default/bio/edit.php:466
-        #: storage/themes/default/bio/new.php:420
-        "Paypal Button" => "",
-
-        #: storage/themes/default/bio/edit.php:472
-        #: storage/themes/default/bio/edit.php:593
-        #: storage/themes/default/bio/new.php:426
-        #: storage/themes/default/bio/new.php:547
-        "Tiktok Embed" => "",
-
-        #: storage/themes/default/bio/edit.php:478
-        #: storage/themes/default/bio/edit.php:486
-        #: storage/themes/default/bio/edit.php:526
-        #: storage/themes/default/bio/edit.php:534
-        #: storage/themes/default/bio/edit.php:542
-        #: storage/themes/default/bio/edit.php:554
-        #: storage/themes/default/bio/edit.php:562
-        #: storage/themes/default/bio/edit.php:570
-        #: storage/themes/default/bio/edit.php:594
-        #: storage/themes/default/bio/edit.php:602
-        #: storage/themes/default/bio/edit.php:622
-        #: storage/themes/default/bio/edit.php:648
-        #: storage/themes/default/bio/edit.php:656
-        #: storage/themes/default/bio/edit.php:696
-        #: storage/themes/default/bio/edit.php:701
-        #: storage/themes/default/bio/edit.php:710
-        #: storage/themes/default/bio/edit.php:723
-        #: storage/themes/default/bio/new.php:432
-        #: storage/themes/default/bio/new.php:440
-        #: storage/themes/default/bio/new.php:480
-        #: storage/themes/default/bio/new.php:488
-        #: storage/themes/default/bio/new.php:496
-        #: storage/themes/default/bio/new.php:508
-        #: storage/themes/default/bio/new.php:516
-        #: storage/themes/default/bio/new.php:524
-        #: storage/themes/default/bio/new.php:548
-        #: storage/themes/default/bio/new.php:556
-        #: storage/themes/default/bio/new.php:576
-        #: storage/themes/default/bio/new.php:602
-        #: storage/themes/default/bio/new.php:610
-        #: storage/themes/default/bio/new.php:650
-        #: storage/themes/default/bio/new.php:655
-        #: storage/themes/default/bio/new.php:664
-        #: storage/themes/default/bio/new.php:677
-        "Back" => "",
-
-        #: storage/themes/default/bio/edit.php:483
-        #: storage/themes/default/bio/new.php:437
-        "Add Text" => "",
-
-        #: storage/themes/default/bio/edit.php:488
-        #: storage/themes/default/bio/new.php:442
-        "FontAwesome Icon Class" => "",
-
-        #: storage/themes/default/bio/edit.php:490
-        #: storage/themes/default/bio/new.php:444
-        "You can use any font from the following list:" => "",
-
-        #: storage/themes/default/bio/edit.php:523
-        #: storage/themes/default/bio/new.php:477
-        "Add Link" => "",
-
-        #: storage/themes/default/bio/edit.php:529
-        #: storage/themes/default/bio/new.php:483
-        "Click the button add insert an Image then choose the file to upload." => "",
-
-        #: storage/themes/default/bio/edit.php:531
-        #: storage/themes/default/bio/new.php:485
-        "Add Image" => "",
-
-        #: storage/themes/default/bio/edit.php:536
-        #: storage/themes/default/bio/new.php:490
-        "Link to Video" => "",
-
-        #: storage/themes/default/bio/edit.php:537
-        #: storage/themes/default/bio/new.php:491
-        "Please enter a valid youtube link" => "",
-
-        #: storage/themes/default/bio/edit.php:539
-        #: storage/themes/default/bio/new.php:493
-        "Add Youtube Video" => "",
-
-        #: storage/themes/default/bio/edit.php:544
-        #: storage/themes/default/bio/new.php:498
-        #: storage/themes/default/qr/edit.php:81 storage/themes/default/qr/edit.php:94
-        #: storage/themes/default/qr/edit.php:111
-        #: storage/themes/default/qr/edit.php:124
-        #: storage/themes/default/qr/new.php:102 storage/themes/default/qr/new.php:113
-        #: storage/themes/default/qr/new.php:128 storage/themes/default/qr/new.php:152
-        "Phone Number" => "",
-
-        #: storage/themes/default/bio/edit.php:548
-        #: storage/themes/default/bio/edit.php:572
-        #: storage/themes/default/bio/new.php:502
-        #: storage/themes/default/bio/new.php:526
-        "Label" => "",
-
-        #: storage/themes/default/bio/edit.php:551
-        #: storage/themes/default/bio/new.php:505
-        "Add WhatsApp Call" => "",
-
-        #: storage/themes/default/bio/edit.php:556
-        #: storage/themes/default/bio/new.php:510
-        "Link to Spotify Song" => "",
-
-        #: storage/themes/default/bio/edit.php:557
-        #: storage/themes/default/bio/new.php:511
-        "Please enter a valid spotify link" => "",
-
-        #: storage/themes/default/bio/edit.php:559
-        #: storage/themes/default/bio/new.php:513
-        "Add Spotify" => "",
-
-        #: storage/themes/default/bio/edit.php:564
-        #: storage/themes/default/bio/new.php:518
-        "Link to Apple Music Song" => "",
-
-        #: storage/themes/default/bio/edit.php:565
-        #: storage/themes/default/bio/new.php:519
-        "Please enter a valid apple music link" => "",
-
-        #: storage/themes/default/bio/edit.php:567
-        #: storage/themes/default/bio/new.php:521
-        "Add Apple Music" => "",
-
-        #: storage/themes/default/bio/edit.php:569
-        #: storage/themes/default/bio/new.php:523
-        "PayPal Button" => "",
-
-        #: storage/themes/default/bio/edit.php:591
-        #: storage/themes/default/bio/new.php:545
-        "Add Paypal" => "",
-
-        #: storage/themes/default/bio/edit.php:596
-        #: storage/themes/default/bio/new.php:550
-        "Link to Tiktok Video" => "",
-
-        #: storage/themes/default/bio/edit.php:597
-        #: storage/themes/default/bio/new.php:551
-        "Please enter a valid tiktok link" => "",
-
-        #: storage/themes/default/bio/edit.php:599
-        #: storage/themes/default/bio/new.php:553
-        "Add Tiktok" => "",
-
-        #: storage/themes/default/bio/edit.php:619
-        #: storage/themes/default/bio/edit.php:645
-        #: storage/themes/default/bio/edit.php:653
-        #: storage/themes/default/bio/edit.php:693
-        #: storage/themes/default/bio/edit.php:698
-        #: storage/themes/default/bio/edit.php:707
-        #: storage/themes/default/bio/edit.php:720
-        #: storage/themes/default/bio/edit.php:728
-        #: storage/themes/default/bio/index.php:155
-        #: storage/themes/default/bio/new.php:573
-        #: storage/themes/default/bio/new.php:599
-        #: storage/themes/default/bio/new.php:607
-        #: storage/themes/default/bio/new.php:647
-        #: storage/themes/default/bio/new.php:652
-        #: storage/themes/default/bio/new.php:661
-        #: storage/themes/default/bio/new.php:674
-        #: storage/themes/default/bio/new.php:682
-        #: storage/themes/default/qr/index.php:152
-        #: storage/themes/default/user/index.php:279
-        #: storage/themes/default/user/index.php:307
-        #: storage/themes/default/user/links.php:185
-        #: storage/themes/default/user/links.php:213
-        "Add" => "",
-
-        #: storage/themes/default/bio/edit.php:631
-        #: storage/themes/default/bio/new.php:585
-        "Height" => "",
-
-        #: storage/themes/default/bio/edit.php:697
-        #: storage/themes/default/bio/new.php:651
-        "This widget allows you to add a custom product. Click the button add below to insert a the widget" => "",
-
-        #: storage/themes/default/bio/edit.php:705
-        #: storage/themes/default/bio/new.php:659
-        "Newsletter list can be downloaded on the Edit Bio page" => "",
-
-        #: storage/themes/default/bio/edit.php:709
-        #: storage/themes/default/bio/new.php:663
-        #: storage/themes/default/layouts/dashboard.php:88
-        #: storage/themes/default/user/affiliate.php:69
-        "Contact" => "",
-
-        #: storage/themes/default/bio/edit.php:718
-        #: storage/themes/default/bio/new.php:672
-        "You will receive emails here" => "",
-
-        #: storage/themes/default/bio/index.php:23
-        #: storage/themes/default/teams/edit.php:28
-        #: storage/themes/default/teams/index.php:136
-        "Edit Bio" => "",
-
-        #: storage/themes/default/bio/index.php:28
-        "Set as Default" => "",
-
-        #: storage/themes/default/bio/index.php:32
-        #: storage/themes/default/qr/index.php:35
-        #: storage/themes/default/user/index.php:76
-        #: storage/themes/default/user/links.php:24
-        "Add to Channel" => "",
-
-        #: storage/themes/default/bio/index.php:33
-        #: storage/themes/default/partials/links.php:26
-        #: storage/themes/default/qr/index.php:36
-        "Reset Stats" => "",
-
-        #: storage/themes/default/bio/index.php:34
-        #: storage/themes/default/qr/index.php:37
-        "Duplicate" => "",
-
-        #: storage/themes/default/bio/index.php:37
-        #: storage/themes/default/domains/index.php:46
-        #: storage/themes/default/overlay/index.php:33
-        #: storage/themes/default/partials/links.php:29
-        #: storage/themes/default/pixels/index.php:31
-        #: storage/themes/default/qr/index.php:40
-        #: storage/themes/default/splash/index.php:35
-        #: storage/themes/default/teams/index.php:30
-        #: storage/themes/default/user/campaigns.php:63
-        #: storage/themes/default/user/channels.php:26
-        #: storage/themes/default/user/channels.php:54
-        #: storage/themes/default/user/edit.php:89
-        #: storage/themes/default/user/settings.php:240
-        "Delete" => "",
-
-        #: storage/themes/default/bio/index.php:54
-        #: storage/themes/default/gates/media.php:14
-        "Views" => "",
-
-        #: storage/themes/default/bio/index.php:65
-        #: storage/themes/default/overlay/index.php:50
-        #: storage/themes/default/pixels/index.php:49
-        #: storage/themes/default/qr/index.php:63
-        #: storage/themes/default/splash/index.php:51
-        #: storage/themes/default/user/campaigns.php:74
-        "No content found. You can create some." => "",
-
-        #: storage/themes/default/bio/index.php:79
-        #: storage/themes/default/domains/index.php:63
-        #: storage/themes/default/domains/new.php:42
-        #: storage/themes/default/overlay/create.php:33
-        #: storage/themes/default/overlay/index.php:65
-        #: storage/themes/default/pixels/index.php:63
-        #: storage/themes/default/pixels/new.php:42
-        #: storage/themes/default/pricing/index.php:47
-        #: storage/themes/default/pricing/index.php:48
-        #: storage/themes/default/pricing/index.php:53
-        #: storage/themes/default/pricing/index.php:54
-        #: storage/themes/default/pricing/index.php:55
-        #: storage/themes/default/pricing/index.php:56
-        #: storage/themes/default/pricing/index.php:57
-        #: storage/themes/default/pricing/index.php:58
-        #: storage/themes/default/pricing/index.php:59
-        #: storage/themes/default/pricing/index.php:60
-        #: storage/themes/default/pricing/index.php:64
-        #: storage/themes/default/qr/index.php:77
-        #: storage/themes/default/splash/index.php:66
-        #: storage/themes/default/teams/index.php:67
-        #: storage/themes/default/user/billing.php:73
-        #: storage/themes/default/user/billing.php:74
-        #: storage/themes/default/user/billing.php:77
-        #: storage/themes/default/user/billing.php:78
-        #: storage/themes/default/user/billing.php:79
-        #: storage/themes/default/user/billing.php:80
-        #: storage/themes/default/user/billing.php:81
-        #: storage/themes/default/user/billing.php:82
-        #: storage/themes/default/user/billing.php:83
-        #: storage/themes/default/user/billing.php:84
-        #: storage/themes/default/user/billing.php:88
-        "Unlimited" => "",
-
-        #: storage/themes/default/bio/index.php:86
-        "What are Bio Pages?" => "",
-
-        #: storage/themes/default/bio/index.php:90
-        "A bio page allows you to create a trackable and customizable landing page where you can add links to your social network pages." => "",
-
-        #: storage/themes/default/bio/index.php:91
-        "You can set a bio page as default and access them via your profile page." => "",
-
-        #: storage/themes/default/bio/index.php:102
-        #: storage/themes/default/domains/index.php:87
-        #: storage/themes/default/overlay/create.php:53
-        #: storage/themes/default/overlay/index.php:87
-        #: storage/themes/default/pixels/index.php:85
-        #: storage/themes/default/qr/index.php:99
-        #: storage/themes/default/splash/index.php:87
-        #: storage/themes/default/teams/index.php:90
-        #: storage/themes/default/user/campaigns.php:194
-        #: storage/themes/default/user/channels.php:156
-        #: storage/themes/default/user/index.php:181
-        #: storage/themes/default/user/links.php:87
-        "Are you sure you want to delete this?" => "",
-
-        #: storage/themes/default/bio/index.php:106
-        #: storage/themes/default/domains/index.php:91
-        #: storage/themes/default/overlay/create.php:57
-        #: storage/themes/default/overlay/index.php:91
-        #: storage/themes/default/pixels/index.php:89
-        #: storage/themes/default/qr/index.php:103
-        #: storage/themes/default/splash/index.php:91
-        #: storage/themes/default/teams/index.php:94
-        #: storage/themes/default/user/campaigns.php:198
-        #: storage/themes/default/user/channels.php:160
-        #: storage/themes/default/user/index.php:185
-        #: storage/themes/default/user/links.php:91
-        "You are trying to delete a record. This action is permanent and cannot be reversed." => "",
-
-        #: storage/themes/default/bio/index.php:110
-        #: storage/themes/default/bio/index.php:128
-        #: storage/themes/default/domains/index.php:95
-        #: storage/themes/default/overlay/create.php:61
-        #: storage/themes/default/overlay/index.php:95
-        #: storage/themes/default/pixels/index.php:93
-        #: storage/themes/default/qr/index.php:107
-        #: storage/themes/default/qr/index.php:125
-        #: storage/themes/default/splash/index.php:95
-        #: storage/themes/default/teams/index.php:98
-        #: storage/themes/default/user/campaigns.php:202
-        #: storage/themes/default/user/channel.php:67
-        #: storage/themes/default/user/channels.php:164
-        #: storage/themes/default/user/index.php:189
-        #: storage/themes/default/user/index.php:206
-        #: storage/themes/default/user/links.php:95
-        #: storage/themes/default/user/links.php:112
-        "Confirm" => "",
-
-        #: storage/themes/default/bio/index.php:120
-        #: storage/themes/default/qr/index.php:117
-        #: storage/themes/default/user/index.php:198
-        #: storage/themes/default/user/links.php:104
-        "Are you sure you want to reset this?" => "",
-
-        #: storage/themes/default/bio/index.php:124
-        #: storage/themes/default/qr/index.php:121
-        #: storage/themes/default/user/index.php:202
-        #: storage/themes/default/user/links.php:108
-        "You are trying to reset all statistic data for this link. This action is permanent and cannot be reversed." => "",
-
-        #: storage/themes/default/bio/index.php:139
-        #: storage/themes/default/qr/index.php:136
-        #: storage/themes/default/user/index.php:291
-        #: storage/themes/default/user/links.php:197
-        "Add to Channels" => "",
-
-        #: storage/themes/default/bio/new.php:5
-        "Publish" => "",
-
-        #: storage/themes/default/bio/new.php:25
-        "Choose domain to generate the link with." => "",
-
-        #: storage/themes/default/blog_single.php:23
-        "Published on" => "",
-
-        #: storage/themes/default/blog_single.php:60
-        "Keep reading" => "",
-
-        #: storage/themes/default/blog_single.php:61
-        "More posts from our blog" => "",
-
-        #: storage/themes/default/blog_single.php:64
-        #: storage/themes/default/user/index.php:113
-        "View all" => "",
-
-        #: storage/themes/default/class/themeSettings.php:128
-        "Color 1" => "",
-
-        #: storage/themes/default/class/themeSettings.php:134
-        "Color 2" => "",
-
-        #: storage/themes/default/class/themeSettings.php:230
-        "The custom image is not valid. Only a JPG or PNG are accepted." => "",
-
-        #: storage/themes/default/class/themeSettings.php:232
-        "Custom image must be either a PNG or a JPEG (Max 500kb)." => "",
-
-        #: storage/themes/default/class/themeSettings.php:255
-        "Settings are successfully saved." => "",
-
-        #: storage/themes/default/domains/edit.php:9
-        #: storage/themes/default/domains/index.php:18
-        #: storage/themes/default/domains/new.php:11
-        #: storage/themes/default/partials/shortener.php:29
-        #: storage/themes/default/qr/edit.php:13 storage/themes/default/qr/new.php:41
-        #: storage/themes/default/user/edit.php:265
-        "Domain" => "",
-
-        #: storage/themes/default/domains/edit.php:15
-        #: storage/themes/default/domains/index.php:19
-        #: storage/themes/default/domains/new.php:18
-        "Domain Root" => "",
-
-        #: storage/themes/default/domains/edit.php:17
-        #: storage/themes/default/domains/new.php:20
-        "Redirects to this page if someone visits the root domain above without a short alias." => "",
-
-        #: storage/themes/default/domains/edit.php:22
-        #: storage/themes/default/domains/new.php:25
-        "Domain 404" => "",
-
-        #: storage/themes/default/domains/edit.php:24
-        #: storage/themes/default/domains/new.php:27
-        "Redirects to this page if a short url is not found (error 404)." => "",
-
-        #: storage/themes/default/domains/edit.php:29
-        "Update Domain" => "",
-
-        #: storage/themes/default/domains/index.php:7
-        #: storage/themes/default/domains/new.php:32
-        "Add Domain" => "",
-
-        #: storage/themes/default/domains/index.php:20
-        "404 Redirect" => "",
-
-        #: storage/themes/default/domains/index.php:30
-        #: storage/themes/default/integrations/zapier.php:9
-        #: storage/themes/default/teams/index.php:34
-        #: storage/themes/default/user/billing.php:27
-        #: storage/themes/default/user/campaigns.php:32
-        "Active" => "",
-
-        #: storage/themes/default/domains/index.php:32
-        "Pending DNS" => "",
-
-        #: storage/themes/default/domains/index.php:34
-        "Inactive/Disabled" => "",
-
-        #: storage/themes/default/domains/index.php:37
-        #: storage/themes/default/domains/index.php:38
-        #: storage/themes/default/user/edit.php:329
-        #: storage/themes/default/user/index.php:269
-        #: storage/themes/default/user/links.php:175
-        "None" => "",
-
-        #: storage/themes/default/domains/index.php:61
-        #: storage/themes/default/domains/new.php:40
-        "Domains" => "",
-
-        #: storage/themes/default/domains/index.php:70
-        #: storage/themes/default/domains/new.php:49
-        "How to setup custom domain" => "",
-
-        #: storage/themes/default/domains/index.php:74
-        "If you have a custom domain name that you want to use with our service, you can associate it to your account very easily. Once added, we will add the domain to your account and set it as the default domain name for your URLs. DNS changes could take up to 36 hours. If you are planning to serve SSL on your domain name, we recommend using cloudflare." => "",
-
-        #: storage/themes/default/domains/index.php:76
-        #: storage/themes/default/domains/new.php:55
-        "To point your domain name, create an A record and set the value to " => "",
-
-        #: storage/themes/default/domains/new.php:13
-        "You will need to setup a DNS record for your domain to work. See instructions on the right side." => "",
-
-        #: storage/themes/default/domains/new.php:53
-        "If you have a custom domain name that you want to use with our service, you can associate it to your account very easily. Once added, we will add the domain to your account and set it as the default domain name for your URLs. DNS changes could take up to 36 hours." => "",
-
-        #: storage/themes/default/errors/404.php:26
-        "Error" => "",
-
-        #: storage/themes/default/errors/404.php:28
-        "The page you are looking for could not be found." => "",
-
-        #: storage/themes/default/errors/404.php:32
-        #: storage/themes/default/errors/disabled.php:32
-        #: storage/themes/default/errors/expired.php:31
-        "Back to home" => "",
-
-        #: storage/themes/default/errors/disabled.php:26
-        "Stop" => "",
-
-        #: storage/themes/default/errors/disabled.php:28
-        "There is a problem with this link and we have blocked it either because it is potentially malicious or contains inappropriate content that is against our terms of service. We actively monitor all links on our platform to ensure the safety of all our users. If you have any questions, feel free to contact us." => "",
-
-        #: storage/themes/default/errors/expired.php:25
-        "Oops" => "",
-
-        #: storage/themes/default/errors/expired.php:27
-        "The link you are trying to access is now expired either because the campaign ended or the link was disabled. If you have any questions, feel free to contact us." => "",
-
-        #: storage/themes/default/gates/custom.php:12
-        #: storage/themes/default/splash/edit.php:72
-        "View site" => "",
-
-        #: storage/themes/default/gates/custom.php:15
-        "Seconds" => "",
-
-        #: storage/themes/default/gates/custom.php:20
-        "Powered by" => "",
-
-        #: storage/themes/default/gates/domain.php:8
-        "Custom domain working" => "",
-
-        #: storage/themes/default/gates/domain.php:9
-        "Your <strong>domain name</strong> is now successfully pointed to our server. You can now start using it from the platform and shorten branded links with your own domain name." => "",
-
-        #: storage/themes/default/gates/domain.php:10
-        "If you want to display another page instead of this page when someone accesses your root domain name, you can define that link in your settings by logging in to your account. You can also define a custom 404 error page." => "",
-
-        #: storage/themes/default/gates/domain.php:11
-        "If you have any questions, please do not hesitate to contact us." => "",
-
-        #: storage/themes/default/gates/domain.php:16
-        #: storage/themes/default/pages/bio.php:13
-        #: storage/themes/default/pages/qr.php:13
-        "Contact us" => "",
-
-        #: storage/themes/default/gates/frame.php:18
-        "Share" => "",
-
-        #: storage/themes/default/gates/frame.php:19
-        "Tweet" => "",
-
-        #: storage/themes/default/gates/frame.php:20
-        #: storage/themes/default/layouts/dashboard.php:130
-        "Close" => "",
-
-        #: storage/themes/default/gates/media.php:26
-        "Short URL" => "",
-
-        #: storage/themes/default/gates/media.php:33
-        #: storage/themes/default/gates/media.php:34
-        "Share on" => "",
-
-        #: storage/themes/default/gates/password.php:14
-        "Enter Password" => "",
-
-        #: storage/themes/default/gates/password.php:15
-        "The access to this URL is restricted. Please enter your password to view it." => "",
-
-        #: storage/themes/default/gates/password.php:31
-        "Unlock" => "",
-
-        #: storage/themes/default/gates/profile.php:139
-        #: storage/themes/default/overlay/create_contact.php:83
-        #: storage/themes/default/overlay/create_contact.php:169
-        #: storage/themes/default/pages/contact.php:35
-        #: storage/themes/default/pages/report.php:40
-        "Send" => "",
-
-        #: storage/themes/default/gates/profile.php:147
-        "Download vCard" => "",
-
-        #: storage/themes/default/gates/splash.php:13
-        "You are about to be redirected to another page." => "",
-
-        #: storage/themes/default/gates/splash.php:24
-        "Redirect me" => "",
-
-        #: storage/themes/default/gates/splash.php:27
-        #: storage/themes/default/pages/consent.php:17
-        "Take me to your homepage" => "",
-
-        #: storage/themes/default/gates/splash.php:32
-        "You are about to be redirected to another page. We are not responsible for the content of that page or the consequences it may have on you." => "",
-
-        #: storage/themes/default/index.php:15
-        "Paste a long url" => "",
-
-        #: storage/themes/default/index.php:18
-        #: storage/themes/default/partials/shortener.php:18
-        "Shorten" => "",
-
-        #: storage/themes/default/index.php:27
-        #: storage/themes/default/partials/shortener.php:64
-        #: storage/themes/default/user/edit.php:301
-        "Type your custom alias here" => "",
-
-        #: storage/themes/default/index.php:44
-        "Your link has been successfully shortened. Want to more customization options?" => "",
-
-        #: storage/themes/default/index.php:45
-        "Get started" => "",
-
-        #: storage/themes/default/index.php:77
-        "Your latest links" => "",
-
-        #: storage/themes/default/index.php:85
-        "Want more options to customize the link, QR codes, branding and advanced metrics?" => "",
-
-        #: storage/themes/default/index.php:108
-        "Latest links" => "",
-
-        #: storage/themes/default/index.php:127
-        "One short link, infinite possibilities." => "",
-
-        #: storage/themes/default/index.php:130
-        "A short link is a powerful marketing tool when you use it carefully. It is not just a link but a medium between your customer and their destination. A short link allows you to collect so much data about your customers and their behaviors." => "",
-
-        #: storage/themes/default/index.php:144
-        "Smart Targeting" => "",
-
-        #: storage/themes/default/index.php:146
-        "Target your customers to increase your reach and redirect them to a relevant page. Add a pixel to retarget them in your social media ad campaign to capture them." => "",
-
-        #: storage/themes/default/index.php:161
-        "In-Depth Analytics" => "",
-
-        #: storage/themes/default/index.php:163
-        "Share your links to your network and measure data to optimize your marketing campaign's performance. Reach an audience that fits your needs." => "",
-
-        #: storage/themes/default/index.php:178
-        "Digital Experience" => "",
-
-        #: storage/themes/default/index.php:180
-        "Use various powerful tools increase conversion and provide a non-intrusive experience to your customers without disengaging them." => "",
-
-        #: storage/themes/default/index.php:194 storage/themes/default/index.php:240
-        "Perfect for sales & marketing" => "",
-
-        #: storage/themes/default/index.php:196 storage/themes/default/index.php:393
-        "Understanding your users and customers will help you increase your conversion. Our system allows you to track everything. Whether it is the amount of clicks, the country or the referrer, the data is there for you to analyze it." => "",
-
-        #: storage/themes/default/index.php:207
-        "Redirection Tools" => "",
-
-        #: storage/themes/default/index.php:219
-        "Powerful Statistics" => "",
-
-        #: storage/themes/default/index.php:231
-        "Beautiful Profiles" => "",
-
-        #: storage/themes/default/index.php:249 storage/themes/default/index.php:295
-        #: storage/themes/default/index.php:306
-        "Powerful tools that work" => "",
-
-        #: storage/themes/default/index.php:251
-        "Our product lets your target your users to better understand their behavior and provide them a better overall experience through smart re-targeting. We provide you many powerful tools to reach them better." => "",
-
-        #: storage/themes/default/index.php:262
-        #: storage/themes/default/partials/sidebar_menu.php:38
-        "Link Management" => "",
-
-        #: storage/themes/default/index.php:274
-        "Privacy Control" => "",
-
-        #: storage/themes/default/index.php:286
-        "Powerful Dashboard" => "",
-
-        #: storage/themes/default/index.php:332 storage/themes/default/index.php:336
-        "New York, United States" => "",
-
-        #: storage/themes/default/index.php:334 storage/themes/default/index.php:354
-        #: storage/themes/default/index.php:374
-        "Someone visited your link" => "",
-
-        #: storage/themes/default/index.php:342 storage/themes/default/index.php:362
-        #: storage/themes/default/index.php:382
-        "{d} minutes ago" => "",
-
-        #: storage/themes/default/index.php:352 storage/themes/default/index.php:356
-        "Paris, France" => "",
-
-        #: storage/themes/default/index.php:372 storage/themes/default/index.php:376
-        "London, United Kingdom" => "",
-
-        #: storage/themes/default/index.php:391
-        "Optimize your marketing strategy" => "",
-
-        #: storage/themes/default/index.php:404
-        "More features than asked for" => "",
-
-        #: storage/themes/default/index.php:417
-        "Custom Landing Page" => "",
-
-        #: storage/themes/default/index.php:419
-        "Create a custom landing page to promote your product or service on forefront and engage the user in your marketing campaign." => "",
-
-        #: storage/themes/default/index.php:434
-        "CTA Overlays" => "",
-
-        #: storage/themes/default/index.php:436
-        "Use our overlay tool to display unobtrusive notifications, polls or even a contact on the target website. Great for campaigns." => "",
-
-        #: storage/themes/default/index.php:451
-        #: storage/themes/default/pricing/index.php:57
-        #: storage/themes/default/user/billing.php:81
-        "Event Tracking" => "",
-
-        #: storage/themes/default/index.php:453
-        "Add your custom pixel from providers such as Facebook and track events right when they are happening." => "",
-
-        #: storage/themes/default/index.php:468
-        "Team Management" => "",
-
-        #: storage/themes/default/index.php:470
-        "Invite your team members and assign them specific privileges to manage links, bundles, pages and other features." => "",
-
-        #: storage/themes/default/index.php:485
-        "Branded Domain Names" => "",
-
-        #: storage/themes/default/index.php:487
-        "Easily add your own domain name for short your links and take control of your brand name and your users' trust." => "",
-
-        #: storage/themes/default/index.php:502
-        "Robust API" => "",
-
-        #: storage/themes/default/index.php:504
-        "Use our powerful API to build custom applications or extend your own application with our powerful tools." => "",
-
-        #: storage/themes/default/index.php:521
-        "Integrations" => "",
-
-        #: storage/themes/default/index.php:597
-        "What our customers say about us" => "",
-
-        #: storage/themes/default/index.php:630
-        "Powering" => "",
-
-        #: storage/themes/default/index.php:640
-        "Serving" => "",
-
-        #: storage/themes/default/index.php:650
-        "Trusted by" => "",
-
-        #: storage/themes/default/index.php:655
-        "Happy Customers" => "",
-
-        #: storage/themes/default/integrations/shortcuts.php:10
-        "Shortcuts in an app developed by Apple and it allows you to create an automation. You can download our powerful Shortcut and you will be able to shorten links in a snap and save it directly in your account." => "",
-
-        #: storage/themes/default/integrations/shortcuts.php:12
-        "How does it work?" => "",
-
-        #: storage/themes/default/integrations/shortcuts.php:14
-        "The Shortcut works in various ways:" => "",
-
-        #: storage/themes/default/integrations/shortcuts.php:16
-        "Safari" => "",
-
-        #: storage/themes/default/integrations/shortcuts.php:18
-        "If you want shorten the current viewing page, tap the share icon at the bottom of the screen and it will shorten the current URL. It will copy the short URL directly to your clipboard so you can paste it somewhere." => "",
-
-        #: storage/themes/default/integrations/shortcuts.php:20
-        "Siri" => "",
-
-        #: storage/themes/default/integrations/shortcuts.php:22
-        "To use Siri, copy a link and ask Siri \"Shorten Link\" and it will shorten the link for you and copy it to your clipboard." => "",
-
-        #: storage/themes/default/integrations/shortcuts.php:24
-        "Manual" => "",
-
-        #: storage/themes/default/integrations/shortcuts.php:26
-        "You can also run the Shortcut by just holding a link then tap Share and you will see Shorten Link in the list." => "",
-
-        #: storage/themes/default/integrations/shortcuts.php:32
-        "How to install it?" => "",
-
-        #: storage/themes/default/integrations/shortcuts.php:35
-        "Make sure you have the Shortcuts app, if not you can download it from the App Store: " => "",
-
-        #: storage/themes/default/integrations/shortcuts.php:35
-        "Download Shortcuts" => "",
-
-        #: storage/themes/default/integrations/shortcuts.php:36
-        "Download our Shortcut" => "",
-
-        #: storage/themes/default/integrations/shortcuts.php:38
-        "After installation, you will be presented with a configuration screen where you need to enter the API URL and the API key" => "",
-
-        #: storage/themes/default/integrations/shortcuts.php:40
-        "API URL" => "",
-
-        #: storage/themes/default/integrations/shortcuts.php:41
-        "API Key" => "",
-
-        #: storage/themes/default/integrations/shortcuts.php:44
-        "After the configuration is complete, you can start shortening links directly from your device in a single tap." => "",
-
-        #: storage/themes/default/integrations/slack.php:7
-        "Connected" => "",
-
-        #: storage/themes/default/integrations/slack.php:14
-        "You can integrate this app with your Slack account and shorten directly from the Slack interface using the command line below. This Slack integration will save all of your links in your account in case you need to access them later. Please see below how to use the command." => "",
-
-        #: storage/themes/default/integrations/slack.php:22
-        "Slack Command" => "",
-
-        #: storage/themes/default/integrations/slack.php:25
-        "Example" => "",
-
-        #: storage/themes/default/integrations/slack.php:28
-        "Example with custom name" => "",
-
-        #: storage/themes/default/integrations/slack.php:29
-        "To send a custom alias, use the following parameter (ABCDXYZ). This will tell the script to choose shorten the link with the custom alias ABCDXYZ." => "",
-
-        #: storage/themes/default/integrations/slack.php:32
-        "The Slack command will return you the short link if everything goes well. In case there is an error, it will return you the original link. If you use the custom parameter and the alias is already taken, the script will automatically increment the alias by 1 - this means if you choose 'google' and 'google' is not available, the script will use google-1" => "",
-
-        #: storage/themes/default/integrations/wordpress.php:12
-        #: storage/themes/default/integrations/wordpress.php:22
-        "WordPress Plugin" => "",
-
-        #: storage/themes/default/integrations/wordpress.php:13
-        "WordPress Function" => "",
-
-        #: storage/themes/default/integrations/wordpress.php:25
-        "You can easily use a shortcode to shorten links with our WordPress plugin. You just need to download it below and upload it in WordPress and that is it. There is no need to configure it as it will be already configured for you. All of your links will be saved in your account." => "",
-
-        #: storage/themes/default/integrations/wordpress.php:27
-        "Do not share this plugin with anyone you do not trust as they will have access to the full API and essentially your account." => "",
-
-        #: storage/themes/default/integrations/wordpress.php:29
-        #: storage/themes/default/integrations/wordpress.php:58
-        "Instructions" => "",
-
-        #: storage/themes/default/integrations/wordpress.php:31
-        "Download the plugin below" => "",
-
-        #: storage/themes/default/integrations/wordpress.php:32
-        #: storage/themes/default/integrations/wordpress.php:61
-        "Go to WordPress Admin" => "",
-
-        #: storage/themes/default/integrations/wordpress.php:32
-        "Plugins" => "",
-
-        #: storage/themes/default/integrations/wordpress.php:32
-        "Add New" => "",
-
-        #: storage/themes/default/integrations/wordpress.php:32
-        "Upload Plugin" => "",
-
-        #: storage/themes/default/integrations/wordpress.php:33
-        "Upload the plugin named linkshortenershortcode.zip and activate it. The plugin will be named Link Shortener Shortcode." => "",
-
-        #: storage/themes/default/integrations/wordpress.php:36
-        "Download Plugin" => "",
-
-        #: storage/themes/default/integrations/wordpress.php:40
-        #: storage/themes/default/integrations/wordpress.php:101
-        #: storage/themes/default/user/tools.php:25
-        "Examples" => "",
-
-        #: storage/themes/default/integrations/wordpress.php:42
-        #: storage/themes/default/integrations/wordpress.php:103
-        "The following code will apply the shortcode \"shorturl\" to the system and you will be able to use the following format." => "",
-
-        #: storage/themes/default/integrations/wordpress.php:45
-        #: storage/themes/default/integrations/wordpress.php:106
-        "You can also use the shortcode in html." => "",
-
-        #: storage/themes/default/integrations/wordpress.php:53
-        "WordPress Shortcode Function" => "",
-
-        #: storage/themes/default/integrations/wordpress.php:56
-        "You can now shorten links directly from WordPress using shortcode. If you don't want to upload a plugin, you can use this method. It is very easy to setup and it works with all versions of WordPress and with any theme. All links you will shorten will be safely stored in your account." => "",
-
-        #: storage/themes/default/integrations/wordpress.php:60
-        "Copy your unique php code below" => "",
-
-        #: storage/themes/default/integrations/wordpress.php:61
-        "Theme File Editor" => "",
-
-        #: storage/themes/default/integrations/wordpress.php:62
-        "On the right side, under Theme Files, find and click on Theme Functions (functions.php)" => "",
-
-        #: storage/themes/default/integrations/wordpress.php:63
-        "Paste the code below at the very end of the file and save" => "",
-
-        #: storage/themes/default/integrations/wordpress.php:65
-        "Your Unique Code" => "",
-
-        #: storage/themes/default/integrations/wordpress.php:67
-        "Do not share this code with anyone you do not trust as they will have access to the full API and essentially your account." => "",
-
-        #: storage/themes/default/integrations/zapier.php:15
-        "You can use Zapier to automate campaigns. By adding the URL to the zapier webhook, we will send you important information to that webhook so you can use them." => "",
-
-        #: storage/themes/default/integrations/zapier.php:16
-        #: storage/themes/default/partials/links.php:71
-        "Note" => "",
-
-        #: storage/themes/default/integrations/zapier.php:16
-        "Although this tool is designed for Zapier, it can be used for any webhook system." => "",
-
-        #: storage/themes/default/integrations/zapier.php:19
-        #: storage/themes/default/integrations/zapier.php:36
-        "URL Zapier Notification" => "",
-
-        #: storage/themes/default/integrations/zapier.php:21
-        "We will send a notification to this URL when you create a short URL." => "",
-
-        #: storage/themes/default/integrations/zapier.php:24
-        #: storage/themes/default/integrations/zapier.php:40
-        "Views Zapier Notification" => "",
-
-        #: storage/themes/default/integrations/zapier.php:26
-        "We will send a notification to this URL when someone clicks your URL." => "",
-
-        #: storage/themes/default/integrations/zapier.php:29
-        "Save" => "",
-
-        #: storage/themes/default/integrations/zapier.php:35
-        "Sample Response" => "",
-
-        #: storage/themes/default/invoice.php:1 storage/themes/default/invoice.php:25
-        "Invoice" => "",
-
-        #: storage/themes/default/invoice.php:29
-        "Payment Date" => "",
-
-        #: storage/themes/default/invoice.php:38
-        "Bill to" => "",
-
-        #: storage/themes/default/invoice.php:49
-        "Payment To" => "",
-
-        #: storage/themes/default/invoice.php:66 storage/themes/default/invoice.php:77
-        "Subscription" => "",
-
-        #: storage/themes/default/invoice.php:84
-        #: storage/themes/default/overlay/edit_poll.php:126
-        #: storage/themes/default/pricing/checkout.php:130
-        "Total" => "",
-
-        #: storage/themes/default/layouts/api.php:61
-        #: storage/themes/default/layouts/auth.php:31
-        #: storage/themes/default/layouts/dashboard.php:119
-        #: storage/themes/default/layouts/main.php:63
-        "This website uses cookies to ensure you get the best experience on our website." => "",
-
-        #: storage/themes/default/layouts/api.php:62
-        #: storage/themes/default/layouts/auth.php:32
-        #: storage/themes/default/layouts/dashboard.php:120
-        #: storage/themes/default/layouts/main.php:64
-        "Got it!" => "",
-
-        #: storage/themes/default/layouts/api.php:63
-        #: storage/themes/default/layouts/auth.php:33
-        #: storage/themes/default/layouts/dashboard.php:121
-        #: storage/themes/default/layouts/main.php:65
-        #: storage/themes/default/overlay/create_message.php:49
-        #: storage/themes/default/overlay/create_message.php:121
-        #: storage/themes/default/overlay/edit_message.php:49
-        "Learn more" => "",
-
-        #: storage/themes/default/layouts/api.php:65
-        #: storage/themes/default/layouts/auth.php:35
-        #: storage/themes/default/layouts/dashboard.php:122
-        #: storage/themes/default/layouts/main.php:67
-        "The coupon enter is not valid" => "",
-
-        #: storage/themes/default/layouts/api.php:66
-        #: storage/themes/default/layouts/auth.php:36
-        #: storage/themes/default/layouts/dashboard.php:123
-        #: storage/themes/default/layouts/main.php:68
-        "You must select at least 1 url." => "",
-
-        #: storage/themes/default/layouts/api.php:68
-        #: storage/themes/default/layouts/auth.php:38
-        #: storage/themes/default/layouts/dashboard.php:125
-        #: storage/themes/default/layouts/main.php:70
-        "No data is available for this request." => "",
-
-        #: storage/themes/default/layouts/dashboard.php:28
-        "You are logged in as another user" => "",
-
-        #: storage/themes/default/layouts/dashboard.php:29
-        "Return to my account" => "",
-
-        #: storage/themes/default/layouts/dashboard.php:42
-        #: storage/themes/default/partials/sidebar_menu.php:93
-        "Teams" => "",
-
-        #: storage/themes/default/layouts/dashboard.php:78
-        #: storage/themes/default/partials/footer.php:74
-        #: storage/themes/default/partials/main_menu.php:27
-        #: storage/themes/default/partials/sidebar_menu.php:113
-        #: storage/themes/default/pricing/index.php:74
-        #: storage/themes/default/teams/edit.php:67
-        #: storage/themes/default/teams/index.php:175
-        #: storage/themes/default/user/billing.php:96
-        "Developer API" => "",
-
-        #: storage/themes/default/layouts/dashboard.php:83
-        #: storage/themes/default/partials/footer.php:101
-        "Report" => "",
-
-        #: storage/themes/default/layouts/dashboard.php:116
-        "The selected image is not valid. Please select a jpg or png with a maximum size of 1mb" => "",
-
-        #: storage/themes/default/layouts/dashboard.php:127
-        "Are you sure you want to proceed?" => "",
-
-        #: storage/themes/default/layouts/dashboard.php:128
-        "Proceed" => "",
-
-        #: storage/themes/default/layouts/dashboard.php:131
-        "Note that this action is permanent. Once you click proceed, you <strong>may not undo</strong> this. Click anywhere outside this modal or click <a href='#close' class='close-modal'>close</a> to close this." => "",
-
-        #: storage/themes/default/maintenance.php:8
-        "BRB" => "",
-
-        #: storage/themes/default/maintenance.php:10
-        "We are currently offline for maintenance. We will be back online as soon as we are done. It should not take long." => "",
-
-        #: storage/themes/default/overlay/create.php:19
-        #: storage/themes/default/overlay/create_contact.php:148
-        #: storage/themes/default/overlay/create_coupon.php:81
-        #: storage/themes/default/overlay/create_image.php:67
-        #: storage/themes/default/overlay/create_message.php:110
-        #: storage/themes/default/overlay/create_newsletter.php:101
-        #: storage/themes/default/overlay/create_poll.php:100
-        #: storage/themes/default/overlay/edit_image.php:67
-        #: storage/themes/default/splash/create.php:58
-        "Create" => "",
-
-        #: storage/themes/default/overlay/create.php:40
-        #: storage/themes/default/overlay/index.php:72
-        "What is a CTA overlay?" => "",
-
-        #: storage/themes/default/overlay/create.php:44
-        #: storage/themes/default/overlay/index.php:76
-        "An overlay page allows you to display a small non-intrusive overlay on the destination website to advertise your product or your services. You can also use this feature to send a message to your users. You can customize the message and the appearance of the overlay right from this page. As soon as you save it, the changes will be applied immediately across all your URLs using this type. Please note that some secured and sensitive websites such as google.com or facebook.com do not work with this feature. You can have unlimited overlay pages and you can choose one for each URL." => "",
-
-        #: storage/themes/default/overlay/create_contact.php:18
-        #: storage/themes/default/overlay/edit_contact.php:18
-        "Send Email Address" => "",
-
-        #: storage/themes/default/overlay/create_contact.php:19
-        #: storage/themes/default/overlay/edit_contact.php:19
-        "Emails from the form will be sent to this address" => "",
-
-        #: storage/themes/default/overlay/create_contact.php:26
-        #: storage/themes/default/overlay/edit_contact.php:26
-        "Email Subject" => "",
-
-        #: storage/themes/default/overlay/create_contact.php:27
-        #: storage/themes/default/overlay/edit_contact.php:27
-        "Something you would know where it comes from." => "",
-
-        #: storage/themes/default/overlay/create_contact.php:32
-        #: storage/themes/default/overlay/create_newsletter.php:18
-        #: storage/themes/default/overlay/edit_contact.php:32
-        #: storage/themes/default/overlay/edit_newsletter.php:18
-        "Form Label" => "",
-
-        #: storage/themes/default/overlay/create_contact.php:32
-        #: storage/themes/default/overlay/create_contact.php:40
-        #: storage/themes/default/overlay/create_contact.php:46
-        #: storage/themes/default/overlay/create_message.php:33
-        #: storage/themes/default/overlay/create_message.php:41
-        #: storage/themes/default/overlay/create_message.php:48
-        #: storage/themes/default/overlay/create_newsletter.php:18
-        #: storage/themes/default/overlay/create_newsletter.php:26
-        #: storage/themes/default/overlay/create_newsletter.php:32
-        #: storage/themes/default/overlay/create_poll.php:53
-        #: storage/themes/default/overlay/edit_message.php:33
-        #: storage/themes/default/overlay/edit_message.php:41
-        #: storage/themes/default/overlay/edit_message.php:48
-        #: storage/themes/default/overlay/edit_newsletter.php:18
-        #: storage/themes/default/overlay/edit_newsletter.php:26
-        #: storage/themes/default/overlay/edit_newsletter.php:32
-        #: storage/themes/default/overlay/edit_poll.php:52
-        "leave empty to disable" => "",
-
-        #: storage/themes/default/overlay/create_contact.php:33
-        #: storage/themes/default/overlay/create_newsletter.php:19
-        #: storage/themes/default/overlay/edit_contact.php:33
-        #: storage/themes/default/overlay/edit_newsletter.php:19
-        "e.g. Need help?" => "",
-
-        #: storage/themes/default/overlay/create_contact.php:40
-        #: storage/themes/default/overlay/create_newsletter.php:26
-        #: storage/themes/default/overlay/edit_contact.php:40
-        #: storage/themes/default/overlay/edit_newsletter.php:26
-        "Form Description" => "",
-
-        #: storage/themes/default/overlay/create_contact.php:41
-        #: storage/themes/default/overlay/create_newsletter.php:27
-        #: storage/themes/default/overlay/edit_contact.php:41
-        #: storage/themes/default/overlay/edit_newsletter.php:27
-        "(optional) Provide a description or anything you want to add to the form." => "",
-
-        #: storage/themes/default/overlay/create_contact.php:46
-        #: storage/themes/default/overlay/create_newsletter.php:32
-        #: storage/themes/default/overlay/create_poll.php:53
-        #: storage/themes/default/overlay/edit_contact.php:46
-        #: storage/themes/default/overlay/edit_newsletter.php:32
-        #: storage/themes/default/overlay/edit_poll.php:52
-        "Thank You Message" => "",
-
-        #: storage/themes/default/overlay/create_contact.php:47
-        #: storage/themes/default/overlay/edit_contact.php:47
-        "e.g. Thank you. We will respond asap." => "",
-
-        #: storage/themes/default/overlay/create_contact.php:55
-        #: storage/themes/default/overlay/create_newsletter.php:47
-        #: storage/themes/default/overlay/create_poll.php:41
-        #: storage/themes/default/overlay/edit_contact.php:55
-        #: storage/themes/default/overlay/edit_contact.php:58
-        #: storage/themes/default/overlay/edit_newsletter.php:47
-        #: storage/themes/default/overlay/edit_poll.php:40
-        "Text Labels" => "",
-
-        #: storage/themes/default/overlay/create_contact.php:61
-        #: storage/themes/default/overlay/edit_contact.php:62
-        "Name Placeholder" => "",
-
-        #: storage/themes/default/overlay/create_contact.php:63
-        #: storage/themes/default/overlay/create_contact.php:70
-        #: storage/themes/default/overlay/create_contact.php:77
-        #: storage/themes/default/overlay/create_contact.php:84
-        #: storage/themes/default/overlay/create_newsletter.php:55
-        #: storage/themes/default/overlay/edit_contact.php:64
-        #: storage/themes/default/overlay/edit_contact.php:71
-        #: storage/themes/default/overlay/edit_contact.php:78
-        #: storage/themes/default/overlay/edit_contact.php:85
-        #: storage/themes/default/overlay/edit_newsletter.php:55
-        "If you want to use a different language, change these." => "",
-
-        #: storage/themes/default/overlay/create_contact.php:68
-        #: storage/themes/default/overlay/edit_contact.php:69
-        "Email Placeholder" => "",
-
-        #: storage/themes/default/overlay/create_contact.php:75
-        #: storage/themes/default/overlay/edit_contact.php:76
-        "Message Placeholder" => "",
-
-        #: storage/themes/default/overlay/create_contact.php:82
-        #: storage/themes/default/overlay/edit_contact.php:83
-        "Send Button Placeholder" => "",
-
-        #: storage/themes/default/overlay/create_contact.php:92
-        #: storage/themes/default/overlay/create_coupon.php:43
-        #: storage/themes/default/overlay/create_image.php:44
-        #: storage/themes/default/overlay/create_message.php:57
-        #: storage/themes/default/overlay/create_newsletter.php:63
-        #: storage/themes/default/overlay/create_poll.php:62
-        #: storage/themes/default/overlay/edit_contact.php:93
-        #: storage/themes/default/overlay/edit_coupon.php:43
-        #: storage/themes/default/overlay/edit_image.php:44
-        #: storage/themes/default/overlay/edit_message.php:57
-        #: storage/themes/default/overlay/edit_newsletter.php:63
-        #: storage/themes/default/overlay/edit_poll.php:61
-        "Appearance Customization" => "",
-
-        #: storage/themes/default/overlay/create_contact.php:98
-        #: storage/themes/default/overlay/edit_contact.php:99
-        "Form Background Color" => "",
-
-        #: storage/themes/default/overlay/create_contact.php:104
-        #: storage/themes/default/overlay/edit_contact.php:105
-        "Form Text Color" => "",
-
-        #: storage/themes/default/overlay/create_contact.php:110
-        #: storage/themes/default/overlay/edit_contact.php:111
-        "Input Background Color" => "",
-
-        #: storage/themes/default/overlay/create_contact.php:116
-        #: storage/themes/default/overlay/edit_contact.php:117
-        "Input Text Color" => "",
-
-        #: storage/themes/default/overlay/create_contact.php:122
-        #: storage/themes/default/overlay/create_coupon.php:61
-        #: storage/themes/default/overlay/create_message.php:87
-        #: storage/themes/default/overlay/create_newsletter.php:81
-        #: storage/themes/default/overlay/create_poll.php:80
-        #: storage/themes/default/overlay/edit_contact.php:123
-        #: storage/themes/default/overlay/edit_coupon.php:61
-        #: storage/themes/default/overlay/edit_message.php:87
-        #: storage/themes/default/overlay/edit_newsletter.php:81
-        #: storage/themes/default/overlay/edit_poll.php:79
-        "Button Background Color" => "",
-
-        #: storage/themes/default/overlay/create_contact.php:128
-        #: storage/themes/default/overlay/create_coupon.php:67
-        #: storage/themes/default/overlay/create_message.php:93
-        #: storage/themes/default/overlay/create_newsletter.php:87
-        #: storage/themes/default/overlay/create_poll.php:86
-        #: storage/themes/default/overlay/edit_contact.php:129
-        #: storage/themes/default/overlay/edit_coupon.php:67
-        #: storage/themes/default/overlay/edit_message.php:93
-        #: storage/themes/default/overlay/edit_newsletter.php:87
-        #: storage/themes/default/overlay/edit_poll.php:85
-        "Button Text Color" => "",
-
-        #: storage/themes/default/overlay/create_contact.php:134
-        #: storage/themes/default/overlay/create_coupon.php:73
-        #: storage/themes/default/overlay/create_image.php:56
-        #: storage/themes/default/overlay/create_message.php:99
-        #: storage/themes/default/overlay/create_newsletter.php:93
-        #: storage/themes/default/overlay/create_poll.php:92
-        #: storage/themes/default/overlay/edit_contact.php:135
-        #: storage/themes/default/overlay/edit_coupon.php:73
-        #: storage/themes/default/overlay/edit_image.php:56
-        #: storage/themes/default/overlay/edit_message.php:99
-        #: storage/themes/default/overlay/edit_newsletter.php:93
-        #: storage/themes/default/overlay/edit_poll.php:91
-        "Overlay Position" => "",
-
-        #: storage/themes/default/overlay/create_contact.php:136
-        #: storage/themes/default/overlay/create_coupon.php:75
-        #: storage/themes/default/overlay/create_image.php:60
-        #: storage/themes/default/overlay/create_message.php:103
-        #: storage/themes/default/overlay/create_newsletter.php:95
-        #: storage/themes/default/overlay/create_poll.php:94
-        #: storage/themes/default/overlay/edit_contact.php:137
-        #: storage/themes/default/overlay/edit_coupon.php:75
-        #: storage/themes/default/overlay/edit_image.php:60
-        #: storage/themes/default/overlay/edit_message.php:103
-        #: storage/themes/default/overlay/edit_newsletter.php:95
-        #: storage/themes/default/overlay/edit_poll.php:93
-        "Bottom Left" => "",
-
-        #: storage/themes/default/overlay/create_contact.php:137
-        #: storage/themes/default/overlay/create_coupon.php:76
-        #: storage/themes/default/overlay/create_image.php:61
-        #: storage/themes/default/overlay/create_message.php:104
-        #: storage/themes/default/overlay/create_newsletter.php:96
-        #: storage/themes/default/overlay/create_poll.php:95
-        #: storage/themes/default/overlay/edit_contact.php:138
-        #: storage/themes/default/overlay/edit_coupon.php:76
-        #: storage/themes/default/overlay/edit_image.php:61
-        #: storage/themes/default/overlay/edit_message.php:104
-        #: storage/themes/default/overlay/edit_newsletter.php:96
-        #: storage/themes/default/overlay/edit_poll.php:94
-        "Bottom Right" => "",
-
-        #: storage/themes/default/overlay/create_contact.php:142
-        #: storage/themes/default/overlay/create_contact.php:174
-        #: storage/themes/default/overlay/create_newsletter.php:39
-        #: storage/themes/default/overlay/create_newsletter.php:121
-        #: storage/themes/default/overlay/edit_contact.php:143
-        #: storage/themes/default/overlay/edit_contact.php:175
-        #: storage/themes/default/overlay/edit_newsletter.php:39
-        #: storage/themes/default/overlay/edit_newsletter.php:130
-        "Webhook Notification" => "",
-
-        #: storage/themes/default/overlay/create_contact.php:144
-        #: storage/themes/default/overlay/create_newsletter.php:41
-        #: storage/themes/default/overlay/edit_contact.php:145
-        #: storage/themes/default/overlay/edit_newsletter.php:41
-        "If you want to receive a notification directly to your app, add the url to your app's handler and as soon as there is a submission, we will send a notification to this url as well as an email to the address provided above." => "",
-
-        #: storage/themes/default/overlay/create_contact.php:177
-        #: storage/themes/default/overlay/edit_contact.php:178
-        "If you add a webhook url, we will send a notification to that url with the contact form data. You will be able to integrate it with your own app or a third-party app. Below is a sample data that will be sent in <code>JSON</code> format via a <code>POST</code> request." => "",
-
-        #: storage/themes/default/overlay/create_coupon.php:18
-        #: storage/themes/default/overlay/edit_coupon.php:18
-        "Coupon Code" => "",
-
-        #: storage/themes/default/overlay/create_coupon.php:26
-        #: storage/themes/default/overlay/create_message.php:27
-        #: storage/themes/default/overlay/edit_coupon.php:26
-        #: storage/themes/default/overlay/edit_message.php:27
-        #: storage/themes/default/splash/create.php:51
-        #: storage/themes/default/splash/edit.php:51
-        "Custom Message" => "",
-
-        #: storage/themes/default/overlay/create_coupon.php:27
-        #: storage/themes/default/overlay/create_message.php:28
-        #: storage/themes/default/overlay/edit_coupon.php:27
-        #: storage/themes/default/overlay/edit_message.php:28
-        #: storage/themes/default/splash/create.php:52
-        #: storage/themes/default/splash/edit.php:52
-        "Get a $10 discount with any purchase more than $50" => "",
-
-        #: storage/themes/default/overlay/create_coupon.php:34
-        #: storage/themes/default/overlay/create_message.php:48
-        #: storage/themes/default/overlay/edit_coupon.php:34
-        #: storage/themes/default/overlay/edit_message.php:48
-        "Button Text" => "",
-
-        #: storage/themes/default/overlay/create_coupon.php:49
-        #: storage/themes/default/overlay/create_image.php:50
-        #: storage/themes/default/overlay/create_message.php:63
-        #: storage/themes/default/overlay/create_newsletter.php:69
-        #: storage/themes/default/overlay/create_poll.php:68
-        #: storage/themes/default/overlay/edit_coupon.php:49
-        #: storage/themes/default/overlay/edit_image.php:50
-        #: storage/themes/default/overlay/edit_message.php:63
-        #: storage/themes/default/overlay/edit_newsletter.php:69
-        #: storage/themes/default/overlay/edit_poll.php:67
-        "Overlay Background Color" => "",
-
-        #: storage/themes/default/overlay/create_coupon.php:55
-        #: storage/themes/default/overlay/create_message.php:69
-        #: storage/themes/default/overlay/create_newsletter.php:75
-        #: storage/themes/default/overlay/create_poll.php:74
-        #: storage/themes/default/overlay/edit_coupon.php:55
-        #: storage/themes/default/overlay/edit_message.php:69
-        #: storage/themes/default/overlay/edit_newsletter.php:75
-        #: storage/themes/default/overlay/edit_poll.php:73
-        "Overlay Text Color" => "",
-
-        #: storage/themes/default/overlay/create_image.php:20
-        #: storage/themes/default/overlay/edit_image.php:20
-        "If you add a link here, the whole overlay will be linked to this when clicked." => "",
-
-        #: storage/themes/default/overlay/create_image.php:27
-        #: storage/themes/default/overlay/create_message.php:18
-        #: storage/themes/default/overlay/edit_image.php:27
-        #: storage/themes/default/overlay/edit_message.php:18
-        #: storage/themes/default/qr/edit.php:475
-        "Logo" => "",
-
-        #: storage/themes/default/overlay/create_image.php:29
-        #: storage/themes/default/overlay/create_message.php:20
-        #: storage/themes/default/overlay/edit_image.php:29
-        #: storage/themes/default/overlay/edit_message.php:20
-        "Logo should be square with a maximum size of 100x100. To remove the image, click on the upload field and then cancel it." => "",
-
-        #: storage/themes/default/overlay/create_image.php:34
-        #: storage/themes/default/overlay/edit_image.php:34
-        "Background Image" => "",
-
-        #: storage/themes/default/overlay/create_image.php:36
-        #: storage/themes/default/overlay/edit_image.php:36
-        "Image should be rectangle with a maximum size of 600x150. To remove the image, click on the upload field and then cancel it." => "",
-
-        #: storage/themes/default/overlay/create_image.php:58
-        #: storage/themes/default/overlay/create_message.php:101
-        #: storage/themes/default/overlay/edit_image.php:58
-        #: storage/themes/default/overlay/edit_message.php:101
-        "Top Left" => "",
-
-        #: storage/themes/default/overlay/create_image.php:59
-        #: storage/themes/default/overlay/create_message.php:102
-        #: storage/themes/default/overlay/edit_image.php:59
-        #: storage/themes/default/overlay/edit_message.php:102
-        "Top Right" => "",
-
-        #: storage/themes/default/overlay/create_image.php:62
-        #: storage/themes/default/overlay/create_message.php:105
-        #: storage/themes/default/overlay/edit_image.php:62
-        #: storage/themes/default/overlay/edit_message.php:105
-        "Bottom Center" => "",
-
-        #: storage/themes/default/overlay/create_message.php:33
-        #: storage/themes/default/overlay/edit_message.php:33
-        "Overlay label" => "",
-
-        #: storage/themes/default/overlay/create_message.php:41
-        #: storage/themes/default/overlay/edit_message.php:41
-        "Button Link" => "",
-
-        #: storage/themes/default/overlay/create_message.php:43
-        #: storage/themes/default/overlay/edit_message.php:43
-        "If you remove the button text below but add a link here, the whole overlay will be linked to this when clicked." => "",
-
-        #: storage/themes/default/overlay/create_message.php:75
-        #: storage/themes/default/overlay/edit_message.php:75
-        "Label Background Color" => "",
-
-        #: storage/themes/default/overlay/create_message.php:81
-        #: storage/themes/default/overlay/edit_message.php:81
-        "Label Text Color" => "",
-
-        #: storage/themes/default/overlay/create_message.php:116
-        "Promo" => "",
-
-        #: storage/themes/default/overlay/create_message.php:120
-        "Your text here" => "",
-
-        #: storage/themes/default/overlay/create_newsletter.php:33
-        #: storage/themes/default/overlay/edit_newsletter.php:33
-        "e.g. Thank you." => "",
-
-        #: storage/themes/default/overlay/create_newsletter.php:53
-        #: storage/themes/default/overlay/edit_newsletter.php:53
-        "Button" => "",
-
-        #: storage/themes/default/overlay/create_newsletter.php:54
-        #: storage/themes/default/overlay/create_newsletter.php:114
-        "Subscribe" => "",
-
-        #: storage/themes/default/overlay/create_newsletter.php:124
-        #: storage/themes/default/overlay/edit_newsletter.php:133
-        "If you add a webhook url, we will send a notification to that url with the form data. You will be able to integrate it with your own app or a third-party app. Below is a sample data that will be sent in <code>JSON</code> format via a <code>POST</code> request." => "",
-
-        #: storage/themes/default/overlay/create_poll.php:20
-        #: storage/themes/default/overlay/edit_poll.php:20
-        "Question" => "",
-
-        #: storage/themes/default/overlay/create_poll.php:21
-        #: storage/themes/default/overlay/edit_poll.php:21
-        "e.g. What is your favorite color?" => "",
-
-        #: storage/themes/default/overlay/create_poll.php:26
-        #: storage/themes/default/overlay/edit_poll.php:26
-        "Options" => "",
-
-        #: storage/themes/default/overlay/create_poll.php:27
-        #: storage/themes/default/overlay/edit_poll.php:27
-        "You can add up to 10 options for each poll. To add an extra option click Add Option above. To ignore a field, leave it empty." => "",
-
-        #: storage/themes/default/overlay/create_poll.php:36
-        #: storage/themes/default/overlay/edit_poll.php:35
-        "Add Option" => "",
-
-        #: storage/themes/default/overlay/create_poll.php:47
-        #: storage/themes/default/overlay/edit_poll.php:46
-        "Vote Button Placeholder" => "",
-
-        #: storage/themes/default/overlay/create_poll.php:54
-        "Thanks..." => "",
-
-        #: storage/themes/default/overlay/create_poll.php:106
-        "Your question here?" => "",
-
-        #: storage/themes/default/overlay/edit_contact.php:32
-        #: storage/themes/default/overlay/edit_contact.php:40
-        #: storage/themes/default/overlay/edit_contact.php:46
-        "(leave empty to disable)" => "",
-
-        #: storage/themes/default/overlay/edit_poll.php:116
-        "Poll Results" => "",
-
-        #: storage/themes/default/pages/affiliate.php:6
-        "Earn {p} commission on affiliate sales" => "",
-
-        #: storage/themes/default/pages/affiliate.php:7
-        #, php-format
-        "Refer customers to us and we will reward you a {p}% commission on all qualifying sales made on our website. Anyone can join the affiliate program." => "",
-
-        #: storage/themes/default/pages/affiliate.php:9
-        "View Affiliate Portal" => "",
-
-        #: storage/themes/default/pages/affiliate.php:11
-        "Join now" => "",
-
-        #: storage/themes/default/pages/api.php:8
-        #: storage/themes/default/pages/api.php:51
-        "Getting Started" => "",
-
-        #: storage/themes/default/pages/api.php:14
-        #: storage/themes/default/pages/api.php:72
-        "Authentication" => "",
-
-        #: storage/themes/default/pages/api.php:20
-        #: storage/themes/default/pages/api.php:114
-        "Rate Limit" => "",
-
-        #: storage/themes/default/pages/api.php:26
-        #: storage/themes/default/pages/api.php:131
-        "Response Handling" => "",
-
-        #: storage/themes/default/pages/api.php:31
-        #: storage/themes/default/partials/topbar_menu.php:43
-        "Admin" => "",
-
-        #: storage/themes/default/pages/api.php:54
-        "An API key is required for requests to be processed by the system. Once a user registers, an API key is automatically generated for this user. The API key must be sent with each request (see full example below). If the API key is not sent or is expired, there will be an error. Please make sure to keep your API key secret to prevent abuse." => "",
-
-        #: storage/themes/default/pages/api.php:60
-        "Your API key" => "",
-
-        #: storage/themes/default/pages/api.php:62
-        "Regenerate API Key" => "",
-
-        #: storage/themes/default/pages/api.php:62
-        "If you proceed, your current applications will not work anymore. You will need to change your api key for it to work again." => "",
-
-        #: storage/themes/default/pages/api.php:62
-        #: storage/themes/default/user/settings.php:208
-        #: storage/themes/default/user/settings.php:261
-        "Regenerate" => "",
-
-        #: storage/themes/default/pages/api.php:75
-        "To authenticate with the API system, you need to send your API key as an authorization token with each request. You can see sample code below." => "",
-
-        #: storage/themes/default/pages/api.php:117
-        "Our API has a rate limiter to safeguard against spike in requests to maximize its stability. Our rate limiter is currently caped at {x} requests per {y} minute." => "",
-
-        #: storage/themes/default/pages/api.php:119
-        "Several headers will be sent alongside the response and these can be examined to determine various information about the request." => "",
-
-        #: storage/themes/default/pages/api.php:134
-        "All API response are returned in JSON format by default. To convert this into usable data, the appropriate function will need to be used according to the language. In PHP, the function json_decode() can be used to convert the data to either an object (default) or an array (set the second parameter to true). It is very important to check the error key as that provides information on whether there was an error or not. You can also check the header code." => "",
-
-        #: storage/themes/default/pages/api.php:162
-        "Parameter" => "",
-
-        #: storage/themes/default/pages/api.php:216
-        "Server response" => "",
-
-        #: storage/themes/default/pages/bio.php:42
-        "One link to rule them all" => "",
-
-        #: storage/themes/default/pages/bio.php:44
-        "Create beautiful profiles and add content like links, donation, videos and more for your social media users. Share a single on your social media profiles so your users can easily find all of your important links on a single page." => "",
-
-        #: storage/themes/default/pages/bio.php:51
-        #: storage/themes/default/pages/qr.php:25
-        #: storage/themes/default/pages/qr.php:34
-        "The new standard" => "",
-
-        #: storage/themes/default/pages/bio.php:60
-        "Track and optimize" => "",
-
-        #: storage/themes/default/pages/bio.php:62
-        "Profiles are fully trackable and you can find out exactly how many people have visited your profiles or clicked links on your profile and where they are from." => "",
-
-        #: storage/themes/default/pages/bio.php:69
-        #: storage/themes/default/pages/qr.php:43
-        #: storage/themes/default/pages/qr.php:52
-        "Trackable to the dot" => "",
-
-        #: storage/themes/default/pages/consent.php:9
-        "This website uses cookies to ensure you get the best experience on our website. You can learn more by visiting our cookie policy. Meanwhile if you agree, please click the button below to proceed to your destination." => "",
-
-        #: storage/themes/default/pages/contact.php:7
-        #: storage/themes/default/pages/contact.php:30
-        "If you have any questions, feel free to contact us so we can help you" => "",
-
-        #: storage/themes/default/pages/contact.php:22
-        "Please enter a valid name." => "",
-
-        #: storage/themes/default/pages/contact.php:30
-        "The message is empty or too short." => "",
-
-        #: storage/themes/default/pages/faq.php:17
-        #: storage/themes/default/pages/faq.php:18
-        "Quick Search" => "",
-
-        #: storage/themes/default/pages/faq.php:57
-        "Back to top" => "",
-
-        #: storage/themes/default/pages/index.php:14
-        "Last Updated" => "",
-
-        #: storage/themes/default/pages/qr.php:27
-        "QR Codes are everywhere and they are not going away. They are a great asset to your company because you can easily capture users and convert them. QR codes can be customized to match your company, brand or product." => "",
-
-        #: storage/themes/default/pages/qr.php:45
-        "The beautify of QR codes is that almost any type of data can be encoded in them. Most types of data can be tracked very easily so you will know exactly when and from where a person scanned your QR code." => "",
-
-        #: storage/themes/default/pages/report.php:6
-        "Report link" => "",
-
-        #: storage/themes/default/pages/report.php:7
-        "Please report a link that you consider risky or dangerous. We will review all cases and take measure to remove the link." => "",
-
-        #: storage/themes/default/pages/report.php:26
-        "Please enter a valid short link" => "",
-
-        #: storage/themes/default/pages/report.php:29
-        "Reason" => "",
-
-        #: storage/themes/default/pages/report.php:31
-        "Spam" => "",
-
-        #: storage/themes/default/pages/report.php:32
-        "Fraudulent" => "",
-
-        #: storage/themes/default/pages/report.php:33
-        "Malicious" => "",
-
-        #: storage/themes/default/pages/report.php:34
-        "Phishing" => "",
-
-        #: storage/themes/default/partials/footer.php:8
-        "Marketing with confidence." => "",
-
-        #: storage/themes/default/partials/footer.php:57
-        #: storage/themes/default/partials/main_menu.php:11
-        #: storage/themes/default/partials/main_menu.php:52
-        "Solutions" => "",
-
-        #: storage/themes/default/partials/footer.php:67
-        "Company" => "",
-
-        #: storage/themes/default/partials/footer.php:72
-        #: storage/themes/default/partials/main_menu.php:41
-        #: storage/themes/default/partials/main_menu.php:121
-        #: storage/themes/default/partials/topbar_menu.php:68
-        "Help" => "",
-
-        #: storage/themes/default/partials/links.php:6
-        "More Info" => "",
-
-        #: storage/themes/default/partials/links.php:11
-        "Unarchive" => "",
-
-        #: storage/themes/default/partials/links.php:13
-        "Archive" => "",
-
-        #: storage/themes/default/partials/links.php:16
-        "Set Private" => "",
-
-        #: storage/themes/default/partials/links.php:18
-        "Set Public" => "",
-
-        #: storage/themes/default/partials/links.php:22
-        #: storage/themes/default/user/edit.php:10
-        "Export Statistics" => "",
-
-        #: storage/themes/default/partials/links.php:39
-        "Disabled" => "",
-
-        #: storage/themes/default/partials/links.php:42
-        "Archived" => "",
-
-        #: storage/themes/default/partials/links.php:50
-        "Public" => "",
-
-        #: storage/themes/default/partials/links.php:53
-        #: storage/themes/default/user/edit.php:327
-        "Campaign" => "",
-
-        #: storage/themes/default/partials/links.php:56
-        "Geo Targeted" => "",
-
-        #: storage/themes/default/partials/links.php:59
-        "Device Targeted" => "",
-
-        #: storage/themes/default/partials/links.php:62
-        "Protected" => "",
-
-        #: storage/themes/default/partials/links.php:65
-        "Expiry on" => "",
-
-        #: storage/themes/default/partials/links.php:65
-        #: storage/themes/default/user/billing.php:46
-        #: storage/themes/default/user/billing.php:68
-        "Expiration" => "",
-
-        #: storage/themes/default/partials/links.php:68
-        #: storage/themes/default/partials/shortener.php:112
-        #: storage/themes/default/pixels/index.php:61
-        #: storage/themes/default/pixels/new.php:40
-        "Pixels" => "",
-
-        #: storage/themes/default/partials/links.php:74
-        #: storage/themes/default/partials/shortener.php:115
-        "Parameters" => "",
-
-        #: storage/themes/default/partials/links.php:79
-        #: storage/themes/default/user/channel.php:41
-        "Copied" => "",
-
-        #: storage/themes/default/partials/links.php:84
-        #: storage/themes/default/stats/partial.php:40
-        "Unique Clicks" => "",
-
-        #: storage/themes/default/partials/main_menu.php:3
-        "Home" => "",
-
-        #: storage/themes/default/partials/main_menu.php:7
-        "Pricing" => "",
-
-        #: storage/themes/default/partials/main_menu.php:17
-        "Resources" => "",
-
-        #: storage/themes/default/partials/main_menu.php:28
-        "Guide on how to use our API" => "",
-
-        #: storage/themes/default/partials/main_menu.php:42
-        "Check out our frequently asked questions" => "",
-
-        #: storage/themes/default/partials/main_menu.php:59
-        "Customizable & trackable QR codes" => "",
-
-        #: storage/themes/default/partials/main_menu.php:67
-        "Convert your social media followers" => "",
-
-        #: storage/themes/default/partials/main_menu.php:97
-        #: storage/themes/default/partials/topbar_menu.php:44
-        "Admin Panel" => "",
-
-        #: storage/themes/default/partials/main_menu.php:111
-        #: storage/themes/default/partials/topbar_menu.php:58
-        #: storage/themes/default/user/campaigns.php:95
-        #: storage/themes/default/user/settings.php:139
-        "Public Profile" => "",
-
-        #: storage/themes/default/partials/main_menu.php:117
-        #: storage/themes/default/partials/topbar_menu.php:64
-        #: storage/themes/default/user/affiliate.php:1
-        "Affiliate" => "",
-
-        #: storage/themes/default/partials/main_menu.php:123
-        #: storage/themes/default/partials/topbar_menu.php:70
-        "Log out" => "",
-
-        #: storage/themes/default/partials/shortener.php:7
-        "Paste a long link" => "",
-
-        #: storage/themes/default/partials/shortener.php:10
-        "Paste up to 10 long urls. One URL per line." => "",
-
-        #: storage/themes/default/partials/shortener.php:41
-        #: storage/themes/default/user/edit.php:275
-        "Redirect" => "",
-
-        #: storage/themes/default/partials/shortener.php:61
-        "If you need a custom alias, you can enter it below." => "",
-
-        #: storage/themes/default/partials/shortener.php:83
-        #: storage/themes/default/user/edit.php:313
-        "Link Expiration" => "",
-
-        #: storage/themes/default/partials/shortener.php:84
-        "Set an expiration date to disable the link." => "",
-
-        #: storage/themes/default/partials/shortener.php:87
-        #: storage/themes/default/user/edit.php:316
-        "MM/DD/YYYY" => "",
-
-        #: storage/themes/default/partials/shortener.php:94
-        "This can be used to identify URLs on your account." => "",
-
-        #: storage/themes/default/partials/shortener.php:97
-        #: storage/themes/default/user/edit.php:323
-        "Type your description here" => "",
-
-        #: storage/themes/default/partials/shortener.php:104
-        #: storage/themes/default/partials/shortener.php:121
-        #: storage/themes/default/user/edit.php:28
-        "Meta Tags" => "",
-
-        #: storage/themes/default/partials/shortener.php:106
-        #: storage/themes/default/partials/shortener.php:147
-        #: storage/themes/default/user/edit.php:54
-        "Geo Targeting" => "",
-
-        #: storage/themes/default/partials/shortener.php:109
-        #: storage/themes/default/partials/shortener.php:186
-        #: storage/themes/default/pricing/index.php:52
-        #: storage/themes/default/user/billing.php:76
-        #: storage/themes/default/user/edit.php:124
-        "Device Targeting" => "",
-
-        #: storage/themes/default/partials/shortener.php:125
-        #: storage/themes/default/user/edit.php:32
-        "Custom Banner" => "",
-
-        #: storage/themes/default/partials/shortener.php:126
-        #: storage/themes/default/partials/shortener.php:132
-        #: storage/themes/default/user/edit.php:33
-        #: storage/themes/default/user/edit.php:39
-        "Enter your custom meta title" => "",
-
-        #: storage/themes/default/partials/shortener.php:138
-        #: storage/themes/default/user/edit.php:45
-        "Enter your custom meta description" => "",
-
-        #: storage/themes/default/partials/shortener.php:149
-        #: storage/themes/default/partials/shortener.php:188
-        #: storage/themes/default/partials/shortener.php:237
-        #: storage/themes/default/user/edit.php:56
-        #: storage/themes/default/user/edit.php:126
-        #: storage/themes/default/user/edit.php:193
-        "+ Add" => "",
-
-        #: storage/themes/default/partials/shortener.php:152
-        #: storage/themes/default/user/edit.php:59
-        "If you have different pages for different countries then it is possible to redirect users to that page using the same URL. Simply choose the country and enter the URL." => "",
-
-        #: storage/themes/default/partials/shortener.php:166
-        #: storage/themes/default/user/edit.php:75
-        #: storage/themes/default/user/edit.php:104
-        "All States" => "",
-
-        #: storage/themes/default/partials/shortener.php:176
-        #: storage/themes/default/partials/shortener.php:206
-        #: storage/themes/default/user/edit.php:85
-        #: storage/themes/default/user/edit.php:114
-        #: storage/themes/default/user/edit.php:145
-        #: storage/themes/default/user/edit.php:162
-        "Type the url to redirect user to." => "",
-
-        #: storage/themes/default/partials/shortener.php:192
-        #: storage/themes/default/user/edit.php:130
-        "If you have different pages for different devices (such as mobile, tablet etc) then it is possible to redirect users to that page using the same short URL. Simply choose the device and enter the URL." => "",
-
-        #: storage/themes/default/partials/shortener.php:235
-        #: storage/themes/default/user/edit.php:191
-        "Parameter Builder" => "",
-
-        #: storage/themes/default/partials/shortener.php:241
-        #: storage/themes/default/user/edit.php:197
-        "You can add custom parameters like UTM to the link above using this tool. Choose the parameter name and then assign a value. These will be added during redirection." => "",
-
-        #: storage/themes/default/partials/shortener.php:247
-        #: storage/themes/default/user/edit.php:204
-        #: storage/themes/default/user/edit.php:219
-        "Parameter name" => "",
-
-        #: storage/themes/default/partials/shortener.php:253
-        #: storage/themes/default/user/edit.php:210
-        #: storage/themes/default/user/edit.php:225
-        "Parameter value" => "",
-
-        #: storage/themes/default/partials/shortener.php:262
-        "Single" => "",
-
-        #: storage/themes/default/partials/shortener.php:263
-        "Multiple" => "",
-
-        #: storage/themes/default/partials/sidebar_menu.php:34
-        #: storage/themes/default/user/channels.php:40
-        "My Channels" => "",
-
-        #: storage/themes/default/partials/sidebar_menu.php:100
-        "Tools & Integrations" => "",
-
-        #: storage/themes/default/partials/stats_nav.php:3
-        #: storage/themes/default/pricing/checkout.php:73
-        "Summary" => "",
-
-        #: storage/themes/default/partials/stats_nav.php:6
-        "Countries & Cities" => "",
-
-        #: storage/themes/default/partials/stats_nav.php:9
-        #: storage/themes/default/stats/platforms.php:16
-        #: storage/themes/default/user/campaignstats.php:85
-        "Platforms" => "",
-
-        #: storage/themes/default/partials/stats_nav.php:12
-        #: storage/themes/default/stats/browsers.php:16
-        "Browsers" => "",
-
-        #: storage/themes/default/partials/stats_nav.php:15
-        #: storage/themes/default/stats/languages.php:16
-        "Languages" => "",
-
-        #: storage/themes/default/partials/stats_nav.php:18
-        "Referrers" => "",
-
-        #: storage/themes/default/partials/topbar_menu.php:14
-        "Dark Mode" => "",
-
-        #: storage/themes/default/partials/topbar_menu.php:17
-        "Light Mode" => "",
-
-        #: storage/themes/default/partials/topbar_menu.php:33
-        "{t} Notifications" => "",
-
-        #: storage/themes/default/pixels/edit.php:6
-        "View Links" => "",
-
-        #: storage/themes/default/pixels/edit.php:18
-        #: storage/themes/default/pixels/new.php:21
-        "Pixel Name" => "",
-
-        #: storage/themes/default/pixels/edit.php:19
-        #: storage/themes/default/pixels/new.php:22
-        "Shopify Campaign" => "",
-
-        #: storage/themes/default/pixels/edit.php:24
-        #: storage/themes/default/pixels/new.php:27
-        "Pixel Tag" => "",
-
-        #: storage/themes/default/pixels/edit.php:25
-        #: storage/themes/default/pixels/new.php:28
-        "Numerical or alphanumerical values only" => "",
-
-        #: storage/themes/default/pixels/edit.php:29
-        "Update Pixel" => "",
-
-        #: storage/themes/default/pixels/index.php:7
-        #: storage/themes/default/pixels/index.php:51
-        #: storage/themes/default/pixels/new.php:1
-        #: storage/themes/default/pixels/new.php:32
-        "Add Pixel" => "",
-
-        #: storage/themes/default/pixels/index.php:70
-        #: storage/themes/default/pixels/new.php:49
-        "What are tracking pixels?" => "",
-
-        #: storage/themes/default/pixels/index.php:74
-        #: storage/themes/default/pixels/new.php:53
-        "Ad platforms such as Facebook and Adwords provide a conversion tracking tool to allow you to gather data on your customers and how they behave on your website. By adding your pixel ID from either of the platforms, you will be able to optimize marketing simply by using short URLs." => "",
-
-        #: storage/themes/default/pixels/index.php:75
-        #: storage/themes/default/pixels/new.php:54
-        "More info" => "",
-
-        #: storage/themes/default/pixels/new.php:11
-        "Pixel Provider" => "",
-
-        #: storage/themes/default/pricing/checkout.php:13
-        "Payment Method" => "",
-
-        #: storage/themes/default/pricing/checkout.php:28
-        #: storage/themes/default/user/settings.php:94
-        "Billing Address" => "",
-
-        #: storage/themes/default/pricing/checkout.php:30
-        #: storage/themes/default/user/settings.php:96
-        "Full Name" => "",
-
-        #: storage/themes/default/pricing/checkout.php:46
-        #: storage/themes/default/user/settings.php:112
-        "State/Province" => "",
-
-        #: storage/themes/default/pricing/checkout.php:62
-        #: storage/themes/default/user/settings.php:128
-        "Zip/Postal code" => "",
-
-        #: storage/themes/default/pricing/checkout.php:87
-        "Subtotal" => "",
-
-        #: storage/themes/default/pricing/checkout.php:94
-        "Promo Code" => "",
-
-        #: storage/themes/default/pricing/checkout.php:104
-        "Apply promo code" => "",
-
-        #: storage/themes/default/pricing/checkout.php:108
-        "Discount" => "",
-
-        #: storage/themes/default/pricing/checkout.php:134
-        "One-time payment" => "",
-
-        #: storage/themes/default/pricing/checkout.php:134
-        "Billed" => "",
-
-        #: storage/themes/default/pricing/checkout.php:145
-        "By subscribing to this plan, you agree to our Terms & Conditions. Subscription is charged in {c}. If you have any questions, please contact us." => "",
-
-        #: storage/themes/default/pricing/index.php:5
-        "Simple Pricing" => "",
-
-        #: storage/themes/default/pricing/index.php:7
-        "Transparent pricing for everyone. Always know what you will pay." => "",
-
-        #: storage/themes/default/pricing/index.php:21
-        "Monthly" => "",
-
-        #: storage/themes/default/pricing/index.php:25
-        "Yearly" => "",
-
-        #: storage/themes/default/pricing/index.php:42
-        "Free" => "",
-
-        #: storage/themes/default/pricing/index.php:47
-        #: storage/themes/default/user/billing.php:73
-        "URLs allowed" => "",
-
-        #: storage/themes/default/pricing/index.php:48
-        #: storage/themes/default/user/billing.php:74
-        "Clicks per month" => "",
-
-        #: storage/themes/default/pricing/index.php:49
-        "Forever" => "",
-
-        #: storage/themes/default/pricing/index.php:49
-        "Data Retention" => "",
-
-        #: storage/themes/default/pricing/index.php:50
-        #: storage/themes/default/user/billing.php:72
-        "Custom Aliases" => "",
-
-        #: storage/themes/default/pricing/index.php:51
-        #: storage/themes/default/user/billing.php:75
-        "Geotargeting" => "",
-
-        #: storage/themes/default/pricing/index.php:58
-        #: storage/themes/default/teams/index.php:65
-        #: storage/themes/default/user/billing.php:82
-        "Team Members" => "",
-
-        #: storage/themes/default/pricing/index.php:70
-        #: storage/themes/default/user/billing.php:94
-        "Campaigns & Link Rotator" => "",
-
-        #: storage/themes/default/pricing/index.php:71
-        "Multiple Domains" => "",
-
-        #: storage/themes/default/pricing/index.php:72
-        "Custom Parameters" => "",
-
-        #: storage/themes/default/pricing/index.php:73
-        #: storage/themes/default/teams/edit.php:70
-        #: storage/themes/default/teams/index.php:178
-        #: storage/themes/default/user/billing.php:95
-        #: storage/themes/default/user/campaignstats.php:102
-        #: storage/themes/default/user/stats.php:61
-        "Export Data" => "",
-
-        #: storage/themes/default/pricing/index.php:75
-        #: storage/themes/default/user/billing.php:97
-        "URL Customization" => "",
-
-        #: storage/themes/default/pricing/index.php:76
-        #: storage/themes/default/user/billing.php:98
-        "Advertisement-Free" => "",
-
-        #: storage/themes/default/private.php:5
-        "Hello" => "",
-
-        #: storage/themes/default/private.php:7
-        "Thanks for your interest but this website is currently used privately." => "",
-
-        #: storage/themes/default/qr/edit.php:9 storage/themes/default/qr/new.php:37
-        "QR Code Name" => "",
-
-        #: storage/themes/default/qr/edit.php:21 storage/themes/default/qr/new.php:49
-        "Choose domain to generate the link with when using dynamic QR codes. Not applicable for static QR codes." => "",
-
-        #: storage/themes/default/qr/edit.php:34 storage/themes/default/qr/edit.php:35
-        #: storage/themes/default/qr/edit.php:129 storage/themes/default/qr/new.php:61
-        #: storage/themes/default/qr/new.php:62
-        "Your Text" => "",
-
-        #: storage/themes/default/qr/edit.php:47 storage/themes/default/qr/new.php:72
-        "Your Link" => "",
-
-        #: storage/themes/default/qr/edit.php:64 storage/themes/default/qr/new.php:87
-        "Subject" => "",
-
-        #: storage/themes/default/qr/edit.php:65 storage/themes/default/qr/new.php:88
-        #: storage/themes/default/qr/new.php:118
-        "Job Application" => "",
-
-        #: storage/themes/default/qr/edit.php:69 storage/themes/default/qr/new.php:92
-        #: storage/themes/default/qr/new.php:157
-        "Your message here to be sent as email" => "",
-
-        #: storage/themes/default/qr/edit.php:90 storage/themes/default/qr/new.php:13
-        #: storage/themes/default/qr/new.php:109
-        "SMS & Message" => "",
-
-        #: storage/themes/default/qr/edit.php:107 storage/themes/default/qr/new.php:27
-        #: storage/themes/default/qr/new.php:124
-        "SMS" => "",
-
-        #: storage/themes/default/qr/edit.php:120 storage/themes/default/qr/new.php:29
-        #: storage/themes/default/qr/new.php:148
-        "Whatsapp" => "",
-
-        #: storage/themes/default/qr/edit.php:149
-        #: storage/themes/default/qr/edit.php:228
-        #: storage/themes/default/qr/new.php:175 storage/themes/default/qr/new.php:252
-        "Organization" => "",
-
-        #: storage/themes/default/qr/edit.php:161
-        #: storage/themes/default/qr/edit.php:240
-        #: storage/themes/default/qr/new.php:187 storage/themes/default/qr/new.php:264
-        "Website" => "",
-
-        #: storage/themes/default/qr/edit.php:166
-        #: storage/themes/default/qr/edit.php:245
-        #: storage/themes/default/qr/new.php:192 storage/themes/default/qr/new.php:269
-        "Social" => "",
-
-        #: storage/themes/default/qr/edit.php:171
-        #: storage/themes/default/qr/edit.php:250
-        #: storage/themes/default/qr/new.php:197 storage/themes/default/qr/new.php:274
-        "Street" => "",
-
-        #: storage/themes/default/qr/edit.php:183
-        #: storage/themes/default/qr/edit.php:262
-        #: storage/themes/default/qr/new.php:209 storage/themes/default/qr/new.php:286
-        "Zipcode" => "",
-
-        #: storage/themes/default/qr/edit.php:206
-        #: storage/themes/default/qr/edit.php:285
-        #: storage/themes/default/qr/new.php:232 storage/themes/default/qr/new.php:309
-        "Linekdin" => "",
-
-        #: storage/themes/default/qr/edit.php:295 storage/themes/default/qr/new.php:14
-        #: storage/themes/default/qr/new.php:317
-        "WiFi" => "",
-
-        #: storage/themes/default/qr/edit.php:299
-        #: storage/themes/default/qr/new.php:321
-        "Network SSID" => "",
-
-        #: storage/themes/default/qr/edit.php:307
-        #: storage/themes/default/qr/new.php:329
-        "Encryption" => "",
-
-        #: storage/themes/default/qr/edit.php:319
-        #: storage/themes/default/qr/edit.php:323 storage/themes/default/qr/new.php:30
-        #: storage/themes/default/qr/new.php:344
-        "Cryptocurrency" => "",
-
-        #: storage/themes/default/qr/edit.php:325
-        #: storage/themes/default/qr/new.php:346
-        "Bitcoin" => "",
-
-        #: storage/themes/default/qr/edit.php:328
-        #: storage/themes/default/qr/new.php:349
-        "Ethereum" => "",
-
-        #: storage/themes/default/qr/edit.php:331
-        #: storage/themes/default/qr/new.php:352
-        "Bitcoin Cash" => "",
-
-        #: storage/themes/default/qr/edit.php:335
-        #: storage/themes/default/qr/new.php:356
-        "Wallet Address" => "",
-
-        #: storage/themes/default/qr/edit.php:344
-        #: storage/themes/default/qr/new.php:135
-        "File Upload (Image or PDF)" => "",
-
-        #: storage/themes/default/qr/edit.php:346
-        "View File" => "",
-
-        #: storage/themes/default/qr/edit.php:351
-        #: storage/themes/default/qr/new.php:138
-        "This can be used to upload an image or a PDF. Most common uses are restaurant menu, promotional poster and resume." => "",
-
-        #: storage/themes/default/qr/edit.php:353 storage/themes/default/qr/new.php:28
-        #: storage/themes/default/qr/new.php:140
-        "File" => "",
-
-        #: storage/themes/default/qr/edit.php:355
-        #: storage/themes/default/qr/new.php:142
-        "Acceptable file: jpg, png, gif, pdf. Max 2MB." => "",
-
-        #: storage/themes/default/qr/edit.php:362
-        #: storage/themes/default/qr/new.php:369
-        "Colors" => "",
-
-        #: storage/themes/default/qr/edit.php:383
-        #: storage/themes/default/qr/new.php:390
-        "Foreground" => "",
-
-        #: storage/themes/default/qr/edit.php:411
-        #: storage/themes/default/qr/new.php:418
-        "Gradient Direction" => "",
-
-        #: storage/themes/default/qr/edit.php:413
-        #: storage/themes/default/qr/new.php:420
-        "Vertical" => "",
-
-        #: storage/themes/default/qr/edit.php:414
-        #: storage/themes/default/qr/new.php:421
-        "Horizontal" => "",
-
-        #: storage/themes/default/qr/edit.php:415
-        #: storage/themes/default/qr/new.php:422
-        "Radial" => "",
-
-        #: storage/themes/default/qr/edit.php:416
-        #: storage/themes/default/qr/new.php:423
-        "Diagonal" => "",
-
-        #: storage/themes/default/qr/edit.php:423
-        #: storage/themes/default/qr/new.php:430
-        "Eye Color" => "",
-
-        #: storage/themes/default/qr/edit.php:431
-        #: storage/themes/default/qr/new.php:438
-        "Design" => "",
-
-        #: storage/themes/default/qr/edit.php:482
-        #: storage/themes/default/qr/new.php:489
-        "Matrix Style" => "",
-
-        #: storage/themes/default/qr/edit.php:486
-        #: storage/themes/default/qr/edit.php:503
-        #: storage/themes/default/qr/new.php:493 storage/themes/default/qr/new.php:510
-        "Square" => "",
-
-        #: storage/themes/default/qr/edit.php:494
-        #: storage/themes/default/qr/new.php:501
-        "Dots" => "",
-
-        #: storage/themes/default/qr/edit.php:499
-        #: storage/themes/default/qr/new.php:506
-        "Eye Style" => "",
-
-        #: storage/themes/default/qr/edit.php:507
-        #: storage/themes/default/qr/new.php:514
-        "Circle" => "",
-
-        #: storage/themes/default/qr/edit.php:518
-        #: storage/themes/default/qr/new.php:525
-        #: storage/themes/default/stats/partial.php:8
-        #: storage/themes/default/user/index.php:134
-        "QR Code" => "",
-
-        #: storage/themes/default/qr/edit.php:529
-        #: storage/themes/default/qr/new.php:536
-        "You will be able to download the QR code in PDF or SVG after it has been generated." => "",
-
-        #: storage/themes/default/qr/index.php:31
-        "Download as PNG" => "",
-
-        #: storage/themes/default/qr/index.php:32
-        "Download as SVG" => "",
-
-        #: storage/themes/default/qr/index.php:33
-        "Download as PDF" => "",
-
-        #: storage/themes/default/qr/index.php:52
-        #: storage/themes/default/stats/partial.php:32
-        "Scans" => "",
-
-        #: storage/themes/default/qr/index.php:84
-        "What are QR Codes?" => "",
-
-        #: storage/themes/default/qr/index.php:88
-        "A QR code is a machine-readable code consisting of an array of black and white squares, typically used for storing URLs or other information for reading by the camera on a smartphone." => "",
-
-        #: storage/themes/default/qr/new.php:9
-        "Static QR" => "",
-
-        #: storage/themes/default/qr/new.php:9
-        "Non-Trackable" => "",
-
-        #: storage/themes/default/qr/new.php:15
-        "Static vCard" => "",
-
-        #: storage/themes/default/qr/new.php:20
-        "Dynamic QR" => "",
-
-        #: storage/themes/default/qr/new.php:20
-        "Trackable" => "",
-
-        #: storage/themes/default/qr/new.php:340
-        "Crypto" => "",
-
-        #: storage/themes/default/qr/new.php:357
-        "Enter your public wallet address" => "",
-
-        #: storage/themes/default/qr/new.php:363
-        "Preview" => "",
-
-        #: storage/themes/default/qr/new.php:482
-        "Custom Logo" => "",
-
-        #: storage/themes/default/qr/new.php:531
-        "Generate QR" => "",
-
-        #: storage/themes/default/splash/create.php:2
-        #: storage/themes/default/splash/edit.php:2
-        "A custom splash page is a transitional page where you can customize it however you want." => "",
-
-        #: storage/themes/default/splash/create.php:18
-        #: storage/themes/default/splash/edit.php:18
-        "Counter" => "",
-
-        #: storage/themes/default/splash/create.php:26
-        #: storage/themes/default/splash/edit.php:26
-        "Link to Product" => "",
-
-        #: storage/themes/default/splash/create.php:32
-        #: storage/themes/default/splash/edit.php:32
-        "Custom Title" => "",
-
-        #: storage/themes/default/splash/create.php:33
-        #: storage/themes/default/splash/edit.php:33
-        "Get a $10 discount" => "",
-
-        #: storage/themes/default/splash/create.php:38
-        #: storage/themes/default/splash/edit.php:38
-        "Upload Banner" => "",
-
-        #: storage/themes/default/splash/create.php:40
-        #: storage/themes/default/splash/edit.php:40
-        "The minimum width must be 980px and the height must be between 250 and 500. The format must be a PNG or a JPG. Maximum size is 500KB" => "",
-
-        #: storage/themes/default/splash/create.php:45
-        #: storage/themes/default/splash/edit.php:45
-        "Upload Avatar" => "",
-
-        #: storage/themes/default/splash/index.php:73
-        "What is a custom splash page?" => "",
-
-        #: storage/themes/default/splash/index.php:77
-        "A custom splash page is a transitional page where you can add a banner and a logo along with a message to represent your brand or company. When creating a short link, you will be able to assign the page to your short url. Users who visit your url will briefly see the page before being redirected to their destination." => "",
-
-        #: storage/themes/default/stats/browsers.php:19
-        #: storage/themes/default/stats/countries.php:19
-        #: storage/themes/default/stats/index.php:21
-        #: storage/themes/default/stats/languages.php:19
-        #: storage/themes/default/stats/platforms.php:19
-        "Choose a date range to update stats" => "",
-
-        #: storage/themes/default/stats/browsers.php:30
-        "Top Browsers" => "",
-
-        #: storage/themes/default/stats/countries.php:16
-        #: storage/themes/default/user/campaignstats.php:51
-        #: storage/themes/default/user/stats.php:36
-        "Visitor Map" => "",
-
-        #: storage/themes/default/stats/countries.php:30
-        #: storage/themes/default/user/campaignstats.php:61
-        #: storage/themes/default/user/stats.php:46
-        "Top Countries" => "",
-
-        #: storage/themes/default/stats/countries.php:42
-        "Cities" => "",
-
-        #: storage/themes/default/stats/countries.php:43
-        "Select a region in the map above to display city data." => "",
-
-        #: storage/themes/default/stats/index.php:36
-        #: storage/themes/default/user/index.php:123
-        "Recent Activity" => "",
-
-        #: storage/themes/default/stats/index.php:59
-        #: storage/themes/default/user/index.php:162
-        "Direct, email or others" => "",
-
-        #: storage/themes/default/stats/languages.php:30
-        "Top Languages" => "",
-
-        #: storage/themes/default/stats/partial.php:13
-        #: storage/themes/default/user/index.php:137
-        "Bio Page" => "",
-
-        #: storage/themes/default/stats/partial.php:40
-        "Unique Scans" => "",
-
-        #: storage/themes/default/stats/partial.php:48
-        "Top Country" => "",
-
-        #: storage/themes/default/stats/partial.php:56
-        "Top Referrer" => "",
-
-        #: storage/themes/default/stats/platforms.php:30
-        "Top Platforms" => "",
-
-        #: storage/themes/default/stats/referrers.php:16
-        "Top Referrers" => "",
-
-        #: storage/themes/default/stats/referrers.php:22
-        "Direct, email and others" => "",
-
-        #: storage/themes/default/stats/referrers.php:31
-        "Social Media" => "",
-
-        #: storage/themes/default/teams/edit.php:1
-        "Edit Member" => "",
-
-        #: storage/themes/default/teams/edit.php:11
-        #: storage/themes/default/teams/edit.php:12
-        #: storage/themes/default/teams/index.php:119
-        #: storage/themes/default/teams/index.php:120
-        "Permissions" => "",
-
-        #: storage/themes/default/teams/edit.php:14
-        #: storage/themes/default/teams/index.php:122
-        "Create Links" => "",
-
-        #: storage/themes/default/teams/edit.php:15
-        #: storage/themes/default/teams/index.php:123
-        "Edit Links" => "",
-
-        #: storage/themes/default/teams/edit.php:16
-        #: storage/themes/default/teams/index.php:124
-        "Delete Links" => "",
-
-        #: storage/themes/default/teams/edit.php:22
-        #: storage/themes/default/teams/index.php:130
-        "Delete QR" => "",
-
-        #: storage/themes/default/teams/edit.php:29
-        #: storage/themes/default/teams/index.php:137
-        "Delete Bio" => "",
-
-        #: storage/themes/default/teams/edit.php:34
-        #: storage/themes/default/teams/index.php:142
-        "Create Splash" => "",
-
-        #: storage/themes/default/teams/edit.php:35
-        #: storage/themes/default/teams/index.php:143
-        "Edit Splash" => "",
-
-        #: storage/themes/default/teams/edit.php:36
-        #: storage/themes/default/teams/index.php:144
-        "Delete Splash" => "",
-
-        #: storage/themes/default/teams/edit.php:41
-        #: storage/themes/default/teams/index.php:149
-        "Create Overlay" => "",
-
-        #: storage/themes/default/teams/edit.php:42
-        #: storage/themes/default/teams/index.php:150
-        "Edit Overlay" => "",
-
-        #: storage/themes/default/teams/edit.php:43
-        #: storage/themes/default/teams/index.php:151
-        "Delete Overlay" => "",
-
-        #: storage/themes/default/teams/edit.php:48
-        #: storage/themes/default/teams/index.php:156
-        "Create Pixels" => "",
-
-        #: storage/themes/default/teams/edit.php:49
-        #: storage/themes/default/teams/index.php:157
-        "Edit Pixels" => "",
-
-        #: storage/themes/default/teams/edit.php:50
-        #: storage/themes/default/teams/index.php:158
-        "Delete Pixels" => "",
-
-        #: storage/themes/default/teams/edit.php:55
-        "Add Branded Domain" => "",
-
-        #: storage/themes/default/teams/edit.php:56
-        "Delete Branded Domain" => "",
-
-        #: storage/themes/default/teams/edit.php:61
-        #: storage/themes/default/teams/index.php:169
-        "Create Campaigns" => "",
-
-        #: storage/themes/default/teams/edit.php:62
-        #: storage/themes/default/teams/index.php:170
-        "Edit Campaigns" => "",
-
-        #: storage/themes/default/teams/edit.php:63
-        #: storage/themes/default/teams/index.php:171
-        "Delete Campaigns" => "",
-
-        #: storage/themes/default/teams/index.php:7
-        #: storage/themes/default/teams/index.php:55
-        #: storage/themes/default/teams/index.php:109
-        "Add Member" => "",
-
-        #: storage/themes/default/teams/index.php:34
-        #: storage/themes/default/user/campaigns.php:32
-        "Inactive" => "",
-
-        #: storage/themes/default/teams/index.php:53
-        "No members found. You can invite one." => "",
-
-        #: storage/themes/default/teams/index.php:74
-        "Permission" => "",
-
-        #: storage/themes/default/teams/index.php:78
-        "Create: A create event will allow your team member to shorten links, create splash pages & overlay and campaigns." => "",
-
-        #: storage/themes/default/teams/index.php:79
-        "Edit: An edit event will allow your team member to edit links, splash pages & overlay and campaigns." => "",
-
-        #: storage/themes/default/teams/index.php:80
-        "Delete: A delete event will allow your team member to delete links, splash pages & overlay and campaigns." => "",
-
-        #: storage/themes/default/teams/index.php:162
-        "Branded Domain" => "",
-
-        #: storage/themes/default/teams/index.php:163
-        "Add Custom Domain" => "",
-
-        #: storage/themes/default/teams/index.php:164
-        "Delete Custom Domain" => "",
-
-        #: storage/themes/default/teams/index.php:185
-        "Invite" => "",
-
-        #: storage/themes/default/user/affiliate.php:6
-        "Affiliate Link" => "",
-
-        #: storage/themes/default/user/affiliate.php:19
-        "Referral History" => "",
-
-        #: storage/themes/default/user/affiliate.php:26
-        "Commission" => "",
-
-        #: storage/themes/default/user/affiliate.php:27
-        "Referred On" => "",
-
-        #: storage/themes/default/user/affiliate.php:28
-        "Paid On" => "",
-
-        #: storage/themes/default/user/affiliate.php:37
-        "Approved" => "",
-
-        #: storage/themes/default/user/affiliate.php:39
-        "Paid" => "",
-
-        #: storage/themes/default/user/affiliate.php:41
-        "Rejected" => "",
-
-        #: storage/themes/default/user/affiliate.php:43
-        #: storage/themes/default/user/affiliate.php:47
-        "Pending" => "",
-
-        #: storage/themes/default/user/affiliate.php:59
-        "Affiliate Rate" => "",
-
-        #: storage/themes/default/user/affiliate.php:62
-        "per qualifying sales" => "",
-
-        #: storage/themes/default/user/affiliate.php:63
-        "Minimum earning of {amount} is required for payment." => "",
-
-        #: storage/themes/default/user/affiliate.php:66
-        "Terms" => "",
-
-        #: storage/themes/default/user/billing.php:7
-        "Subscription History" => "",
-
-        #: storage/themes/default/user/billing.php:13
-        #: storage/themes/default/user/billing.php:43
-        "Transaction ID" => "",
-
-        #: storage/themes/default/user/billing.php:15
-        "Since" => "",
-
-        #: storage/themes/default/user/billing.php:16
-        "Next Payment" => "",
-
-        #: storage/themes/default/user/billing.php:17
-        "Status" => "",
-
-        #: storage/themes/default/user/billing.php:37
-        "Payment History" => "",
-
-        #: storage/themes/default/user/billing.php:45
-        "Date" => "",
-
-        #: storage/themes/default/user/billing.php:53
-        "Refunded" => "",
-
-        #: storage/themes/default/user/billing.php:54
-        "Free Trial" => "",
-
-        #: storage/themes/default/user/billing.php:70
-        "Current Plan" => "",
-
-        #: storage/themes/default/user/billing.php:101
-        "Change plan" => "",
-
-        #: storage/themes/default/user/billing.php:107
-        #: storage/themes/default/user/billing.php:124
-        "Cancel Membership" => "",
-
-        #: storage/themes/default/user/billing.php:110
-        "You can cancel your membership whenever your want. Upon request, your membership will be canceled right before your next payment period. This means you can still enjoy premium features until the end of your membership." => "",
-
-        #: storage/themes/default/user/billing.php:111
-        #: storage/themes/default/user/billing.php:140
-        "Cancel membership" => "",
-
-        #: storage/themes/default/user/billing.php:128
-        "We respect your decision and we are sorry to see you go. If you want to share anything with us, please use the box below and we will do our best to improve our service." => "",
-
-        #: storage/themes/default/user/billing.php:135
-        "Reason for cancellation" => "",
-
-        #: storage/themes/default/user/campaigns.php:7
-        #: storage/themes/default/user/campaigns.php:76
-        #: storage/themes/default/user/campaigns.php:117
-        "Create a Campaign" => "",
-
-        #: storage/themes/default/user/campaigns.php:22
-        "Rotator" => "",
-
-        #: storage/themes/default/user/campaigns.php:23
-        "Quick Stats" => "",
-
-        #: storage/themes/default/user/campaigns.php:49
-        "views" => "",
-
-        #: storage/themes/default/user/campaigns.php:50
-        "links" => "",
-
-        #: storage/themes/default/user/campaigns.php:88
-        "Campaign List Disabled" => "",
-
-        #: storage/themes/default/user/campaigns.php:92
-        "To create a list page for the campaign, you need a default bio page and public profile settings." => "",
-
-        #: storage/themes/default/user/campaigns.php:94
-        "Default Bio" => "",
-
-        #: storage/themes/default/user/campaigns.php:102
-        "What is a campaign?" => "",
-
-        #: storage/themes/default/user/campaigns.php:106
-        "A campaign can be used to group links together for various purpose. You can use the dedicated rotator link where a random link will be chosen and redirected to among the group. You will also be able to view aggregated statistics for a campaign." => "",
-
-        #: storage/themes/default/user/campaigns.php:123
-        #: storage/themes/default/user/campaigns.php:162
-        "Campaign Name" => "",
-
-        #: storage/themes/default/user/campaigns.php:123
-        #: storage/themes/default/user/campaigns.php:162
-        #: storage/themes/default/user/channels.php:79
-        #: storage/themes/default/user/channels.php:121
-        "required" => "",
-
-        #: storage/themes/default/user/campaigns.php:127
-        #: storage/themes/default/user/campaigns.php:166
-        "Rotator Slug" => "",
-
-        #: storage/themes/default/user/campaigns.php:127
-        #: storage/themes/default/user/campaigns.php:166
-        "optional" => "",
-
-        #: storage/themes/default/user/campaigns.php:129
-        #: storage/themes/default/user/campaigns.php:168
-        "If you want to set a custom alias for the rotator link, you can fill this field." => "",
-
-        #: storage/themes/default/user/campaigns.php:133
-        #: storage/themes/default/user/campaigns.php:172
-        "Access" => "",
-
-        #: storage/themes/default/user/campaigns.php:134
-        #: storage/themes/default/user/campaigns.php:173
-        "Disabling this option will deactivate the rotator link." => "",
-
-        #: storage/themes/default/user/campaigns.php:143
-        "Create Campaign" => "",
-
-        #: storage/themes/default/user/campaigns.php:156
-        #: storage/themes/default/user/campaigns.php:182
-        #: storage/themes/default/user/channels.php:115
-        "Update Campaign" => "",
-
-        #: storage/themes/default/user/campaignstats.php:7
-        #: storage/themes/default/user/stats.php:7
-        "Export Stats" => "",
-
-        #: storage/themes/default/user/campaignstats.php:16
-        "Traffic Distribution" => "",
-
-        #: storage/themes/default/user/campaignstats.php:73
-        "Browser" => "",
-
-        #: storage/themes/default/user/campaignstats.php:107
-        #: storage/themes/default/user/stats.php:66
-        "Choose a range to export data as CSV. Exported data will including information like date, city and country, os, browser, referer and language." => "",
-
-        #: storage/themes/default/user/campaignstats.php:112
-        #: storage/themes/default/user/links.php:76
-        #: storage/themes/default/user/stats.php:71
-        "Export" => "",
-
-        #: storage/themes/default/user/channel.php:33
-        "Remove from channel" => "",
-
-        #: storage/themes/default/user/channel.php:59
-        "Are you sure you want to remove this item from this channel?" => "",
-
-        #: storage/themes/default/user/channel.php:63
-        "You are trying to remove an item from a channel." => "",
-
-        #: storage/themes/default/user/channels.php:7
-        #: storage/themes/default/user/channels.php:102
-        "Create Channel" => "",
-
-        #: storage/themes/default/user/channels.php:12
-        "Starred Channels" => "",
-
-        #: storage/themes/default/user/channels.php:32
-        #: storage/themes/default/user/channels.php:60
-        "View Channel" => "",
-
-        #: storage/themes/default/user/channels.php:73
-        "Create a Channel" => "",
-
-        #: storage/themes/default/user/channels.php:87
-        #: storage/themes/default/user/channels.php:129
-        "Badge Color" => "",
-
-        #: storage/themes/default/user/channels.php:92
-        #: storage/themes/default/user/channels.php:134
-        "Star Channel" => "",
-
-        #: storage/themes/default/user/channels.php:93
-        #: storage/themes/default/user/channels.php:135
-        "Starred channels will show up in the sidebar navigation for quick access." => "",
-
-        #: storage/themes/default/user/edit.php:20
-        "URL" => "",
-
-        #: storage/themes/default/user/edit.php:289
-        "Alias" => "",
-
-        #: storage/themes/default/user/index.php:12
-        #: storage/themes/default/user/index.php:22
-        "Today" => "",
-
-        #: storage/themes/default/user/index.php:34
-        "Recent Clicks" => "",
-
-        #: storage/themes/default/user/index.php:48
-        "We are currently manually approving links. As soon as the link is approved, you will be able to start using it." => "",
-
-        #: storage/themes/default/user/index.php:63
-        #: storage/themes/default/user/links.php:11
-        "Select All" => "",
-
-        #: storage/themes/default/user/index.php:66
-        #: storage/themes/default/user/links.php:14
-        "Unarchive Selected" => "",
-
-        #: storage/themes/default/user/index.php:68
-        #: storage/themes/default/user/links.php:16
-        "Archive Selected" => "",
-
-        #: storage/themes/default/user/index.php:73
-        #: storage/themes/default/user/index.php:262
-        #: storage/themes/default/user/links.php:21
-        #: storage/themes/default/user/links.php:168
-        "Add to Campaign" => "",
-
-        #: storage/themes/default/user/index.php:80
-        #: storage/themes/default/user/links.php:28
-        "Delete Selected" => "",
-
-        #: storage/themes/default/user/index.php:88
-        #: storage/themes/default/user/links.php:36
-        "Search for links" => "",
-
-        #: storage/themes/default/user/index.php:107
-        "No links found. You can create some." => "",
-
-        #: storage/themes/default/user/index.php:216
-        #: storage/themes/default/user/links.php:122
-        "Short Link Info" => "",
-
-        #: storage/themes/default/user/index.php:251
-        #: storage/themes/default/user/links.php:157
-        "Done" => "",
-
-        #: storage/themes/default/user/links.php:43
-        "Sort Results" => "",
-
-        #: storage/themes/default/user/links.php:45
-        "Latest" => "",
-
-        #: storage/themes/default/user/links.php:46
-        "Oldest" => "",
-
-        #: storage/themes/default/user/links.php:47
-        "Most Popular" => "",
-
-        #: storage/themes/default/user/links.php:48
-        "Less Popular" => "",
-
-        #: storage/themes/default/user/links.php:74
-        "Export Links" => "",
-
-        #: storage/themes/default/user/links.php:75
-        "This tool allows you to generate a list of urls in CSV format. Some basic data such clicks will be included as well." => "",
-
-        #: storage/themes/default/user/settings.php:5
-        "You have used a social network to login. Please note that in this case you don't have a password set." => "",
-
-        #: storage/themes/default/user/settings.php:9
-        "You have used a social network to login. You will need to choose a username." => "",
-
-        #: storage/themes/default/user/settings.php:20
-        "Avatar" => "",
-
-        #: storage/themes/default/user/settings.php:22
-        "By default, we will use the Gravatar associated to your email. Uploaded avatars must be square with the width ranging from 200-500px with a maximum size of 500kb." => "",
-
-        #: storage/themes/default/user/settings.php:37
-        "Please note that if you change your email, you will need to activate your account again." => "",
-
-        #: storage/themes/default/user/settings.php:45
-        "A username is required for your public profile to be visible." => "",
-
-        #: storage/themes/default/user/settings.php:54
-        #: storage/themes/default/user/settings.php:61
-        "Leave blank to keep current one." => "",
-
-        #: storage/themes/default/user/settings.php:68
-        "Default Domain" => "",
-
-        #: storage/themes/default/user/settings.php:81
-        "Default Redirection" => "",
-
-        #: storage/themes/default/user/settings.php:140
-        "Public profile will be activated only when this option is public." => "",
-
-        #: storage/themes/default/user/settings.php:152
-        "Media Gateway" => "",
-
-        #: storage/themes/default/user/settings.php:153
-        "If enabled, special pages will be automatically created for your media URLs (e.g. youtube, vimeo, dailymotion...)." => "",
-
-        #: storage/themes/default/user/settings.php:166
-        "If enabled, you will receive occasional newsletters from us." => "",
-
-        #: storage/themes/default/user/settings.php:175
-        "Save Settings" => "",
-
-        #: storage/themes/default/user/settings.php:184
-        #: storage/themes/default/user/settings.php:272
-        "Two-Factor Authentication (2FA)" => "",
-
-        #: storage/themes/default/user/settings.php:186
-        "2FA is an enhanced level security for your account. Each time you login, an extra step where you will need to enter a unique code will be required to gain access to your account. To enable 2FA, please click the button below and download the <strong>Google Authenticator</strong> app from Apple Store or Play Store." => "",
-
-        #: storage/themes/default/user/settings.php:189
-        "View QR" => "",
-
-        #: storage/themes/default/user/settings.php:192
-        #: storage/themes/default/user/settings.php:282
-        "Secret Key" => "",
-
-        #: storage/themes/default/user/settings.php:195
-        "Important" => "",
-
-        #: storage/themes/default/user/settings.php:197
-        "You need to scan the code above with the app. You need to backup the QR code by saving it and save the key somewhere safe in case you lose your phone. You will not be able to login if you can't provide the code, in that case you will need to contact us. If you disable 2FA and re-enable it, you will need to scan a new code." => "",
-
-        #: storage/themes/default/user/settings.php:198
-        "Disable 2FA" => "",
-
-        #: storage/themes/default/user/settings.php:200
-        "Activate 2FA" => "",
-
-        #: storage/themes/default/user/settings.php:206
-        #: storage/themes/default/user/settings.php:251
-        "Developer API Key" => "",
-
-        #: storage/themes/default/user/settings.php:213
-        #: storage/themes/default/user/settings.php:226
-        "Delete your account" => "",
-
-        #: storage/themes/default/user/settings.php:214
-        #: storage/themes/default/user/settings.php:231
-        "We respect your privacy and as such you can delete your account permanently and remove all your data from our server. Please note that this action is permanent and cannot be reversed." => "",
-
-        #: storage/themes/default/user/settings.php:215
-        "Delete Permanently" => "",
-
-        #: storage/themes/default/user/settings.php:256
-        "If you regenerate your key, the current key will be revoked and your applications might stop working until you update the api key with the new one." => "",
-
-        #: storage/themes/default/user/settings.php:278
-        "You need to scan the code above with the app then enter the 6-digit number that you see in the app to activate 2FA. It is highly recommended to backup the unique key somewhere safe." => "",
-
-        #: storage/themes/default/user/settings.php:293
-        "Activate" => "",
-
-        #: storage/themes/default/user/tools.php:7
-        #: storage/themes/default/user/tools.php:18
-        "Quick Shortener" => "",
-
-        #: storage/themes/default/user/tools.php:8
-        #: storage/themes/default/user/tools.php:38
-        "Bookmarklet" => "",
-
-        #: storage/themes/default/user/tools.php:9
-        #: storage/themes/default/user/tools.php:57
-        "Full-Page Script" => "",
-
-        #: storage/themes/default/user/tools.php:20
-        "This tool allows you to quickly shorten any URL in any page without using any fancy method. This is perhaps the quickest and the easiest method available for you to shorten URLs across all platforms. This method will generate a unique short URL for you that you will be able to access anytime from your dashboard." => "",
-
-        #: storage/themes/default/user/tools.php:22
-        "Use your quick URL below to shorten any URL by adding the URL after /q/?u=. <strong>For security reasons, you need to be logged in and using the remember me feature.</strong> Check out the examples below to understand how to use this method." => "",
-
-        #: storage/themes/default/user/tools.php:28
-        #: storage/themes/default/user/tools.php:47
-        "Notes" => "",
-
-        #: storage/themes/default/user/tools.php:30
-        "Please note that this method does not return anything. It simply redirects the user to the redirection page. However if you need the actual short URL, you can always get it from your dashboard." => "",
-
-        #: storage/themes/default/user/tools.php:40
-        "You can use our bookmarklet tool to instantaneously shorten any site you are currently viewing and if you are logged in on our site, it will be automatically saved to your account for future access. Simply drag the following link to your bookmarks bar or copy the link and manually add it to your favorites." => "",
-
-        #: storage/themes/default/user/tools.php:42
-        "Drag me to your Bookmark Bar" => "",
-
-        #: storage/themes/default/user/tools.php:42
-        "Shorten URL" => "",
-
-        #: storage/themes/default/user/tools.php:44
-        "If you can't drag the link above, use your browser's bookmark editor to create a new bookmark and add the URL below as the link." => "",
-
-        #: storage/themes/default/user/tools.php:49
-        "Please note that for secured sites that use SSL, the widget will not pop up due to security issues. In that case, the user will be redirected our site where you will be able to view your short URL." => "",
-
-        #: storage/themes/default/user/tools.php:59
-        "This script allows you to shorten all (or select) URLs on your website very easily. All you need to do is to copy and paste the code below at the end of your page. You can customize the selector as you wish to target URLs in a specific selector. Note you can just  copy the code below because everything is already for you." => "",
-
-        #: storage/themes/default/user/tools.php:63
-        "Choosing a different domain" => "",
-
-        #: storage/themes/default/user/tools.php:64
-        "By default, the script uses the default domain on the platform however you can define a custom domain name to shorten links with. You need to make sure the domain is exactly the same as the domain added in the account, including the schema (http/https" => "",
-
-        #: storage/themes/default/user/tools.php:68
-        "Choosing custom selectors" => "",
-
-        #: storage/themes/default/user/tools.php:69
-        "By default, this script shortens all URLs in a page. If you want to target specific URLs then you can add a selector parameter. You can see an example below where the script will only shorten URLs having a class named mylink or all direct link in the .content container or all links in the .comments container" => "",
-
-        #: storage/themes/default/user/tools.php:73
-        "Excluding domain names" => "",
-
-        #: storage/themes/default/user/tools.php:74
-        "You can exclude domain names if you wish. You can add an exclude parameter to exclude domain names. The example below shortens all URLs but excludes URLs from google.com or apple.com" => "",
-
-        #: storage/themes/default/user/tools.php:78
-        "Restricting domain names" => "",
-
-        #: storage/themes/default/user/tools.php:79
-        "You can restrict domain names by adding an include parameter to restrict domain names. The example below shortens all URLs within the include domain name." => "",
-
-        "If you change the domain name, the QR code will change!" => "",
-
-        "Your password is too long. Passwords must be between 8 to 64 characters." => "",
-        "Order Confirmation" => "",        
-        "Transparent" => "",
-        "Animation" => "",
-        "Shake" => "",
-        "Scale" => "",
-        "Jello" => "",
-        "Vibrate" => "",
-        "Wobble" => "",
-        "View Stats" => "",
-        "Get Verified" => "",
-        "You already requested a verification. As soon as we verify the document, we will let you know." => "",
-        "Please upload a document so we can verify you." => "",
-        "Please fill everything so we can verify you." => "",
-        "Document must be either a PDF or a JPG (Max 2MB)." => "",
-        "Document must be either a PDF or a JPG (Max 2MB)" => "",
-        "Thank you. We will process your document as soon as possible and verify you." => "",
-        "You cannot shorten URLs at the moment. Please upgrade to another plan." => "",
-        "Display Avatar" => "",
-        "Line Messenger" => "",
-        "Add a heading with different sizes" => "",
-        "Add a text body to your page" => "",
-        "Separate your content with a line" => "",
-        "Add a trackable button to a link" => "",
-        "Add custom HTML code. Script codes are not accepted" => "",
-        "Upload an image" => "",
-        "Add a downloadable vCard" => "",
-        "Generate a PayPal button to accept payments" => "",
-        "Add button that will open whatsapp" => "",
-        "Widgets" => "",
-        "Add a dynamic RSS feed widget" => "",
-        "Add a newsletter form to store emails" => "",
-        "Add a contact form to receive emails" => "",
-        "Add a widget to a product on your site" => "",
-        "Embed a Youtube video" => "",
-        "Embed a Spotify music widget" => "",
-        "Embed an Apple music widget" => "",
-        "TikTok Embed" => "",
-        "Embed a tiktok video" => "",
-        "Click the button add insert an Image then choose the file to upload" => "",
-        "Choose domain to generate the link with" => "",
-        "Leave this field empty to generate a random alias" => "",
-        "By adding a password, you can restrict the access" => "",
-        "Remove Logo" => "",
-        "Verified Account" => "",
-        "Language Targeted" => "",
-        "Language Targeting" => "",
-        "If you have different pages for different languages then it is possible to redirect users to that page using the same URL. Simply choose the language and enter the URL." => "",
-        "Verified" => "",
-        "Margin" => "",
-        "Update Channel" => "",
-        "items" => "",
-        "Order Date" => "",
-        "Order No" => "",
-        "Need Help?" => "",
-        "If you have different pages for different languages then it is possible to redirect users to that page using the same short URL. Simply choose the language and enter the URL." => "",
-        "Sort By" => "",
-        "Newest" => "",
-        "Results Per Page" => "",
-        "Older than" => "",
-        "Filter" => "",
-        "Company Name" => "",
-        "You can get your account verified and this provides you several benefits. After we verify we your account, you will get a verified checkmark on your Bio Pages and your links will have a trusted status." => "",
-        "All we need from you is a document that matches your name and address. Documents can be a national card, company bill or any other official document." => "",
-        "Upload Document" => "",
-        "2MB max, PDF or JPG" => "",
-        "Submit" => "",
-        "Verifications" => "",
-    ]
+ return [
+  'code' => 'vi',
+  'region' => 'vi',
+  'name' => 'Tieng viet',
+  'author' => 'GemPixel',
+  'link' => 'https://gempixel.com',
+  'date' => '20/08/2022',
+  'rtl' => false,
+  'data' => [
+    'Invalid token. Please try again.' => 'Mã không hợp lệ. Thử lại.',
+    'Selected URLs have been deleted.' => 'Các URL đã chọn đã bị xóa.',
+    'URL has been deleted.' => 'URL đã bị xóa.',
+    'An unexpected error occurred.' => 'Một lỗi không mong muốn đã xảy ra.',
+    'Selected users have been deleted but their URLs were not deleted.' => 'Người dùng được chọn đã bị xóa nhưng URL của họ chưa bị xóa.',
+    'User has been deleted.' => 'Người dùng đã bị xóa.',
+    'This user and everything associated have been successfully deleted.' => 'Người dùng này và mọi thứ được liên kết với nó đã được xóa thành công.',
+    'Page has been deleted.' => 'Trang đã bị xóa.',
+    'Logo must be either a PNG or a JPEG.' => 'Biểu trưng phải ở định dạng PNG hoặc JPEG.',
+    'Logo must be either a PNG or a JPEG (Max 100KB).' => 'Biểu trưng phải ở định dạng PNG hoặc JPEG (tối đa 100 KB).',
+    'Security token expired, please try again.' => 'Mã thông báo bảo mật đã hết hạn. Thử lại.',
+    'File doesn\'t exist!' => 'Tập tin không tồn tại!',
+    'URL has been successfully shortened' => 'URL đã được rút ngắn thành công',
+    'Your Last 10 URLs' => '10 URL cuối cùng của bạn',
+    'Latest Public URLs' => 'URL công khai mới nhất',
+    'User Account' => 'Tài khoản người dùng',
+    'Something went wrong, please try again.' => 'Một lỗi đã xảy ra. Thử lại.',
+    'Monthly Subscription' => 'Đăng ký hàng tháng',
+    'First month' => 'Tháng đầu tiên',
+    'Yearly Subscription' => 'Đăng ký hàng năm',
+    'First year' => 'Năm đầu tiên',
+    'An error ocurred, please try again. You have not been charged.' => 'Có một lỗi đã xảy ra. Xin hãy thử lại. Bạn chưa bị tính phí.',
+    'Your credit card was declined. Please check your credit card and try again later.' => 'Thẻ tín dụng của bạn đã bị từ chối. Vui lòng kiểm tra thẻ tín dụng của bạn và thử lại sau.',
+    'You were successfully subscribed. Thank you!' => 'Bạn đã được đăng ký thành công. Cảm ơn!',
+    'An unexpected issue occurred. Please contact us for more info.' => 'Đã xảy ra sự cố ngoài ý muốn. Vui lòng liên hệ với chúng tôi để biết thêm thông tin.',
+    'Save' => 'để bảo vệ',
+    'Premium Plan Pricing' => 'Giá gói cao cấp',
+    'Complete your subscription' => 'Hoàn thành đăng ký của bạn',
+    'Feature disabled in demo.' => 'Chức năng bị tắt trong bản trình diễn',
+    'You are already a pro member.' => 'Bạn đã là thành viên chuyên nghiệp.',
+    'Your payment has been canceled.' => 'Thanh toán của bạn đã bị hủy.',
+    'Payment complete. We will upgrade your account as soon as the payment is verified.' => 'Thanh toán hoàn tất Chúng tôi sẽ cập nhật tài khoản của bạn ngay sau khi thanh toán được xác minh.',
+    'Your payment was successfully made. Thank you.' => 'Thanh toán của bạn đã được thực hiện thành công. Cảm ơn.',
+    'You have to make your profile public for this page to be accessible.' => 'Bạn phải công khai hồ sơ của mình để trang này có thể truy cập được.',
+    'Bundle URLs' => 'url nhóm',
+    'Views' => 'Lượt xem',
+    'Public profile of ' => 'Hồ sơ công khai của',
+    'Public URLs' => 'url công cộng',
+    'Please fill everything' => 'Vui lòng điền vào tất cả',
+    'Your message has been sent. We will reply you as soon as possible.' => 'Tin nhắn của bạn đã được gửi. Chúng tôi sẽ trả lời bạn càng sớm càng tốt.',
+    'Contact Us' => 'Liên hệ chúng tôi',
+    'If you have any questions, feel free to contact us on this page.' => 'Nếu bạn có bất kỳ câu hỏi nào, vui lòng liên hệ với chúng tôi trên trang này.',
+    'Direct, email and other' => 'Trực tiếp, email và khác',
+    'Expired Resource' => 'Tài nguyên hết hạn',
+    'Page not found' => 'Không tìm thấy trang',
+    'Choose Domain' => 'Chọn miền',
+    'Redirection' => 'Chuyển hướng',
+    'Direct' => 'Trực tiếp',
+    'Frame' => 'Khung',
+    'Splash' => 'Giật gân',
+    'Overlay' => 'Che phủ',
+    'Custom Splash' => 'Giật gân tùy chỉnh',
+    'Pricing' => 'Đặt giá',
+    'Login' => 'đăng nhập',
+    'Get Started' => 'Bắt đầu',
+    'Admin' => 'quản trị viên',
+    'Upgrade' => 'Cải thiện',
+    'My Account' => 'Tài khoản của tôi',
+    'Logout' => 'Kết nối - Kết nối',
+    'Dashboard' => 'Bảng điều khiển',
+    'Archived Links' => 'Liên kết được lưu trữ',
+    'Expired Links' => 'liên kết hết hạn',
+    'Bundles' => 'Gói',
+    'Splash Pages' => 'trang bắt đầu',
+    'Pro' => 'chuyên nghiệp',
+    'Overlay Pages' => 'Trang lớp phủ',
+    'Tracking Pixels' => 'Điểm ảnh theo dõi',
+    'Online' => 'Trực tuyến',
+    'Offline' => 'Ngoại tuyến',
+    'Public Profile' => 'Hồ sơ công khai',
+    'Tools' => 'Công cụ',
+    'Settings' => 'Cài đặt',
+    'Account Info' => 'Thông tin tài khoản',
+    'Free' => 'Miễn phí',
+    'out of' => 'hết',
+    'URLs' => 'URL',
+    'Clicks' => 'Nhấp chuột',
+    'Bundles Views' => 'Chế độ xem chùm tia',
+    'Next Payment' => 'Thanh toán tiếp theo',
+    'Private' => 'Riêng tư',
+    'Public' => 'Công cộng',
+    'URL successfully archived.' => 'URL được lưu trữ thành công.',
+    'URL successfully unarchived.' => 'Đã hủy lưu trữ URL thành công.',
+    'directly ' => 'trực tiếp',
+    'referred by ' => 'được tham chiếu bởi',
+    '%s from %s %s visited %s %s' => '%s từ %s%s đã truy cập %s%s',
+    'Someone' => 'Người nào đó',
+    'Undefined Title' => 'Tiêu đề không xác định',
+    'No URLs found.' => 'Không tìm thấy URL',
+    'URL' => 'URL',
+    'Choose Bundle' => 'Chọn một bộ',
+    'Create Bundle' => 'Tạo một nhóm',
+    'Remove from Bundle' => 'Xóa khỏi lô',
+    'Add to bundle' => 'Thêm vào gói',
+    'Bundle Name' => 'Tên lô',
+    'required' => 'Phần bắt buộc',
+    'Bundle Access' => 'Truy cập gói',
+    'If you set it to private, only you can access the URLs' => 'Nếu bạn đặt ở chế độ riêng tư, chỉ bạn mới có thể truy cập các URL',
+    'Update Bundle' => 'Cập nhật nhóm',
+    'Public Bundles' => 'Gói công khai',
+    'Copy' => 'Sao chép',
+    'Share on' => 'Chia sẻ',
+    'Although we respect your decision, we are still sorry to see you go. If you want to share anything with us, please use the box below and we will do our best to improve our service.' => 'Mặc dù chúng tôi tôn trọng quyết định của bạn, nhưng chúng tôi vẫn rất tiếc khi thấy bạn ra đi. Nếu bạn muốn chia sẻ điều gì đó với chúng tôi, vui lòng sử dụng hộp bên dưới và chúng tôi sẽ cố gắng hết sức để cải thiện dịch vụ của mình.',
+    'Password' => 'Mật khẩu',
+    'Reason for cancellation' => 'Lý do hủy bỏ',
+    'Cancel my membership' => 'Hủy đăng ký của tôi',
+    'Please note that your premium membership is about to expire. You can renew it right now by clicking the button below.' => 'Xin lưu ý rằng đăng ký cao cấp của bạn sắp hết hạn. Bạn có thể gia hạn ngay bây giờ bằng cách nhấp vào nút bên dưới.',
+    'Renew' => 'Thay mới',
+    'Recent Activities' => 'Các hoạt động gần đây',
+    'Realtime' => 'Thời gian thực',
+    'No activities yet' => 'Không có hoạt động nào vào lúc này',
+    'Top URLs' => 'URL hàng đầu',
+    'No URLs found' => 'Không tìm thấy URL',
+    'Click' => 'Bấm vào',
+    'Announcement' => 'Thông báo',
+    'You can use our bookmarklet tool to instantaneously shorten any site you are currently viewing and if you are logged in on our site, it will be automatically saved to your account for future access. Simply drag the following link to your bookmarks bar or copy the link and manually add it to your favorites.' => 'Bạn có thể sử dụng công cụ bookmarklet của chúng tôi để rút ngắn ngay lập tức bất kỳ trang web nào bạn đang xem và nếu bạn đã đăng nhập vào trang web của chúng tôi, nó sẽ tự động được lưu vào tài khoản của bạn để truy cập sau. Chỉ cần kéo liên kết sau vào thanh dấu trang của bạn hoặc sao chép liên kết và thêm nó vào dấu trang của bạn theo cách thủ công.',
+    'Drag me to your Bookmark Bar' => 'Kéo tôi vào thanh dấu trang của bạn',
+    'Bookmarklet' => 'Đánh dấu trang',
+    'Export URL Statistics' => 'Xuất Thống kê URL',
+    'You can export visit data as CSV. Simply click the following button to create it.' => 'Bạn có thể xuất dữ liệu lượt truy cập ở định dạng CSV. Chỉ cần nhấp vào nút sau để tạo nó.',
+    'Export Data' => 'Xuất dữ liệu',
+    'Export URLs' => 'Xuất URL',
+    'You can export your URLs along with a summary of the stats as CSV. Simply click the following button to create it.' => 'Bạn có thể xuất các URL của mình với số liệu thống kê tóm tắt ở định dạng CSV. Chỉ cần nhấp vào nút sau để tạo nó.',
+    'We are social' => 'Chúng tôi là xã hội',
+    'Likes' => 'Giống',
+    'Like us on' => 'Thích chúng tôi trên',
+    'Follow us on' => 'Theo dõi chúng tôi tại',
+    'Advertisment' => 'Quảng cáo',
+    'Remove Ads' => 'Loại bỏ các quảng cáo',
+    'second' => 'thứ hai',
+    'minute' => 'phút',
+    'hour' => 'giờ',
+    'day' => 'ban ngày',
+    'week' => 'tuần',
+    'month' => 'tháng',
+    'year' => 'năm',
+    'decade' => 'thập kỷ',
+    'ago' => 'Từ',
+    'First' => 'Đầu tiên',
+    'Last' => 'Cuối cùng',
+    'Previous' => 'trước',
+    'Next' => 'Kế tiếp',
+    'Please answer the captcha.' => 'Vui lòng trả lời hình ảnh xác thực.',
+    'The CAPTCHA wasn\'t entered correctly. Please try it again.' => 'CAPTCHA không được nhập chính xác. Thử lại.',
+    'Please enter the CAPTCHA.' => 'Xin vui lòng nhập mã xác nhận khác.',
+    'The CSRF token is not valid. Please try again.' => 'Mã thông báo CSRF không hợp lệ. Thử lại.',
+    'Please create a free account or login to shorten URLs.' => 'Vui lòng tạo tài khoản miễn phí hoặc đăng nhập để rút ngắn URL.',
+    'This service is meant to be used internally only.' => 'Dịch vụ này chỉ dành cho mục đích sử dụng nội bộ.',
+    'Please enter a valid URL.' => 'Vui lòng nhập một URL hợp lệ',
+    'This domain name has been blacklisted.' => 'Tên miền này đã được đưa vào danh sách đen.',
+    'This URL contains blacklisted keywords.' => 'URL này chứa các từ khóa trong danh sách đen.',
+    'URL is suspected to contain malwares and other harmful content.' => 'URL bị nghi ngờ chứa phần mềm độc hại và nội dung có hại khác.',
+    'Linking to executable files is not allowed.' => 'Không cho phép liên kết đến các tệp thi hành.',
+    'The expiry date must be later than today.' => 'Ngày hết hạn phải sau ngày hôm nay.',
+    'Custom alias must be at least 3 characters.' => 'Bí danh tùy chỉnh phải có ít nhất 3 ký tự.',
+    'Inappropriate aliases are not allowed.' => 'Bí danh không phù hợp không được phép.',
+    'That alias is taken. Please choose another one.' => 'Bí danh này đã được sử dụng. Vui lòng chọn cái khác.',
+    'That alias is reserved. Please choose another one.' => 'Bí danh này được bảo lưu. Vui lòng chọn cái khác.',
+    'That is a premium alias and is reserved to only pro members.' => 'Đây là bí danh cao cấp và chỉ dành cho thành viên chuyên nghiệp.',
+    'You have maxed your short URLs limit. Either delete existing URLs or upgrade to a premium plan.' => 'Bạn đã đạt tối đa giới hạn URL ngắn của mình. Xóa các URL hiện có hoặc nâng cấp lên gói cao cấp.',
+    'Please enter a valid password.' => 'Vui lòng nhập mật khẩu hợp lệ.',
+    'Adblock Detected' => 'Đã phát hiện khối quảng cáo',
+    'Please disable Adblock and refresh the page again.' => 'Vui lòng tắt Adblock và làm mới lại trang.',
+    'Comments' => 'bình luận',
+    'Enter your password to unlock this URL' => 'Nhập mật khẩu của bạn để mở khóa URL này',
+    'The access to this URL is restricted. Please enter your password to view it.' => 'Quyền truy cập vào URL này bị hạn chế. Vui lòng nhập mật khẩu của bạn để xem nó.',
+    'Unlock' => 'Mở',
+    'This URL is private and only the creator can access the stats. If you are the creator, please login to access it.' => 'URL này là riêng tư và chỉ người tạo mới có thể truy cập số liệu thống kê. Nếu bạn là người tạo, vui lòng đăng nhập để truy cập nó.',
+    'Stats for' => 'Thống kê cho',
+    'Sorry, we are not accepting users right now.' => 'Xin lỗi, chúng tôi không chấp nhận người dùng vào lúc này.',
+    'You have been blocked for 1 hour due to many unsuccessful login attempts.' => 'Bạn đã bị chặn trong 1 giờ do nhiều lần đăng nhập không thành công.',
+    'Please enter a valid email or username.' => 'Vui lòng nhập email hoặc tên người dùng hợp lệ.',
+    'Wrong email and password combination.' => 'Kết hợp sai email và mật khẩu.',
+    'Wrong email and password combination' => 'Kết hợp sai email và mật khẩu',
+    'You have been banned due to abuse. Please contact us for clarification.' => 'Bạn đã bị cấm vì lạm dụng. Vui lòng liên hệ với chúng tôi để làm rõ.',
+    'You haven\'t activated your account. Please check your email for the activation link. If you haven\'t received any emails from us, please contact us.' => 'Bạn chưa kích hoạt tài khoản của mình. Vui lòng kiểm tra email của bạn để biết liên kết kích hoạt. Nếu bạn chưa nhận được email từ chúng tôi, hãy liên hệ với chúng tôi.',
+    'You have been successfully logged in.' => 'Bạn đã đăng nhập thành công.',
+    'Login to your account' => 'Đăng nhập vào tài khoản của bạn',
+    'Sorry, Facebook connect is not available right now.' => 'Xin lỗi, Kết nối Facebook hiện không khả dụng.',
+    'You must grant access to this application to use your facebook account.' => 'Bạn phải cấp quyền truy cập vào ứng dụng này để sử dụng tài khoản Facebook của mình.',
+    'An error has occured. Please try again later.' => 'Một lỗi đã xảy ra. Vui lòng thử lại sau.',
+    'You must grant permission to this application to use your profile information.' => 'Bạn phải cấp quyền cho ứng dụng này để sử dụng thông tin hồ sơ của bạn.',
+    'The email linked to your account has been already used. If you have used that, please login to your existing account otherwise please contact us.' => 'Email được liên kết với tài khoản của bạn đã được sử dụng. Nếu bạn đã sử dụng nó, hãy đăng nhập vào tài khoản hiện tại của bạn, nếu không thì hãy liên hệ với chúng tôi.',
+    'You must grant permission to this application to use your twitter account.' => 'Bạn phải cấp quyền cho ứng dụng này để sử dụng tài khoản Twitter của mình.',
+    'Sorry, Twitter connect is not available right now.' => 'Xin lỗi, kết nối Twitter hiện không khả dụng.',
+    'An error occured, please try again later.' => 'Một lỗi đã xảy ra. Vui lòng thử lại sau.',
+    'Sorry, Google connect is not available right now.' => 'Xin lỗi, Google Connect không khả dụng vào lúc này.',
+    'You must grant permission to this application to use your google account.' => 'Bạn cần cấp cho ứng dụng này quyền sử dụng tài khoản google của mình.',
+    'The email linked to your account has been already used. If you have used that, please login to you existing account otherwise please contact us.' => 'Email được liên kết với tài khoản của bạn đã được sử dụng. Nếu bạn đã sử dụng nó, vui lòng đăng nhập vào tài khoản hiện tại của bạn, nếu không thì hãy liên hệ với chúng tôi.',
+    'We are not accepting users at this time.' => 'Chúng tôi hiện không chấp nhận người dùng.',
+    'Please enter a valid email.' => 'Vui lòng nhập email hợp lệ.',
+    'An account is already associated with this email.' => 'Một tài khoản đã được liên kết với email này.',
+    'Password must contain at least 5 characters.' => 'Mật khẩu phải chứa ít nhất 5 ký tự.',
+    'Passwords don\'t match.' => 'Mất khẩu không hợp lệ.',
+    'You must agree to our terms of service.' => 'Bạn phải chấp nhận điều khoản sử dụng dịch vụ.',
+    'Please enter a valid username.' => 'Vui lòng nhập tên người dùng hợp lệ.',
+    'An account is already associated with this username.' => 'Một tài khoản đã được liên kết với tên người dùng này.',
+    'An email has been sent to activate your account. Please check your spam folder if you didn\'t receive it.' => 'Một email đã được gửi để kích hoạt tài khoản của bạn. Vui lòng kiểm tra thư mục thư rác nếu bạn không nhận được.',
+    'You have been successfully registered.' => 'Bạn đã đăng ký thành công.',
+    'Register and manage your urls.' => 'Đăng ký và quản lý URL của bạn.',
+    'Your account has been successfully activated.' => 'Tài khoản của bạn đã được kích hoạt thành công.',
+    'Wrong activation token or account already activated.' => 'Mã thông báo kích hoạt sai hoặc tài khoản đã được kích hoạt.',
+    'Your password has been changed.' => 'Mật khẩu của bạn đã được thay đổi.',
+    'Reset Password' => 'Đặt lại mật khẩu',
+    'Token has expired, please request another link.' => 'Mã thông báo đã hết hạn, vui lòng yêu cầu một liên kết khác.',
+    'If an active account is associated with this email, you should receive an email shortly.' => 'Nếu một tài khoản đang hoạt động được liên kết với email này, bạn sẽ sớm nhận được email.',
+    'Clear Search' => 'Tìm kiếm rõ ràng',
+    'Nothing found.' => 'Không tìm thấy gì.',
+    'Archived URLs' => 'URL đã lưu trữ',
+    'Expired URLs' => 'url hết hạn',
+    'Bundle name cannot be empty and must have at least 2 characters.' => 'Tên bộ không được để trống và phải dài ít nhất 2 ký tự.',
+    'You already have a bundle with that name.' => 'Bạn đã có một gói có tên này.',
+    'Bundle was successfully created. You may start adding URLs in it now.' => 'Bộ đã được tạo thành công. Bạn có thể bắt đầu thêm URL ngay bây giờ.',
+    'Bundle has been updated.' => 'Bộ đã được cập nhật.',
+    'This URL has been added to the bundle.' => 'URL này đã được thêm vào nhóm.',
+    'Manage your bundles' => 'Quản lý gói của bạn',
+    'This bundle has been deleted.' => 'Gói này đã bị xóa.',
+    'Security token expired. Please try again.' => 'Mã thông báo bảo mật đã hết hạn. Thử lại.',
+    'This URL has been successfully updated.' => 'URL này đã được cập nhật thành công.',
+    'This URL doesn\'t exist.' => 'URL này không tồn tại.',
+    'Domain Name' => 'Tên miền',
+    'Edit URL' => 'Chỉnh sửa URL',
+    'Long URL' => 'url dài',
+    'Note that the password might be encrypted. To update this simply enter the password again.' => 'Lưu ý rằng mật khẩu có thể được mã hóa. Để cập nhật điều này, chỉ cần nhập lại mật khẩu.',
+    'Note' => 'Nhận thấy',
+    'optional' => 'không bắt buộc',
+    'Meta Title' => 'Tiêu đề meta',
+    'Meta Description' => 'Mô tả siêu dữ liệu',
+    'Geotargeting Data' => 'Dữ liệu nhắm mục tiêu theo địa lý',
+    'Add a Field' => 'Thêm trường',
+    'Country' => 'Quốc gia',
+    'Delete' => 'Để xóa',
+    'URL Access' => 'Truy cập URL',
+    'Update' => 'Cập nhật',
+    'Stats' => 'Số liệu thống kê',
+    'URL Info' => 'Thông tin URL',
+    'since' => 'Từ',
+    'To change the dimension of the QR code, add the size parameter to the url and then your desired dimension. (Max 500x500)' => 'Để thay đổi kích thước của mã QR, hãy thêm tham số kích thước vào URL, sau đó là kích thước mong muốn. (Tối đa 500x500)',
+    'Please choose a premium package to unlock this feature.' => 'Vui lòng chọn gói cao cấp để mở khóa tính năng này.',
+    'Create a Custom Splash Page' => 'Tạo trang bắt đầu tùy chỉnh',
+    'Edit' => 'biên tập',
+    'You don\'t have any active splash pages.' => 'Bạn không có trang chủ đang hoạt động.',
+    'Create' => 'Tạo nên',
+    'Info' => 'Thông tin',
+    'A custom splash page is a transitional page where you can add a banner and an avatar along with a message to represent your brand or company. You can have up to a maximum of 5 splash pages and you can choose one for each URL.' => 'Trang đích tùy chỉnh là trang chuyển tiếp nơi bạn có thể thêm biểu ngữ và hình đại diện với thông điệp để đại diện cho thương hiệu hoặc doanh nghiệp của mình. Bạn có thể có tối đa 5 trang bắt đầu và bạn có thể chọn một trang cho mỗi URL.',
+    'You have reached your max limit.' => 'Bạn đã đạt đến giới hạn tối đa của mình.',
+    'Please enter unique name.' => 'Vui lòng nhập một tên duy nhất.',
+    'Message is too long. It must be less than 140 characters.' => 'Tin nhắn dài quá. Nó phải ít hơn 140 ký tự.',
+    'Avatar must be either a PNG or a JPEG.' => 'Hình đại diện phải là tệp PNG hoặc JPEG.',
+    'Banner must be either a PNG or a JPEG.' => 'Biểu ngữ phải ở định dạng PNG hoặc JPEG.',
+    'Avatar must be either a 100x100 PNG or a JPEG (Max 300KB).' => 'Hình đại diện phải là PNG 100x100 hoặc JPEG (tối đa 300KB).',
+    'Banner must be either a 980x300 PNG or a JPEG (Max 500KB).' => 'Biểu ngữ phải ở định dạng PNG 980 x 300 hoặc JPEG (tối đa 500 KB).',
+    'Splash page has been created.' => 'Trang Splash đã được tạo.',
+    'Create your splash page' => 'Tạo trang chủ của bạn',
+    'Unique name' => 'Tên đặc biệt',
+    'Link to Product' => 'Liên kết đến sản phẩm',
+    'Upload Avatar' => 'Tải hình đại diện',
+    'Upload Banner' => 'Nhập biểu ngữ',
+    'The minimum width must be 980px and the height must be between 250 and 500. The format must be a PNG or a JPG. Maximum size is 500KB.' => 'Chiều rộng tối thiểu phải là 980px và chiều cao phải nằm trong khoảng từ 250 đến 500. Định dạng phải là định dạng PNG hoặc JPG. Kích thước tối đa là 500KB.',
+    'Custom Title' => 'Tiêu đề tùy chỉnh',
+    'Custom Message' => 'Tin nhắn được cá nhân hóa',
+    'Create Splash Page' => 'Tạo một trang giật gân',
+    'This splash page doesn\'t exist.' => 'Trang chủ này không tồn tại.',
+    'The name, title, message and link cannot be empty.' => 'Tên, tiêu đề, tin nhắn và liên kết không được để trống.',
+    'Splash page has been updated.' => 'Trang chủ đã được cập nhật.',
+    'Edit Custom Splash Page' => 'Chỉnh sửa trang bắt đầu tùy chỉnh',
+    'Edit splash page' => 'Chỉnh sửa trang chủ',
+    'View site' => 'Xem trang web',
+    'Update Splash Page' => 'Cập nhật trang Splash',
+    'The splash page has been deleted.' => 'Trang chủ đã bị xóa.',
+    'The message field cannot be empty.' => 'Trường thông báo không được để trống.',
+    'Overlay has been saved.' => 'Lớp phủ đã được lưu.',
+    'Customize your overlay page' => 'Tùy chỉnh trang lớp phủ của bạn',
+    'Live Preview' => 'Xem trước trực tiếp',
+    'Overlay label' => 'Nhãn lớp phủ',
+    'Button Link' => 'Liên kết nút',
+    'Button Text' => 'Nút văn bản',
+    'Overlay Background Color' => 'Lớp phủ màu nền',
+    'Overlay Text Color' => 'Lớp phủ màu văn bản',
+    'Button Background Color' => 'Màu nền của nút',
+    'Button Text Color' => 'Màu chữ của nút',
+    'Overlay Position' => 'Vị trí lớp phủ',
+    'Save overlay' => 'Lưu lớp phủ',
+    'An overlay page allows you to display a small non-intrusive overlay on the destination website to advertise your product or your services. You can also use this feature to send a message to your users. You can customize the message and the appearance of the overlay right from this page. As soon as you save it, the changes will be applied immediately across all your URLs using this type. Please note that some secured and sensitive websites such as google.com or facebook.com do not work with this feature.' => 'Trang lớp phủ cho phép bạn hiển thị một lớp phủ nhỏ, không xâm phạm trên trang web đích để quảng cáo sản phẩm hoặc dịch vụ của bạn. Bạn cũng có thể sử dụng tính năng này để gửi tin nhắn cho người dùng của mình. Bạn có thể tùy chỉnh thông báo và giao diện của lớp phủ trực tiếp từ trang này. Ngay sau khi bạn lưu nó, các thay đổi sẽ được áp dụng ngay lập tức cho tất cả các URL của bạn bằng loại này. Lưu ý rằng một số trang web an toàn và nhạy cảm, chẳng hạn như google.com hoặc facebook.com, không hoạt động với tính năng này.',
+    'Wow there. You are an admin. You can\'t cancel your membership.' => 'Chà ở đó. Bạn là quản trị viên. Bạn không thể hủy đăng ký của mình.',
+    'Your password is incorrect.' => 'Mật khẩu của bạn là không chính xác.',
+    'An error has occured, please contact us.' => 'Đã xảy ra lỗi, vui lòng liên hệ với chúng tôi.',
+    'Your subscription has been canceled.' => 'Đăng ký của bạn đã bị hủy.',
+    'This username has already been used. Please try again.' => 'Tên người dùng này đã được sử dụng. Thử lại.',
+    'Account has been successfully updated.' => 'Tài khoản đã được cập nhật thành công.',
+    'Account Settings' => 'Cài đặt tài khoản',
+    'Subscription History' => 'Lịch sử đăng ký',
+    'Transaction ID' => 'ID giao dịch',
+    'Amount' => 'Số lượng',
+    'Since' => 'Từ',
+    'Status' => 'Trạng thái',
+    'Active' => 'tài sản',
+    'Latest Transactions' => 'Giao dịch cuối cùng',
+    'Date' => 'Ngày',
+    'Expiration' => 'Hết hạn sử dụng',
+    'Refunded' => 'Được hoàn tiền',
+    'Data for this url is not available.' => 'Không có dữ liệu cho URL này.',
+    'Facebook pixel ID is not correct. Please double check.' => 'Id pixel Facebook không chính xác. Hãy kiểm tra.',
+    'Adwords pixel ID is not correct. Please double check.' => 'Id pixel Adwords không chính xác. Hãy kiểm tra.',
+    'LinkedIn ID is not correct. Please double check.' => 'Tên người dùng LinkedIn không chính xác. Hãy kiểm tra.',
+    'Tracking pixels have been successfully updated.' => 'Các pixel theo dõi đã được cập nhật thành công.',
+    'Edit Bundle' => 'Sửa đổi nhóm',
+    'Select All' => 'Chọn tất cả',
+    'Delete All' => 'Xóa hết',
+    'Please select a bundle from the left.' => 'Vui lòng chọn một nhóm từ bên trái.',
+    'Total' => 'Tổng cộng',
+    'Next payment will be automatically charged at the beginning of each period.' => 'Khoản thanh toán tiếp theo sẽ được ghi nợ tự động vào đầu mỗi kỳ.',
+    'Checkout' => 'Thủ tục thanh toán',
+    'Full Name' => 'Họ và tên',
+    'Address' => 'Địa chỉ',
+    'City' => 'Thành phố',
+    'State/Province' => 'Tiểu bang/Tỉnh',
+    'Zip/Postal code' => 'Mã Zip / Mã bưu chính',
+    'Pay with PayPal' => 'Thanh toán bằng PayPal',
+    'Home' => 'Chào mừng',
+    'Contact us' => 'Liên hệ chúng tôi',
+    'Name' => 'tên đầu tiên',
+    'Email' => 'E-mail',
+    'Required' => 'Phần bắt buộc',
+    'Message' => 'Tin nhắn',
+    'Send' => 'Gửi',
+    'seconds' => 'giây',
+    'Contact' => 'Liên hệ',
+    'Language' => 'Ngôn ngữ',
+    'Copied' => 'Sao chép',
+    'Geotargeting data for' => 'Dữ liệu nhắm mục tiêu theo địa lý cho',
+    'URL has been successfully shortened. Click Copy or CRTL+C to Copy it.' => 'URL đã được rút ngắn thành công. Nhấp vào Sao chép hoặc CRTL+C để sao chép.',
+    'You can access the statistic page via this link' => 'Bạn có thể truy cập trang thống kê qua liên kết này',
+    'Copied to clipboard.' => 'Sao chép vào clipboard.',
+    'Redirect from' => 'Chuyển hướng từ',
+    'Redirect to' => 'Chuyển hướng đến',
+    'Share this on' => 'Chia sẻ cái này trên',
+    'Congratulation! Your URL has been successfully shortened. You can share it on Facebook or Twitter by clicking the links below.' => 'Chúc mừng! URL của bạn đã được rút ngắn thành công. Bạn có thể chia sẻ nó trên Facebook hoặc Twitter bằng cách nhấp vào các liên kết bên dưới.',
+    'Save QR Code' => 'Lưu mã QR',
+    'Continue' => 'Tiếp tục',
+    'This website uses cookies to ensure you get the best experience on our website.' => 'Trang web này sử dụng cookie để đảm bảo bạn có được trải nghiệm tốt nhất trên trang web của chúng tôi.',
+    'Got it!' => 'Tôi hiểu rồi!',
+    'Learn more' => 'Tìm hiểu thêm',
+    'Confirm Password' => 'Xác nhận mật khẩu',
+    'Share' => 'Chia sẻ',
+    'Tweet' => 'Tweet',
+    'Close' => 'Đóng',
+    'One short link, infinite possibilities.' => 'Một liên kết ngắn, khả năng vô tận.',
+    'A short link is a powerful marketing tool when you use it carefully. It is not just a link but a medium between your customer and their destination. A short link allows you to collect so much data about your customers and their behaviors.' => 'Một liên kết ngắn là một công cụ tiếp thị mạnh mẽ khi được sử dụng cẩn thận. Nó không chỉ là một liên kết mà còn là một phương tiện giữa khách hàng của bạn và điểm đến của họ. Liên kết ngắn cho phép bạn thu thập rất nhiều dữ liệu về khách hàng và hành vi của họ.',
+    'Target. Re-target.' => 'Mục tiêu. Nhắm mục tiêu lại.',
+    'Target your customers to increase your reach and redirect them to a relevant page. Add a pixel to retarget them in your social media ad campaign to capture them.' => 'Nhắm mục tiêu khách hàng của bạn để tăng phạm vi tiếp cận của bạn và chuyển hướng họ đến một trang có liên quan. Thêm pixel để nhắm mục tiêu lại chúng trong chiến dịch quảng cáo trên mạng xã hội của bạn để thu hút chúng.',
+    'Measure. Optimize.' => 'Đo lường. Để tối ưu hóa.',
+    'Share your links to your network and measure data to optimize your marketing campaign\'s performance. Reach an audience that fits your needs.' => 'Chia sẻ các liên kết của bạn với mạng của bạn và đo lường dữ liệu để tối ưu hóa hiệu suất của chiến dịch tiếp thị của bạn. Tiếp cận đối tượng phù hợp với nhu cầu của bạn.',
+    'Reach & increase sales.' => 'Tiếp cận và tăng doanh số.',
+    'Perfect for sales & marketing' => 'Hoàn hảo cho bán hàng và tiếp thị',
+    'Understanding your users and customers will help you increase your conversion. Our system allows you to track everything. Whether it is the amount of clicks, the country or the referrer, the data is there for you to analyze it.' => 'Hiểu người dùng và khách hàng của bạn sẽ giúp bạn tăng chuyển đổi. Hệ thống của chúng tôi cho phép bạn theo dõi mọi thứ. Cho dù đó là số lần nhấp chuột, quốc gia hay liên kết giới thiệu, dữ liệu luôn ở đó để bạn phân tích.',
+    'Create an account' => 'Tạo một tài khoản',
+    'Start for free, upgrade later - No credit card required.' => 'Bắt đầu miễn phí, nâng cấp sau - Không cần thẻ tín dụng.',
+    'Target interested users.' => 'Nhắm mục tiêu người dùng quan tâm.',
+    'Powerful tools that work' => 'Các công cụ mạnh mẽ hoạt động',
+    'Our product lets your target your users to better understand their behavior and provide them a better overall experience through smart re-targeting. We provide you many powerful tools to reach them better.' => 'Sản phẩm của chúng tôi cho phép người dùng của bạn hiểu rõ hơn về hành vi của họ và cung cấp cho họ trải nghiệm tổng thể tốt hơn thông qua nhắm mục tiêu thông minh. Chúng tôi cung cấp cho bạn nhiều công cụ mạnh mẽ để đạt được chúng tốt hơn.',
+    'Link Controls' => 'Kiểm tra liên kết',
+    'Privacy Control' => 'Kiểm soát quyền riêng tư',
+    'Link Management' => 'Quản lý liên kết',
+    'Powerful Dashboard' => 'Bảng điều khiển mạnh mẽ',
+    'Premium Features' => 'Tính năng cao cấp',
+    'Statistics' => 'Số liệu thống kê',
+    'Control on each and everything.' => 'Kiểm soát mọi người và mọi thứ.',
+    'Complete control on your links' => 'Toàn quyền kiểm soát các liên kết của bạn',
+    'With our premium membership, you will have complete control on your links. This means you can change the destination anytime you want. Add, change or remove any filters, anytime.' => 'Với tư cách thành viên cao cấp của chúng tôi, bạn sẽ có toàn quyền kiểm soát các liên kết của mình. Điều này có nghĩa là bạn có thể thay đổi điểm đến bất cứ khi nào bạn muốn. Thêm, sửa đổi hoặc xóa bộ lọc bất kỳ lúc nào.',
+    'Targeting your customers' => 'Nhắm mục tiêu khách hàng của bạn',
+    'Target Customers' => 'khách hàng mục tiêu',
+    'Target your users based on their location and device and redirect them to specialized pages to increase your conversion.' => 'Nhắm mục tiêu người dùng của bạn dựa trên vị trí và thiết bị của họ và chuyển hướng họ đến các trang chuyên biệt để tăng chuyển đổi của bạn.',
+    'Custom Landing Page' => 'Trang đích tùy chỉnh',
+    'Create a custom landing page to promote your product or service on forefront and engage the user in your marketing campaign.' => 'Tạo trang đích tùy chỉnh để quảng bá nổi bật sản phẩm hoặc dịch vụ của bạn và thu hút người dùng vào chiến dịch tiếp thị của bạn.',
+    'Overlays' => 'Lớp phủ',
+    'Use our overlay tool to display unobtrusive notifications on the target website. A perfect way to send a message to your customers or run a promotion campaign.' => 'Sử dụng công cụ lớp phủ của chúng tôi để hiển thị các thông báo kín đáo trên trang web mục tiêu. Một cách hoàn hảo để gửi tin nhắn cho khách hàng của bạn hoặc bắt đầu một chiến dịch quảng cáo.',
+    'Event Tracking' => 'Theo dõi sự kiện',
+    'Add your custom pixel from providers such as Facebook and track events right when they are happening.' => 'Thêm pixel tùy chỉnh của bạn vào các nhà cung cấp như Facebook và theo dõi các sự kiện khi chúng xảy ra.',
+    'Premium Aliases' => 'Bí danh cao cấp',
+    'As a premium membership, you will be able to choose a premium alias for your links from our list of reserved aliases.' => 'Là thành viên cao cấp, bạn sẽ có thể chọn một bí danh cao cấp cho các liên kết của mình từ danh sách các bí danh dành riêng của chúng tôi.',
+    'Robust API' => 'API mạnh mẽ',
+    'Use our powerful API to build custom applications or extend your own application with our powerful tools.' => 'Sử dụng API mạnh mẽ của chúng tôi để tạo các ứng dụng tùy chỉnh hoặc mở rộng ứng dụng của riêng bạn bằng các công cụ mạnh mẽ của chúng tôi.',
+    'Get started for free' => 'Bắt đầu miễn phí',
+    'Start your marketing campaign now and reach your customers efficiently.' => 'Bắt đầu chiến dịch tiếp thị của bạn ngay bây giờ và tiếp cận khách hàng của bạn một cách hiệu quả.',
+    'Register now' => 'đăng ký ngay',
+    'Marketing with confidence.' => 'Tiếp thị với sự tự tin',
+    'Powering' => 'Cho ăn',
+    'Links' => 'Kết nối',
+    'Serving' => 'Phần',
+    'Trusted by' => 'Được tin tưởng bởi',
+    'Customers' => 'Khách hàng',
+    'Login using a social network' => 'Kết nối bằng mạng xã hội',
+    'Login with Facebook' => 'Kết nối với Facebook',
+    'Login with Twitter' => 'Kết nối với Twitter',
+    'Login with Google' => 'Đăng nhập bằng Google',
+    'Email or username' => 'Thư điện tử hoặc tên người dùng',
+    'Create account' => 'Tạo một tài khoản',
+    'Forgot Password' => 'Quên mật khẩu',
+    'Remember me' => 'Nhớ tôi',
+    'Email address' => 'Địa chỉ email',
+    'Back to login' => 'Quay lại kết nối',
+    'Short URL' => 'url ngắn',
+    'Facebook Pixel' => 'Điểm Facebook',
+    'Google Adwords Pixel' => 'Google Adwords Pixel',
+    'LinkedIn Insight Tag' => 'Thẻ thông tin chi tiết LinkedIn',
+    'Save pixels' => 'Lưu pixel',
+    'What are tracking pixels?' => 'Các pixel theo dõi là gì?',
+    'Ad platforms such as Facebook and Adwords provide a conversion tracking tool to allow you to gather data on your customers and how they behave on your website. By adding your pixel ID from either of the platforms, you will be able to optimize marketing simply by using short URLs.' => 'Các nền tảng quảng cáo như Facebook và Adwords cung cấp công cụ theo dõi chuyển đổi cho phép bạn thu thập dữ liệu về khách hàng và hành vi của họ trên trang web của bạn. Bằng cách thêm ID pixel của bạn trên một trong hai nền tảng, bạn sẽ có thể tối ưu hóa hoạt động tiếp thị chỉ bằng cách sử dụng các URL ngắn.',
+    'Facebook pixel makes conversion tracking, optimization and remarketing easier than ever. The Facebook pixel ID is usually composed of 16 digits. Please make sure to add the correct value otherwise events will not be tracked!' => 'pixel Facebook giúp theo dõi chuyển đổi, tối ưu hóa và tiếp thị lại dễ dàng hơn bao giờ hết. ID Facebook Pixel thường dài 16 chữ số. Vui lòng đảm bảo thêm giá trị chính xác nếu không các sự kiện sẽ không được theo dõi!',
+    'Google Adwords Conversion Pixel' => 'Điểm chuyển đổi Google Adwords',
+    'With AdWords conversion tracking, you can see how effectively your ad clicks lead to valuable customer activity. The Adwords pixel ID is usually composed of AW followed by 11 digits followed by 19 mixed characters. Please make sure to add the correct value otherwise events will not be tracked!' => 'Với tính năng theo dõi chuyển đổi của AdWords, bạn có thể thấy số lượng nhấp chuột lên quảng cáo của mình đang tạo ra hoạt động đáng kể của khách hàng. Số nhận dạng pixel Adwords thường bao gồm AW theo sau là 11 chữ số, sau đó là 19 ký tự hỗn hợp. Vui lòng đảm bảo thêm giá trị chính xác nếu không các sự kiện sẽ không được theo dõi!',
+    'The LinkedIn Insight Tag is a piece of lightweight JavaScript code that you can add to your website to enable in-depth campaign reporting and unlock valuable insights about your website visitors.You can use the LinkedIn Insight Tag to track conversions, retarget website visitors, and unlock additional insights about members interacting with your ads.!' => 'Thẻ LinkedIn Insight là một mã JavaScript nhẹ mà bạn có thể thêm vào trang web của mình để tạo báo cáo chiến dịch chi tiết và thu được thông tin chi tiết có giá trị về khách truy cập trang web của bạn. Bạn có thể sử dụng thẻ LinkedIn Insight để theo dõi chuyển đổi. Mở khóa thông tin bổ sung về các thành viên tương tác với quảng cáo của bạn.',
+    'View Profile' => 'Xem hồ sơ',
+    'View Bundles' => 'Hiển thị các gói',
+    'Username' => 'Tên tài khoản',
+    'Please enter a username' => 'Vui lòng nhập tên người dùng',
+    'Please confirm your password.' => 'Vui lòng xác nhận mật khẩu của bạn.',
+    'I agree to the' => 'Tôi đồng ý với',
+    'terms and conditions' => 'Các điều khoản và điều kiện',
+    'You have used a social network to login. Please note that in this case you don\'t have a password set.' => 'Bạn đã sử dụng mạng xã hội để đăng nhập. Xin lưu ý rằng trong trường hợp này, bạn chưa đặt mật khẩu.',
+    'You have used a social network to login. You will need to choose a username.' => 'Bạn đã sử dụng mạng xã hội để đăng nhập. Bạn sẽ cần chọn một tên người dùng.',
+    'Please note that if you change your email, you will need to activate your account again.' => 'Xin lưu ý rằng nếu bạn thay đổi địa chỉ email của mình, bạn sẽ cần phải kích hoạt lại tài khoản của mình.',
+    'A username is required for your public profile to be visible.' => 'Cần có tên người dùng để hồ sơ công khai của bạn hiển thị.',
+    'leave blank to keep current one' => 'để trống để giữ hiện tại',
+    'Default Redirection' => 'Chuyển hướng mặc định',
+    'Profile Access' => 'Quyền truy cập hồ sơ',
+    'Public profile will be activated only when this option is public. Username is required.' => 'Hồ sơ công khai sẽ chỉ được kích hoạt khi tùy chọn này được công khai. Tên người dùng là bắt buộc.',
+    'Media Gateway' => 'Cổng đa phương tiện',
+    'If enabled, special pages will be automatically created for your media URLs' => 'Nếu tùy chọn này được kích hoạt, các trang đặc biệt sẽ được tạo tự động cho các URL đa phương tiện của bạn',
+    'Disabled' => 'tàn tật',
+    'Enabled' => 'Đã bật',
+    'Your Premium Membership' => 'Tư cách thành viên cao cấp của bạn',
+    'Last Payment' => 'Thanh toán cuối cùng',
+    'Expiry' => 'Hết hạn sử dụng',
+    'Cancel Membership' => 'Hủy bỏ thành viên',
+    'You can cancel your membership whenever your want. Upon request, your membership will be canceled right before your next payment period. This means you can still enjoy premium features until the end of your membership.' => 'Bạn có thể hủy tư cách thành viên của mình bất cứ khi nào bạn muốn. Theo yêu cầu, tư cách thành viên của bạn sẽ bị hủy ngay trước kỳ thanh toán tiếp theo của bạn. Điều này có nghĩa là bạn vẫn có thể tận hưởng các tính năng cao cấp cho đến khi đăng ký của bạn kết thúc.',
+    'Cancel membership' => 'Hủy bỏ thành viên',
+    'Paste a long url' => 'Dán một URL dài',
+    'Shorten' => 'rút ngắn',
+    'Paste up to 10 long urls. One URL per line.' => 'Dán tối đa 10 url dài. Một URL trên mỗi dòng',
+    'Advanced Options' => 'Tùy chọn nâng cao',
+    'Custom Alias' => 'Bí danh tùy chỉnh',
+    'If you need a custom alias, you can enter it below.' => 'Nếu bạn cần bí danh tùy chỉnh, bạn có thể nhập bí danh đó bên dưới.',
+    'Type your custom alias here' => 'Nhập bí danh tùy chỉnh của bạn tại đây',
+    'Link Expiration' => 'Liên kết đã hết hạn',
+    'Set an expiration date to disable the URL after this date.' => 'Đặt ngày hết hạn để hủy kích hoạt URL sau ngày này.',
+    'MM/DD/YYYY' => 'MM/DD/YYYY',
+    'Password Protect' => 'Mật khẩu được bảo vệ',
+    'By adding a password, you can restrict the access.' => 'Bằng cách thêm mật khẩu, bạn có thể hạn chế quyền truy cập.',
+    'Type your password here' => 'Nhập mật khẩu của bạn tại đây',
+    'Description' => 'Mô tả',
+    'This can be used to identify URLs on your account.' => 'Điều này có thể được sử dụng để xác định các URL trong tài khoản của bạn.',
+    'Type your description here' => 'Nhập mô tả của bạn ở đây',
+    'Geotargeting' => 'Nhắm mục tiêu theo địa lý',
+    'Add more locations' => 'Thêm các địa điểm khác',
+    'If you have different pages for different countries then it is possible to redirect users to that page using the same URL. Simply choose the country and enter the URL.' => 'Nếu bạn có các trang khác nhau cho các quốc gia khác nhau, có thể chuyển hướng người dùng đến trang này bằng cùng một URL. Chỉ cần chọn quốc gia và nhập URL.',
+    'Type the url to redirect user to.' => 'Nhập URL để chuyển hướng người dùng đến.',
+    'Device Targeting' => 'Nhắm mục tiêu theo thiết bị',
+    'Add more device' => 'Thêm thiết bị khác',
+    'If you have different pages for different devices (such as mobile, tablet etc) then it is possible to redirect users to that page using the same short URL. Simply choose the device and enter the URL.' => 'Nếu bạn có các trang khác nhau cho các thiết bị khác nhau (chẳng hạn như điện thoại di động, máy tính bảng, v.v.), thì có thể chuyển hướng người dùng đến trang này bằng cùng một URL ngắn. Chỉ cần chọn thiết bị và nhập URL.',
+    'Targeting Pixels' => 'Nhắm mục tiêu pixel',
+    'Add your targeting pixels below from the list. Please make sure to enable them in the pixels settings.' => 'Thêm pixel nhắm mục tiêu của bạn bên dưới vào danh sách. Đảm bảo bật chúng trong cài đặt pixel.',
+    'Adwords Pixel' => 'Adword Pixel',
+    'LinkedIn Pixel' => 'Điểm ảnh được liên kết',
+    'Multiple' => 'Một số',
+    'Single' => 'Độc nhất',
+    'Geotargeted' => 'Tham chiếu địa lý',
+    'Device Targeted' => 'Thiết bị được nhắm mục tiêu',
+    'Protected' => 'Được bảo vệ',
+    'Expiry on' => 'Hết hạn vào ngày',
+    'Pixels' => 'điểm ảnh',
+    'View Note' => 'Xem ghi chú',
+    'Options' => 'Tùy chọn',
+    'Click to change bundle' => 'Nhấp để thay đổi gói',
+    'Change Bundle' => 'Sửa đổi nhóm',
+    'Bundle' => 'Đóng gói',
+    'Click to add to a bundle' => 'Nhấp để thêm vào lô',
+    'Unarchive' => 'Hủy lưu trữ',
+    'Archive' => 'Lưu trữ',
+    'You are about to be redirected to another page.' => 'Bạn sắp được chuyển hướng đến một trang khác.',
+    'Redirect me' => 'Chuyển hướng tôi',
+    'Take me to your homepage' => 'Đưa tôi đến trang chủ của bạn',
+    'You are about to be redirected to another page. We are not responisible for the content of that page or the consequences it may have on you.' => 'Bạn sắp được chuyển hướng đến một trang khác. Chúng tôi không chịu trách nhiệm về nội dung của trang này hoặc bất kỳ ảnh hưởng nào mà nó có thể gây ra cho bạn.',
+    'Unique Clicks' => 'Số nhấp chuột duy nhất',
+    'Daily' => 'Hằng ngày',
+    'Monthly' => 'Hàng tháng',
+    'Yearly' => 'Hàng năm',
+    'Top Countries' => 'Các quốc gia tốt nhất',
+    'Operating Systems' => 'Các hệ điều hành',
+    'Browsers' => 'Trình duyệt',
+    'Referrers' => 'Người giới thiệu',
+    'Social Shares' => 'Hành động xã hội',
+    'Tools & Integrations' => 'Công cụ và tích hợp',
+    'Quick Shortener' => 'Rút ngắn nhanh',
+    'Developer API' => 'API nhà phát triển',
+    'Full-Page Script' => 'Tập lệnh toàn trang',
+    'This tool allows you to quickly shorten any URL in any page without using any fancy method. This is perhaps the quickest and the easiest method available for you to shorten URLs across all platforms. This method will generate a unique short URL for you that you will be able to access anytime from your dashboard.' => 'Công cụ này cho phép bạn rút ngắn nhanh bất kỳ URL nào trong bất kỳ trang nào mà không cần sử dụng bất kỳ phương pháp ưa thích nào. Đây có lẽ là phương pháp nhanh nhất và dễ dàng nhất để rút ngắn URL trên tất cả các nền tảng. Phương pháp này sẽ tạo một URL ngắn, duy nhất cho bạn mà bạn có thể truy cập bất kỳ lúc nào từ trang tổng quan của mình.',
+    'Use your quick URL below to shorten any URL by adding the URL after /q/?u=. For security reasons, you need to be logged in and using the remember me feature. Check out the examples below to understand how to use this method.' => 'Sử dụng URL nhanh bên dưới để rút ngắn bất kỳ URL nào bằng cách thêm URL sau /q/? bạn =. Vì lý do bảo mật, bạn phải đăng nhập và sử dụng chức năng ghi nhớ. Xem các ví dụ bên dưới để hiểu cách sử dụng phương pháp này.',
+    'Examples' => 'Ví dụ',
+    'Notes' => 'Nhận xét',
+    'Please note that this method does not return anything. It simply redirects the user to the redirection page. However if you need the actual short URL, you can always get it from your dashboard.' => 'Xin lưu ý rằng phương thức này không trả về bất kỳ thứ gì. Nó chỉ chuyển hướng người dùng đến trang chuyển hướng. Tuy nhiên, nếu bạn cần URL ngắn thực sự, bạn luôn có thể lấy nó từ trang tổng quan của mình.',
+    'Shorten URL' => 'Rút ngắn URL',
+    'If you can\'t drag the link above, use your browser\'s bookmark editor to create a new bookmark and add the URL below as the link.' => 'Nếu bạn không thể kéo liên kết ở trên, hãy sử dụng trình chỉnh sửa dấu trang của trình duyệt để tạo dấu trang mới và thêm URL bên dưới làm liên kết.',
+    'Please note that for secured sites that use SSL, the widget will not pop up due to security issues. In that case, the user will be redirected our site where you will be able to view your short URL.' => '4126/5000',
+    'API Usage in PHP' => '3782 ký tự trên 5000 tối đa:',
+    'An API key is required for requests to be processed by the system. Once a user registers, an API key is automatically generated for this user. The API key must be sent with each request via the key parameter (see full example below). If the API key is not sent or is expired, there will be an error. Please make sure to keep your API key secret to prevent abuse.' => 'CÁC. ID pixel Facebook không chính xác. Xin vui lòng kiểm tra lại. ID pixel Adwords không chính xác. Xin vui lòng kiểm tra lại. ID LinkedIn không chính xác. Xin vui lòng kiểm tra lại. Pixel theo dõi đã được cập nhật thành công. Chỉnh sửa gói Chọn tất cả Xóa tất cả Vui lòng chọn một gói từ bên trái. Tổng số tiền thanh toán Tiếp theo sẽ được tự động tính vào đầu mỗi kỳ. Thanh toán Tên đầy đủ Địa chỉ Thành phố Bang/Tỉnh Mã zip/Mã bưu chính Thanh toán bằng PayPal Trang chủ Liên hệ với chúng tôi Tên Email Yêu cầu Tin nhắn Gửi giây Liên hệ Ngôn ngữ Đã sao chép Dữ liệu nhắm mục tiêu theo địa lý cho URL đã được rút ngắn thành công. Nhấp vào Sao chép hoặc CRTL+C để Sao chép nó. Bạn có thể truy cập trang thống kê qua liên kết này Đã sao chép vào khay nhớ tạm. Chuyển hướng từ Chuyển hướng sang Chia sẻ điều này trên Xin chúc mừng! URL của bạn đã được rút ngắn thành công. Bạn có thể chia sẻ nó trên Facebook hoặc Twitter bằng cách nhấp vào các liên kết bên dưới. Lưu mã QR Tiếp tục Trang web này sử dụng cookie để đảm bảo bạn có được trải nghiệm tốt nhất trên trang web của chúng tôi. Hiểu rồi! Tìm hiểu thêm Xác nhận mật khẩu Chia sẻ Tweet Đóng Một liên kết ngắn, khả năng vô tận. Một liên kết ngắn là một công cụ tiếp thị mạnh mẽ khi bạn sử dụng nó một cách cẩn thận. Nó không chỉ là một liên kết mà còn là phương tiện giữa khách hàng của bạn và điểm đến của họ. Một liên kết ngắn cho phép bạn thu thập rất nhiều dữ liệu về khách hàng và hành vi của họ. Mục tiêu. Nhắm mục tiêu lại. Nhắm mục tiêu khách hàng của bạn để tăng phạm vi tiếp cận của bạn và chuyển hướng họ đến một trang có liên quan. Thêm pixel để nhắm mục tiêu lại chúng trong chiến dịch quảng cáo trên mạng xã hội của bạn để nắm bắt chúng. Đo lường. Tối ưu hóa. Chia sẻ các liên kết của bạn với mạng của bạn và đo lường dữ liệu để tối ưu hóa hiệu suất của chiến dịch tiếp thị của bạn. Tiếp cận đối tượng phù hợp với nhu cầu của bạn. Tiếp cận và tăng doanh số bán hàng. Hoàn hảo cho bán hàng & tiếp thị Hiểu người dùng và khách hàng của bạn sẽ giúp bạn tăng chuyển đổi. Hệ thống của chúng tôi cho phép bạn theo dõi mọi thứ. Cho dù đó là số lượng nhấp chuột, quốc gia hay người giới thiệu, dữ liệu luôn sẵn sàng để bạn phân tích. Tạo tài khoản Bắt đầu miễn phí, nâng cấp sau - Không cần thẻ tín dụng. Nhắm mục tiêu người dùng quan tâm. Các công cụ mạnh mẽ hoạt động Sản phẩm của chúng tôi cho phép người dùng nhắm mục tiêu của bạn hiểu rõ hơn về hành vi của họ và cung cấp cho họ trải nghiệm tổng thể tốt hơn thông qua nhắm mục tiêu lại thông minh. Chúng tôi cung cấp cho bạn nhiều công cụ mạnh mẽ để tiếp cận họ tốt hơn. Kiểm soát liên kết Kiểm soát quyền riêng tư Quản lý liên kết Bảng điều khiển mạnh mẽ Các tính năng cao cấp Kiểm soát thống kê trên từng và mọi thứ. Kiểm soát hoàn toàn các liên kết của bạn Với tư cách thành viên cao cấp của chúng tôi, bạn sẽ có toàn quyền kiểm soát các liên kết của mình. Điều này có nghĩa là bạn có thể thay đổi điểm đến bất cứ lúc nào bạn muốn. Thêm, thay đổi hoặc xóa bất kỳ bộ lọc nào vào bất kỳ lúc nào. Nhắm mục tiêu khách hàng của bạn Khách hàng mục tiêu Nhắm mục tiêu người dùng của bạn dựa trên vị trí và thiết bị của họ và chuyển hướng họ đến các trang chuyên biệt để tăng chuyển đổi của bạn. Trang đích tùy chỉnh Tạo trang đích tùy chỉnh để quảng bá sản phẩm hoặc dịch vụ của bạn lên hàng đầu và thu hút người dùng vào chiến dịch tiếp thị của bạn. Lớp phủ Sử dụng công cụ lớp phủ của chúng tôi để hiển thị các thông báo kín đáo trên trang web mục tiêu. Một cách hoàn hảo để gửi tin nhắn cho khách hàng của bạn hoặc chạy một chiến dịch khuyến mãi. Theo dõi sự kiện Thêm pixel tùy chỉnh của bạn từ các nhà cung cấp như Facebook và theo dõi các sự kiện ngay khi chúng đang diễn ra. Bí danh cao cấp Với tư cách là thành viên cao cấp, bạn sẽ có thể chọn bí danh cao cấp cho các liên kết của mình từ danh sách bí danh dành riêng của chúng tôi. API mạnh mẽ Sử dụng API mạnh mẽ của chúng tôi để xây dựng các ứng dụng tùy chỉnh hoặc mở rộng ứng dụng của riêng bạn bằng các công cụ mạnh mẽ của chúng tôi. Bắt đầu miễn phí Bắt đầu chiến dịch tiếp thị của bạn ngay bây giờ và tiếp cận khách hàng của bạn một cách hiệu quả. Đăng ký ngay Tiếp thị với sự tự tin. Cung cấp năng lượng cho các liên kết Được khách hàng tin cậy Đăng nhập bằng mạng xã hội Đăng nhập bằng Facebook Đăng nhập bằng Twitter Đăng nhập bằng Google Email hoặc tên người dùng Tạo tài khoản Quên mật khẩu Ghi nhớ địa chỉ Email của tôi Quay lại đăng nhập URL ngắn',
+    'Your API key' => 'Nếu bạn không thể kéo liên kết ở trên, hãy sử dụng trình chỉnh sửa dấu trang của trình duyệt để tạo dấu trang mới và thêm URL bên dưới làm liên kết.',
+    'Sending a request for shortening a URL' => 'Xin lưu ý rằng đối với các trang web bảo mật sử dụng SSL, tiện ích con sẽ không hiển thị do vấn đề bảo mật. Trong trường hợp này, người dùng sẽ được chuyển hướng đến trang web của chúng tôi, nơi bạn có thể thấy URL ngắn của mình.',
+    'To send a request, the user must use the following format where the variables api and url are required. In the example below, the URL of the demo is used but you should use your own domain name. To request a custom alias, simply add &custom= at the end.' => 'Sử dụng API trong PHP',
+    'Server response' => 'Cần có khóa API để hệ thống xử lý các yêu cầu. Sau khi người dùng đăng ký, khóa API sẽ tự động được tạo cho người dùng đó. Khóa API phải được gửi cùng với mỗi yêu cầu thông qua tham số khóa (xem ví dụ đầy đủ bên dưới). Nếu khóa API không được gửi hoặc đã hết hạn, sẽ xảy ra lỗi. Đảm bảo giữ bí mật khóa API của bạn để tránh sử dụng sai mục đích.',
+    'As before, the response will encoded in JSON format (default). This is done to facilitate cross-language usage. The first element of the response will always tell if an error has occurred (error: 1) or not (error: 0). The second element will change with respect to the first element. If there is an error, the second element will be named \'msg\'. which contains the source of error, otherwise it will be named “short” which contains the short URL. (See below for an example)' => 'Khóa API của bạn',
+    'No errors' => 'Gửi yêu cầu rút ngắn URL',
+    'An error has occurred' => 'Để gửi yêu cầu, người dùng phải sử dụng định dạng sau khi yêu cầu các biến API và URL. Trong ví dụ bên dưới, URL demo được sử dụng nhưng bạn phải sử dụng tên miền của riêng mình. Để yêu cầu bí danh tùy chỉnh, chỉ cần thêm &custom= vào cuối.',
+    'Using plain text format' => 'Phản hồi của máy chủ',
+    'You can now request the response to be in plain text by just adding &format=text at the end of your request. Note that if an error occurs, it will not output anything so you can assume if it is empty then there is an error.' => 'Như trước đây, phản hồi sẽ được mã hóa ở định dạng JSON (theo mặc định). Điều này được thực hiện để tạo thuận lợi cho việc sử dụng nhiều ngôn ngữ. Phần tử đầu tiên của phản hồi sẽ luôn cho biết có xảy ra lỗi (lỗi: 1) hay không (lỗi: 0). Mục thứ hai sẽ thay đổi từ mục đầu tiên. Nếu có lỗi, phần tử thứ hai sẽ được gọi là \'msg\'. chứa nguồn gốc của lỗi, nếu không nó sẽ được đặt tên là \'short\' chứa URL ngắn. (Xem ví dụ bên dưới)',
+    'Using the API in PHP' => 'Không có lỗi',
+    'To use the API in your PHP application, you have to send a GET request through file_get_contents or cURL: Both are reliable methods. You can copy the function below. Everything is already set up for you.' => 'Một lỗi đã xảy ra',
+    'Simple Usage' => 'Sử dụng định dạng văn bản thuần túy',
+    'Usage with custom alias' => 'Giờ đây, bạn có thể yêu cầu phản hồi ở dạng văn bản thuần túy bằng cách thêm &format=text vào cuối yêu cầu của mình. Lưu ý rằng nếu xảy ra lỗi, nó sẽ không xuất ra bất kỳ thứ gì, vì vậy bạn có thể cho rằng nếu nó trống thì có lỗi.',
+    'Usage with custom alias and text format' => 'Sử dụng API trong PHP',
+    'This script allows you to shorten all (or select) URLs on your website very easily. All you need to do is to copy and paste the code below at the end of your page. You can customize the selector as you wish to target URLs in a specific selector. Note you can just copy the code below because everything is already for you.' => 'Để sử dụng API trong ứng dụng PHP của bạn, bạn phải gửi yêu cầu GET qua file_get_contents hoặc cURL: Cả hai đều là phương pháp đáng tin cậy. Bạn có thể sao chép chức năng dưới đây. Mọi thứ đã được thiết lập cho bạn.',
+    'Choosing custom select' => 'dễ sử dụng',
+    'By default, this script shortens all URLs in a page. If you want to target specific URLs then you can add a selector paramater. You can see an example below where the script will only shorten URLs having a class named mylink or all direct link in the .content container or all links in the .comments container' => 'Sử dụng với bí danh tùy chỉnh',
+    'Excluding domain names' => 'Sử dụng với bí danh tùy chỉnh và định dạng văn bản',
+    'You can exclude domain names if you wish. You can add an exclude parameter to exclude domain names. The example below shortens all URLs but excludes URLs from google.com or gempixel.com' => 'Tập lệnh này giúp bạn dễ dàng rút ngắn tất cả (hoặc chọn) URL trên trang web của mình. Tất cả những gì bạn cần làm là sao chép và dán mã bên dưới vào cuối trang của mình. Bạn có thể tùy chỉnh bộ chọn theo cách bạn muốn nhắm mục tiêu các URL trong một bộ chọn cụ thể. Lưu ý rằng bạn chỉ cần sao chép mã bên dưới vì mọi thứ đã được thực hiện cho bạn.',
+    'Choose your premium plan' => 'Chọn lựa chọn tùy chỉnh',
+    'If I pay yearly, do I get a discount?' => 'Theo mặc định, tập lệnh này rút ngắn tất cả các URL trên một trang. Nếu bạn muốn nhắm mục tiêu các URL cụ thể, bạn có thể thêm tham số lựa chọn. Bạn có thể xem một ví dụ bên dưới, trong đó tập lệnh sẽ chỉ rút ngắn các URL có lớp có tên mylink hoặc bất kỳ liên kết trực tiếp nào trong vùng chứa .content hoặc tất cả các liên kết trong vùng chứa .comments' ,
+    'Can I upgrade my account at any time?' => 'Loại trừ tên miền',
+    'Yes! You can start with our free package and upgrade anytime to enjoy premium features.' => 'Bạn có thể loại trừ tên miền nếu muốn. Bạn có thể thêm tham số loại trừ để loại trừ tên miền. Ví dụ dưới đây rút ngắn tất cả các URL, nhưng loại trừ các URL từ google.com hoặc gempixel.com',
+    'How will I be charged?' => 'Chọn gói cao cấp của bạn',
+    'You will be charged at the beginning of each period automatically until canceled.' => 'Nếu tôi thanh toán hàng năm, tôi có được giảm giá không?',
+    'You will be reminded to renew your membership 7 days before your expiration.' => 'Tôi có thể cập nhật tài khoản của mình bất cứ lúc nào không?',
+    'How do refunds work?' => 'Đúng! Bạn có thể bắt đầu với gói miễn phí của chúng tôi và nâng cấp bất cứ lúc nào để tận hưởng các tính năng cao cấp.',
+    'Upon request, we will issue a refund at the moment of the request for all upcoming periods. If you are on a monthly plan, we will stop charging you at the end of your current billing period. If you are on yearly plan, we will refund amounts for the remaining months.' => 'Tôi sẽ bị tính phí như thế nào?',
+    'Upon request, we will issue a refund at the moment of the request for all upcoming periods. You will just need to contact us and we will take of everything.' => 'Bạn sẽ tự động bị tính phí vào đầu mỗi khoảng thời gian cho đến khi bị hủy.',
+    'Starter' => 'Chúng tôi sẽ nhắc bạn gia hạn tư cách thành viên 7 ngày trước ngày hết hạn.',
+    'Basic Features' => 'Hoàn tiền hoạt động như thế nào?',
+    'Basic Redirection Filters' => 'Nếu được yêu cầu, chúng tôi sẽ hoàn trả cho bạn tại thời điểm yêu cầu cho tất cả các khoảng thời gian trong tương lai. Nếu bạn đang sử dụng gói hàng tháng, chúng tôi sẽ ngừng tính phí cho bạn khi kết thúc thời hạn thanh toán hiện tại. Nếu bạn đang sử dụng gói hàng năm, chúng tôi sẽ hoàn lại số tiền cho các tháng còn lại.',
+    'URLs allowed' => 'Nếu được yêu cầu, chúng tôi sẽ hoàn trả cho bạn tại thời điểm yêu cầu cho tất cả các khoảng thời gian trong tương lai. Bạn chỉ cần liên hệ với chúng tôi và chúng tôi sẽ lo mọi thứ.',
+    'Limited URL Customization' => 'Cổng vào',
+    'Advertisement' => 'Tính năng cơ bản',
+    'Limited Support' => 'Bộ lọc chuyển hướng cơ bản',
+    'Current Plan' => 'URL được ủy quyền',
+    'Professional' => 'Cá nhân hóa URL có giới hạn',
+    'Custom Splash Pages' => 'Quảng cáo',
+    'Custom Overlay Pages' => 'Hỗ trợ có giới hạn',
+    'Unlimited URLs' => 'Kế hoạch hiện tại',
+    'URL Customization' => 'Chuyên nghiệp',
+    'No Advertisements' => 'Trang bắt đầu tùy chỉnh',
+    'Prioritized Support' => 'Trang lớp phủ tùy chỉnh',
+    'Go Pro' => 'URL không giới hạn',
+    'Premium Features. All Yours.' => 'Tùy chỉnh URL',
+    'Enter keyword and press enter.' => 'Không quảng cáo',
+    'Newest' => 'Hỗ trợ ưu tiên',
+    'Oldest' => 'Đi pro',
+    'Popular' => 'Tính năng cao cấp. Tất cả của bạn.',
+    'Delete Selected' => 'Nhập từ khóa và nhấn Enter.',
+    'Featured image must be either a PNG or a JPEG.' => 'Hình ảnh được chọn phải ở định dạng PNG hoặc JPEG.',
+    'Featured image must be either a PNG or a JPEG (Max 1MB).' => 'Hình ảnh được chọn phải ở định dạng PNG hoặc JPEG (tối đa 1 MB).',
+    'Post has been deleted.' => 'Bài đăng đã bị xóa.',
+    'You have already used a trial.' => 'Bạn đã sử dụng bản dùng thử.',
+    'Unsafe Link Detected' => 'Đã phát hiện liên kết nguy hiểm',
+    'Yes' => 'Đúng',
+    'Your domain name is working. Add it to your account now.' => 'Tên miền của bạn đang hoạt động. Thêm ngay vào tài khoản của bạn.',
+    'Not Found' => 'Không tìm thấy',
+    'Hello' => 'Chào buổi sáng',
+    'This service is meant to be private.' => 'Dịch vụ này được coi là riêng tư.',
+    'We are currently under maintenance.' => 'Chúng tôi hiện đang bảo trì.',
+    'Blog' => 'Blog',
+    'Tools &amp; Integrations' => 'Công cụ và tích hợp',
+    'Free Trial' => 'Thử miễn phí',
+    'No bundles found..' => 'Không tìm thấy gói nào..',
+    'Top Blog Posts' => 'Bài đăng trên blog hay nhất',
+    'No posts found' => 'không tìm thấy mục',
+    's' => 'S',
+    'Captcha is required. Please try again.' => 'Hình ảnh xác thực là bắt buộc. Thử lại.',
+    'The captcha did not validate. Please try again.' => 'Hình ảnh xác thực không thành công. Thử lại.',
+    'You have reached your maximum links limit. Please upgrade to another plan.' => 'Bạn đã đạt đến giới hạn liên kết tối đa của mình. Vui lòng chuyển sang gói khác.',
+    'Please enter the 2FA access code to login.' => 'Vui lòng nhập mật khẩu 2FA để đăng nhập.',
+    'Enter your 2FA access code' => 'Nhập mã truy cập 2FA của bạn',
+    'The access code can be found on the Authenticator app. Please enter the code shown for this website. If you lost your phone or can\'t use the app, please contact us.' => 'Bạn có thể tìm thấy mã truy cập trên ứng dụng Authenticator. Vui lòng nhập mã được hiển thị cho trang web này. Nếu bạn bị mất điện thoại hoặc không thể sử dụng ứng dụng, vui lòng liên hệ với chúng tôi.',
+    '2FA Access Code' => 'Mã truy cập 2FA',
+    'Validate' => 'Để xác nhận',
+    'Parameter Name' => 'Tên của thông số',
+    'My Brand' => 'Thương hiệu của tôi',
+    'Get a $10 discount' => 'Được giảm $10',
+    'Get a $10 discount with any purchase more than $50' => 'Được giảm 10 đô la với bất kỳ giao dịch mua nào trên 50 đô la',
+    'Create a small popup with a message and a link to a page or a product.' => 'Tạo cửa sổ bật lên nhỏ có thông báo và liên kết đến một trang hoặc sản phẩm.',
+    'Contact Form' => 'Mâu liên hệ',
+    'Create a contact form where users will be able to contact you via email.' => 'Tạo biểu mẫu liên hệ nơi người dùng có thể liên hệ với bạn qua email.',
+    'Poll' => 'Sự khảo sát',
+    'Create a quick poll where users will be able to answer it upon visit.' => 'Tạo một cuộc thăm dò ý kiến ​​nhanh để người dùng có thể trả lời cuộc thăm dò đó trong khi họ truy cập.',
+    'Your text here' => 'Văn bản của bạn ở đây',
+    'Promo' => 'Khuyến mãi',
+    'Avatar must be either a maximum size of 100x100 PNG or a JPEG (Max 300KB).' => 'Hình đại diện phải có kích thước tối đa là 100 x 100 PNG hoặc JPEG (Tối đa 300 KB).',
+    'Customize Message Overlay' => 'Tùy chỉnh lớp phủ tin nhắn',
+    'leave empty to disable' => 'để trống để tắt',
+    'Avatar' => 'Hình đại diện',
+    'Avatar should be square with a maximum size of 100x100. To remove the image, click on the upload field and then cancel it.' => 'Ảnh đại diện phải là hình vuông với kích thước tối đa là 100x100. Để xóa hình ảnh, hãy nhấp vào trường tải lên và sau đó hủy nó.',
+    'If you remove the button text below but add a link here, the whole overlay will be linked to this when clicked.' => 'Nếu bạn xóa văn bản nút bên dưới nhưng thêm một liên kết ở đây, toàn bộ lớp phủ sẽ liên kết với nó khi được nhấp vào.',
+    'Top Left' => 'Ở góc trên cùng bên trái',
+    'Top Right' => 'Trên cùng bên phải',
+    'Bottom Left' => 'Ở dưới cùng bên trái',
+    'Bottom Right' => 'Ở dưới cùng bên phải',
+    'Need Help?' => 'Cần giúp đỡ?',
+    'The name field cannot be empty.' => 'Trường tên không được để trống.',
+    'Customize Contact Overlay' => 'Tùy chỉnh lớp phủ liên hệ',
+    'Send Email Address' => 'Gửi địa chỉ email',
+    'Emails from the form will be sent to this address' => 'Email biểu mẫu sẽ được gửi đến địa chỉ này',
+    'Email Subject' => 'Chủ đề email',
+    'Something you would know where it comes from.' => 'Một cái gì đó bạn sẽ biết nó đến từ đâu.',
+    'Form Label' => 'Nhãn biểu mẫu',
+    '(leave empty to disable)' => '(để trống để tắt)',
+    'e.g. Need help?' => 'Ví dụ. Cần giúp đỡ?',
+    'Form Description' => 'Mô tả biểu mẫu',
+    '(optional) Provide a description or anything you want to add to the form.' => '(tùy chọn) Cung cấp mô tả hoặc bất cứ điều gì bạn muốn thêm vào biểu mẫu.',
+    'Name Placeholder' => 'Trình giữ chỗ tên',
+    'If you want to use a different language, change these.' => 'Nếu bạn muốn sử dụng một ngôn ngữ khác, hãy thay đổi chúng.',
+    'Email Placeholder' => 'Phần giữ chỗ cho e-mail',
+    'Message Placeholder' => 'Trình giữ chỗ tin nhắn',
+    'Send Button Placeholder' => 'Gửi nút giữ chỗ',
+    'Form Background Color' => 'Màu nền của biểu mẫu',
+    'Form Text Color' => 'Màu văn bản biểu mẫu',
+    'Input Background Color' => 'Nhập màu nền',
+    'Input Text Color' => 'Nhập màu văn bản',
+    'Webhook Notification' => 'Thông báo sách điện tử',
+    'If you want to receive a notification directly to your app, add the url to your app\'s handler and as soon as there is a submission, we will send a notification to this url as well as an email to the address provided above. For more information, please check on the right.' => 'Nếu bạn muốn nhận thông báo trực tiếp trên đơn đăng ký của mình, hãy thêm URL vào trình quản lý ứng dụng của bạn và ngay khi có đơn gửi, chúng tôi sẽ gửi thông báo tới URL này cũng như email tới \'địa chỉ đã cung cấp ở trên. Để biết thêm thông tin, vui lòng kiểm tra bên phải.',
+    'An overlay page allows you to display a small non-intrusive overlay on the destination website to advertise your product or your services. You can use this type of overlay to insert a popup-style contact form to shortened page. Please note that some secured and sensitive websites such as google.com or facebook.com do not work with this feature.' => 'Trang lớp phủ cho phép bạn hiển thị một lớp phủ nhỏ, không xâm phạm trên trang web đích để quảng cáo sản phẩm hoặc dịch vụ của bạn. Bạn có thể sử dụng loại lớp phủ này để chèn biểu mẫu liên hệ kiểu cửa sổ bật lên vào một trang rút gọn. Xin lưu ý rằng một số trang web an toàn và nhạy cảm như google.com hoặc facebook.com không hoạt động với tính năng này.',
+    'If you add a webhook url, we will send a notification to that url with the contact form data. You will be able to integrate it with your own app or a third-party app. Below is a sample data that will be sent in <code>JSON</code> format via a <code>POST</code> request.' => 'Nếu bạn thêm URL webhook, chúng tôi sẽ gửi thông báo tới URL đó cùng với dữ liệu biểu mẫu liên hệ. Bạn có thể tích hợp nó với ứng dụng của riêng bạn hoặc ứng dụng của bên thứ ba. Dưới đây là ví dụ về dữ liệu sẽ được gửi ở định dạng JSON thông qua yêu cầu POST.',
+    'A minimum of two options is required.' => 'Cần có tối thiểu hai tùy chọn.',
+    'Customize Poll Overlay' => 'Tùy chỉnh lớp phủ khảo sát',
+    'Question' => 'Câu hỏi',
+    'Add Option' => 'Thêm tùy chọn',
+    'You can add up to 10 options for each poll. To add an extra option click Add Option above. To ignore a field, leave it empty.' => 'Bạn có thể thêm tối đa 10 tùy chọn cho mỗi cuộc thăm dò. Để thêm một tùy chọn bổ sung, hãy nhấp vào Thêm tùy chọn ở trên. Để bỏ qua một trường, hãy để trống trường đó.',
+    'Background Color' => 'Màu nền',
+    'Text Color' => 'Văn bản màu',
+    'Your question here?' => 'Câu hỏi của bạn ở đây?',
+    'Vote' => 'Bỏ phiếu',
+    'An overlay page allows you to display a small non-intrusive overlay on the destination website to advertise your product or your services. You can use this type of overlay to insert a poll to shortened page. Please note that some secured and sensitive websites such as google.com or facebook.com do not work with this feature.' => 'Trang lớp phủ cho phép bạn hiển thị một lớp phủ nhỏ, không xâm phạm trên trang web đích để quảng cáo sản phẩm hoặc dịch vụ của bạn. Bạn có thể sử dụng loại lớp phủ này để chèn một cuộc thăm dò ý kiến ​​trên một trang rút gọn. Xin lưu ý rằng một số trang web an toàn và nhạy cảm như google.com hoặc facebook.com không hoạt động với tính năng này.',
+    'Votes' => 'Phiếu bầu',
+    'Your API key has been updated.' => 'Khóa API của bạn đã được cập nhật.',
+    'Your Zapier URL has been updated.' => 'URL Zapier của bạn đã được cập nhật.',
+    '2FA has been activated on your account. Please make sure to backup the secret key or the QR code.' => '2FA đã được kích hoạt trên tài khoản của bạn. Đảm bảo lưu khóa bí mật hoặc mã QR.',
+    '2FA has been disabled on your account.' => '2FA đã bị vô hiệu hóa trên tài khoản của bạn.',
+    'Avatar must be either a PNG or a JPEG (Max 500kb).' => 'Hình đại diện phải ở định dạng PNG hoặc JPEG (tối đa 500 KB).',
+    'Avatar must be either a PNG or a JPEG with a recommended dimension of 200x200.' => 'Hình đại diện phải ở định dạng PNG hoặc JPEG với kích thước khuyến nghị là 200 x 200.',
+    'Two-Factor Authentication (2FA)' => 'Xác thực hai yếu tố (2FA)',
+    '2FA is an enhanced level security for your account. Each time you login, an extra step where you will need to enter a unique code will be required to gain access to your account. To enable 2FA, please click the button below and download the <strong>Google Authenticator</strong> app from Apple Store or Play Store.' => '2FA là mức độ bảo mật nâng cao cho tài khoản của bạn. Mỗi lần bạn đăng nhập, một bước bổ sung mà bạn sẽ cần nhập một mã duy nhất sẽ được yêu cầu để truy cập tài khoản của bạn. Để bật 2FA, hãy nhấp vào nút bên dưới và tải xuống ứng dụng <strong>Google Authenticator</strong> từ Apple Store hoặc Play Store.',
+    'Important' => 'Quan trọng',
+    'You need to scan the code below with the app. You need to backup the QR code below by saving it and save the key somewhere safe in case you lose your phone. You will not be able to login if you can\'t provide the code, you will need to contact us. If you disable 2FA and re-enable it, you will need to scan a new code.' => 'Bạn phải quét mã bên dưới bằng ứng dụng. Bạn nên lưu mã QR dưới đây bằng cách lưu lại và cất chìa khóa ở nơi an toàn phòng trường hợp bị mất điện thoại. Bạn sẽ không thể đăng nhập nếu bạn không thể cung cấp mã, bạn sẽ cần liên hệ với chúng tôi. Nếu bạn tắt 2FA và bật lại, bạn sẽ cần quét mã mới.',
+    'Secret Key' => 'Chìa khoá bí mật',
+    'Disable 2FA' => 'Vô hiệu hóa 2FA',
+    'Activate 2FA' => 'Bật 2FA',
+    'Quora ID is not correct. Please double check.' => 'ID Quora không chính xác. Hãy kiểm tra.',
+    'GTM container ID is not correct. Please double check.' => 'ID bộ chứa GTM không chính xác. Hãy kiểm tra.',
+    'An error occured. Please try again.' => 'Một lỗi đã xảy ra. Thử lại.',
+    'Profile has been saved.' => 'Hồ sơ đã được lưu.',
+    'No clicks from social media.' => 'Không có nhấp chuột trên mạng xã hội.',
+    'You need to allow this application to install the commands on your slack account.' => 'Bạn phải cho phép ứng dụng này cài đặt lệnh trên tài khoản Slack của mình.',
+    'No posts found.' => 'Không tìm thấy vật nào.',
+    'The profile builder allows you to customize your profile so you can only share one link and users can view all of the links on a single page.' => 'Trình tạo hồ sơ cho phép bạn tùy chỉnh hồ sơ của mình để bạn chỉ có thể chia sẻ một liên kết và người dùng có thể xem tất cả các liên kết trên một trang.',
+    'Profile Name' => 'Tên hồ sơ',
+    'This field is optional. If left empty, only the username will show.' => 'Mục này không bắt buộc. Nếu để trống, chỉ tên người dùng sẽ được hiển thị.',
+    'Page Style' => 'Kiểu trang',
+    'Add Link' => 'Thêm liên kết',
+    'You can add up to 10 links. To add an extra link click Add Link above. To ignore a field, leave it empty. If you have already shortened the link added below, we will use the short url as the link to the button otherwise we will create a new short url so you can track clicks. Please do not paste short links.' => 'Bạn có thể thêm tối đa 10 liên kết. Để thêm một liên kết bổ sung, hãy nhấp vào Thêm liên kết ở trên. Để bỏ qua một trường, hãy để trống. Nếu bạn đã rút gọn liên kết được thêm bên dưới, chúng tôi sẽ sử dụng URL ngắn làm liên kết đến nút, nếu không, chúng tôi sẽ tạo một URL ngắn mới để bạn có thể theo dõi các lần nhấp. Vui lòng không dán các liên kết ngắn.',
+    'Link' => 'Liên kết',
+    'Label' => 'Nhãn',
+    'Enable Public Bundles' => 'Kích hoạt lô công khai',
+    'Enable a button to show all public bundles.' => 'Kích hoạt một nút để hiển thị tất cả các lô công khai.',
+    'No' => 'KHÔNG',
+    'Save Profile' => 'Lưu hồ sơ',
+    'View Lists' => 'Xem danh sách',
+    'Select all' => 'Chọn tất cả',
+    'Delete all' => 'Xóa hết',
+    'Credit or debit card' => 'Thẻ tín dụng hoặc thẻ ghi nợ',
+    'Coupon Code' => 'Mã giảm giá',
+    'Pay with Card' => 'Thanh toán bằng thẻ',
+    'You will need to setup a DNS record for your domain to work. See instructions on the right side.' => 'Bạn sẽ cần thiết lập bản ghi DNS để miền của mình hoạt động. Xem hướng dẫn ở bên phải.',
+    'Root Redirect' => 'Chuyển hướng gốc',
+    'Redirects to this page if someone visits the root domain above without a short alias.' => 'Chuyển hướng đến trang này nếu ai đó truy cập miền gốc ở trên mà không có bí danh ngắn.',
+    '404 Redirect' => 'Chuyển hướng 404',
+    'Redirects to this page if a short url is not found (error 404).' => 'Chuyển hướng đến trang này nếu không tìm thấy URL ngắn (lỗi 404).',
+    'Pending DNS' => 'DNS đang chờ xử lý',
+    'The coupon enter is not valid' => 'Phiếu giảm giá đã nhập không hợp lệ',
+    'You must select at least 1 url.' => 'Bạn phải chọn ít nhất 1 URL.',
+    'Keyword must be more than 3 characters!' => 'Từ khóa phải chứa hơn 3 ký tự!',
+    'Are you sure you want to proceed?' => 'Bạn có chắc chắn muốn tiếp tục không?',
+    'Proceed' => 'Tiếp tục',
+    'Cancel' => 'Hủy bỏ',
+    'Note that this action is permanent. Once you click proceed, you <strong>may not undo</strong> this. Click anywhere outside this modal or click <a href=\'#close\' class=\'close-modal\'>close</a> to close this.' => 'Lưu ý rằng hành động này là vĩnh viễn. Khi bạn nhấp vào Tiếp tục, bạn <strong>không thể</strong> hoàn tác thao tác này. Nhấp vào bất kỳ đâu bên ngoài phương thức này hoặc nhấp vào <a href=\'#close\' class=\'close-modal\'>đóng</a> để đóng.',
+    'Custom Image must be either a PNG or a JPEG.' => 'Hình ảnh tùy chỉnh phải ở định dạng PNG hoặc JPEG.',
+    'Custom Image must be either a PNG or a JPEG (Max 500kb).' => 'Hình ảnh tùy chỉnh phải ở định dạng PNG hoặc JPEG (tối đa 500 KB).',
+    'Your trial expires in ' => 'Bản dùng thử của bạn sẽ hết hạn sau',
+    'days' => 'ngày',
+    'Upgrade now' => 'Cập nhật bây giờ',
+    'Integrations' => 'Tích hợp',
+    'Connect with the following apps and others to extend your application.' => 'Kết nối với các ứng dụng sau và các ứng dụng khác để mở rộng ứng dụng của bạn.',
+    'Slack' => 'Mềm mại',
+    'Zapier' => 'Zapier',
+    'Google Tag Manager' => 'Trình quản lý thẻ của Google',
+    'One link to all your links' => 'Một liên kết tới tất cả các liên kết của bạn',
+    'Create your Public Profile' => 'Tạo hồ sơ công khai của bạn',
+    'Create your profile with our simple profile builder and add your all of your links. Share a single link on social networks like instagram, twitter and TikTok and monitor clicks on your links.' => 'Tạo hồ sơ của bạn với trình tạo hồ sơ đơn giản của chúng tôi và thêm tất cả các liên kết của bạn. Chia sẻ một liên kết duy nhất trên các mạng xã hội như instagram, twitter và TikTok, đồng thời theo dõi các lần nhấp vào liên kết của bạn.',
+    'Get started' => 'Bắt đầu',
+    'Plan Name' => 'Tên kế hoạch',
+    'Plan Limits' => 'Giới hạn kế hoạch',
+    'Shopify Campaign' => 'Chiến dịch Shopify',
+    'Numerical or alphanumerical values only' => 'Chỉ giá trị số hoặc chữ số',
+    'Quora Pixels' => 'Quora Pixels',
+    'Google Tag Manager allows you to combine hundreds of pixels into a single pixel. Please make sure to add the correct &quot;Container ID&quot; otherwise events will not be tracked!' => 'Trình quản lý thẻ của Google cho phép bạn kết hợp hàng trăm pixel thành một pixel. Vui lòng đảm bảo thêm đúng 'ID vùng chứa' nếu không các sự kiện sẽ không được theo dõi!',
+    'Quora Pixel Tag' => 'Thẻ pixel Quora',
+    'The Quora Pixel is a tool that is placed in your website code to track traffic and conversions. When someone clicks on your ad and lands on your website, the Quora Pixel allows you to identify how many people are visiting your website and what actions they are taking.' => 'Quora Pixel là một công cụ được đặt trong mã trang web của bạn để theo dõi lưu lượng truy cập và chuyển đổi. Khi ai đó nhấp vào quảng cáo của bạn và truy cập trang web của bạn, Quora Pixel sẽ giúp bạn xác định có bao nhiêu người truy cập trang web của bạn và những hành động họ thực hiện.',
+    'Back to Profile' => 'Quay lại hồ sơ',
+    'Short Link' => 'Liên kết ngắn',
+    'Reason' => 'Raison',
+    'Spam' => 'thư rác',
+    'Fraudulent' => 'Lừa đảo',
+    'Malicious' => 'Độc hại',
+    'Phishing' => 'Lừa đảo',
+    'By default, we will use the Gravatar associated to your email. Uploaded avatars must be square with the width ranging from 200-500px with a maximum size of 500kb.' => 'Theo mặc định, chúng tôi sẽ sử dụng Gravatar được liên kết với email của bạn. Hình đại diện đã tải lên phải là hình vuông có chiều rộng từ 200 đến 500 pixel và kích thước tối đa là 500 KB.',
+    'Congrats!' => 'Xin chúc mừng!',
+    'Your <strong>domain name</strong> is now successfully pointed to our server. You can now start using it from the platform and shorten branded links with your own domain name.' => '<strong>Tên miền</strong> của bạn hiện được trỏ đến máy chủ của chúng tôi. Bây giờ bạn có thể bắt đầu sử dụng nó từ nền tảng và rút ngắn các liên kết có thương hiệu bằng tên miền của riêng bạn.',
+    'If you want to display another page instead of this page when someone accesses your root domain name, you can define that link in your settings by logging in to your account. You can also define a custom 404 error page.' => 'Nếu bạn muốn hiển thị một trang khác thay vì trang này khi ai đó truy cập tên miền gốc của bạn, bạn có thể đặt liên kết này trong cài đặt của mình bằng cách đăng nhập vào tài khoản của mình. Bạn cũng có thể xác định trang lỗi 404 tùy chỉnh.',
+    'If you have any questions, please do not hesitate to contact us.' => 'Nếu bạn có bất kỳ câu hỏi nào, vui lòng liên hệ với chúng tôi.',
+    'Parameters' => 'Cài đặt',
+    'Zapier Integration' => 'Tích hợp Zapier',
+    'Slack Integration' => 'Tích hợp chậm',
+    'Regenerate API Key' => 'Tạo lại khóa API',
+    'If you proceed, your current applications wil not work anymore. You will need to change your api key for it to work again.' => 'Nếu bạn tiếp tục, các ứng dụng hiện tại của bạn sẽ không hoạt động nữa. Bạn sẽ cần phải thay đổi khóa API của mình để khóa hoạt động trở lại.',
+    'Regenerate' => 'Tái sinh',
+    'You can use Zapier to automate campaigns. By adding the URL to the zapier webhook, we will send you important information to that webhook so you can use them.' => 'Bạn có thể sử dụng Zapier để tự động hóa các chiến dịch. Bằng cách thêm URL vào webhook Zapier, chúng tôi sẽ gửi cho bạn thông tin quan trọng tới webhook này để bạn có thể sử dụng nó.',
+    'URL Zapier Notification' => 'Thông báo URL Zapier',
+    'We will send a notification to this URL when you create a short URL.' => 'Chúng tôi sẽ gửi thông báo tới URL này khi bạn tạo một URL ngắn.',
+    'Views Zapier Notification' => 'Hiển thị thông báo Zapier',
+    'We will send a notification to this URL when someone clicks your URL.' => 'Chúng tôi sẽ gửi thông báo tới URL này khi người dùng nhấp vào URL của bạn.',
+    'Sample Response' => 'Phản ứng mẫu',
+    'Connected' => 'Đã kết nối',
+    'You can integrate this app with your slack account and shorten directly from the slack interface using the command line below. This slack integration will save all of your links in your account in case you need to access them later. Please see below how to use the command.' => 'Bạn có thể tích hợp ứng dụng này với tài khoản Slack của mình và rút ngắn trực tiếp từ giao diện Slack bằng dòng lệnh bên dưới. Sự tích hợp chậm này sẽ lưu tất cả các liên kết của bạn trong tài khoản của bạn trong trường hợp bạn cần truy cập chúng sau này. Vui lòng xem bên dưới cách sử dụng lệnh.',
+    'Slack Command' => 'Lệnh chùng',
+    'Example' => 'Ví dụ',
+    'Example with custom name' => 'Ví dụ với tên tùy chỉnh',
+    'To send a custom alias, use the following paramter (ABCDXYZ). This will tell the script to choose shorten the link with the custom alias ABCDXYZ.' => 'Để gửi bí danh tùy chỉnh, hãy sử dụng tham số sau (ABCDXYZ). Thao tác này sẽ yêu cầu tập lệnh chọn rút ngắn liên kết bằng bí danh tùy chỉnh ABCDXYZ.',
+    'The slack command will return you the short link if everything goes well. In case there is an error, it will return you the original link. If you use the custom parameter and the alias is already taken, the script will automatically increment the alias by 1 - this means if you choose \'google\' and \'google\' is not available, the script will use google-1' => 'Lệnh chùng sẽ trả lại liên kết ngắn cho bạn nếu mọi việc suôn sẻ. Trong trường hợp có lỗi, nó sẽ gửi lại cho bạn liên kết ban đầu. Nếu bạn sử dụng tham số tùy chỉnh và bí danh đã được sử dụng, tập lệnh sẽ tự động tăng bí danh lên 1 - điều này có nghĩa là nếu bạn chọn "google" và "google" không khả dụng, thì tập lệnh sẽ sử dụng google-1',
+    'Simple Pricing' => 'Định giá đơn giản',
+    'Transparent pricing for everyone. Always know what you will pay.' => 'Giá cả minh bạch cho tất cả mọi người. Luôn biết bạn sẽ trả bao nhiêu.',
+    'Custom Aliases' => 'Bí danh tùy chỉnh',
+    'Day' => 'ban ngày',
+    'Forever' => 'Cho tất cả thời điểm',
+    'Upon request, we will issue a refund at the moment of the request for all <strong>upcoming</strong> periods. If you are on a monthly plan, we will stop charging you at the end of your current billing period. If you are on a yearly plan, we will refund amounts for the remaining months.' => 'Nếu được yêu cầu, chúng tôi sẽ hoàn lại tiền tại thời điểm yêu cầu cho tất cả <strong>các khoảng thời gian trong tương lai</strong>. Nếu bạn đang sử dụng gói hàng tháng, chúng tôi sẽ ngừng tính phí cho bạn khi kết thúc thời hạn thanh toán hiện tại của bạn. Nếu bạn đang sử dụng gói hàng năm, chúng tôi sẽ hoàn lại số tiền cho các tháng còn lại.',
+    'Upon request, we will issue a refund at the moment of the request for all <strong>upcoming</strong> periods. You will just need to contact us and we will take care of everything.' => 'Nếu được yêu cầu, chúng tôi sẽ hoàn lại tiền tại thời điểm yêu cầu cho tất cả <strong>các khoảng thời gian trong tương lai</strong>. Chỉ cần liên hệ với chúng tôi và chúng tôi sẽ lo mọi thứ.',
+    'Archive all' => 'Lưu trữ tất cả',
+    'Pending Approval' => 'Đang chờ xác thực',
+    'We are currently manually approving links. As soon as the link is approved, you will be able to start using it.' => 'Chúng tôi hiện đang phê duyệt các liên kết theo cách thủ công. Ngay sau khi liên kết được phê duyệt, bạn có thể bắt đầu sử dụng nó.',
+    'Account' => 'Tài khoản',
+    'Get Account' => 'Nhận một tài khoản',
+    'To get information on the account, you can send a request to this endpoint and it will return data on the account.' => 'Để lấy thông tin tài khoản, bạn có thể gửi yêu cầu đến điểm cuối này và nó sẽ trả về dữ liệu tài khoản.',
+    'Update Account' => 'Tài khoản được cập nhật',
+    'To update information on the account, you can send a request to this endpoint and it will update data on the account.' => 'Để cập nhật thông tin tài khoản, bạn có thể gửi yêu cầu đến điểm cuối này và nó sẽ cập nhật dữ liệu tài khoản.',
+    'List all Links' => 'Liệt kê tất cả các liên kết',
+    'To get your links via the API, you can use this endpoint. You can also filter data (See table for more info).' => 'Để nhận các liên kết của bạn thông qua API, bạn có thể sử dụng điểm cuối này. Bạn cũng có thể lọc dữ liệu (xem bảng để biết thêm thông tin).',
+    'Get a single link' => 'Nhận liên kết duy nhất',
+    'To get details for a single link via the API, you can use this endpoint.' => 'Để nhận thông tin chi tiết về một liên kết thông qua API, bạn có thể sử dụng điểm cuối này.',
+    'Shorten a Link' => 'Rút gọn liên kết',
+    'To shorten a link, you need to send a valid data in JSON via a POST request. The data must be sent as the raw body of your request as shown below. The example below shows all the parameters you can send but you are not required to send all (See table for more info).' => 'Để rút ngắn một liên kết, bạn phải gửi dữ liệu hợp lệ ở dạng JSON thông qua yêu cầu POST. Dữ liệu phải được gửi dưới dạng nội dung thô của yêu cầu của bạn như được hiển thị bên dưới. Ví dụ bên dưới hiển thị tất cả các tham số bạn có thể gửi nhưng bạn không phải gửi tất cả (xem bảng để biết thêm thông tin).',
+    'Update a Link' => 'Cập nhật liên kết',
+    'To update a link, you need to send a valid data in JSON via a PUT request. The data must be sent as the raw body of your request as shown below. The example below shows all the parameters you can send but you are not required to send all (See table for more info).' => 'Để cập nhật liên kết, bạn phải gửi dữ liệu hợp lệ ở dạng JSON thông qua yêu cầu PUT. Dữ liệu phải được gửi dưới dạng nội dung thô của yêu cầu của bạn như được hiển thị bên dưới. Ví dụ bên dưới hiển thị tất cả các tham số bạn có thể gửi nhưng bạn không phải gửi tất cả (xem bảng để biết thêm thông tin).',
+    'Delete a Link' => 'Xóa liên kết',
+    'To delete a link, you need to send a DELETE request.' => 'Để xóa một liên kết, bạn phải gửi yêu cầu XÓA.',
+    'QR Codes' => 'Mã QR',
+    'List all QR codes' => 'Liệt kê tất cả các mã QR',
+    'To get your QR codes via the API, you can use this endpoint. You can also filter data (See table for more info).' => 'Để nhận mã QR qua API, bạn có thể sử dụng điểm cuối này. Bạn cũng có thể lọc dữ liệu (xem bảng để biết thêm thông tin).',
+    'Get a single QR Code' => 'Nhận một mã QR duy nhất',
+    'To get details for a single QR code via the API, you can use this endpoint.' => 'Để nhận thông tin chi tiết về một mã QR thông qua API, bạn có thể sử dụng điểm cuối này.',
+    'Create a QR Code' => 'Tạo mã QR',
+    'To shorten a QR Code, you need to send a valid data in JSON via a POST request. The data must be sent as the raw body of your request as shown below. The example below shows all the parameters you can send but you are not required to send all (See table for more info).' => 'Để rút ngắn Mã QR, bạn phải gửi dữ liệu hợp lệ ở dạng JSON thông qua yêu cầu POST. Dữ liệu phải được gửi dưới dạng nội dung thô của yêu cầu của bạn như được hiển thị bên dưới. Ví dụ bên dưới hiển thị tất cả các tham số bạn có thể gửi nhưng bạn không phải gửi tất cả (xem bảng để biết thêm thông tin).',
+    'Update a QR Code' => 'Cập nhật mã QR',
+    'To update a QR Code, you need to send a valid data in JSON via a PUT request. The data must be sent as the raw body of your request as shown below. The example below shows all the parameters you can send but you are not required to send all (See table for more info).' => 'Để cập nhật Mã QR, bạn phải gửi dữ liệu hợp lệ ở định dạng JSON thông qua yêu cầu PUT. Dữ liệu phải được gửi dưới dạng nội dung thô của yêu cầu của bạn như được hiển thị bên dưới. Ví dụ bên dưới hiển thị tất cả các tham số bạn có thể gửi nhưng bạn không phải gửi tất cả (xem bảng để biết thêm thông tin).',
+    'Delete a QR Code' => 'Xóa mã QR',
+    'To delete a QR code, you need to send a DELETE request.' => 'Để xóa mã QR, bạn phải gửi yêu cầu XÓA.',
+    'Plans' => 'Các kế hoạch',
+    'This endpoint is only accessible by users with admin privileges.' => 'Chỉ người dùng có đặc quyền của quản trị viên mới có thể truy cập điểm cuối này.',
+    'List all plans' => 'Liệt kê tất cả các gói',
+    'Get a list of all plans on the platform.' => 'Nhận danh sách tất cả các gói trên nền tảng.',
+    'Subscribe a user to a plan' => 'Đăng ký người dùng vào một gói',
+    'To subscribe a user to plan, send a PUT request to this endpoint with the plan id and user id. The type of subscription and the expiration date will need to be specified. If the expiration date is not specified, the date will be adjusted according to the type.' => 'Để đăng ký người dùng vào gói, hãy gửi yêu cầu PUT đến điểm cuối này với ID gói và ID người dùng. Loại đăng ký và ngày hết hạn phải được chỉ định. Nếu ngày hết hạn không được chỉ định, ngày sẽ được điều chỉnh theo loại.',
+    '(optional) Expiration date of the plan e.g. ' => '(tùy chọn) Ngày hết hạn gói, ví dụ:',
+    'Users' => 'Người dùng',
+    'List all users' => 'Liệt kê tất cả người dùng',
+    'Get a list of all users on the platform. Data can be filtered by sending a filter parameter in the url.' => 'Lấy danh sách tất cả người dùng nền tảng. Dữ liệu có thể được lọc bằng cách chuyển tham số bộ lọc trong url.',
+    'Create a user' => 'Tạo người dùng',
+    'To create a user, use this endpoint and send the following information as JSON.' => 'Để tạo người dùng, hãy sử dụng điểm cuối này và gửi thông tin sau ở định dạng JSON.',
+    'Delete a user' => 'Xóa người dùng',
+    'To delete a user, use this endpoint.' => 'Để xóa người dùng, hãy sử dụng điểm cuối này.',
+    'The password is invalid or does not match.' => 'Mật khẩu không hợp lệ hoặc không khớp.',
+    'You do not have this permission. Please contact your team administrator.' => 'Bạn không có quyền này. Vui lòng liên hệ với quản trị viên nhóm của bạn.',
+    'An unexpected error occurred. Please try again.' => 'Một lỗi không mong muốn đã xảy ra. Thử lại.',
+    'Link not found. Please try again.' => 'Không tìm thấy liên kết. Thử lại.',
+    'Link has been deleted.' => 'Liên kết đã bị xóa.',
+    'No link was selected. Please try again.' => 'Không có liên kết nào được chọn. Thử lại.',
+    'Selected Links have been deleted.' => 'Các liên kết được chọn đã bị xóa.',
+    'You need to select at least 1 link.' => 'Bạn phải chọn ít nhất 1 liên kết.',
+    'Selected links have been archived.' => 'Các liên kết đã chọn đã được lưu trữ.',
+    'Selected links have been removed from archive.' => 'Các liên kết được chọn đã bị xóa khỏi kho lưu trữ.',
+    'Selected links have been set to public.' => 'Các liên kết đã chọn đã được công khai.',
+    'Selected links have been set to private.' => 'Các liên kết được chọn đã được đặt là riêng tư.',
+    'Link does not exist.' => 'Liên kết không tồn tại.',
+    'Update Link' => 'Cập nhật liên kết',
+    'URL does not exist.' => 'URL không tồn tại.',
+    'Link has been updated successfully.' => 'Liên kết đã được cập nhật thành công.',
+    'Invalid campaign. Please choose a valid campaign.' => 'Chiến dịch không hợp lệ. Vui lòng chọn một chiến dịch hợp lệ.',
+    'Selected links have been added to the ' => 'Các liên kết đã chọn đã được thêm vào',
+    'This has been disabled in demo.' => 'Điều này đã bị vô hiệu hóa trong bản trình diễn.',
+    'Report Link' => 'Liên kết Báo cáo',
+    'Please enter a valid link.' => 'Vui lòng nhập một liên kết hợp lệ.',
+    'Thank you. We will review this link and take action.' => 'CẢM ƠN. Chúng tôi sẽ xem xét liên kết này và thực hiện hành động.',
+    'Frequently Asked Questions' => 'Các câu hỏi thường gặp',
+    'API Reference for Developers' => 'Tham chiếu API dành cho nhà phát triển',
+    'Affiliate Program' => 'Chương trình liên kết',
+    'Easy to use, dynamic and customizable QR codes for your marketing campaigns. Analyze statistics and optimize your marketing strategy and increase engagement.' => 'Mã QR dễ sử dụng, năng động và có thể tùy chỉnh cho các chiến dịch tiếp thị của bạn. Phân tích số liệu thống kê và tối ưu hóa chiến lược tiếp thị của bạn và tăng mức độ tương tác.',
+    'Bio Profiles' => 'Hồ sơ hữu cơ',
+    'Convert your followers by creating beautiful pages that group all of your important links on the single page.' => 'Chuyển đổi người đăng ký của bạn bằng cách tạo các trang đẹp kết hợp tất cả các liên kết quan trọng của bạn trên một trang.',
+    'This link is private and only the creator can access the stats. If you are the creator, please login to access it.' => 'Liên kết này là riêng tư và chỉ người tạo mới có thể truy cập số liệu thống kê. Nếu bạn là người tạo, vui lòng đăng nhập để truy cập.',
+    'Advanced statistics page for the short URL' => 'Trang thống kê nâng cao cho URL ngắn',
+    'Last 7 Days' => '7 ngày qua',
+    'Last 30 Days' => '30 ngày qua',
+    'This Month' => 'Tháng này',
+    'Last Month' => 'Tháng trước',
+    'Last 3 Months' => '3 tháng qua',
+    'Country Stats for' => 'Thống kê theo quốc gia cho',
+    'Country statistics page for the short URL' => 'Trang thống kê theo quốc gia cho URL ngắn',
+    'Unknown' => 'Không xác định',
+    'Somewhere from' => 'Một vài nơi',
+    'Platform Stats for' => 'Thống kê nền tảng cho',
+    'Platform statistics page for the short URL' => 'Trang thống kê nền tảng cho URL ngắn',
+    'Browser Stats for' => 'Thống kê trình duyệt cho',
+    'Browser statistics page for the short URL' => 'Trang thống kê trình duyệt cho URL ngắn',
+    'Language Stats for' => 'Thống kê ngôn ngữ cho',
+    'Language statistics page for the short URL' => 'Trang thống kê ngôn ngữ cho URL ngắn',
+    'Referrers Stats for' => 'Số liệu thống kê giới thiệu cho',
+    'Current' => 'Thông thạo',
+    '{d}-Day Free Trial' => '{d} ngày dùng thử miễn phí',
+    'You have been successfully subscribed.' => 'Bạn đã được đăng ký thành công.',
+    'You already subscribed to this plan. If you want to upgrade, please choose another plan.' => 'Bạn đã đăng ký gói này. Nếu bạn muốn nâng cấp, vui lòng chọn gói khác.',
+    'Promo code has expired. Please try again.' => 'Mã khuyến mại đã hết hạn. Thử lại.',
+    'Please enter a valid promo code.' => 'Vui lòng nhập mã khuyến mại hợp lệ.',
+    'Register and manage your urls' => 'Lưu và quản lý URL của bạn',
+    'Register an account and gain control over your urls. Manage them, edit them or remove them without hassle.' => 'Đăng ký một tài khoản và kiểm soát các URL của bạn. Quản lý, sửa đổi hoặc xóa chúng mà không gặp rắc rối.',
+    'The email, the username and the password are required.' => 'Email, tên người dùng và mật khẩu là bắt buộc.',
+    'Username already exists.' => 'Tên người dùng này đã tồn tại.',
+    'This username cannot be used or already exists. Please choose another username' => 'Tên người dùng này không thể được sử dụng hoặc đã tồn tại. Hãy chọn một tên người dùng khác',
+    'Password must be at least 5 characters.' => 'Mật khẩu phải chứa ít nhất 5 ký tự.',
+    'If you forgot your password, you can request a link to reset your password.' => 'Nếu bạn quên mật khẩu, bạn có thể yêu cầu một liên kết để đặt lại mật khẩu của mình.',
+    'Your new password cannot be the same as the old password.' => 'Mật khẩu mới của bạn không được giống với mật khẩu cũ.',
+    'Your email has been successfully verified.' => 'Email của bạn đã được xác minh thành công.',
+    'The invitation link has expired or is currently unavailable. Please contact administrator.' => 'Liên kết mời đã hết hạn hoặc hiện không khả dụng. Vui lòng liên hệ với quản trị viên.',
+    'Join Team' => 'Tham gia một nhóm',
+    'You have been successfully logged out.' => 'Bạn đã đăng xuất thành công.',
+    'An error has occurred. Please try again later.' => 'Một lỗi đã xảy ra. Vui lòng thử lại sau.',
+    'Welcome! You have been successfully logged in.' => 'Để chào đón! Bạn đã đăng nhập thành công.',
+    'And error occurred, please try again later.' => 'Và đã xảy ra lỗi, vui lòng thử lại sau.',
+    'An error has occurred! Please make sure that you have set up this application as instructed.' => 'Một lỗi đã xảy ra! Đảm bảo rằng bạn đã định cấu hình ứng dụng này theo hướng dẫn.',
+    'You must grant permission to this application to use your Google account.' => 'Bạn phải cho phép ứng dụng này sử dụng tài khoản Google của mình.',
+    'Billing' => 'Thanh toán',
+    'Your trial has been canceled.' => 'Bản dùng thử của bạn đã bị hủy.',
+    'Payment not found. Please try again.' => 'Không tìm thấy thanh toán. Thử lại.',
+    'View Invoice' => 'Xem hóa đơn',
+    'As an admin, you cannot delete your account form this page.' => 'Là quản trị viên, bạn không thể xóa tài khoản của mình khỏi trang này.',
+    'Your account has been deleted successfully and your data has been wiped out. If you have any questions please don\'t hesitate to contact us.' => 'Tài khoản của bạn đã được xóa thành công và dữ liệu của bạn đã bị xóa. Nếu bạn có bất kỳ câu hỏi nào, đừng ngần ngại liên hệ với chúng tôi.',
+    'Your account has been terminated.' => 'Tài khoản của bạn đã bị chấm dứt.',
+    'Your account has been successfully terminated.' => 'Tài khoản của bạn đã được chấm dứt thành công.',
+    'Passwords is the same as the old password.' => 'Mật khẩu giống như mật khẩu cũ.',
+    'You have changed your email. Please check your email before logging out and activate your account.' => 'Bạn đã thay đổi địa chỉ email của mình. Vui lòng kiểm tra email của bạn trước khi đăng xuất và kích hoạt tài khoản của bạn.',
+    'API key has been regenerated successfully. Please do not forget to update your application.' => 'Khóa API đã được tạo lại thành công. Hãy nhớ cập nhật ứng dụng của bạn.',
+    'Import' => 'Nhập khẩu',
+    'We have detected that you have an old bio page. Do you want to import it?<br><br><a href=\\"?importoldbio=true\\" class=\\"btn btn-primary\\">' => 'Chúng tôi đã phát hiện ra rằng bạn có một trang tiểu sử cũ. Bạn có muốn nhập nó không?<br><br><a href=\\"?importoldbio=true\\" class=\\"btn btn-primary\\">',
+    'Bio Pages' => 'Trang hữu cơ',
+    'Create Bio' => 'Tạo tiểu sử',
+    'Please enter a name for your profile.' => 'Vui lòng nhập tên cho tiểu sử của bạn.',
+    'Please add at least one link.' => 'Vui lòng thêm ít nhất một liên kết.',
+    'Profile has been successfully created.' => 'Hồ sơ được tạo thành công.',
+    'Profile does not exist.' => 'Hồ sơ không tồn tại.',
+    'Profile has been successfully deleted.' => 'Hồ sơ đã được xóa thành công.',
+    'Update Bio' => 'Cập nhật tiểu sử',
+    'Profile has been successfully updated.' => 'Hồ sơ đã được cập nhật thành công.',
+    'Profile has been set as default and can now be access via your profile page.' => 'Hồ sơ đã được đặt làm mặc định và hiện có thể được truy cập thông qua trang hồ sơ của bạn.',
+    'Profile has been set as default and can now be access via your profile page. Your profile setting is currently set on private.' => 'Hồ sơ đã được đặt làm mặc định và hiện có thể được truy cập thông qua trang hồ sơ của bạn. Cài đặt hồ sơ của bạn hiện được đặt thành riêng tư.',
+    'Campaigns' => 'Chiến dịch',
+    'Campaign name cannot be empty and must have at least 2 characters.' => 'Tên chiến dịch không được để trống và phải chứa ít nhất 2 ký tự.',
+    'You already have a campaign with that name.' => 'Bạn đã có một chiến dịch với tên này.',
+    'This slug is currently not available. Please choose another one.' => 'Sên này hiện không có sẵn. Vui lòng chọn cái khác.',
+    'Campaign was successfully created. You may start adding links to it now.' => 'Chiến dịch đã được tạo thành công. Bạn có thể bắt đầu thêm liên kết vào nó ngay bây giờ.',
+    'Campaign does not exist' => 'Chiến dịch không tồn tại',
+    'Campaign was updated successfully.' => 'Chiến dịch đã được cập nhật thành công.',
+    'Campaign not found. Please try again.' => 'Không tìm thấy chiến dịch. Thử lại.',
+    'Campaign has been deleted.' => 'Chiến dịch đã bị xóa.',
+    'Campaign Statistics' => 'Thống kê chiến dịch',
+    'Campaign Links' => 'Liên kết Chiến dịch',
+    'Affiliate Referrals' => 'Tham khảo liên kết',
+    'Branded Domains' => 'Miền thương hiệu',
+    'New Domain' => 'Miền mới',
+    'A valid domain name is required.' => 'Một tên miền hợp lệ là bắt buộc.',
+    'The domain has been already used.' => 'Miền đã được sử dụng.',
+    'A valid url is required for the root domain.' => 'Cần có một URL hợp lệ cho miền gốc.',
+    'A valid url is required for the 404 page.' => 'Cần có một URL hợp lệ cho trang 404.',
+    'Domain has been added successfully' => 'Đã thêm miền thành công',
+    'Domain not found. Please try again.' => 'Không tìm thấy miền. Thử lại.',
+    'Edit Domain' => 'Thay đổi tên miền',
+    'Domain has been updated successfully.' => 'Miền đã được cập nhật thành công.',
+    'Domain has been deleted.' => 'Miền đã bị xóa.',
+    'Please specify a range.' => 'Vui lòng chỉ định một phạm vi.',
+    'CTA Overlay' => 'Lớp gọi hành động',
+    'Create a CTA Overlay' => 'Tạo lớp phủ CTA',
+    'Overlay page does not exist.' => 'Trang lớp phủ không tồn tại.',
+    'send' => 'gửi',
+    'Overlay has been successfully created.' => 'Lớp phủ đã được tạo thành công.',
+    'Overlay has been successfully updated.' => 'Lớp phủ đã được cập nhật thành công.',
+    'Please enter a valid question.' => 'Vui lòng nhập một câu hỏi hợp lệ.',
+    'Logo must be either a PNG or a JPEG (Max 500kb).' => 'Biểu trưng phải ở định dạng PNG hoặc JPEG (Tối đa 500kb).',
+    'Logo must be either a PNG or a JPEG with a recommended dimension of 100x100.' => 'Biểu trưng phải ở định dạng PNG hoặc JPEG với kích thước khuyến nghị là 100 x 100.',
+    'You need to upload your logo and/or a background.' => 'Bạn cần tải lên biểu trưng và/hoặc nền của mình.',
+    'Image must be either a PNG or a JPEG (Max 1mb).' => 'Hình ảnh phải ở định dạng PNG hoặc JPEG (Tối đa 1 MB).',
+    'Image must be either a PNG or a JPEG with a recommended dimension of 600x150.' => 'Hình ảnh phải ở định dạng PNG hoặc JPEG với kích thước khuyến nghị là 600 x 150.',
+    'Overlay not found. Please try again.' => 'Không tìm thấy lớp phủ. Thử lại.',
+    'Overlay has been deleted.' => 'Lớp phủ đã bị xóa.',
+    'New Pixel' => 'Điểm ảnh mới',
+    'Please enter valid id.' => 'Vui lòng nhập tên người dùng hợp lệ.',
+    'Google Ads pixel ID is not correct. Please double check.' => 'ID pixel Google Ads không chính xác. Hãy kiểm tra.',
+    'Twitter ID is not correct. Please double check.' => 'ID Twitter không chính xác. Hãy kiểm tra.',
+    'AdRoll ID is not correct. Please double check.' => 'ID AdRoll không chính xác. Hãy kiểm tra.',
+    'Google Analytics ID is not correct. Please double check.' => 'ID Google Analytics không chính xác. Hãy kiểm tra.',
+    'Pixel has been added successfully' => 'pixel đã được thêm thành công',
+    'Pixel not found. Please try again.' => 'Không tìm thấy pixel. Thử lại.',
+    'Edit Pixel' => 'Chỉnh sửa điểm ảnh',
+    'Pixel has been updated successfully.' => 'Pixel đã được cập nhật thành công.',
+    'Pixel has been deleted.' => 'Pixel đã bị xóa.',
+    'Create QR' => 'Tạo QR',
+    'Please enter a name for your QR code.' => 'Vui lòng nhập tên cho mã QR của bạn.',
+    'Invalid QR format or missing data' => 'Định dạng QR không hợp lệ hoặc thiếu dữ liệu',
+    'QR Code has been successfully generated.' => 'Mã QR đã được tạo thành công.',
+    'Edit QR' => 'Chỉnh sửa QR',
+    'QR Code has been successfully updated.' => 'Mã QR đã được cập nhật thành công.',
+    'Create a Custom Splash' => 'Tạo khóa tùy chỉnh',
+    'Please enter a valid counter time in seconds.' => 'Vui lòng nhập thời gian truy cập hợp lệ tính bằng giây.',
+    'Avatar must be either a PNG or a JPEG (Max 300kb).' => 'Hình đại diện phải ở định dạng PNG hoặc JPEG (Tối đa 300kb).',
+    'Banner must be either a PNG or a JPEG (Max 500kb).' => 'Biểu ngữ phải ở định dạng PNG hoặc JPEG (Tối đa 500kb).',
+    'Banner must be either a PNG or a JPEG with a recommended dimension of 980x300.' => 'Biểu ngữ phải ở định dạng PNG hoặc JPEG với kích thước khuyến nghị là 980 x 300.',
+    'Custom splash page has been created.' => 'Trang chủ tùy chỉnh đã được tạo.',
+    'Custom splash page does not exist.' => 'Trang chủ tùy chỉnh không tồn tại.',
+    'Update a Custom Splash' => 'Cập nhật Splash tùy chỉnh',
+    'Custom splash page has been updated.' => 'Trang chủ tùy chỉnh đã được cập nhật.',
+    'Custom splash page has been deleted.' => 'Trang chủ tùy chỉnh đã bị xóa.',
+    'Manage Teams' => 'Quản lý nhóm',
+    'This is not a valid email address' => 'Địa chỉ email này không hợp lệ',
+    'This user has already an account. Please use another email.' => 'Người dùng này đã có tài khoản. Vui lòng sử dụng địa chỉ email khác.',
+    'This email address has been invited.' => 'Địa chỉ email này đã được mời.',
+    'No permission has been assigned for this user.' => 'Không có quyền nào được chỉ định cho người dùng này.',
+    'An invite has been sent to the email.' => 'Một lời mời đã được gửi đến địa chỉ email.',
+    'The application has been install on your slack account. You can now use the command to shorten links directly from your conversations.' => 'Ứng dụng đã được cài đặt vào tài khoản Slack của bạn. Giờ đây, bạn có thể sử dụng lệnh để rút ngắn liên kết trực tiếp từ các cuộc trò chuyện của mình.',
+    'Please verify your email' => 'Vui lòng kiểm tra email của bạn',
+    'Registration has been successful' => 'Đăng ký đã thành công',
+    'Password Reset Instructions' => 'Hướng dẫn đặt lại mật khẩu',
+    'Your email has been verified' => 'Email của bạn đã được xác minh',
+    'Your password was changed.' => 'Mật khẩu của bạn đã được thay đổi.',
+    'Your password was changed. If you did not change your password, please contact us as soon as possible.' => 'Mật khẩu của bạn đã được thay đổi. Nếu bạn chưa thay đổi mật khẩu của mình, vui lòng liên hệ với chúng tôi càng sớm càng tốt.',
+    'You just got paid!' => 'Bạn vừa được trả tiền!',
+    'You just got paid {amount} via PayPal for being an awesome affiliate!' => 'Bạn vừa được trả {amount} qua PayPal vì là một đơn vị liên kết tuyệt vời!',
+    'You have been invited to join our team' => 'Bạn đã được mời tham gia nhóm của chúng tôi',
+    'Your subscription has been canceled' => 'Đăng ký của bạn đã bị hủy',
+    'Inactive Link' => 'Liên kết không hoạt động',
+    'Link Expired' => 'Liên kết đã hết hạn',
+    'Enter your password to unlock this link' => 'Nhập mật khẩu của bạn để mở khóa liên kết này',
+    'The access to this link is restricted. Please enter your password to view it.' => 'Quyền truy cập vào liên kết này bị hạn chế. Vui lòng nhập mật khẩu của bạn để xem nó.',
+    'List' => 'Danh sách',
+    'QR data cannot be empty. Please fill the appropriate field.' => 'Dữ liệu QR không được để trống. Vui lòng điền vào trường thích hợp.',
+    'Invalid phone number. Please try again.' => 'Số điện thoại không hợp lệ. Thử lại.',
+    'vCard data cannot be empty. Please fill some fields' => 'Dữ liệu vCard không được để trống. Vui lòng điền vào một số trường',
+    'Please enter the Wifi SSID' => 'Vui lòng nhập SSID Wi-Fi',
+    'Bank Transfer' => 'Sự chi trả',
+    'Enable' => 'Cho phép',
+    'Transfer payments via your bank.' => 'Thanh toán bằng chuyển khoản qua ngân hàng của bạn.',
+    'Bank Info' => 'Thông tin ngân hàng',
+    'Enter the full information where your users can send payments to via their bank.' => 'Nhập thông tin đầy đủ mà người dùng của bạn có thể gửi thanh toán qua ngân hàng của họ.',
+    'Bank Information' => 'Thông tin ngân hàng',
+    'Lifetime' => 'Cả đời',
+    'Your subscription is currently pending. Once we receive the money, we will activate your subscription.' => 'Đăng ký của bạn hiện đang bị treo. Khi chúng tôi nhận được tiền, chúng tôi sẽ kích hoạt đăng ký của bạn.',
+    'Paypal Basic Checkout' => 'Thanh toán cơ bản của Paypal',
+    'Collect payments via basic paypal checkout.' => 'Thu thanh toán qua thanh toán paypal cơ bản.',
+    'PayPal Email' => 'Paypal Email',
+    'Payments will be sent to this address. Please make sure that you enable IPN and enable notification.' => 'Thanh toán sẽ được gửi đến địa chỉ này. Đảm bảo bật IPN và bật thông báo.',
+    'PayPal IPN' => 'PayPal IPN',
+    'For more info <a href="https://developer.paypal.com/webapps/developer/docs/classic/products/instant-payment-notification/" target="_blank">click here</a>' => 'Để biết thêm thông tin <a href="https://developer.paypal.com/webapps/developer/docs/classic/products/instant-payment-notification/" target="_blank">nhấp vào đây</a >',
+    'Paypal API Payments' => 'Thanh toán API Paypal',
+    'Collect payments securely with PayPal API.' => 'Nhận thanh toán một cách an toàn với API PayPal.',
+    'Client ID' => 'danh tính khách hàng',
+    'Please enter your live client ID.' => 'Vui lòng nhập ID khách hàng trực tiếp của bạn.',
+    'Client Secret Key' => 'Khóa bí mật của khách hàng',
+    'Please enter your live client secret.' => 'Vui lòng nhập bí mật khách hàng trực tiếp của bạn.',
+    'You cannot enable both basic paypal and paypal api at the same time. You must choose one.' => 'Bạn không thể kích hoạt cả api paypal cơ bản và paypal cùng một lúc. Bạn phải chọn một.',
+    'An issue occurred. You have not been charged.' => 'Đã xảy ra sự cố. Bạn chưa bị tính phí.',
+    'An issue occurred. Please contact us for more info.' => 'Đã xảy ra sự cố. Vui lòng liên hệ với chúng tôi để biết thêm thông tin.',
+    'Stripe Payments' => 'Thanh toán Sọc',
+    'Collect payments securely with Stripe.' => 'Thu thanh toán an toàn với Stripe.',
+    'Stripe Publishable Key' => 'Khóa có thể xuất bản sọc',
+    'Get your stripe keys from here once logged in <a href="https://dashboard.stripe.com/account/apikeys" target="_blank">click here</a>' => 'Nhận khóa Stripe của bạn tại đây sau khi đăng nhập <a href="https://dashboard.stripe.com/account/apikeys" target="_blank">nhấp vào đây</a>',
+    'Stripe Secret Key' => 'Khóa bí mật sọc',
+    'Webhook Signature Key' => 'Khóa ký Webhook',
+    'Webhook signature is a security measure to verify the authenticity of the data incoming from Stripe. It is highly recommended that you add this for safety measure. You can find your key after adding a webhook. <a href="https://dashboard.stripe.com/account/webhooks" target="_blank">Click here to find your signature key.</a>' => 'Chữ ký Webhook là một biện pháp bảo mật để xác minh tính xác thực của dữ liệu từ Stripe. Chúng tôi khuyên bạn nên thêm nó để bảo mật. Bạn có thể tìm thấy khóa của mình sau khi thêm webhook. <a href="https://dashboard.stripe.com/account/webhooks" target="_blank">Nhấp vào đây để tìm khóa ký của bạn.</a>',
+    'Webhook URL' => 'url webhook',
+    'You can add your webhooks <a href="https://dashboard.stripe.com/account/webhooks" target="_blank">here</a>. For more info, please check the docs.' => 'Bạn có thể thêm webhook của mình <a href="https://dashboard.stripe.com/account/webhooks" target="_blank">tại đây</a>. Để biết thêm thông tin, vui lòng xem tài liệu.',
+    'You have a new Subscriber' => 'Bạn có một người đăng ký mới',
+    'Payment failed' => 'Thanh toán không thành công',
+    'Please upgrade to a premium package in order to continue.' => 'Vui lòng nâng cấp lên gói cao cấp để tiếp tục.',
+    'Great! Your domain is working.' => 'Tuyệt vời! Miền của bạn đang hoạt động.',
+    'Offline for Maintenance' => 'Ngoại tuyến để bảo trì',
+    'Private Use' => 'Sử dụng cá nhân',
+    'Please create a free account or login to shorten links.' => 'Vui lòng tạo tài khoản miễn phí hoặc đăng nhập để rút ngắn liên kết.',
+    'You cannot shorten URLs of this website.' => 'Bạn không thể rút ngắn URL trên trang web này.',
+    'This domain name or link has been blacklisted.' => 'Tên miền hoặc liên kết này đã bị đưa vào danh sách đen.',
+    'URL is suspected to contain malware and other harmful content.' => 'URL bị nghi ngờ chứa phần mềm độc hại và nội dung có hại khác.',
+    'Banner must be either a PNG or a JPEG (Max 200kb).' => 'Biểu ngữ phải ở định dạng PNG hoặc JPEG (Tối đa 200kb).',
+    'Link has been shortened' => 'Liên kết đã được rút ngắn',
+    'This URL cannot be used with this redirect method because browsers will prevent it for security reasons.' => 'Không thể sử dụng URL này với phương pháp chuyển hướng này vì các trình duyệt sẽ ngăn chặn nó vì lý do bảo mật.',
+    'CTA Contact' => 'Liên hệ với CTA',
+    'CTA Poll' => 'Khảo sát CTA',
+    'CTA Message' => 'Thông điệp kêu gọi hành động',
+    'CTA Newsletter' => 'Bản tin CTA',
+    'Create a small popup form to collect emails from users.' => 'Tạo biểu mẫu bật lên nhỏ để thu thập email của người dùng.',
+    'CTA Image' => 'Ảnh CTA',
+    'Create a small popup with an image of your choice.' => 'Tạo cửa sổ bật lên nhỏ với hình ảnh bạn chọn.',
+    'PayPal' => 'PayPal',
+    'Credit Card' => 'Thẻ tín dụng',
+    'Transfer payments via your bank' => 'Thanh toán bằng chuyển khoản qua ngân hàng của bạn',
+    'Join team and collaborate on everything' => 'Tham gia nhóm và cộng tác trên mọi thứ',
+    'I agree to the terms and conditions' => 'Tôi chấp nhận các điều khoản và điều kiện',
+    'Accept' => 'Chấp nhận',
+    'Forgot Password?' => 'Quên mật khẩu?',
+    'or' => 'Hoặc',
+    'Sign in with' => 'Kết nối với',
+    'All Rights Reserved' => 'Đã đăng ký Bản quyền',
+    'Don\'t have an account?' => 'Bạn chưa có tài khoản?',
+    'Register' => 'Đăng ký',
+    'Create your account' => 'Tạo tài khoản của bạn',
+    'Already have an account?' => 'Bạn co săn san để tạo một tai khoản?',
+    'New Password' => 'Mật khẩu mới',
+    'View Bio' => 'Xem tiểu sử',
+    'Bio Page Name' => 'Tên của trang sinh học',
+    'Bio Page Alias' => 'Bí danh trang sinh học',
+    'Leave this field empty to generate a random alias.' => 'Để trống trường này để tạo bí danh ngẫu nhiên.',
+    'Custom Avatar' => 'hình đại diện tùy chỉnh',
+    'We recommend you choose a square picture with a maximum size of 300x300 and 500kb.' => 'Chúng tôi khuyên bạn nên chọn hình ảnh vuông có kích thước tối đa là 300x300 và 500kb.',
+    'Social Links' => 'Kết nối xã hội',
+    'Appearance' => 'Vẻ bề ngoài',
+    'Add Link or Content' => 'Thêm liên kết hoặc nội dung',
+    'Facebook' => 'Facebook',
+    'Please enter a valid link' => 'Vui lòng nhập một liên kết hợp lệ',
+    'Twitter' => 'twitter',
+    'Instagram' => 'instagram',
+    'Tiktok' => 'Tích tắc',
+    'Linkedin' => 'LinkedIn',
+    'Youtube' => 'Youtube',
+    'Templates' => 'Người mẫu',
+    'Background' => 'Lý lịch',
+    'Single Color' => 'Màu đơn',
+    'Gradient Color' => 'Độ dốc màu',
+    'Gradient Start' => 'Khởi đầu xuống cấp',
+    'Gradient Stop' => 'Điểm dừng xuống cấp',
+    'Button Color' => 'Nút màu',
+    'Button text Color' => 'Màu chữ của nút',
+    'Text' => 'Chữ',
+    'Youtube Video' => 'Video Youtube',
+    'WhatsApp Call' => 'Cuộc gọi WhatsApp',
+    'Spotify Embed' => 'Tích hợp Spotify',
+    'Apple Music Embed' => 'Tích hợp Apple Music',
+    'Paypal Button' => 'Nút Paypal',
+    'Tiktok Embed' => 'Nhúng Tiktok',
+    'Back' => 'Nhận xét',
+    'Add Text' => 'Chèn văn bản',
+    'Image' => 'Hình ảnh',
+    'Add Image' => 'Thêm ảnh',
+    'Link to Video' => 'Liên kết tới video',
+    'Please enter a valid youtube link' => 'Vui lòng nhập liên kết youtube hợp lệ',
+    'Add Youtube Video' => 'Thêm video Youtube',
+    'Phone Number' => 'Số điện thoại',
+    'Add WhatsApp Call' => 'Thêm cuộc gọi WhatsApp',
+    'Link to Spotify Song' => 'Liên kết tới bài hát Spotify',
+    'Please enter a valid spotify link' => 'Vui lòng nhập liên kết Spotify hợp lệ',
+    'Add Spotify' => 'Thêm Spotify',
+    'Link to Apple Music Song' => 'Liên kết tới bài hát Apple Music',
+    'Please enter a valid apple music link' => 'Vui lòng nhập liên kết Apple Music hợp lệ',
+    'Add Apple Music' => 'Thêm Apple Music',
+    'PayPal Button' => 'Nút PayPal',
+    'Currency' => 'Tiền tệ',
+    'Add Paypal' => 'Thêm Paypal',
+    'Link to Tiktok Video' => 'Liên kết tới video Tiktok',
+    'Please enter a valid tiktok link' => 'Vui lòng nhập liên kết tiktok hợp lệ',
+    'Add Tiktok' => 'Thêm Tiktok',
+    'Bio Builder' => 'Người xây dựng sinh học',
+    'Edit Bio' => 'Chỉnh sửa tiểu sử',
+    'Set as Default' => 'Xác định theo mặc định',
+    'Default' => 'Mặc định',
+    'No content found. You can create some.' => 'Không tìm thấy nội dung. Bạn có thể tạo một số.',
+    'Unlimited' => 'Vô hạn',
+    'What are Bio Pages?' => 'Trang sinh học là gì?',
+    'A bio page allows you to create a trackable and customizable landing page where you can add links to your social network pages.' => 'Trang tiểu sử cho phép bạn tạo trang đích có thể theo dõi và tùy chỉnh, nơi bạn có thể thêm liên kết vào các trang truyền thông xã hội của mình.',
+    'You can set a bio page as default and access them via your profile page.' => 'Bạn có thể đặt trang tiểu sử mặc định và truy cập nó thông qua trang hồ sơ của mình.',
+    'Are you sure you want to delete this?' => 'Bạn có chắc chắn muốn xóa cái này không?',
+    'You are trying to delete a record. This action is permanent and cannot be reversed.' => 'Bạn đang cố xóa một bản ghi. Hành động này là vĩnh viễn và không thể đảo ngược.',
+    'Confirm' => 'Xác nhận',
+    'Choose domain to generate the link with.' => 'Chọn miền để liên kết đến.',
+    'Published on' => 'Đã xuất bản trên',
+    'Keep reading' => 'Hãy đọc tiếp',
+    'More posts from our blog' => 'Các bài viết khác từ blog của chúng tôi',
+    'View all' => 'Nhìn thấy mọi thứ',
+    'The custom image is not valid. Only a JPG or PNG are accepted.' => 'Hình ảnh tùy chỉnh không hợp lệ. Chỉ JPG hoặc PNG được chấp nhận.',
+    'Custom image must be either a PNG or a JPEG (Max 500kb).' => 'Hình ảnh tùy chỉnh phải ở định dạng PNG hoặc JPEG (Tối đa 500 KB).',
+    'Settings are successfully saved.' => 'Cài đặt đã lưu thành công.',
+    'Domain' => 'Lãnh địa',
+    'Domain Root' => 'gốc tên miền',
+    'Domain 404' => 'Miền 404',
+    'Update Domain' => 'Cập nhật tên miền',
+    'Add Domain' => 'Thêm miền',
+    'Inactive/Disabled' => 'Không hoạt động/Đã tắt',
+    'None' => 'Không có',
+    'Domains' => 'Khu vực',
+    'How to setup custom domain' => 'Cách định cấu hình miền tùy chỉnh',
+    'If you have a custom domain name that you want to use with our service, you can associate it to your account very easily. Once added, we will add the domain to your account and set it as the default domain name for your URLs. DNS changes could take up to 36 hours. If you are planning to serve SSL on your domain name, we recommend using cloudflare.' => 'Nếu bạn có một tên miền tùy chỉnh mà bạn muốn sử dụng với dịch vụ của chúng tôi, bạn có thể liên kết nó với tài khoản của mình rất dễ dàng. Khi đã thêm, chúng tôi sẽ thêm miền vào tài khoản của bạn và đặt miền đó làm tên miền mặc định cho các URL của bạn. Thay đổi DNS có thể mất tới 36 giờ. Nếu bạn định sử dụng SSL trên tên miền của mình, chúng tôi khuyên bạn nên sử dụng cloudflare.',
+    'To point your domain name, create an A record and set the value to ' => 'Để trỏ tên miền của bạn, hãy tạo bản ghi A và đặt giá trị thành',
+    'If you have a custom domain name that you want to use with our service, you can associate it to your account very easily. Once added, we will add the domain to your account and set it as the default domain name for your URLs. DNS changes could take up to 36 hours.' => 'Nếu bạn có một tên miền tùy chỉnh mà bạn muốn sử dụng với dịch vụ của chúng tôi, bạn có thể liên kết nó với tài khoản của mình rất dễ dàng. Khi đã thêm, chúng tôi sẽ thêm miền vào tài khoản của bạn và đặt miền đó làm tên miền mặc định cho các URL của bạn. Thay đổi DNS có thể mất tới 36 giờ.',
+    'Error' => 'Lỗi',
+    'The page you are looking for could not be found.' => 'Không tìm thấy trang bạn đang tìm kiếm.',
+    'Back to home' => 'Trở về nhà',
+    'Stop' => 'Dừng lại',
+    'There is a problem with this link and we have blocked it either because it is potentially malicious or contains inappropriate content that is against our terms of service. We actively monitor all links on our platform to ensure the safety of all our users. If you have any questions, feel free to contact us.' => 'Có vấn đề với liên kết này và chúng tôi đã chặn nó vì nó có khả năng độc hại hoặc vì nó chứa nội dung không phù hợp vi phạm Điều khoản dịch vụ của chúng tôi. Chúng tôi tích cực giám sát tất cả các liên kết trên nền tảng của mình để đảm bảo an toàn cho tất cả người dùng của chúng tôi. Nếu bạn có bất kỳ câu hỏi nào, đừng ngần ngại liên hệ với chúng tôi.',
+    'Oops' => 'Ối',
+    'The link you are trying to access is now expired either because the campaign ended or the link was disabled. If you have any questions, feel free to contact us.' => 'Liên kết bạn đang cố truy cập hiện đã hết hạn, do chiến dịch đã kết thúc hoặc liên kết đã bị vô hiệu hóa. Nếu bạn có bất kỳ câu hỏi nào, đừng ngần ngại liên hệ với chúng tôi.',
+    'Seconds' => 'Giây',
+    'Powered by' => 'Được hỗ trợ bởi',
+    'Custom domain working' => 'Miền tùy chỉnh đang hoạt động',
+    'Enter Password' => 'Nhập mật khẩu',
+    'You are about to be redirected to another page. We are not responsible for the content of that page or the consequences it may have on you.' => 'Bạn sắp được chuyển hướng đến một trang khác. Chúng tôi không chịu trách nhiệm về nội dung của trang này hoặc bất kỳ ảnh hưởng nào mà nó có thể gây ra cho bạn.',
+    'Advanced' => 'Nâng cao',
+    'Custom' => 'Phong tục',
+    'Password Protection' => 'Mật khẩu bảo vệ',
+    'Your link has been successfully shortened. Want to more customization options?' => 'Link của bạn đã được rút gọn thành công. Muốn có thêm tùy chọn tùy chỉnh?',
+    'Your latest links' => 'Liên kết mới nhất của bạn',
+    'Want more options to customize the link, QR codes, branding and advanced metrics?' => 'Muốn có thêm tùy chọn để tùy chỉnh liên kết, mã QR, thương hiệu và các chỉ số nâng cao?',
+    'Latest links' => 'Liên kết cuối cùng',
+    'Smart Targeting' => 'Nhắm mục tiêu thông minh',
+    'In-Depth Analytics' => 'Phân tích sâu',
+    'Digital Experience' => 'Trải nghiệm kỹ thuật số',
+    'Use various powerful tools increase conversion and provide a non-intrusive experience to your customers without disengaging them.' => 'Sử dụng nhiều công cụ mạnh mẽ để tăng chuyển đổi và cung cấp trải nghiệm không xâm phạm cho khách hàng của bạn mà không làm họ mất hứng thú.',
+    'Redirection Tools' => 'Công cụ chuyển hướng',
+    'Powerful Statistics' => 'Số liệu thống kê mạnh mẽ',
+    'Beautiful Profiles' => 'Hồ sơ đẹp',
+    'New York, United States' => 'New York, Hoa Kỳ',
+    'Someone visited your link' => 'Ai đó đã truy cập liên kết của bạn',
+    '{d} minutes ago' => '{d} phút trước',
+    'Paris, France' => 'Paris, Pháp',
+    'London, United Kingdom' => 'London, Vương quốc Anh',
+    'Optimize your marketing strategy' => 'Tối ưu hóa chiến lược tiếp thị của bạn',
+    'More features than asked for' => 'Nhiều tính năng hơn yêu cầu',
+    'CTA Overlays' => 'Lớp phủ CTA',
+    'Use our overlay tool to display unobtrusive notifications, polls or even a contact on the target website. Great for campaigns.' => 'Sử dụng công cụ lớp phủ của chúng tôi để hiển thị các thông báo kín đáo, các cuộc thăm dò ý kiến ​​hoặc thậm chí là một liên hệ trên trang web mục tiêu. Lý tưởng cho các chiến dịch.',
+    'Team Management' => 'Quản lý nhóm',
+    'Invite your team members and assign them specific privileges to manage links, bundles, pages and other features.' => 'Mời các thành viên trong nhóm của bạn và cấp cho họ các đặc quyền cụ thể để quản lý liên kết, gói, trang và các tính năng khác.',
+    'Branded Domain Names' => 'Tên miền thương hiệu',
+    'Easily add your own domain name for short your links and take control of your brand name and your users\' trust.' => 'Dễ dàng thêm tên miền của riêng bạn để rút ngắn các liên kết của bạn và kiểm soát thương hiệu của bạn cũng như lòng tin của người dùng.',
+    'What our customers say about us' => 'Khách hàng nói gì về chúng tôi',
+    'Happy Customers' => 'Khách hàng hài lòng',
+    'Invoice' => 'Hóa đơn',
+    'Payment Date' => 'Ngày thanh toán',
+    'Bill to' => 'làm hóa đơn',
+    'Payment To' => 'Chi trả tiền cho',
+    'Subscription' => 'Đăng ký',
+    'Report' => 'Báo cáo',
+    'The selected image is not valid. Please select a jpg or png with a maximum size of 1mb' => 'Hình ảnh đã chọn không hợp lệ. Vui lòng chọn một jpg hoặc png với kích thước tối đa là 1MB',
+    'No data is available for this request.' => 'Không có dữ liệu cho yêu cầu này.',
+    'BRB' => 'BRB',
+    'We are currently offline for maintenance. We will be back online as soon as we are done. It should not take long.' => 'Chúng tôi hiện đang ngoại tuyến để bảo trì. Chúng tôi sẽ trực tuyến trở lại ngay sau khi hoàn thành. Sẽ không mất nhiều thời gian đâu.',
+    'What is a CTA overlay?' => 'Lớp phủ CTA là gì?',
+    'An overlay page allows you to display a small non-intrusive overlay on the destination website to advertise your product or your services. You can also use this feature to send a message to your users. You can customize the message and the appearance of the overlay right from this page. As soon as you save it, the changes will be applied immediately across all your URLs using this type. Please note that some secured and sensitive websites such as google.com or facebook.com do not work with this feature. You can have unlimited overlay pages and you can choose one for each URL.' => 'Trang lớp phủ cho phép bạn hiển thị một lớp phủ nhỏ, không xâm phạm trên trang web đích để quảng cáo sản phẩm hoặc dịch vụ của bạn. Bạn cũng có thể sử dụng tính năng này để gửi tin nhắn cho người dùng của mình. Bạn có thể tùy chỉnh thông báo và giao diện của lớp phủ trực tiếp từ trang này. Ngay sau khi bạn lưu nó, các thay đổi sẽ được áp dụng ngay lập tức cho tất cả các URL của bạn bằng loại này. Xin lưu ý rằng một số trang web an toàn và nhạy cảm như google.com hoặc facebook.com không hoạt động với tính năng này. Bạn có thể có số lượng trang lớp phủ không giới hạn và bạn có thể chọn một trang cho mỗi URL.',
+    'Thank You Message' => 'Tin nhắn cảm ơn',
+    'e.g. Thank you. We will respond asap.' => 'Ví dụ. CẢM ƠN. Chúng tôi sẽ trả lời bạn càng sớm càng tốt.',
+    'Text Labels' => 'Nhãn văn bản',
+    'Appearance Customization' => 'Tùy chỉnh giao diện',
+    'Bottom Center' => 'Trung tâm trên',
+    'If you want to receive a notification directly to your app, add the url to your app\'s handler and as soon as there is a submission, we will send a notification to this url as well as an email to the address provided above.' => 'Nếu bạn muốn nhận thông báo trực tiếp trên đơn đăng ký của mình, hãy thêm URL vào trình quản lý ứng dụng của bạn và ngay khi có đơn gửi, chúng tôi sẽ gửi thông báo tới URL này cũng như email tới \'địa chỉ đã cung cấp ở trên. ',
+    'If you add a link here, the whole overlay will be linked to this when clicked.' => 'Nếu bạn thêm một liên kết ở đây, toàn bộ lớp phủ sẽ liên kết với nó khi được nhấp vào.',
+    'Logo' => 'Logo',
+    'Logo should be square with a maximum size of 100x100. To remove the image, click on the upload field and then cancel it.' => 'Biểu trưng phải là hình vuông với kích thước tối đa là 100 x 100. Để xóa hình ảnh, hãy nhấp vào trường tải lên, sau đó hủy nó.',
+    'Background Image' => 'Hình nền',
+    'Image should be rectangle with a maximum size of 600x150. To remove the image, click on the upload field and then cancel it.' => 'Hình ảnh phải là hình chữ nhật có kích thước tối đa là 600 x 150. Để xóa hình ảnh, hãy nhấp vào trường tải lên, sau đó hủy bỏ hình ảnh đó.',
+    'Label Background Color' => 'Màu nền của nhãn',
+    'Label Text Color' => 'Nhãn màu văn bản',
+    'e.g. Thank you.' => 'Ví dụ. CẢM ƠN.',
+    'Button' => 'Cái nút',
+    'Subscribe' => 'Đặt mua',
+    'Newsletter' => 'Bản tin',
+    'If you add a webhook url, we will send a notification to that url with the form data. You will be able to integrate it with your own app or a third-party app. Below is a sample data that will be sent in <code>JSON</code> format via a <code>POST</code> request.' => 'Nếu bạn thêm URL webhook, chúng tôi sẽ gửi thông báo tới URL đó cùng với dữ liệu biểu mẫu. Bạn có thể tích hợp nó với ứng dụng của riêng bạn hoặc ứng dụng của bên thứ ba. Dưới đây là ví dụ về dữ liệu sẽ được gửi ở định dạng <code>JSON</code> thông qua yêu cầu <code>POST</code>.',
+    'e.g. What is your favorite color?' => 'Ví dụ. Màu sắc ưa thích của bạn là gì?',
+    'Vote Button Placeholder' => 'Phần giữ chỗ cho nút biểu quyết',
+    'Thanks...' => 'CẢM ƠN...',
+    'Newsletter Emails' => 'email bản tin',
+    'Collected {c} emails in total' => 'Tổng cộng {c} email đã được thu thập',
+    'Download as CSV' => 'Tải xuống ở định dạng CSV',
+    'Poll Results' => 'Kết quả khảo sát',
+    'Earn {p} commission on affiliate sales' => 'Kiếm {p} hoa hồng khi bán hàng qua đơn vị liên kết',
+    'Refer customers to us and we will reward you a {p}% commission on all qualifying sales made on our website. Anyone can join the affiliate program.' => 'Giới thiệu khách hàng cho chúng tôi và chúng tôi sẽ thưởng cho bạn khoản hoa hồng {p}% cho tất cả doanh số bán hàng đủ điều kiện được thực hiện trên trang web của chúng tôi. Bất kỳ ai cũng có thể tham gia chương trình liên kết.',
+    'View Affiliate Portal' => 'Xem cổng liên kết',
+    'Join now' => 'Tham gia ngay',
+    'Getting Started' => 'Bắt đầu',
+    'Authentication' => 'Xác thực',
+    'Rate Limit' => 'Giới hạn tỷ lệ',
+    'Response Handling' => 'Quản lý phản hồi',
+    'An API key is required for requests to be processed by the system. Once a user registers, an API key is automatically generated for this user. The API key must be sent with each request (see full example below). If the API key is not sent or is expired, there will be an error. Please make sure to keep your API key secret to prevent abuse.' => 'Cần có khóa API để hệ thống xử lý các yêu cầu. Sau khi người dùng đăng ký, khóa API sẽ tự động được tạo cho người dùng đó. Khóa API phải được gửi cùng với mỗi yêu cầu (xem ví dụ đầy đủ bên dưới). Nếu khóa API không được gửi hoặc đã hết hạn, sẽ xảy ra lỗi. Đảm bảo giữ bí mật khóa API của bạn để tránh lạm dụng.',
+    'If you proceed, your current applications will not work anymore. You will need to change your api key for it to work again.' => 'Nếu bạn tiếp tục, các ứng dụng hiện tại của bạn sẽ không hoạt động nữa. Bạn sẽ cần phải thay đổi khóa API của mình để khóa này hoạt động trở lại.',
+    'To authenticate with the API system, you need to send your API key as an authorization token with each request. You can see sample code below.' => 'Để xác thực với hệ thống API, bạn phải gửi khóa API của mình dưới dạng mã thông báo ủy quyền với mỗi yêu cầu. Bạn có thể xem mã mẫu bên dưới.',
+    'Our API has a rate limiter to safeguard against spike in requests to maximize its stability. Our rate limiter is currently caped at {x} requests per {y} minute.' => 'API của chúng tôi có bộ giới hạn tốc độ để bảo vệ chống lại các yêu cầu tăng đột biến nhằm tối đa hóa tính ổn định của nó. Bộ giới hạn tốc độ của chúng tôi hiện bị giới hạn đối với {x} yêu cầu mỗi {y} phút.',
+    'Several headers will be sent alongside the response and these can be examined to determine various information about the request.' => 'Một số tiêu đề sẽ được gửi cùng với phản hồi và chúng có thể được kiểm tra để xác định các thông tin khác nhau về yêu cầu.',
+    'All API response are returned in JSON format by default. To convert this into usable data, the appropriate function will need to be used according to the language. In PHP, the function json_decode() can be used to convert the data to either an object (default) or an array (set the second parameter to true). It is very important to check the error key as that provides information on whether there was an error or not. You can also check the header code.' => 'Tất cả các phản hồi API được trả về ở định dạng JSON theo mặc định. Để chuyển đổi dữ liệu này thành dữ liệu có thể sử dụng, chức năng thích hợp sẽ cần được sử dụng tùy thuộc vào ngôn ngữ. Trong PHP, hàm json_decode() có thể được sử dụng để chuyển đổi dữ liệu thành đối tượng (mặc định) hoặc mảng (đặt tham số thứ hai thành true). Điều rất quan trọng là kiểm tra khóa lỗi vì nó cho biết có lỗi hay không. Bạn cũng có thể kiểm tra mã tiêu đề.',
+    'Parameter' => 'Cài đặt',
+    'One link to rule them all' => 'Một trái phiếu thống trị tất cả',
+    'Create beautiful profiles and add content like links, donation, videos and more for your social media users. Share a single on your social media profiles so your users can easily find all of your important links on a single page.' => 'Tạo hồ sơ đẹp mắt và thêm nội dung như liên kết, quyên góp, video, v.v. cho người dùng phương tiện truyền thông xã hội của bạn. Chia sẻ một liên kết trên hồ sơ mạng xã hội của bạn để người dùng có thể dễ dàng tìm thấy tất cả các liên kết quan trọng của bạn trên một trang.',
+    'The new standard' => 'Bình thường mới',
+    'Track and optimize' => 'Theo dõi và Tối ưu hóa',
+    'Profiles are fully trackable and you can find out exactly how many people have visited your profiles or clicked links on your profile and where they are from.' => 'Hồ sơ hoàn toàn có thể theo dõi được và bạn có thể biết chính xác có bao nhiêu người đã truy cập hồ sơ của bạn hoặc nhấp vào liên kết trên hồ sơ của bạn và họ đến từ đâu.',
+    'Trackable to the dot' => 'Có thể theo dõi tất cả các cách',
+    'If you have any questions, feel free to contact us so we can help you' => 'Nếu bạn có bất kỳ câu hỏi nào, đừng ngần ngại liên hệ với chúng tôi để chúng tôi có thể giúp bạn',
+    'Please enter a valid name.' => 'Xin vui lòng nhập vào một tên hợp lệ.',
+    'The message is empty or too short.' => 'Tin nhắn trống hoặc quá ngắn.',
+    'Back to top' => 'Quay lại đầu trang',
+    'Last Updated' => 'Cập nhật cuối cùng',
+    'QR Codes are everywhere and they are not going away. They are a great asset to your company because you can easily capture users and convert them. QR codes can be customized to match your company, brand or product.' => 'Mã QR ở khắp mọi nơi và chúng sẽ không biến mất. Chúng là tài sản tuyệt vời cho doanh nghiệp của bạn vì bạn có thể dễ dàng thu hút người dùng và chuyển đổi họ. Mã QR có thể được tùy chỉnh để phù hợp với doanh nghiệp, thương hiệu hoặc sản phẩm của bạn.',
+    'The beautify of QR codes is that almost any type of data can be encoded in them. Most types of data can be tracked very easily so you will know exactly when and from where a person scanned your QR code.' => 'Cái hay của mã QR là hầu hết mọi loại dữ liệu đều có thể được mã hóa trong chúng. Hầu hết các loại dữ liệu có thể được theo dõi rất dễ dàng để bạn biết chính xác thời gian và vị trí ai đó đã quét mã QR của bạn.',
+    'Report link' => 'Báo cáo liên kết',
+    'Please report a link that you consider risky or dangerous. We will review all cases and take measure to remove the link.' => 'Vui lòng báo cáo một liên kết mà bạn cho là rủi ro hoặc nguy hiểm. Chúng tôi sẽ điều tra tất cả các trường hợp và thực hiện hành động để xóa liên kết.',
+    'Please enter a valid short link' => 'Vui lòng nhập một liên kết ngắn hợp lệ',
+    'Solutions' => 'Các giải pháp',
+    'Company' => 'Công ty',
+    'Help' => 'Giúp đỡ',
+    'More Info' => 'Thêm thông tin',
+    'Set Private' => 'Đặt làm riêng tư',
+    'Set Public' => 'Công bố',
+    'Export Statistics' => 'Thống kê xuất khẩu',
+    'Archived' => 'Lưu trữ',
+    'Campaign' => 'Chiến dịch',
+    'Geo Targeted' => 'Nhắm mục tiêu theo địa lý',
+    'Resources' => 'Tài nguyên',
+    'Guide on how to use our API' => 'Hướng dẫn sử dụng API của chúng tôi',
+    'Check out our frequently asked questions' => 'Tham khảo các câu hỏi thường gặp của chúng tôi',
+    'Customizable & trackable QR codes' => 'Mã QR có thể tùy chỉnh và theo dõi',
+    'Convert your social media followers' => 'Chuyển đổi người theo dõi trên mạng xã hội của bạn',
+    'Admin Panel' => 'bảng quản trị',
+    'Paste a long link' => 'Dán một liên kết dài',
+    'Redirect' => 'Chuyển hướng',
+    'Set an expiration date to disable the link.' => 'Đặt ngày hết hạn để tắt liên kết.',
+    'Meta Tags' => 'Thẻ meta',
+    'Geo Targeting' => 'nhắm mục tiêu theo địa lý',
+    'Custom Banner' => 'Biểu ngữ tùy chỉnh',
+    'Enter your custom meta title' => 'Nhập tiêu đề meta tùy chỉnh của bạn',
+    'Enter your custom meta description' => 'Nhập mô tả meta tùy chỉnh của bạn',
+    '+ Add' => '+ Thêm',
+    'All States' => 'Tất cả các bang',
+    'Parameter Builder' => 'Trình tạo tham số',
+    'You can add custom parameters like UTM to the link above using this tool. Choose the parameter name and then assign a value. These will be added during redirection.' => 'Bạn có thể thêm các tham số tùy chỉnh như UTM vào liên kết ở trên bằng công cụ này. Chọn tên của tham số, sau đó gán giá trị. Chúng sẽ được thêm vào trong quá trình chuyển hướng.',
+    'Parameter name' => 'Tên của thông số',
+    'Parameter value' => 'Giá trị tham số',
+    'Teams' => 'Đội',
+    'All Tools' => 'Tất cả các công cụ',
+    'Summary' => 'Bản tóm tắt',
+    'Countries' => 'Quốc gia',
+    'Platforms' => 'Nền tảng',
+    'Languages' => 'NGÔN NGỮ',
+    'Dark Mode' => 'Chế độ tối',
+    'Light Mode' => 'Chế độ sáng',
+    '{t} Notifications' => '{t} thông báo',
+    'Affiliate' => 'Chi nhánh',
+    'Log out' => 'Đăng xuất',
+    'View Links' => 'Hiển thị liên kết',
+    'Pixel Name' => 'Tên pixel',
+    'Pixel Tag' => 'Thẻ pixelized',
+    'Update Pixel' => 'Cập nhật Pixel',
+    'Add Pixel' => 'Thêm một điểm ảnh',
+    'More info' => 'Thêm thông tin',
+    'Pixel Provider' => 'Nhà cung cấp pixel',
+    'Payment Method' => 'Phương thức thanh toán',
+    'Billing Address' => 'Địa chỉ thanh toán',
+    'Subtotal' => 'Tổng cộng',
+    'Promo Code' => 'Mã khuyến mại',
+    'Apply' => 'Áp dụng',
+    'Apply promo code' => 'Áp dụng mã khuyến mại',
+    'Discount' => 'Vận chuyển',
+    'One-time payment' => 'Thanh toán một lần',
+    'Billed' => 'Hóa đơn',
+    'By subscribing to this plan, you agree to our Terms & Conditions. Subscription is charged in {c}. If you have any questions, please contact us.' => 'Bằng cách đăng ký gói này, bạn đồng ý với các điều khoản và điều kiện của chúng tôi. Đăng ký được lập hóa đơn trong {c}. Nếu bạn có thắc mắc, xin vui lòng liên hệ với chúng tôi.',
+    'Clicks per month' => 'Số nhấp chuột mỗi tháng',
+    'Team Members' => 'Thành viên của nhóm',
+    'Campaigns & Link Rotator' => 'Chiến dịch và công cụ quay vòng liên kết',
+    'Multiple Domains' => 'Nhiều miền',
+    'Custom Parameters' => 'Cài đặt tùy chỉnh',
+    'Advertisement-Free' => 'Quảng cáo miễn phí',
+    'Thanks for your interest but this website is currently used privately.' => 'Cảm ơn bạn đã quan tâm, nhưng trang web này hiện đang được sử dụng riêng tư.',
+    'QR Code Name' => 'tên mã QR',
+    'Your Text' => 'Văn bản của bạn',
+    'Your Link' => 'Liên kết của bạn',
+    'Subject' => 'Vấn đề',
+    'Job Application' => 'Đơn xin việc',
+    'Your message here to be sent as email' => 'Thông điệp của bạn ở đây để gửi qua e-mail',
+    'Phone' => 'Gọi',
+    'SMS' => 'TIN NHẮN',
+    'vCard' => 'vCard',
+    'First Name' => 'Tên đầu tiên',
+    'Last Name' => 'Họ',
+    'Organization' => 'Thân hình',
+    'Website' => 'Trang mạng',
+    'Social' => 'Xã hội',
+    'Street' => 'Đường phố',
+    'State' => 'Tình trạng',
+    'Zipcode' => 'Mã bưu điện',
+    'Linekdin' => 'LinkedIn',
+    'WiFi' => 'Không dây',
+    'Network SSID' => 'Mạng SSID',
+    'Encryption' => 'Mã hóa',
+    'Colors' => 'Màu sắc',
+    'Foreground' => 'Vấn đề xung quanh',
+    'Gradient Direction' => 'Cảm giác về độ dốc',
+    'Vertical' => 'Thẳng đứng',
+    'Horizontal' => 'Nằm ngang',
+    'Radial' => 'Xuyên tâm',
+    'Diagonal' => 'Đường chéo',
+    'Design' => 'Thiết kế',
+    'Matrix Style' => 'Kiểu ma trận',
+    'Square' => 'Bờ rìa',
+    'Rounded' => 'Tròn',
+    'Dots' => 'Điểm',
+    'Eye Style' => 'Kiểu mắt',
+    'Circle' => 'Vòng tròn',
+    'QR Code' => 'Mã QR',
+    'You will be able to download the QR code in PDF or SVG after it has been generated.' => 'Bạn sẽ có thể tải xuống mã QR ở định dạng PDF hoặc SVG sau khi được tạo.',
+    'Download as PNG' => 'Tải xuống dưới dạng PNG',
+    'Download as SVG' => 'Tải xuống ở định dạng SVG',
+    'Download as PDF' => 'Tải xuống dưới dạng PDF',
+    'Scans' => 'Quét',
+    'What are QR Codes?' => 'Mã QR là gì?',
+    'A QR code is a machine-readable code consisting of an array of black and white squares, typically used for storing URLs or other information for reading by the camera on a smartphone.' => 'Mã QR là mã mà máy có thể đọc được bao gồm một dãy ô vuông màu đen và trắng, thường được sử dụng để lưu trữ URL hoặc thông tin khác mà máy ảnh trên điện thoại thông minh có thể đọc được.',
+    'Static QR' => 'QR tĩnh',
+    'Non-Trackable' => 'Không theo dõi được',
+    'Dynamic QR' => 'QR động',
+    'Trackable' => 'Có thể theo dõi',
+    'Preview' => 'Cái nhìn thấu suốt',
+    'Eye Color' => 'Màu mắt',
+    'Custom Logo' => 'Biểu tượng tùy chỉnh',
+    'Generate QR' => 'Tạo QR',
+    'A custom splash page is a transitional page where you can customize it however you want.' => 'Trang chủ tùy chỉnh là trang chuyển tiếp mà bạn có thể tùy chỉnh theo ý muốn.',
+    'Counter' => 'Quầy tính tiền',
+    'The minimum width must be 980px and the height must be between 250 and 500. The format must be a PNG or a JPG. Maximum size is 500KB' => 'Chiều rộng tối thiểu phải là 980px và chiều cao phải nằm trong khoảng từ 250 đến 500. Định dạng phải là PNG hoặc JPG. Kích thước tối đa là 500 KB',
+    'What is a custom splash page?' => 'Trang chủ được cá nhân hóa là gì?',
+    'A custom splash page is a transitional page where you can add a banner and a logo along with a message to represent your brand or company. When creating a short link, you will be able to assign the page to your short url. Users who visit your url will briefly see the page before being redirected to their destination.' => 'Trang đích tùy chỉnh là trang chuyển tiếp nơi bạn có thể thêm biểu ngữ và biểu trưng cùng với thông báo để đại diện cho thương hiệu hoặc doanh nghiệp của mình. Khi tạo một liên kết ngắn, bạn sẽ có thể gán trang cho URL ngắn của mình. Người dùng truy cập URL của bạn sẽ thấy trang này một thời gian ngắn trước khi được chuyển hướng đến đích của họ.',
+    'Choose a date range to update stats' => 'Chọn phạm vi ngày để cập nhật số liệu thống kê',
+    'Top Browsers' => 'Trình duyệt tốt nhất',
+    'Visitor Map' => 'Bản đồ khách truy cập',
+    'Cities' => 'Các thành phố',
+    'Select a region in the map above to display city data.' => 'Chọn một khu vực trên bản đồ ở trên để xem dữ liệu thành phố.',
+    'Recent Activity' => 'Hoạt động gần đây',
+    'Direct, email or others' => 'Trực tiếp, email hoặc những người khác',
+    'Top Languages' => 'Ngôn ngữ chính',
+    'Bio Link' => 'Liên kết sinh học',
+    'Unique Scans' => 'Quét duy nhất',
+    'Top Country' => 'Quốc gia tốt nhất',
+    'Top Referrer' => 'Người giới thiệu tốt nhất',
+    'Top Platforms' => 'Nền tảng tốt nhất',
+    'Top Referrers' => 'Tài liệu tham khảo chính',
+    'Direct, email and others' => 'Trực tiếp, email và những thứ khác',
+    'Social Media' => 'truyền thông xã hội',
+    'Edit Member' => 'Chỉnh sửa thành viên',
+    'Permissions' => 'Quyền',
+    'Create Links' => 'Tạo liên kết',
+    'Edit Links' => 'Chỉnh sửa liên kết',
+    'Delete Links' => 'Xóa liên kết',
+    'Delete QR' => 'Xóa QR',
+    'Delete Bio' => 'Xóa tiểu sử',
+    'Create Splash' => 'Tạo Splatters',
+    'Edit Splash' => 'Chỉnh sửa Splatter',
+    'Delete Splash' => 'Xóa Splatter',
+    'Create Overlay' => 'Tạo lớp phủ',
+    'Edit Overlay' => 'Chỉnh sửa lớp phủ',
+    'Delete Overlay' => 'Xóa lớp phủ',
+    'Create Pixels' => 'Tạo pixel',
+    'Edit Pixels' => 'Chỉnh sửa Pixel',
+    'Delete Pixels' => 'Xóa pixel',
+    'Add Branded Domain' => 'Thêm tên miền thương hiệu',
+    'Delete Branded Domain' => 'Xóa miền thương hiệu',
+    'Create Campaigns' => 'Tạo Chiến dịch',
+    'Edit Campaigns' => 'Chỉnh sửa Chiến dịch',
+    'Delete Campaigns' => 'Xóa Chiến dịch',
+    'Add Member' => 'Thêm thành viên',
+    'Inactive' => 'Nhàn rỗi',
+    'No members found. You can invite one.' => 'Không tìm thấy thành viên nào. Bạn có thể mời một người.',
+    'Permission' => 'Ủy quyền',
+    'Create: A create event will allow your team member to shorten links, create splash pages & overlay and campaigns.' => 'Tạo: Sự kiện tạo sẽ cho phép thành viên trong nhóm của bạn rút ngắn liên kết, tạo trang giới thiệu, lớp phủ và chiến dịch.',
+    'Edit: An edit event will allow your team member to edit links, splash pages & overlay and campaigns.' => 'Chỉnh sửa: Một sự kiện thay đổi sẽ cho phép thành viên trong nhóm của bạn chỉnh sửa liên kết, trang bắt đầu, lớp phủ và chiến dịch.',
+    'Delete: A delete event will allow your team member to delete links, splash pages & overlay and campaigns.' => 'Xóa: Sự kiện xóa sẽ cho phép thành viên trong nhóm của bạn xóa liên kết, trang giật gân, lớp phủ và chiến dịch.',
+    'Branded Domain' => 'Miền thương hiệu',
+    'Add Custom Domain' => 'Thêm miền tùy chỉnh',
+    'Delete Custom Domain' => 'Xóa miền tùy chỉnh',
+    'Invite' => 'Mời',
+    'Affiliate Link' => 'Liên kết liên kết',
+    'Referral History' => 'Lịch sử tài trợ',
+    'Commission' => 'Nhiệm vụ',
+    'Referred On' => 'Được tham chiếu trên',
+    'Paid On' => 'Trả nó',
+    'Approved' => 'Tán thành',
+    'Paid' => 'Trả',
+    'Rejected' => 'Vật bị loại bỏ',
+    'Pending' => 'Đang chờ',
+    'Affiliate Rate' => 'Tỷ lệ liên kết',
+    'per qualifying sales' => 'theo doanh số đủ điều kiện',
+    'Minimum earning of {amount} is required for payment.' => 'Cần có số tiền thắng tối thiểu là {amount} để xuất chi.',
+    'Terms' => 'Điều kiện',
+    'Payment History' => 'lịch sử thanh toán',
+    'We respect your decision and we are sorry to see you go. If you want to share anything with us, please use the box below and we will do our best to improve our service.' => 'Chúng tôi tôn trọng quyết định của bạn và rất tiếc khi thấy bạn ra đi. Nếu bạn muốn chia sẻ bất cứ điều gì với chúng tôi, vui lòng sử dụng hộp bên dưới và chúng tôi sẽ cố gắng hết sức để cải thiện dịch vụ của mình.',
+    'Create a Campaign' => 'Tạo chiến dịch',
+    'Rotator' => 'Máy quay',
+    'views' => 'lượt xem',
+    'links' => 'kết nối',
+    'What is a campaign?' => 'Chiến dịch là gì?',
+    'A campaign can be used to group links together for various purpose. You can use the dedicated rotator link where a random link will be chosen and redirected to among the group. You will also be able to view aggregated statistics for a campaign.' => 'Một chiến dịch có thể được sử dụng để tổng hợp các liên kết cho các mục đích khác nhau. Bạn có thể sử dụng công cụ quay vòng liên kết chuyên dụng trong đó một liên kết ngẫu nhiên sẽ được chọn và chuyển hướng đến giữa các nhóm. Bạn cũng sẽ có thể xem thống kê tổng hợp cho một chiến dịch.',
+    'Campaign Name' => 'Tên chiến dịch',
+    'Rotator Slug' => 'sên quay',
+    'If you want to set a custom alias for the rotator link, you can fill this field.' => 'Nếu bạn muốn đặt bí danh tùy chỉnh cho liên kết công cụ quay vòng, bạn có thể điền vào trường này.',
+    'Access' => 'Truy cập vào',
+    'Disabling this option will deactivate the rotator link.' => 'Vô hiệu hóa tùy chọn này sẽ vô hiệu hóa liên kết công cụ quay vòng.',
+    'Create Campaign' => 'Tạo chiến dịch',
+    'Update Campaign' => 'Cập nhật chiến dịch',
+    'Export Stats' => 'Thống kê xuất khẩu',
+    'Traffic Distribution' => 'Phân phối lưu lượng truy cập',
+    'Browser' => 'Hoa tiêu',
+    'Choose a range to export data as CSV. Exported data will including information like date, city and country, os, browser, referer and language.' => 'Chọn một phạm vi để xuất dữ liệu sang định dạng CSV. Dữ liệu được xuất sẽ bao gồm các thông tin như ngày, thành phố và quốc gia, hệ điều hành, trình duyệt, liên kết giới thiệu và ngôn ngữ.',
+    'Export' => 'Xuất khẩu',
+    'Alias' => 'A.k.a',
+    'Today' => 'Hôm nay',
+    'Recent Clicks' => 'Số nhấp chuột gần đây',
+    'Recent Links' => 'Liên kết gần đây',
+    'Search for links' => 'Tìm kiếm liên kết',
+    'Unarchive Selected' => 'Không lưu trữ lựa chọn',
+    'Archive Selected' => 'Lưu trữ đã chọn',
+    'Add to Campaign' => 'Thêm vào chiến dịch',
+    'No links found. You can create some.' => 'Không tìm thấy liên kết nào. Bạn có thể tạo một số.',
+    'Bio Page' => 'Trang sinh học',
+    'Short Link Info' => 'Thông tin liên kết ngắn',
+    'Download' => 'Tải xuống',
+    'Done' => 'LÀM',
+    'Add' => 'Thêm vào',
+    'Sort Results' => 'Sắp xếp kết quả',
+    'Latest' => 'Cuối cùng',
+    'Most Popular' => 'Phổ biến nhất',
+    'Less Popular' => 'Ít phổ biến hơn',
+    'Export Links' => 'Xuất liên kết',
+    'This tool allows you to generate a list of urls in CSV format. Some basic data such clicks will be included as well.' => 'Công cụ này tạo danh sách các url ở định dạng CSV. Một số dữ liệu cơ bản như số nhấp chuột cũng sẽ được bao gồm.',
+    'Leave blank to keep current one.' => 'Để trống để giữ cái hiện tại.',
+    'Default Domain' => 'Tên miền mặc định',
+    'Public profile will be activated only when this option is public.' => 'Hồ sơ công khai sẽ chỉ được kích hoạt khi tùy chọn này ở chế độ công khai.',
+    'If enabled, special pages will be automatically created for your media URLs (e.g. youtube, vimeo, dailymotion...).' => 'Nếu tùy chọn này được bật, các trang đặc biệt sẽ được tạo tự động cho các URL phương tiện của bạn (ví dụ: youtube, vimeo, dailymotion...).',
+    'If enabled, you will receive occasional newsletters from us.' => 'Nếu được bật, thỉnh thoảng bạn sẽ nhận được bản tin từ chúng tôi.',
+    'Save Settings' => 'Lưu các thiết lập',
+    'View QR' => 'Xem QR',
+    'You need to scan the code above with the app. You need to backup the QR code by saving it and save the key somewhere safe in case you lose your phone. You will not be able to login if you can\'t provide the code, in that case you will need to contact us. If you disable 2FA and re-enable it, you will need to scan a new code.' => 'Bạn phải quét mã ở trên bằng ứng dụng. Bạn nên sao lưu mã QR bằng cách lưu lại và cất chìa khóa ở nơi an toàn phòng trường hợp mất điện thoại. Bạn sẽ không thể đăng nhập nếu bạn không thể cung cấp mã, trong trường hợp đó, bạn cần liên hệ với chúng tôi. Nếu bạn tắt 2FA và bật lại, bạn sẽ cần quét mã mới.',
+    'Developer API Key' => 'Khóa API của nhà phát triển',
+    'Delete your account' => 'Xóa tài khoản của bạn',
+    'We respect your privacy and as such you can delete your account permanently and remove all your data from our server. Please note that this action is permanent and cannot be reversed.' => 'Chúng tôi tôn trọng quyền riêng tư của bạn và do đó bạn có thể xóa vĩnh viễn tài khoản của mình và xóa tất cả dữ liệu của mình khỏi máy chủ của chúng tôi. Xin lưu ý rằng hành động này là vĩnh viễn và không thể đảo ngược.',
+    'Delete Permanently' => 'Xóa chắc chắn',
+    'If you regenerate your key, the current key will be revoked and your applications might stop working until you update the api key with the new one.' => 'Nếu bạn tạo lại khóa của mình, khóa hiện tại sẽ bị thu hồi và các ứng dụng của bạn có thể ngừng hoạt động cho đến khi bạn cập nhật khóa API bằng khóa mới.',
+    'Use your quick URL below to shorten any URL by adding the URL after /q/?u=. <strong>For security reasons, you need to be logged in and using the remember me feature.</strong> Check out the examples below to understand how to use this method.' => 'Sử dụng URL nhanh bên dưới để rút ngắn bất kỳ URL nào bằng cách thêm URL sau /q/?u=. <strong>Vì lý do bảo mật, bạn phải đăng nhập và sử dụng tính năng Ghi nhớ.</strong> Xem các ví dụ bên dưới để hiểu cách sử dụng phương pháp này.',
+    'This script allows you to shorten all (or select) URLs on your website very easily. All you need to do is to copy and paste the code below at the end of your page. You can customize the selector as you wish to target URLs in a specific selector. Note you can just  copy the code below because everything is already for you.' => 'Tập lệnh này giúp bạn dễ dàng rút ngắn tất cả (hoặc một số) URL trang web của mình. Tất cả những gì bạn phải làm là sao chép và dán mã bên dưới vào cuối trang của mình. Bạn có thể tùy chỉnh bộ chọn theo cách bạn muốn nhắm mục tiêu các URL trong một bộ chọn cụ thể. Lưu ý rằng bạn chỉ cần sao chép mã bên dưới vì nó đã có sẵn cho bạn.',
+    'By default, this script shortens all URLs in a page. If you want to target specific URLs then you can add a selector parameter. You can see an example below where the script will only shorten URLs having a class named mylink or all direct link in the .content container or all links in the .comments container' => 'Theo mặc định, tập lệnh này rút ngắn tất cả các URL trên một trang. Nếu bạn muốn nhắm mục tiêu các URL cụ thể, bạn có thể thêm tham số bộ chọn. Bạn có thể xem một ví dụ bên dưới, trong đó tập lệnh sẽ chỉ rút ngắn các URL có lớp có tên mylink hoặc tất cả các liên kết trực tiếp trong vùng chứa .content hoặc tất cả các liên kết trong vùng chứa .comments',
+    'Restricting domain names' => 'Hạn chế tên miền',
+    'You can restrict domain names by adding an include parameter to restrict domain names. The example below shortens all URLs within the include domain name.' => 'Bạn có thể hạn chế tên miền bằng cách thêm tham số bao gồm để hạn chế tên miền. Ví dụ dưới đây rút ngắn tất cả các URL trong tên miền được bao gồm.',
+    'Reset Stats' => 'Đặt lại thống kê',
+    'Link has been successfully reset.' => 'Liên kết đã được thiết lập lại thành công.',
+    'Are you sure you want to reset this?' => 'Bạn có chắc chắn muốn đặt lại cái này không?',
+    'You are trying to reset all statistic data for this link. This action is permanent and cannot be reversed.' => 'Bạn đang cố đặt lại tất cả dữ liệu thống kê cho liên kết này. Hành động này là vĩnh viễn và không thể đảo ngược.',
+    'This feature is currently unavailable. Please contact your team administrator.' => 'Tính năng này hiện không khả dụng. Vui lòng liên hệ với quản trị viên nhóm của bạn.',
+    'Selected links have been added to the {c} campaign.' => 'Các liên kết đã chọn đã được thêm vào chiến dịch {c}.',
+    'Selected links have been removed from campaigns.' => 'Các liên kết được chọn đã bị xóa khỏi chiến dịch.',
+    'You need to be logged in to use this feature.' => 'Bạn phải đăng nhập để sử dụng tính năng này.',
+    'You have to make your profile public or set a default bio for this page to be accessible.' => 'Bạn phải đặt hồ sơ của mình ở chế độ công khai hoặc đặt tiểu sử mặc định để trang này có thể truy cập được.',
+    'Statistics have been successfully reset.' => 'Thống kê đã được thiết lập lại thành công.',
+    'Cookie Policy Consent' => 'Đồng ý với chính sách cookie',
+    'From' => 'Của',
+    'To' => 'TẠI',
+    'Su' => 'Su',
+    'Mo' => 'tháng',
+    'Tu' => 'Của tôi',
+    'We' => 'Chúng tôi',
+    'Th' => 'Ê',
+    'Fr' => 'đã',
+    'Sa' => 'CÔ ẤY',
+    'January' => 'Tháng Giêng',
+    'February' => 'THÁNG 2',
+    'March' => 'Bước đều',
+    'April' => 'Tháng tư',
+    'May' => 'Có thể',
+    'June' => 'Tháng sáu',
+    'July' => 'Tháng bảy',
+    'August' => 'Tháng tám',
+    'September' => 'Tháng 9',
+    'October' => 'Tháng Mười',
+    'November' => 'Tháng mười một',
+    'December' => 'Tháng 12',
+    'You have been successfully logged.' => 'Bạn đã đăng nhập thành công.',
+    'Token has expired, please login manually.' => 'Mã thông báo đã hết hạn, vui lòng đăng nhập thủ công.',
+    'Token has expired, please login manually' => 'Mã thông báo đã hết hạn, vui lòng đăng nhập thủ công',
+    'Icon' => 'Biểu tượng',
+    'Color' => 'Màu sắc',
+    'Style' => 'Phong cách',
+    'Rectangular' => 'Hình hộp chữ nhật',
+    'Site' => 'Đến nơi',
+    'Solid' => 'Chất rắn',
+    'Dotted' => 'Điểm',
+    'Dashed' => 'Say mê',
+    'Background must be either a PNG or a JPEG (Max 1mb).' => 'Nền phải ở định dạng PNG hoặc JPEG (Tối đa 1 MB).',
+    'Image must be either a PNG or a JPEG (Max 500kb).' => 'Hình ảnh phải ở định dạng PNG hoặc JPEG (Tối đa 500kb).',
+    'Item has been successfully duplicated.' => 'Mục đã được sao chép thành công.',
+    'Channels' => 'Kênh đào',
+    'Channel' => 'Kênh',
+    'Channel name cannot be empty and must have at least 2 characters.' => 'Tên kênh không được để trống và phải có ít nhất 2 ký tự.',
+    'Channel was successfully created. You may start adding links to it now.' => 'Kênh đã được tạo thành công. Bạn có thể bắt đầu thêm liên kết vào nó ngay bây giờ.',
+    'Channel does not exist' => 'Kênh không tồn tại',
+    'Channel was updated successfully.' => 'Kênh đã được cập nhật thành công.',
+    'Channel has been successfully deleted.' => 'Kênh đã được xóa thành công.',
+    'You need to select at least 1 channel.' => 'Bạn phải chọn ít nhất 1 kênh.',
+    'Selected items have been added to the {c} channel.' => 'Các mục đã chọn đã được thêm vào kênh {c}.',
+    'Item has been removed from the channel.' => 'Mục đã bị xóa khỏi chuỗi.',
+    'A new domain was added.' => 'Một miền mới đã được thêm vào.',
+    'A customer ({e}) added a new domain to the platform. Please make sure the domain is pointed correctly and is resolving as expected. Their domain name is {d}.' => 'Một khách hàng ({e}) đã thêm một miền mới vào nền tảng. Vui lòng đảm bảo rằng tên miền được trỏ chính xác và phân giải như mong đợi. Tên miền của họ là {d}.',
+    'WordPress Integration' => 'Tích hợp WordPress',
+    'Shortcuts Integration' => 'Tích hợp phím tắt',
+    'Plugin cannot be generated. Please contact us for more information.' => 'Không thể tạo plugin. Vui lòng liên hệ với chúng tôi để biết thêm thông tin.',
+    'The coupon field cannot be empty.' => 'Trường phiếu giảm giá không được để trống.',
+    'Pixel provider is currently not supported.' => 'Nhà cung cấp pixel hiện không được hỗ trợ.',
+    'A pixel with this provider and tag already exists.' => 'Một pixel với nhà cung cấp và thẻ này đã tồn tại.',
+    'QR has been successfully deleted.' => 'QR đã được xóa thành công.',
+    'Please verify and approve this url' => 'Vui lòng xác minh và phê duyệt URL này',
+    'Your trial will end soon!' => 'Thử nghiệm của bạn sẽ sớm kết thúc!',
+    'Admin notification' => 'Thông báo của quản trị viên',
+    'Message sent successfully.' => 'Tin nhắn đã được gửi thành công.',
+    'An error internal server error ocurred. Please change the QR type.' => 'Đã xảy ra lỗi máy chủ nội bộ. Vui lòng thay đổi loại QR.',
+    'Please enter a valid wallet address' => 'Vui lòng nhập địa chỉ ví hợp lệ',
+    'Please choose a valid file.' => 'Vui lòng chọn một tệp hợp lệ.',
+    'File must be either a PNG, JPEG, GIF or a PDF (Max 2MB)' => 'Tệp phải ở định dạng PNG, JPEG, GIF hoặc PDF (Tối đa 2 MB)',
+    'An error occurred' => 'Một lỗi đã xảy ra',
+    'Built-in Checkout' => 'Thanh toán tích hợp',
+    'Stripe Hosted Checkout' => 'Thanh toán được lưu trữ bởi Stripe',
+    'Choose between built-in checkout or Stripe hosted checkout.' => 'Chọn giữa thanh toán trong ứng dụng hoặc thanh toán được lưu trữ trên Stripe.',
+    'Custom alias must be less than 50 characters.' => 'Bí danh tùy chỉnh phải ít hơn 50 ký tự.',
+    'Coupon' => 'Phiếu mua hàng',
+    'Create a small popup with a coupon code that users can use.' => 'Tạo cửa sổ bật lên nhỏ với mã phiếu giảm giá mà người dùng có thể sử dụng.',
+    'Snapchat ID is not correct. Please double check.' => 'ID Snapchat không chính xác. Hãy kiểm tra.',
+    'Pinterest ID is not correct. Please double check.' => 'ID Pinterest không chính xác. Hãy kiểm tra.',
+    'Reddit ID is not correct. Please double check.' => 'Tên người dùng Reddit không chính xác. Hãy kiểm tra.',
+    'Bing ID is not correct. Please double check.' => 'ID Bing không chính xác. Hãy kiểm tra.',
+    'This user does not exist.' => 'Người dùng này không tòn tại.',
+    '{d} {p} ago' => 'có {d} {p}',
+    'Content' => 'Nội dung',
+    'Telegram' => 'Điện tín',
+    'Snapchat' => 'Trò chuyện nhanh',
+    'Discord' => 'bất hòa',
+    'Twitch' => 'Tic',
+    'Pinterest' => 'Pinterest',
+    'Shopify' => 'Mua sắm',
+    'Amazon' => 'Amazon',
+    'Font' => 'Phông chữ ký tự',
+    'Custom CSS' => 'CSS tùy chỉnh',
+    'Heading' => 'Tiêu đề',
+    'Divider' => 'Số chia',
+    'HTML' => 'HTML',
+    'RSS Feed' => 'nguồn cấp dữ liệu RSS',
+    'Product' => 'Sản phẩm',
+    'FontAwesome Icon Class' => 'Lớp biểu tượng FontAwesome',
+    'You can use any font from the following list:' => 'Bạn có thể sử dụng bất kỳ phông chữ nào trong danh sách sau:',
+    'Click the button add insert an Image then choose the file to upload.' => 'Nhấp vào nút thêm chèn Hình ảnh rồi chọn tệp để tải lên.',
+    'Height' => 'Chiều cao',
+    'This widget allows you to add a custom product. Click the button add below to insert a the widget' => 'Tiện ích này cho phép bạn thêm một sản phẩm tùy chỉnh. Nhấp vào nút thêm bên dưới để chèn tiện ích con',
+    'Newsletter list can be downloaded on the Edit Bio page' => 'Có thể tải xuống danh sách các bản tin từ trang Chỉnh sửa tiểu sử',
+    'You will receive emails here' => 'Bạn sẽ nhận được email tại đây',
+    'Add to Channel' => 'Thêm vào kênh',
+    'Duplicate' => 'Nhân bản',
+    'Add to Channels' => 'Thêm vào Kênh',
+    'Publish' => 'Công bố',
+    'Color 1' => 'Màu 1',
+    'Color 2' => 'Màu 2',
+    'Download vCard' => 'Tải xuống vCard',
+    'Shortcuts in an app developed by Apple and it allows you to create an automation. You can download our powerful Shortcut and you will be able to shorten links in a snap and save it directly in your account.' => 'Các phím tắt trong một ứng dụng do Apple phát triển và nó cho phép bạn tạo một ứng dụng tự động hóa. Bạn có thể tải xuống lối tắt mạnh mẽ của chúng tôi và bạn sẽ có thể rút ngắn các liên kết trong tích tắc và lưu trực tiếp vào tài khoản của mình.',
+    'How does it work?' => 'Làm thế nào nó hoạt động?',
+    'The Shortcut works in various ways:' => 'Phím tắt hoạt động theo nhiều cách khác nhau:',
+    'Safari' => 'Cuộc đi săn',
+    'If you want shorten the current viewing page, tap the share icon at the bottom of the screen and it will shorten the current URL. It will copy the short URL directly to your clipboard so you can paste it somewhere.' => 'Nếu bạn muốn rút ngắn trang xem hiện tại, hãy nhấn vào biểu tượng chia sẻ ở cuối màn hình và nó sẽ rút ngắn URL hiện tại. Nó sẽ sao chép trực tiếp URL ngắn vào khay nhớ tạm của bạn để bạn có thể dán nó vào đâu đó.',
+    'Siri' => 'Siri',
+    'To use Siri, copy a link and ask Siri "Shorten Link" and it will shorten the link for you and copy it to your clipboard.' => 'Để sử dụng Siri, hãy sao chép một liên kết và hỏi Siri "Rút gọn liên kết" và nó sẽ rút ngắn liên kết đó cho bạn và sao chép liên kết đó vào khay nhớ tạm của bạn.',
+    'Manual' => 'Thủ công',
+    'You can also run the Shortcut by just holding a link then tap Share and you will see Shorten Link in the list.' => 'Bạn cũng có thể chạy lối tắt bằng cách chỉ cần giữ một liên kết, sau đó nhấn Chia sẻ và bạn sẽ thấy Liên kết lối tắt trong danh sách.',
+    'How to install it?' => 'Làm thế nào để cài đặt nó?',
+    'Make sure you have the Shortcuts app, if not you can download it from the App Store: ' => 'Đảm bảo bạn có ứng dụng Phím tắt, nếu không, bạn có thể tải xuống từ App Store:',
+    'Download Shortcuts' => 'Tải xuống phím tắt',
+    'Download our Shortcut' => 'Tải xuống phím tắt của chúng tôi',
+    'After installation, you will be presented with a configuration screen where you need to enter the API URL and the API key' => 'Sau khi cài đặt, bạn sẽ thấy một màn hình cấu hình nơi bạn cần nhập URL API và Khóa API',
+    'API URL' => 'URL API',
+    'API Key' => 'Mã API',
+    'After the configuration is complete, you can start shortening links directly from your device in a single tap.' => 'Sau khi thiết lập hoàn tất, bạn có thể bắt đầu rút ngắn liên kết trực tiếp từ thiết bị của mình chỉ bằng một cú nhấp chuột.',
+    'You can integrate this app with your Slack account and shorten directly from the Slack interface using the command line below. This Slack integration will save all of your links in your account in case you need to access them later. Please see below how to use the command.' => 'Bạn có thể tích hợp ứng dụng này với tài khoản Slack của mình và rút ngắn trực tiếp từ giao diện Slack bằng dòng lệnh bên dưới. Tích hợp Slack này sẽ lưu tất cả các liên kết của bạn trong tài khoản của bạn trong trường hợp bạn cần truy cập chúng sau này. Vui lòng xem bên dưới cách sử dụng lệnh.',
+    'To send a custom alias, use the following parameter (ABCDXYZ). This will tell the script to choose shorten the link with the custom alias ABCDXYZ.' => 'Để gửi bí danh tùy chỉnh, hãy sử dụng tham số sau (ABCDXYZ). Thao tác này sẽ yêu cầu tập lệnh chọn rút ngắn liên kết bằng bí danh tùy chỉnh ABCDXYZ.',
+    'The Slack command will return you the short link if everything goes well. In case there is an error, it will return you the original link. If you use the custom parameter and the alias is already taken, the script will automatically increment the alias by 1 - this means if you choose \'google\' and \'google\' is not available, the script will use google-1' => 'Lệnh Slack sẽ trả lại liên kết ngắn cho bạn nếu mọi việc suôn sẻ. Trong trường hợp có lỗi, nó sẽ gửi lại cho bạn liên kết ban đầu. Nếu bạn sử dụng tham số tùy chỉnh và bí danh đã được sử dụng, tập lệnh sẽ tự động tăng bí danh lên 1 - điều này có nghĩa là nếu bạn chọn \'google\' và \'google\' không khả dụng, thì tập lệnh sẽ sử dụng google-1',
+    'WordPress Plugin' => 'Plugin WordPress',
+    'WordPress Function' => 'Chức năng WordPress',
+    'You can easily use a shortcode to shorten links with our WordPress plugin. You just need to download it below and upload it in WordPress and that is it. There is no need to configure it as it will be already configured for you. All of your links will be saved in your account.' => 'Bạn có thể dễ dàng sử dụng mã ngắn để rút ngắn liên kết bằng plugin WordPress của chúng tôi. Bạn chỉ cần tải về bên dưới và upload lên WordPress thế là xong. Không cần cấu hình nó vì nó đã được cấu hình sẵn cho bạn. Tất cả các liên kết của bạn sẽ được lưu trong tài khoản của bạn.',
+    'Do not share this plugin with anyone you do not trust as they will have access to the full API and essentially your account.' => 'Không chia sẻ plugin này với những người mà bạn không tin tưởng vì họ sẽ có quyền truy cập vào toàn bộ API và về cơ bản là tài khoản của bạn.',
+    'Instructions' => 'Hướng dẫn',
+    'Download the plugin below' => 'Tải plugin bên dưới',
+    'Go to WordPress Admin' => 'Truy cập quản trị viên WordPress',
+    'Plugins' => 'Bổ sung',
+    'Add New' => 'Thêm mới',
+    'Upload Plugin' => 'Tải xuống plugin',
+    'Upload the plugin named linkshortenershortcode.zip and activate it. The plugin will be named Link Shortener Shortcode.' => 'Tải xuống plugin có tên linkshortenershortcode.zip và kích hoạt nó. Phần bổ trợ sẽ được đặt tên là Mã ngắn Trình rút gọn Liên kết.',
+    'Download Plugin' => 'Tải xuống plugin',
+    'The following code will apply the shortcode "shorturl" to the system and you will be able to use the following format.' => 'Mã sau sẽ áp dụng mã ngắn "shorturl" cho hệ thống và bạn có thể sử dụng định dạng sau.',
+    'You can also use the shortcode in html.' => 'Bạn cũng có thể sử dụng mã ngắn trong html.',
+    'WordPress Shortcode Function' => 'Tính năng mã ngắn WordPress',
+    'You can now shorten links directly from WordPress using shortcode. If you don\'t want to upload a plugin, you can use this method. It is very easy to setup and it works with all versions of WordPress and with any theme. All links you will shorten will be safely stored in your account.' => 'Giờ đây, bạn có thể rút ngắn liên kết trực tiếp từ WordPress bằng mã ngắn. Nếu bạn không muốn tải xuống plugin, bạn có thể sử dụng phương pháp này. Nó rất dễ cấu hình và hoạt động với tất cả các phiên bản của WordPress và với bất kỳ chủ đề nào. Mọi liên kết bạn rút ngắn sẽ được lưu trữ an toàn trong tài khoản của bạn.',
+    'Copy your unique php code below' => 'Sao chép mã php duy nhất của bạn bên dưới',
+    'Theme File Editor' => 'Trình chỉnh sửa tập tin chủ đề',
+    'On the right side, under Theme Files, find and click on Theme Functions (functions.php)' => 'Ở bên phải, bên dưới Tệp chủ đề, tìm và nhấp vào Chức năng chủ đề (functions.php)',
+    'Paste the code below at the very end of the file and save' => 'Dán mã bên dưới vào cuối tệp và lưu',
+    'Your Unique Code' => 'Mã duy nhất của bạn',
+    'Do not share this code with anyone you do not trust as they will have access to the full API and essentially your account.' => 'Không chia sẻ mã này với những người mà bạn không tin tưởng, vì họ sẽ có quyền truy cập vào toàn bộ API và về cơ bản là tài khoản của bạn.',
+    'Although this tool is designed for Zapier, it can be used for any webhook system.' => 'Mặc dù công cụ này được thiết kế cho Zapier nhưng nó có thể được sử dụng cho bất kỳ hệ thống webhook nào.',
+    'You are logged in as another user' => 'Bạn đã đăng nhập với tư cách người dùng khác',
+    'Return to my account' => 'Quay lại tài khoản của tôi',
+    'This website uses cookies to ensure you get the best experience on our website. You can learn more by visiting our cookie policy. Meanwhile if you agree, please click the button below to proceed to your destination.' => 'Trang web này sử dụng cookie để đảm bảo bạn có được trải nghiệm tốt nhất trên trang web của chúng tôi. Bạn có thể tìm hiểu thêm bằng cách tham khảo chính sách cookie của chúng tôi. Trong thời gian chờ đợi, nếu bạn đồng ý, vui lòng nhấp vào nút bên dưới để điều hướng đến điểm đến của bạn.',
+    'Quick Search' => 'Tìm kiếm nhanh',
+    'My Channels' => 'Kênh của tôi',
+    'Countries & Cities' => 'Quốc gia và Thành phố',
+    'Data Retention' => 'Lưu trữ dữ liệu',
+    'Choose domain to generate the link with when using dynamic QR codes. Not applicable for static QR codes.' => 'Chọn miền để tạo liên kết khi sử dụng mã QR động. Không áp dụng cho mã QR tĩnh.',
+    'SMS & Message' => 'Văn bản và Tin nhắn',
+    'Whatsapp' => 'WhatsApp',
+    'Cryptocurrency' => 'Tiền điện tử',
+    'Bitcoin' => 'Bitcoin',
+    'Ethereum' => 'Ethereum',
+    'Bitcoin Cash' => 'Tiền Bitcoin',
+    'Wallet Address' => 'Địa chỉ ví',
+    'File Upload (Image or PDF)' => 'Tải xuống tệp (hình ảnh hoặc PDF)',
+    'View File' => 'Xem thông báo',
+    'This can be used to upload an image or a PDF. Most common uses are restaurant menu, promotional poster and resume.' => 'Điều này có thể được sử dụng để tải lên một hình ảnh hoặc PDF. Các mục đích sử dụng phổ biến nhất là thực đơn nhà hàng, áp phích quảng cáo và sơ yếu lý lịch.',
+    'File' => 'Trường hợp',
+    'Acceptable file: jpg, png, gif, pdf. Max 2MB.' => 'Các tệp được chấp nhận: jpg, png, gif, pdf. Tối đa 2 MB.',
+    'Static vCard' => 'vCard tĩnh',
+    'Crypto' => 'tiền điện tử',
+    'Enter your public wallet address' => 'Nhập địa chỉ ví công khai của bạn',
+    'Change plan' => 'Thay đổi kế hoạch',
+    'Quick Stats' => 'Thống kê nhanh',
+    'Campaign List Disabled' => 'Danh sách chiến dịch bị vô hiệu hóa',
+    'To create a list page for the campaign, you need a default bio page and public profile settings.' => 'Để tạo trang danh sách cho chiến dịch, bạn cần có trang tiểu sử mặc định và cài đặt hồ sơ công khai.',
+    'Default Bio' => 'Không phải trả tiền theo mặc định',
+    'Remove from channel' => 'Xóa khỏi kênh',
+    'Are you sure you want to remove this item from this channel?' => 'Bạn có chắc chắn muốn xóa mục này khỏi chuỗi này không?',
+    'You are trying to remove an item from a channel.' => 'Bạn đang cố xóa một mục khỏi một kênh.',
+    'Create Channel' => 'Tạo kênh',
+    'Starred Channels' => 'Kênh yêu thích',
+    'View Channel' => 'Hiển thị kênh',
+    'Create a Channel' => 'Tạo kênh',
+    'Badge Color' => 'Màu huy hiệu',
+    'Star Channel' => 'Chuỗi sao',
+    'Starred channels will show up in the sidebar navigation for quick access.' => 'Các kênh yêu thích sẽ xuất hiện trong thanh điều hướng bên để truy cập nhanh.',
+    'You need to scan the code above with the app then enter the 6-digit number that you see in the app to activate 2FA. It is highly recommended to backup the unique key somewhere safe.' => 'Bạn phải quét mã ở trên bằng ứng dụng, sau đó nhập số có 6 chữ số mà bạn nhìn thấy trong ứng dụng để kích hoạt 2FA. Bạn nên lưu khóa duy nhất ở nơi an toàn.',
+    'Activate' => 'Cho phép',
+    'Choosing a different domain' => 'Chọn miền khác',
+    'By default, the script uses the default domain on the platform however you can define a custom domain name to shorten links with. You need to make sure the domain is exactly the same as the domain added in the account, including the schema (http/https' => 'Theo mặc định, tập lệnh sử dụng tên miền mặc định trên nền tảng, nhưng bạn có thể đặt tên miền tùy chỉnh để rút ngắn các liên kết. Bạn phải đảm bảo rằng miền hoàn toàn giống với miền được thêm vào tài khoản, bao gồm cả lược đồ (http/https',
+    'Choosing custom selectors' => 'Chọn bộ chọn tùy chỉnh',
+    'You can exclude domain names if you wish. You can add an exclude parameter to exclude domain names. The example below shortens all URLs but excludes URLs from google.com or apple.com' => 'Bạn có thể loại trừ tên miền nếu muốn. Bạn có thể thêm tham số loại trừ để loại trừ tên miền. Ví dụ bên dưới rút ngắn tất cả các URL nhưng loại trừ các URL từ google.com hoặc apple.com',
+    'If you change the domain name, the QR code will change!' => 'Nếu bạn thay đổi tên miền, mã QR sẽ thay đổi!',
+    'Your password is too long. Passwords must be between 8 to 64 characters.' => 'Mật khẩu của bạn quá dài. Mật khẩu phải có từ 8 đến 64 ký tự.',
+    'Order Confirmation' => 'Xác nhận đơn hàng',
+    'Transparent' => 'Trong suốt',
+    'Animation' => 'Hoạt hình',
+    'Shake' => 'Lắc',
+    'Scale' => 'Thang',
+    'Jello' => 'Goo',
+    'Vibrate' => 'Rung',
+    'Wobble' => 'Dao động',
+    'View Stats' => 'Thống kê cho thấy',
+    'Get Verified' => 'Được xác minh',
+    'You already requested a verification. As soon as we verify the document, we will let you know.' => 'Bạn đã yêu cầu xác minh. Ngay sau khi chúng tôi xác minh tài liệu, chúng tôi sẽ thông báo cho bạn.',
+    'Please upload a document so we can verify you.' => 'Vui lòng tải tài liệu lên để chúng tôi có thể xác minh bạn.',
+    'Please fill everything so we can verify you.' => 'Vui lòng điền vào mọi thứ để chúng tôi có thể xác minh bạn.',
+    'Document must be either a PDF or a JPG (Max 2MB).' => 'Tài liệu phải ở định dạng PDF hoặc JPG (Tối đa 2 MB).',
+    'Document must be either a PDF or a JPG (Max 2MB)' => 'Tài liệu phải ở định dạng PDF hoặc JPG (Tối đa 2 tháng)',
+    'Thank you. We will process your document as soon as possible and verify you.' => 'CẢM ƠN. Chúng tôi sẽ xử lý tài liệu của bạn ngay khi có thể và xác minh bạn.',
+    'You cannot shorten URLs at the moment. Please upgrade to another plan.' => 'Bạn không thể rút ngắn URL vào lúc này. Vui lòng chuyển sang gói khác.',
+    'Display Avatar' => 'Hiển thị hình đại diện',
+    'Line Messenger' => 'đường dây nhắn tin',
+    'Add a heading with different sizes' => 'Thêm tiêu đề với các kích cỡ khác nhau',
+    'Add a text body to your page' => 'Thêm nội dung vào trang của bạn',
+    'Separate your content with a line' => 'Tách nội dung của bạn bằng một dòng',
+    'Add a trackable button to a link' => 'Thêm nút có thể theo dõi vào liên kết',
+    'Add custom HTML code. Script codes are not accepted' => 'Thêm mã HTML tùy chỉnh. Mã tập lệnh không được chấp nhận',
+    'Upload an image' => 'Tải hình ảnh lên',
+    'Add a downloadable vCard' => 'Thêm vCard có thể tải xuống',
+    'Generate a PayPal button to accept payments' => 'Tạo nút PayPal để chấp nhận thanh toán',
+    'Add button that will open whatsapp' => 'Thêm một nút sẽ mở WhatsApp',
+    'Widgets' => 'tiện ích con',
+    'Add a dynamic RSS feed widget' => 'Thêm tiện ích nguồn cấp dữ liệu RSS động',
+    'Add a newsletter form to store emails' => 'Thêm biểu mẫu bản tin để lưu trữ email',
+    'Add a contact form to receive emails' => 'Thêm biểu mẫu liên hệ để nhận email',
+    'Add a widget to a product on your site' => 'Thêm tiện ích cho sản phẩm trên trang web của bạn',
+    'Embed a Youtube video' => 'Nhúng video Youtube',
+    'Embed a Spotify music widget' => 'Tích hợp tiện ích âm nhạc Spotify',
+    'Embed an Apple music widget' => 'Tích hợp tiện ích âm nhạc của Apple',
+    'TikTok Embed' => 'Tích hợp TikTok',
+    'Embed a tiktok video' => 'Nhúng video tiktok',
+    'Click the button add insert an Image then choose the file to upload' => 'Nhấp vào nút thêm chèn Hình ảnh rồi chọn tệp để tải lên',
+    'Choose domain to generate the link with' => 'Chọn miền để tạo liên kết',
+    'Leave this field empty to generate a random alias' => 'Để trống trường này để tạo bí danh ngẫu nhiên',
+    'By adding a password, you can restrict the access' => 'Bằng cách thêm mật khẩu, bạn có thể hạn chế quyền truy cập',
+    'Remove Logo' => 'Xóa logo',
+    'Verified Account' => 'Tài khoản đã xác minh',
+    'Language Targeted' => 'Ngôn ngữ mục tiêu',
+    'Language Targeting' => 'Nhắm mục tiêu theo ngôn ngữ',
+    'If you have different pages for different languages then it is possible to redirect users to that page using the same URL. Simply choose the language and enter the URL.' => 'Nếu bạn có các trang khác nhau cho các ngôn ngữ khác nhau, có thể chuyển hướng người dùng đến trang này bằng cùng một URL. Chỉ cần chọn ngôn ngữ và nhập URL.',
+    'Verified' => 'Đã kiểm tra',
+    'Margin' => 'Lề',
+    'Update Channel' => 'Cập nhật chuỗi',
+    'items' => 'yếu tố',
+    'Order Date' => 'Ngày đặt hàng',
+    'Order No' => 'Số thứ tự',
+    'If you have different pages for different languages then it is possible to redirect users to that page using the same short URL. Simply choose the language and enter the URL.' => 'Nếu bạn có các trang khác nhau cho các ngôn ngữ khác nhau, có thể chuyển hướng người dùng đến trang này bằng cùng một URL ngắn. Chỉ cần chọn ngôn ngữ và nhập URL.',
+    'Sort By' => 'Sắp xếp theo',
+    'Results Per Page' => 'Kết quả mỗi trang',
+    'Older than' => 'Lớn tuổi hơn',
+    'Filter' => 'Đã lọc',
+    'Company Name' => 'Tên công ty',
+    'You can get your account verified and this provides you several benefits. After we verify we your account, you will get a verified checkmark on your Bio Pages and your links will have a trusted status.' => 'Bạn có thể xác minh tài khoản của mình và nó mang lại cho bạn một số lợi ích. Sau khi xác minh tài khoản của mình, bạn sẽ nhận được dấu kiểm đã xác minh trên các trang tiểu sử của mình và các liên kết của bạn sẽ có trạng thái đáng tin cậy.',
+    'All we need from you is a document that matches your name and address. Documents can be a national card, company bill or any other official document.' => 'Tất cả những gì chúng tôi cần từ bạn là một tài liệu phù hợp với tên và địa chỉ của bạn. Tài liệu có thể là thẻ quốc gia, hóa đơn công ty hoặc bất kỳ tài liệu chính thức nào khác.',
+    'Upload Document' => 'Tải tài liệu lên',
+    '2MB max, PDF or JPG' => 'Tối đa 2 MB, PDF hoặc JPG',
+    'Submit' => 'Nộp',
+    'Verifications' => 'Séc',
+	]
 ];
