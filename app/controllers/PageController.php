@@ -63,6 +63,8 @@ class Page {
 
         return View::with($template, compact('page'))->extend('layouts.main');
     }
+
+    
     /**
      * Contact Page
      *
@@ -80,6 +82,25 @@ class Page {
         Plugin::dispatch('contact');
 
         return View::with('pages.contact')->extend('layouts.main');
+    }   
+
+     /**
+     * Contact Page
+     *
+     * @author GemPixel <https://gempixel.com> 
+     * @version 6.0
+     * @return void
+     */
+    public function paste(){
+
+        if(!config('paste')) stop(404);
+
+        View::set('title', e('Paste'));
+
+        // @group Plugin
+        Plugin::dispatch('paste');
+
+        return View::with('pages.paste')->extend('layouts.main');
     }   
 
     /**
@@ -355,6 +376,8 @@ class Page {
     
         return View::with('pages.bio')->extend('layouts.main'); 
     }
+
+    
 
 
 
