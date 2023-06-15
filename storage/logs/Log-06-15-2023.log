@@ -44,3 +44,299 @@
 
 [2023-06-15T08:10:44.344138+07:00] system.ERROR: Trying to get property 'pass' of non-object occurred in /var/www/url-shorten/storage/themes/default/admin/settings/mail.php:47 -> http://www.rutgonurl.click/admin/settings/mail  
 
+[2023-06-15T16:24:59.516243+07:00] system.ERROR: syntax error, unexpected 'ID' (T_STRING), expecting ']' -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:25:01.302299+07:00] system.ERROR: syntax error, unexpected 'ID' (T_STRING), expecting ']' -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:25:02.094093+07:00] system.ERROR: syntax error, unexpected 'ID' (T_STRING), expecting ']' -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:25:04.099684+07:00] system.ERROR: syntax error, unexpected 'ID' (T_STRING), expecting ']' -> http://rutgonurl.click/  
+
+[2023-06-15T16:25:04.749815+07:00] system.ERROR: syntax error, unexpected 'ID' (T_STRING), expecting ']' -> http://rutgonurl.click/  
+
+[2023-06-15T16:25:12.362658+07:00] system.ERROR: syntax error, unexpected 'ID' (T_STRING), expecting ']' -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:38:52.903473+07:00] system.ERROR: syntax error, unexpected 'ID' (T_STRING), expecting ']' -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:38:54.284512+07:00] system.ERROR: syntax error, unexpected 'ID' (T_STRING), expecting ']' -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:38:59.607556+07:00] system.ERROR: syntax error, unexpected 'ID' (T_STRING), expecting ']' -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:18.755343+07:00] system.ERROR: include(/var/www/url-shorten/storage/languages/vi/app.php): failed to open stream: No such file or directory occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:44 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:18.755430+07:00] system.ERROR: include(): Failed opening '/var/www/url-shorten/storage/languages/vi/app.php' for inclusion (include_path='.:/usr/share/php') occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:44 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:18.755452+07:00] system.ERROR: Trying to access array offset on value of type bool occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:46 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:18.755469+07:00] system.ERROR: count(): Parameter must be an array or an object that implements Countable occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:46 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:18.755483+07:00] system.ERROR: Trying to access array offset on value of type bool occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:47 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:18.755498+07:00] system.ERROR: array_filter() expects parameter 1 to be array, null given occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:47 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:18.755517+07:00] system.ERROR: count(): Parameter must be an array or an object that implements Countable occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:47 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:20.215822+07:00] system.ERROR: Undefined index: name occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:28 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:20.215900+07:00] system.ERROR: Undefined index: rtl occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:28 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:20.215934+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:29 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:20.215955+07:00] system.ERROR: Undefined index: link occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:30 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:20.215975+07:00] system.ERROR: Undefined index: author occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:30 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:20.215997+07:00] system.ERROR: Undefined index: date occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:31 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:20.216021+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:43 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:20.216053+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:48 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:20.216075+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:49 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:20.216097+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:51 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:26.111288+07:00] system.ERROR: include(/var/www/url-shorten/storage/languages/vi/app.php): failed to open stream: No such file or directory occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:44 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:26.111400+07:00] system.ERROR: include(): Failed opening '/var/www/url-shorten/storage/languages/vi/app.php' for inclusion (include_path='.:/usr/share/php') occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:44 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:26.111430+07:00] system.ERROR: Trying to access array offset on value of type bool occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:46 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:26.111455+07:00] system.ERROR: count(): Parameter must be an array or an object that implements Countable occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:46 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:26.111476+07:00] system.ERROR: Trying to access array offset on value of type bool occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:47 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:26.111496+07:00] system.ERROR: array_filter() expects parameter 1 to be array, null given occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:47 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:26.111530+07:00] system.ERROR: count(): Parameter must be an array or an object that implements Countable occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:47 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:27.596240+07:00] system.ERROR: Undefined index: name occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:28 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:27.596301+07:00] system.ERROR: Undefined index: rtl occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:28 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:27.596332+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:29 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:27.596349+07:00] system.ERROR: Undefined index: link occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:30 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:27.596364+07:00] system.ERROR: Undefined index: author occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:30 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:27.596382+07:00] system.ERROR: Undefined index: date occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:31 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:27.596397+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:43 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:27.596416+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:48 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:27.596433+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:49 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:27.596454+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:51 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:40.356325+07:00] system.ERROR: include(/var/www/url-shorten/storage/languages/vi/app.php): failed to open stream: No such file or directory occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:44 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:40.356429+07:00] system.ERROR: include(): Failed opening '/var/www/url-shorten/storage/languages/vi/app.php' for inclusion (include_path='.:/usr/share/php') occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:44 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:40.356451+07:00] system.ERROR: Trying to access array offset on value of type bool occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:46 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:40.356474+07:00] system.ERROR: count(): Parameter must be an array or an object that implements Countable occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:46 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:40.356495+07:00] system.ERROR: Trying to access array offset on value of type bool occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:47 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:40.356515+07:00] system.ERROR: array_filter() expects parameter 1 to be array, null given occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:47 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:40.356537+07:00] system.ERROR: count(): Parameter must be an array or an object that implements Countable occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:47 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:41.844945+07:00] system.ERROR: Undefined index: name occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:28 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:41.845004+07:00] system.ERROR: Undefined index: rtl occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:28 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:41.845025+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:29 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:41.845041+07:00] system.ERROR: Undefined index: link occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:30 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:41.845066+07:00] system.ERROR: Undefined index: author occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:30 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:41.845079+07:00] system.ERROR: Undefined index: date occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:31 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:41.845110+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:43 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:41.845137+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:48 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:41.845152+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:49 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:41:41.845167+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:51 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:44:15.192154+07:00] system.ERROR: syntax error, unexpected 'ID' (T_STRING), expecting ']' -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:44:17.040725+07:00] system.ERROR: syntax error, unexpected 'ID' (T_STRING), expecting ']' -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:52:47.605659+07:00] system.ERROR: include(/var/www/url-shorten/storage/languages/vi/app.php): failed to open stream: No such file or directory occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:44 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:52:47.605744+07:00] system.ERROR: include(): Failed opening '/var/www/url-shorten/storage/languages/vi/app.php' for inclusion (include_path='.:/usr/share/php') occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:44 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:52:47.605766+07:00] system.ERROR: Trying to access array offset on value of type bool occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:46 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:52:47.605784+07:00] system.ERROR: count(): Parameter must be an array or an object that implements Countable occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:46 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:52:47.605799+07:00] system.ERROR: Trying to access array offset on value of type bool occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:47 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:52:47.605820+07:00] system.ERROR: array_filter() expects parameter 1 to be array, null given occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:47 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:52:47.605834+07:00] system.ERROR: count(): Parameter must be an array or an object that implements Countable occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:47 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:52:49.096880+07:00] system.ERROR: Undefined index: name occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:28 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:52:49.096942+07:00] system.ERROR: Undefined index: rtl occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:28 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:52:49.096962+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:29 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:52:49.096977+07:00] system.ERROR: Undefined index: link occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:30 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:52:49.097002+07:00] system.ERROR: Undefined index: author occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:30 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:52:49.097015+07:00] system.ERROR: Undefined index: date occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:31 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:52:49.097033+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:43 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:52:49.097054+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:48 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:52:49.097070+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:49 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:52:49.097086+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:51 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:05.246400+07:00] system.ERROR: include(/var/www/url-shorten/storage/languages/vi/app.php): failed to open stream: No such file or directory occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:44 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:05.246502+07:00] system.ERROR: include(): Failed opening '/var/www/url-shorten/storage/languages/vi/app.php' for inclusion (include_path='.:/usr/share/php') occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:44 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:05.246535+07:00] system.ERROR: Trying to access array offset on value of type bool occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:46 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:05.246556+07:00] system.ERROR: count(): Parameter must be an array or an object that implements Countable occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:46 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:05.246574+07:00] system.ERROR: Trying to access array offset on value of type bool occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:47 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:05.246594+07:00] system.ERROR: array_filter() expects parameter 1 to be array, null given occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:47 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:05.246615+07:00] system.ERROR: count(): Parameter must be an array or an object that implements Countable occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:47 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:06.723024+07:00] system.ERROR: Undefined index: name occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:28 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:06.723088+07:00] system.ERROR: Undefined index: rtl occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:28 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:06.723107+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:29 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:06.723122+07:00] system.ERROR: Undefined index: link occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:30 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:06.723137+07:00] system.ERROR: Undefined index: author occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:30 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:06.723150+07:00] system.ERROR: Undefined index: date occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:31 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:06.723179+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:43 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:06.723200+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:48 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:06.723222+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:49 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:06.723236+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:51 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:11.175440+07:00] system.ERROR: syntax error, unexpected 'ID' (T_STRING), expecting ']' -> http://rutgonurl.click/admin/languages/new  
+
+[2023-06-15T16:53:13.184023+07:00] system.ERROR: include(/var/www/url-shorten/storage/languages/vi/app.php): failed to open stream: No such file or directory occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:44 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:13.184133+07:00] system.ERROR: include(): Failed opening '/var/www/url-shorten/storage/languages/vi/app.php' for inclusion (include_path='.:/usr/share/php') occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:44 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:13.184163+07:00] system.ERROR: Trying to access array offset on value of type bool occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:46 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:13.184187+07:00] system.ERROR: count(): Parameter must be an array or an object that implements Countable occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:46 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:13.184207+07:00] system.ERROR: Trying to access array offset on value of type bool occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:47 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:13.184227+07:00] system.ERROR: array_filter() expects parameter 1 to be array, null given occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:47 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:13.184244+07:00] system.ERROR: count(): Parameter must be an array or an object that implements Countable occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:47 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:14.680114+07:00] system.ERROR: Undefined index: name occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:28 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:14.680191+07:00] system.ERROR: Undefined index: rtl occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:28 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:14.680840+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:29 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:14.680882+07:00] system.ERROR: Undefined index: link occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:30 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:14.680923+07:00] system.ERROR: Undefined index: author occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:30 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:14.680946+07:00] system.ERROR: Undefined index: date occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:31 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:14.680984+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:43 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:14.681019+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:48 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:14.681053+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:49 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:14.681072+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:51 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:17.963165+07:00] system.ERROR: include(/var/www/url-shorten/storage/languages/vi/app.php): failed to open stream: No such file or directory occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:44 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:17.963249+07:00] system.ERROR: include(): Failed opening '/var/www/url-shorten/storage/languages/vi/app.php' for inclusion (include_path='.:/usr/share/php') occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:44 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:17.963270+07:00] system.ERROR: Trying to access array offset on value of type bool occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:46 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:17.963288+07:00] system.ERROR: count(): Parameter must be an array or an object that implements Countable occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:46 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:17.963302+07:00] system.ERROR: Trying to access array offset on value of type bool occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:47 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:17.963316+07:00] system.ERROR: array_filter() expects parameter 1 to be array, null given occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:47 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:17.963329+07:00] system.ERROR: count(): Parameter must be an array or an object that implements Countable occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:47 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:19.440150+07:00] system.ERROR: Undefined index: name occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:28 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:19.440214+07:00] system.ERROR: Undefined index: rtl occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:28 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:19.440234+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:29 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:19.440266+07:00] system.ERROR: Undefined index: link occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:30 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:19.440282+07:00] system.ERROR: Undefined index: author occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:30 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:19.440294+07:00] system.ERROR: Undefined index: date occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:31 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:19.440310+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:43 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:19.440330+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:48 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:19.440359+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:49 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:19.440382+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:51 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:41.558246+07:00] system.ERROR: include(/var/www/url-shorten/storage/languages/vi/app.php): failed to open stream: No such file or directory occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:44 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:41.558347+07:00] system.ERROR: include(): Failed opening '/var/www/url-shorten/storage/languages/vi/app.php' for inclusion (include_path='.:/usr/share/php') occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:44 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:41.558370+07:00] system.ERROR: Trying to access array offset on value of type bool occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:46 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:41.558387+07:00] system.ERROR: count(): Parameter must be an array or an object that implements Countable occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:46 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:41.558402+07:00] system.ERROR: Trying to access array offset on value of type bool occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:47 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:41.558417+07:00] system.ERROR: array_filter() expects parameter 1 to be array, null given occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:47 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:41.558431+07:00] system.ERROR: count(): Parameter must be an array or an object that implements Countable occurred in /var/www/url-shorten/app/controllers/admin/LanguagesController.php:47 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:43.048581+07:00] system.ERROR: Undefined index: name occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:28 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:43.048649+07:00] system.ERROR: Undefined index: rtl occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:28 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:43.048670+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:29 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:43.048685+07:00] system.ERROR: Undefined index: link occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:30 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:43.048698+07:00] system.ERROR: Undefined index: author occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:30 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:43.048711+07:00] system.ERROR: Undefined index: date occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:31 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:43.048727+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:43 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:43.048756+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:48 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:43.048777+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:49 -> http://rutgonurl.click/admin/languages  
+
+[2023-06-15T16:53:43.048817+07:00] system.ERROR: Undefined index: code occurred in /var/www/url-shorten/storage/themes/default/admin/languages/index.php:51 -> http://rutgonurl.click/admin/languages  
+
