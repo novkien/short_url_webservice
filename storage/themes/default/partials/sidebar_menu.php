@@ -1,3 +1,6 @@
+<?php ///sidebar_menu for user ?>
+
+
 <ul class="sidebar-nav">
     <li class="sidebar-item active">
         <a class="sidebar-link" href="<?php echo route('dashboard') ?>">
@@ -18,6 +21,9 @@
             <i class="align-middle" data-feather="bar-chart"></i> <span class="align-middle"><?php ee('Statistics') ?></span>
         </a>
     </li>
+
+
+    /* 
     <?php if($user->has('channels')): ?>
         <li class="sidebar-header"><?php ee('Channels') ?></li>
         <?php foreach($channels = \Core\DB::channels()->where('userid', $user->rID())->where('starred', 1)->orderByAsc('name')->findMany() as $channel): ?>
@@ -28,7 +34,10 @@
                 <i data-feather="package"></i> <span class="align-middle"><?php ee('My Channels') ?></span>
             </a>
         </li>
-    <?php endif ?>   
+    <?php endif ?>
+    */
+
+
     <li class="sidebar-header"><?php ee('Link Management') ?></li>
     <li class="sidebar-item">
         <a class="sidebar-link" href="<?php echo route('links') ?>">
