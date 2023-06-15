@@ -29,7 +29,7 @@ use Core\Localization;
 
 // Homepage
 Gem::get('/', 'Home@index')->name('home')->middleware('CheckDomain')->middleware('CheckMaintenance')->middleware('CheckPrivate');
-Gem::get('/paste', 'Page@paste')->name('paste')->middleware('CheckDomain')->middleware('CheckMaintenance');
+
 
 // Pricing Page
 Gem::get('/pricing', 'Subscription@pricing')->name('pricing')->middleware('CheckDomain')->middleware('CheckMaintenance');
@@ -41,6 +41,7 @@ Gem::get('/checkout/{id}/{type}/tax', 'Subscription@tax')->middleware('Auth')->n
 // Custom Page
 Gem::get('/page/{page}', 'Page@index')->name('page')->middleware('CheckDomain')->middleware('CheckMaintenance');
 Gem::get('/qr-codes', 'Page@qr')->name('page.qr')->middleware('CheckDomain')->middleware('CheckMaintenance');
+Gem::get('/paste', 'Page@paste')->name('paste')->middleware('CheckDomain')->middleware('CheckMaintenance');
 Gem::get('/bio-profiles', 'Page@bio')->name('page.bio')->middleware('CheckDomain')->middleware('CheckMaintenance');
 
 // Contact Page

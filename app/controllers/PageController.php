@@ -84,8 +84,9 @@ class Page {
         return View::with('pages.contact')->extend('layouts.main');
     }   
 
-     /**
-     * Contact Page
+
+    /**
+     * QR Codes
      *
      * @author GemPixel <https://gempixel.com> 
      * @version 6.0
@@ -93,15 +94,12 @@ class Page {
      */
     public function paste(){
 
-        if(!config('paste')) stop(404);
-
         View::set('title', e('Paste'));
 
-        // @group Plugin
-        Plugin::dispatch('paste');
+        View::set('description', e('Easy archive and share your text simply'));
 
-        return View::with('pages.paste')->extend('layouts.main');
-    }   
+        return View::with('pages.paste')->extend('layouts.main');        
+    }
 
     /**
      * Send Contact Form
