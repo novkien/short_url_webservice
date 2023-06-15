@@ -1249,7 +1249,7 @@
     'Please enter a valid short link' => 'Vui lòng nhập một liên kết ngắn hợp lệ',
     'Solutions' => 'Các giải pháp',
     'Company' => 'Công ty',
-    'Help' => 'Giúp đỡ',
+    'Help' => 'Trợ giúp',
     'More Info' => 'Thêm thông tin',
     'Set Private' => 'Đặt làm riêng tư',
     'Set Public' => 'Công bố',

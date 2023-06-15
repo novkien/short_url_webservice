@@ -38,7 +38,6 @@
     */
 ?>
 
-    <li class="sidebar-header"><?php ee('Link Management') ?></li>
     <li class="sidebar-item">
         <a class="sidebar-link" href="<?php echo route('links') ?>">
             <i class="align-middle" data-feather="link"></i> <span class="align-middle"><?php ee('Links') ?> </span>
@@ -117,11 +116,11 @@
         </a>
     </li>    
     <?php endif ?>   
-    */
-?>
+    
 
 
-    <?php //plug('usermenu') ?>
+
+    <?php plug('usermenu') ?>
     <li class="sidebar-item">        
         <a class="sidebar-link collapsed" data-bs-target="#nav-tool" data-bs-toggle="collapse">
             <i class="align-middle" data-feather="terminal"></i> <span class="align-middle"><?php ee('Tools & Integrations') ?></span>
@@ -141,4 +140,6 @@
             <?php endif ?>
         </ul>
     </li>     
+    */
+?>
 </ul>

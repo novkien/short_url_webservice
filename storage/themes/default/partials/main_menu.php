@@ -1,12 +1,10 @@
 <ul class="navbar-nav ml-lg-auto">
     <li class="nav-item nav-item-spaced d-lg-block">
         <a class="nav-link" href="<?php echo route('home') ?>"><?php ee('Home') ?></a>
-    </li>    
-    <?php if(config('pro')): ?>
-    <li class="nav-item nav-item-spaced d-lg-block">
-        <a class="nav-link" href="<?php echo route('pricing') ?>"><?php ee('Pricing') ?></a>
     </li>   
-    <?php endif ?>
+
+
+
     <li class="nav-item nav-item-spaced dropdown dropdown-animate" data-toggle="hover">
         <a class="nav-link" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false"><?php ee('Solutions') ?></a>
         <div class="dropdown-menu dropdown-menu-xl p-0">
@@ -61,17 +59,7 @@
                                 </div>
                             </div> 
 
-                            <!--added removal bio-->
-                            <?php
-                            ////<div class="list-group-item border-0">
-                            ///    <div class="media d-flex">                                    
-                            ///        <div class="media-body">
-                            ///            <a href="<?php echo route('page.bio') ?>" class="d-block h6 mb-0"><?php ee('Bio Profiles') ?></a>
-                            ///            <small class="text-sm text-muted mb-0"><?php ee('Convert your social media followers') ?></small>
-                            ///        </div>
-                            ///    </div>
-                            </div>     
-                            ?>                         
+                   
                             <?php foreach(\Helpers\App::pages('main') as $page): ?>
                                 <div class="list-group-item border-0">
                                     <div class="media d-flex">                                    
@@ -87,12 +75,10 @@
             </div>
         </div>
     </li>
-    <?php if(config('blog')): ?>
-    <li class="nav-item nav-item-spaced d-lg-block">
-        <a class="nav-link" href="<?php echo route('blog') ?>"><?php ee('Blog') ?></a>
-    </li>
-    <?php endif ?>
+
     <?php plug('homemenu') ?>
+
+
 </ul>
 <ul class="navbar-nav align-items-lg-center d-none d-lg-flex ml-lg-auto">    
     <?php if(\Core\Auth::logged()): ?>    
