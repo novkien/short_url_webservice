@@ -51,11 +51,14 @@
             <li class="sidebar-item"><a class="sidebar-link" href="<?php echo route('admin.payments') ?>"><?php ee('Payments') ?></a></li>
         </ul>
     </li>   
-    <li class="sidebar-item">
+
+    ///added removal bio
+    <!----<li class="sidebar-item">
         <a class="sidebar-link collapsed" href="<?php echo route('admin.bio') ?>">
             <i class="align-middle" data-feather="layout"></i> <span class="align-middle"><?php ee('Bio Pages') ?></span>
         </a>
     </li> 
+    -->
     <li class="sidebar-item">
         <a class="sidebar-link collapsed" href="<?php echo route('admin.qr') ?>">
             <i class="align-middle" data-feather="aperture"></i> <span class="align-middle"><?php ee('QR Codes') ?></span>

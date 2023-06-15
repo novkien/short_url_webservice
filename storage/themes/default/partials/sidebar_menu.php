@@ -4,13 +4,18 @@
             <i class="align-middle" data-feather="sliders"></i> <span class="align-middle"><?php ee('Dashboard') ?></span>
         </a>
     </li>
-    <?php if($user->has('bio')): ?>
-    <li class="sidebar-item">
-        <a class="sidebar-link" href="<?php echo route('bio') ?>">
-            <i class="align-middle" data-feather="layout"></i> <span class="align-middle"><?php ee('Bio Pages') ?></span>
-        </a>
-    </li>
-    <?php endif ?>
+
+    <?php 
+    ///if($user->has('bio')): 
+    ///<li class="sidebar-item">
+    ///    <a class="sidebar-link" href="<?php echo route('bio') ?>">
+    ///        <i class="align-middle" data-feather="layout"></i> <span class="align-middle"><?php ee('Bio Pages') ?></span>
+    ///    </a>
+    /// </li>
+    /// endif
+    
+    ?>
+
     <?php if($user->has('qr')): ?>
     <li class="sidebar-item">
         <a class="sidebar-link" href="<?php echo route('qr') ?>">

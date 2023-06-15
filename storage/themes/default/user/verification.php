@@ -12,7 +12,8 @@
     <div class="col-md-8">
         <div class="card">
             <div class="card-body">
-                <p><?php ee('You can get your account verified and this provides you several benefits. After we verify we your account, you will get a verified checkmark on your Bio Pages and your links will have a trusted status.') ?></p>
+            <!--added removal bio-->
+                <p><?php //ee('You can get your account verified and this provides you several benefits. After we verify we your account, you will get a verified checkmark on your Bio Pages and your links will have a trusted status.') ?></p>
 
                 <p><?php ee('All we need from you is a document that matches your name and address. Documents can be a national card, company bill or any other official document.') ?></p>
                 <form action="<?php echo route('user.verification.verify') ?>" method="post" enctype="multipart/form-data" autocomplete="off">

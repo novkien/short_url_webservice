@@ -57,7 +57,11 @@
                     <h6 class="heading mb-3"><?php ee('Solutions') ?></h6>
                     <ul class="list-unstyled">
                         <li><a href="<?php echo route('page.qr') ?>"><?php ee('QR Codes') ?></a></li>
-                        <li><a href="<?php echo route('page.bio') ?>"><?php ee('Bio Profiles') ?></a></li>
+                        
+                        <!--added removal bio-->
+                        <?php /////<li><a href="<?php echo route('page.bio') ?>"><?php ee('Bio Profiles') ?></a></li>
+                        ?>
+
                         <?php foreach(\Helpers\App::pages('main') as $page): ?>
                             <li><a href="<?php echo route('page', [$page->seo]) ?>"><?php ee($page->name) ?></a></li>
                         <?php endforeach ?>

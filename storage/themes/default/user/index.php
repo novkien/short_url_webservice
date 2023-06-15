@@ -136,13 +136,19 @@
                                 <?php if($stats->url->qrid): ?>
                                     <span class="badge bg-success text-sm"><?php ee("QR Code") ?></span>
                                     <strong><?php echo $stats->qr ?></strong></a>
-                                <?php elseif($stats->url->profileid): ?>
-                                    <span class="badge bg-success text-sm"><?php ee("Bio Page") ?></span>
-                                    <strong><?php echo $stats->profile ?></strong></a>
-                                    <a href="<?php echo $stats->url->url ?>" target="_blank" rel="nofollow"><strong class="text-break"><?php echo \Core\Helper::truncate(\Core\Helper::empty($stats->url->meta_title, $stats->url->url), 30) ?></strong></a> 
-                                    <?php if($stats->url->alias || $stats->url->custom): ?>
-                                        <small class="text-muted" data-href="<?php echo Helpers\App::shortRoute($stats->url->domain, $stats->url->alias.$stats->url->custom) ?>"><?php echo Helpers\App::shortRoute($stats->url->domain, $stats->url->alias.$stats->url->custom) ?></small>
-                                    <?php endif ?>
+                                
+                                <!--added removal bio-->
+                                <?php
+                                // <?php elseif($stats->url->profileid): ?>
+                                //     <span class="badge bg-success text-sm"><?php ee("Bio Page") ?></span>
+                                //     <strong><?php echo $stats->profile ?></strong></a>
+                                //     <a href="<?php echo $stats->url->url ?>" target="_blank" rel="nofollow"><strong class="text-break"><?php echo \Core\Helper::truncate(\Core\Helper::empty($stats->url->meta_title, $stats->url->url), 30) ?></strong></a> 
+                                //     <?php if($stats->url->alias || $stats->url->custom): ?>
+                                //         <small class="text-muted" data-href="<?php echo Helpers\App::shortRoute($stats->url->domain, $stats->url->alias.$stats->url->custom) ?>"><?php echo Helpers\App::shortRoute($stats->url->domain, $stats->url->alias.$stats->url->custom) ?></small>
+                                //     <?php endif ?>
+                                ?>
+                                
+                                
                                 <?php else: ?>
                                     <img src="<?php echo route('link.ico', $stats->urlid) ?>" width="16" height="16" class="rounded-circle me-1" alt="<?php echo $stats->url->meta_title ?>">
                                     <a href="<?php echo $stats->url->url ?>" target="_blank" rel="nofollow"><strong class="text-break"><?php echo \Core\Helper::truncate(\Core\Helper::empty($stats->url->meta_title, $stats->url->url), 30) ?></strong></a>

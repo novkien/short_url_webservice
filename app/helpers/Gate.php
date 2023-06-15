@@ -378,6 +378,7 @@ class Gate {
         }
 
         View::set('title', !empty($url->meta_title) ? $url->meta_title : $profile->name);
+        
         View::set('description', !empty($url->meta_description) ? $url->meta_description : $profile->name.' Bio Page');
         
         View::set('url', \Helpers\App::shortRoute($url->domain??null, $profile->alias));

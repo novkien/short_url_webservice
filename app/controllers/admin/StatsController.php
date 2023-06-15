@@ -41,7 +41,8 @@ class Stats {
         $counts = [];
         $counts['urls'] = ['name' => e('Links'), 'count' => DB::url()->count(), 'count.today' => DB::url()->whereRaw('`date` >= CURDATE()')->count()];
         $counts['clicks'] = ['name' => e('Clicks'), 'count' => \Core\DB::url()->selectExpr('SUM(click) as click')->first()->click, 'count.today' => DB::stats()->whereRaw('`date` >= CURDATE()')->count()];
-        $counts['bio'] = ['name' => e('Bio Pages'), 'count' => DB::profiles()->count(), 'count.today' => DB::profiles()->whereRaw('`created_at` >= CURDATE()')->count()];
+        ///added removal bio
+        //$counts['bio'] = ['name' => e('Bio Pages'), 'count' => DB::profiles()->count(), 'count.today' => DB::profiles()->whereRaw('`created_at` >= CURDATE()')->count()];
         $counts['qr'] = ['name' => e('QR Codes'), 'count' => DB::qrs()->count(), 'count.today' => DB::qrs()->whereRaw('`created_at` >= CURDATE()')->count()];
     
         return View::with('admin.stats', compact('counts'))->extend('admin.layouts.main');

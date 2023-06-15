@@ -344,14 +344,20 @@ class Page {
      * @version 6.0
      * @return void
      */
-    public function bio(){
 
+
+
+    public function bio(){
+    
         View::set('title', e('Bio Profiles'));
         
         View::set('description', e('Convert your followers by creating beautiful pages that group all of your important links on the single page.'));
-
+    
         return View::with('pages.bio')->extend('layouts.main'); 
     }
+
+
+
     /**
      * Consent
      *

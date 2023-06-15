@@ -319,7 +319,8 @@ final class App {
             "alias"     => ["enabled" => true],	
             "multiple"  => ["enabled" => true],
             "qr"        => ["enabled" => true, "count" => 0],
-            "bio"       => ["enabled" => true, "count" => 0],
+            ///added removal bio
+            "bio"       => ["enabled" => false, "count" => 0],
             "channels"  => ["enabled" => true, "count" => 0],
             "custom"    => null
         ];

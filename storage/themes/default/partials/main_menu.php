@@ -60,14 +60,18 @@
                                     </div>
                                 </div>
                             </div> 
-                            <div class="list-group-item border-0">
-                                <div class="media d-flex">                                    
-                                    <div class="media-body">
-                                        <a href="<?php echo route('page.bio') ?>" class="d-block h6 mb-0"><?php ee('Bio Profiles') ?></a>
-                                        <small class="text-sm text-muted mb-0"><?php ee('Convert your social media followers') ?></small>
-                                    </div>
-                                </div>
-                            </div>                              
+
+                            <!--added removal bio-->
+                            <?php
+                            ////<div class="list-group-item border-0">
+                            ///    <div class="media d-flex">                                    
+                            ///        <div class="media-body">
+                            ///            <a href="<?php echo route('page.bio') ?>" class="d-block h6 mb-0"><?php ee('Bio Profiles') ?></a>
+                            ///            <small class="text-sm text-muted mb-0"><?php ee('Convert your social media followers') ?></small>
+                            ///        </div>
+                            ///    </div>
+                            </div>     
+                            ?>                         
                             <?php foreach(\Helpers\App::pages('main') as $page): ?>
                                 <div class="list-group-item border-0">
                                     <div class="media d-flex">                                    
