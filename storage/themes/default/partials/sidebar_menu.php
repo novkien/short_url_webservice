@@ -22,7 +22,7 @@
         </a>
     </li>
 
-
+<?php
     /* 
     <?php if($user->has('channels')): ?>
         <li class="sidebar-header"><?php ee('Channels') ?></li>
@@ -36,7 +36,7 @@
         </li>
     <?php endif ?>
     */
-
+?>
 
     <li class="sidebar-header"><?php ee('Link Management') ?></li>
     <li class="sidebar-item">
