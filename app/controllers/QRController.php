@@ -230,7 +230,7 @@ class QR {
 
         $qrdata['data'] = $input;
 
-        echo $qrdata['type'].'<br>'.$qrdata['data'];
+        echo $qrdata['type'].'<br>'.$qrdata['data'].'<br>';
 
 
         if($request->mode == 'gradient'){
@@ -278,7 +278,6 @@ class QR {
 
         $alias = \substr(md5(rand(0,100).Helper::rand(12)), 0, 15);
 
-        echo $alias;
 
 
 /*
