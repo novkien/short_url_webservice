@@ -178,6 +178,7 @@ class QR {
 
         if(Auth::user()->teamPermission('qr.create') == false){
 			return back()->with('danger', e('You do not have this permission. Please contact your team administrator.'));
+            echo 'False';
 		}
     
         if(!\Helpers\QR::typeExists($request->type)) return back()->with('danger',  e('Invalid QR format or missing data'));
