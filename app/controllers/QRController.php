@@ -190,20 +190,7 @@ class QR {
 
         $total = Auth::user()->hasLimit('qr');
 
-        \Models\Plans::checkLimit($count, $total);
-        try{
-            if($request->type == 'file'){
-            
-                $input = call_user_func([\Helpers\QR::class, 'type'.ucfirst($request->type)]);
-                $data = uploads('qr/files/'.$input);
-    
-            }else {
-                $input = $request->{$request->type} ? $request->{$request->type} : $request->text;
-                $data = call_user_func([\Helpers\QR::class, 'type'.ucfirst($request->type)], clean($input));
-            }  
-        }  catch(\Exception $e){
-            return back()->with('danger',  $e->getMessage());
-        }
+
 */
 
         try{
@@ -316,7 +303,7 @@ class QR {
         if($url){
 
             $url->qrid = $qr->id;
-            $url->save();
+            //$url->save();
         }
         
         echo $qr->data.'<br>';
