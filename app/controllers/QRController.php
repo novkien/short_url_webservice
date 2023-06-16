@@ -317,7 +317,7 @@ class QR {
         if($url){
 
             $url->qrid = $qr->id;
-            echo $url;
+            echo $qr->id;
             //$url->save();
         }
         
