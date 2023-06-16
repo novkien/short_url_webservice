@@ -4,7 +4,9 @@
     </li>   
 
 
+<?php ///dropdown menu example
 
+/*
     <li class="nav-item nav-item-spaced dropdown dropdown-animate" data-toggle="hover">
         <a class="nav-link" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false"><?php ee('Solutions') ?></a>
         <div class="dropdown-menu dropdown-menu-xl p-0">
@@ -75,8 +77,12 @@
             </div>
         </div>
     </li>
+*/
 
-    <?php plug('homemenu') ?>
+?>
+
+
+    <?php //plug('homemenu') ?>
 
 
 </ul>
@@ -131,7 +137,7 @@
     </li> 
     
     
-    
+
 </ul>
 <?php if(config("user") && !config("private") && !config("maintenance")): ?>
     <div class="d-lg-none px-4 text-center">    

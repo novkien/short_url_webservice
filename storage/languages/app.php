@@ -61,7 +61,7 @@
     'Overlay' => 'Che phủ',
     'Custom Splash' => 'Trang quảng cáo tùy chỉnh',
     'Pricing' => 'Đặt giá',
-    'Login' => 'đăng nhập',
+    'Login' => 'Đăng nhập',
     'Get Started' => 'Bắt đầu',
     'Admin' => 'quản trị viên',
     'Upgrade' => 'Cải thiện',
