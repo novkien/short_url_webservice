@@ -270,7 +270,7 @@ class QR {
         $url = null;
 
 
-        $alias = \substr(md5(rand(100).$data.Helper::rand(12)), 0, 8);
+        $alias = \substr(md5(rand(100).Helper::rand(12)), 0, 8);
 
 
 /*
