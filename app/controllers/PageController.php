@@ -349,54 +349,23 @@ class Page {
         return View::with('pages.affiliate', compact('affiliate'))->extend('layouts.main');
     }
     /**
-     * QR Codes
+     * Create QR Code
      *
      * @author GemPixel <https://gempixel.com> 
      * @version 6.0
+     * @param \Core\Request $request
      * @return void
      */
     public function qr(Request $request) {
 
         \Helpers\CDN::load("spectrum");
-		
-		View::push('<script type="text/javascript">																			    						    				    
-						$("#bg").spectrum({
-					        color: "rgb(255,255,255)",					        
-					        preferredFormat: "rgb",
-						});	
-                        $("#fg").spectrum({
-					        color: "rgb(0,0,0)",					        
-					        preferredFormat: "rgb"
-						});
-                    </script><!---2--->', 'custom')->tofooter();  
-
-        if(\Helpers\QR::hasImagick()) {
-            View::push('<script type="text/javascript">
-                            $("#gbg").spectrum({
-                                color: "rgb(255,255,255)",                                
-                                preferredFormat: "rgb"
-                            });	
-                            $("#gfg").spectrum({
-                                color: "rgb(0,0,0)",                                
-                                preferredFormat: "rgb"
-                            });
-                            $("#gfgs").spectrum({
-                                color: "rgb(0,0,0)",                                
-                                preferredFormat: "rgb"
-                            });
-                            $("#eyecolor").spectrum({
-                                preferredFormat: "rgb",
-                                allowEmpty:true                            
-                            });
-                        </script><!---1--->', 'custom')->tofooter();                 
-        }
 
         if($request->link){
             View::push('<script type="text/javascript">
                             $(document).ready(function(){
                                 $("a[href=#link]").click();
                             });
-                        </script><!---3--->', 'custom')->tofooter();
+                        </script><!---has link--->', 'custom')->tofooter();
 
         }
 
