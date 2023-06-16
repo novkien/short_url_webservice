@@ -247,7 +247,7 @@
         </section>   
     <?php endif ?>
     <?php if (config("homepage_stats")): ?>
-    <section class="py-lg-3 bg-section-secondary">
+    <section class="bg-section-secondary pb-3">
         <div class="container pt-4 position-relative zindex-100">        
             <div class="row mt-4">
                 <div class="col-lg-12 mx-auto">
