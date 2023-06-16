@@ -311,7 +311,8 @@ class QR {
         $qr->data = json_encode($qrdata);
         $qr->status = 1;
         $qr->created_at = Helper::dtime();
-        $qr->save();
+        echo $url ? $url->id : null;
+        //$qr->save();
 
         if($url){
 
