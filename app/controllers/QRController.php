@@ -379,7 +379,7 @@ class QR {
                         </script>', 'custom')->tofooter();                 
         }
 
-        View::set('title', e("Edit QR").' '. $qr->name);
+        //View::set('title', e("Edit QR").' '. $qr->name);
 
         $domains = false;
         if(!in_array($qr->data->type, ['text', 'sms','wifi','staticvcard'])){      
