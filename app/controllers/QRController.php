@@ -274,10 +274,10 @@ class QR {
 
         echo $alias;
 
-
+        echo $request->data['text'];
 
         if(!in_array($request->type, ['text', 'sms','wifi','staticvcard'])){       
-            echo $request->data['text'];      
+      
             /*           
             $url = DB::url()->create();
             $url->userid = Auth::user()->rID();
