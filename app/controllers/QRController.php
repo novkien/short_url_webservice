@@ -384,6 +384,7 @@ class QR {
 
         View::set('title', e("Edit QR").' '. $qr->name);
 
+        /*
         $domains = false;
         if(!in_array($qr->data->type, ['text', 'sms','wifi','staticvcard'])){      
             $domains = [];
@@ -391,7 +392,7 @@ class QR {
                 $domains[] = $domain;
             }  
         }
-        
+        */
         return View::with('qr.edit', compact('qr', 'url', 'domains'))->extend('layouts.main');     
     }
 
