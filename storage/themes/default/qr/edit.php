@@ -200,7 +200,7 @@
                     </div>
                 </div>
             </div>
-            <?php route('qr.generate', [$qr->alias]) ?>
+            <?php route('qr.generate', [$qr->alias])  ?>
             <div class="col-md-3 justify-content-right">
                 <div class="card">
                     <div class="card-header">
