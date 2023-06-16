@@ -284,4 +284,82 @@ class QR {
         
         return Helper::redirect()->to(route('qr.edit', [$qr->id]))->with('success',  e('QR Code has been successfully generated.'));
     }
+
+        /**
+     * Edit QR
+     *
+     * @author GemPixel <https://gempixel.com> 
+     * @version 6.0
+     * @param integer $id
+     * @return void
+     */
+    public function edit(int $id){
+
+        if(Auth::user()->teamPermission('qr.edit') == false){
+			return back()->with('danger', e('You do not have this permission. Please contact your team administrator.'));
+		}
+
+        if(!$qr = DB::qrs()->where('id', $id)->where('userid', Auth::user()->rID())->first()){
+            return back()->with('danger', 'QR does not exist.');
+        }    
+        
+        $qr->data = json_decode($qr->data);
+        
+        $url = null;
+        if($qr->urlid){
+            $url = DB::url()->first($qr->urlid);
+        }
+
+        \Helpers\CDN::load("spectrum");
+		
+		View::push('<script type="text/javascript">																			    						    				    
+						$("#bg").spectrum({
+					        color: "'.(isset($qr->data->color->bg) ? $qr->data->color->bg : 'rba(255,255,255)').'",
+					        showInput: true,
+					        preferredFormat: "rgb"
+						});	
+                        $("#fg").spectrum({
+					        color: "'.(isset($qr->data->color->fg) ? $qr->data->color->fg : 'rgb(0,0,0)').'",
+					        showInput: true,
+					        preferredFormat: "rgb"
+						});
+                    </script>', 'custom')->tofooter(); 
+
+        if(\Helpers\QR::hasImagick()){
+            View::push('<script type="text/javascript">
+                            $("#gbg").spectrum({
+                                color: "'.(isset($qr->data->gradient) ? $qr->data->gradient[1] : 'rgb(255,255,255)').'",
+                                showInput: true,
+                                preferredFormat: "rgb"
+                            });	
+                            $("#gfg").spectrum({
+                                color: "'.(isset($qr->data->gradient) ? $qr->data->gradient[0][0] : 'rgb(0,0,0)').'",
+                                showInput: true,
+                                preferredFormat: "rgb"
+                            });
+                            $("#gfgs").spectrum({
+                                color: "'.(isset($qr->data->gradient) ? $qr->data->gradient[0][1] : 'rgb(0,0,0)').'",
+                                showInput: true,
+                                preferredFormat: "rgb"
+                            });
+                            $("#eyecolor").spectrum({
+                                color: "'.(isset($qr->data->eyecolor) ? $qr->data->eyecolor : '').'",
+                                preferredFormat: "rgb",
+                                allowEmpty:true                            
+                            });
+                        </script>', 'custom')->tofooter();                 
+        }
+
+        View::set('title', e("Edit QR").' '. $qr->name);
+
+        $domains = false;
+        if(!in_array($qr->data->type, ['text', 'sms','wifi','staticvcard'])){      
+            $domains = [];
+            foreach(array_reverse(\Helpers\App::domains(), true) as $domain){
+                $domains[] = $domain;
+            }  
+        }
+        return View::with('qr.edit', compact('qr', 'url', 'domains'))->extend('layouts.dashboard');
+    }
+
 }
