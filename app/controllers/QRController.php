@@ -207,7 +207,7 @@ class QR {
 */
 
         try{
-            if($request->type == 'file'){
+            if($request->type == 'file' && false){
             
                 $input = call_user_func([\Helpers\QR::class, 'type'.ucfirst($request->type)]);
                 $data = uploads('qr/files/'.$input);
@@ -217,11 +217,6 @@ class QR {
 
                 
                 $data = call_user_func([\Helpers\QR::class, 'type'.ucfirst($request->type)], clean($input));
-
-                echo $data.'<br>';
-
-
-
 
             }  
         }  catch(\Exception $e){
@@ -234,6 +229,9 @@ class QR {
         $qrdata['type'] = clean($request->type);
 
         $qrdata['data'] = $input;
+
+        echo $qrdata['type'].'<br>'.$qrdata['data'];
+
 
         if($request->mode == 'gradient'){
             $qrdata['gradient'] = [
