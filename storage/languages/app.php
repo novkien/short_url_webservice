@@ -197,7 +197,7 @@
     'Sorry, Google connect is not available right now.' => 'Xin lỗi, Google Connect không khả dụng vào lúc này.',
     'You must grant permission to this application to use your google account.' => 'Bạn cần cấp cho ứng dụng này quyền sử dụng tài khoản google của mình.',
     'The email linked to your account has been already used. If you have used that, please login to you existing account otherwise please contact us.' => 'Email được liên kết với tài khoản của bạn đã được sử dụng. Nếu bạn đã sử dụng nó, vui lòng đăng nhập vào tài khoản hiện tại của bạn, nếu không thì hãy liên hệ với chúng tôi.',
-    'We are not accepting users at this time.' => 'Chúng tôi hiện không chấp nhận người dùng.',
+    'We are not accepting users at this time.' => 'Hiện tại không chấp nhận đăng ký, xin hãy thử lại sau hoặc liên hệ với chúng tôi.',
     'Please enter a valid email.' => 'Vui lòng nhập email hợp lệ.',
     'An account is already associated with this email.' => 'Một tài khoản đã được liên kết với email này.',
     'Password must contain at least 5 characters.' => 'Mật khẩu phải chứa ít nhất 5 ký tự.',
