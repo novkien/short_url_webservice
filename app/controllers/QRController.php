@@ -329,16 +329,11 @@ class QR {
         if(!$qr = DB::qrs()->where('id', $id)->where('userid', 1)->first()){
             return back()->with('danger', 'QR does not exist.');
         }    
-        //echo $results->data;
-        //echo $results->name;
-        //echo $results->id;
 
-        if(!$qr = DB::qrs()->where('id', $id)->where('userid', 1)->first()){
-            //return back()->with('danger', 'QR does not exist.');
-            echo $qr->data;
+        echo $qr->data;
         echo $qr->name;
         echo $qr->id;
-        }
+    
         
         $qr->data = json_decode($qr->data);
         
