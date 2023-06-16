@@ -200,7 +200,9 @@
                     </div>
                     <div class="card-body">
                         <div id="return-ajax">
-                            <img src="<?php echo route('qr.generate', [$qr->alias]) ?>" class="img-responsive w-100" />
+                            <a href="https://www.bing.com">
+                                <img src="<?php echo route('qr.generate', [$qr->alias]) ?>" class="img-responsive w-100" />
+                            </a>
                         </div>    
                         <button type="submit" class="btn btn-primary mt-3"><?php ee('Update') ?></button>
                     </div>
