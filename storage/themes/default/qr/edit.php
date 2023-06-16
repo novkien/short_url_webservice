@@ -174,7 +174,7 @@
                         </div>                    
                     <?php endif ?>
                 </div>
-                <div class="card">	
+                <div class="card hide">	
                     <div class="card-body collapse" id="colors">
                         <div id="singlecolor" class="collapse <?php echo isset($qr->data->color) ? 'hide' : '' ?>">
                             <div class="row">
