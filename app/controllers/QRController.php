@@ -332,10 +332,11 @@ class QR {
             echo "Error: " . DB::error();
         } else if (empty($results)) {
             echo "No results found.";
+        } else if (!isset($results[0]['alias'])) {
+            echo "Error: 'alias' index is undefined or illegal.";
         } else {
             echo $results[0]['alias'];
         }
-        
 
         //echo $results->data;
         //echo $results->name;
