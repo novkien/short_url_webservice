@@ -194,61 +194,6 @@
         <div class="container">
             <div class="section-process-step">
                 <div class="row row-grid justify-content-between align-items-center">
-                    <div class="col-lg-5 order-lg-2">
-                        <h5 class="h3"><?php ee('Perfect for sales & marketing') ?></h5>
-                        <p class="lead my-4">
-                            <?php ee('Understanding your users and customers will help you increase your conversion. Our system allows you to track everything. Whether it is the amount of clicks, the country or the referrer, the data is there for you to analyze it.') ?>
-                        </p>
-                        <ul class="list-unstyled mb-0">
-                            <li class="py-2">
-                                <div class="d-flex align-items-center">
-                                    <div>
-                                        <div class="icon icon-shape bg-primary text-white icon-sm rounded-circle mr-3">
-                                            <i class="fas fa-layer-group"></i>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <span class="h6 mb-0"><?php ee('Redirection Tools') ?></span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="py-2">
-                                <div class="d-flex align-items-center">
-                                    <div>
-                                        <div class="icon icon-shape bg-primary text-white icon-sm rounded-circle mr-3">
-                                            <i class="fas fa-chart-line"></i>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <span class="h6 mb-0"><?php ee('Powerful Statistics') ?></span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="py-2">
-                                <div class="d-flex align-items-center">
-                                    <div>
-                                        <div class="icon icon-shape bg-primary text-white icon-sm rounded-circle mr-3">
-                                            <i class="fas fa-user"></i>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <span class="h6 mb-0"><?php ee('Beautiful Profiles') ?></span>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-6 order-lg-1">
-                        <div class="card mb-0 mr-lg-5">
-                            <div class="card-body p-2">
-                                <img src="<?php echo assets('images/profiles.png') ?>" alt="<?php ee('Perfect for sales & marketing') ?>" class="img-responsive w-100">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section-process-step">
-                <div class="row row-grid justify-content-between align-items-center">
                     <div class="col-lg-5">
                         <h5 class="h3"><?php ee('Powerful tools that work') ?></h5>
                         <p class="lead my-4">

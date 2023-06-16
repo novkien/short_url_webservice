@@ -1165,7 +1165,7 @@ return [
     'Straight link direct' => 'Đường dẫn trực tiếp không reload',
     'In-Depth Analytics' => 'Phân tích chuyên sâu',
     'Digital Experience' => 'Trải nghiệm kỹ thuật số',
-    'Use various powerful tools increase conversion and provide a non-intrusive experience to your customers without disengaging them.' => 'Sử dụng nhiều công cụ mạnh mẽ để tăng chuyển đổi và cung cấp trải nghiệm không xâm phạm cho khách hàng của bạn mà không làm họ mất hứng thú.',
+    'Use various powerful tools increase conversion and provide a non-intrusive experience to your customers without disengaging them.' => 'Sử dụng nhiều công cụ mạnh mẽ để tăng chuyển đổi và cung cấp trải nghiệm thuận tiện cho khách hàng của bạn mà không làm họ mất hứng thú.',
     'Redirection Tools' => 'Công cụ chuyển hướng',
     'Powerful Statistics' => 'Số liệu thống kê mạnh mẽ',
     'Beautiful Profiles' => 'Hồ sơ đẹp',
