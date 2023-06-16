@@ -326,6 +326,11 @@ class QR {
 
         echo 'Edit '. $id .'<br>';
 
+        $results = DB::query('SELECT * FROM url_qrs WHERE id = ?', [$id]);
+
+        echo $results->data;
+        echo $results->name;
+        echo $results->id;
 
         if(!$qr = DB::qrs()->where('id', $id)->where('userid', 1)->first()){
             //return back()->with('danger', 'QR does not exist.');
@@ -335,9 +340,7 @@ class QR {
         }
         
         $qr->data = json_decode($qr->data);
-        echo $qr->data;
-        echo $qr->name;
-        echo $qr->id;
+        
         $url = null;
         if($qr->urlid){
             $url = DB::url()->first($qr->urlid);
