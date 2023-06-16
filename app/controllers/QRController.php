@@ -269,7 +269,7 @@ class QR {
       
                        
             $url = DB::url()->create();
-            $url->userid = Auth::user()->rID();
+            $url->userid = 1;
             $url->url = $data;
             $url->alias = \substr(md5(rand(0,100)), 0, 6);
 
