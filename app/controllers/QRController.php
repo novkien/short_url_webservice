@@ -330,10 +330,6 @@ class QR {
             return back()->with('danger', 'QR does not exist.');
         }    
 
-        echo $qr->data;
-        echo $qr->name;
-        echo $qr->id;
-    
         
         $qr->data = json_decode($qr->data);
         
@@ -391,7 +387,7 @@ class QR {
                 $domains[] = $domain;
             }  
         }
-        //return View::with('qr.edit', compact('qr', 'url', 'domains'))->extend('layouts.dashboard');
+        return View::with('qr.edit', compact('qr', 'url', 'domains'))->extend('layouts.dashboard');
     }
 
 }
