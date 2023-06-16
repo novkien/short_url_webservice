@@ -14,24 +14,11 @@
                     </div>                
                     <div class="list-group list-group-flush list-group-dynamic">
                         <a class="list-group-item list-group-item-action active" data-bs-toggle="collapse" data-bs-parent="#qrbuilder" href="#text"><i class="me-2" data-feather="type"></i> <?php ee('Text') ?></a>
-                        <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" data-bs-parent="#qrbuilder" href="#sms"><i class="me-2" data-feather="smartphone"></i><?php ee('SMS & Message') ?></a>
                         <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" data-bs-parent="#qrbuilder" href="#wifi"><i class="me-2" data-feather="wifi"></i> <?php ee('WiFi') ?></a>
                         <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" data-bs-parent="#qrbuilder" href="#staticvcard"><i class="me-2" data-feather="user"></i> <?php ee('Static vCard') ?></a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        <h5 class="card-title fw-bold"><?php ee('Dynamic QR') ?> - <?php ee('Trackable') ?></h5>
-                    </div>                
-                    <div class="list-group list-group-flush list-group-dynamic">
-                        <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" data-bs-parent="#qrbuilder" href="#vcard"><i class="me-2" data-feather="user"></i> <?php ee('vCard') ?></a>
                         <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" data-bs-parent="#qrbuilder" href="#link"><i class="me-2" data-feather="link"></i> <?php ee('Link') ?></a>
-                        <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" data-bs-parent="#qrbuilder" href="#email"><i class="me-2" data-feather="mail"></i> <?php ee('Email') ?></a>
-                        <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" data-bs-parent="#qrbuilder" href="#phone"><i class="me-2" data-feather="phone"></i> <?php ee('Phone') ?></a> 
-                        <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" data-bs-parent="#qrbuilder" href="#smsonly"><i class="me-2" data-feather="smartphone"></i><?php ee('SMS') ?></a>
+                        <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" data-bs-parent="#qrbuilder" href="#link"><i class="me-2" data-feather="link"></i> <?php ee('Link') ?></a>
                         <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" data-bs-parent="#qrbuilder" href="#file"><i class="me-2 fa fa-file fa-lg"></i> <?php ee('File') ?></a>
-                        <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" data-bs-parent="#qrbuilder" href="#whatsapp"><i class="me-2 fab fa-whatsapp fa-lg"></i> <?php ee('Whatsapp') ?></a>
-                        <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" data-bs-parent="#qrbuilder" href="#crypto"><i class="me-2 fab fa-bitcoin fa-lg"></i> <?php ee('Cryptocurrency') ?></a>                    
                     </div>
                 </div>
             </div>
