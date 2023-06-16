@@ -214,7 +214,13 @@ class QR {
 
             }else {
                 $input = $request->{$request->type} ? $request->{$request->type} : $request->text;
+
+                echo $input.'<br />';
                 $data = call_user_func([\Helpers\QR::class, 'type'.ucfirst($request->type)], clean($input));
+
+
+
+
             }  
         }  catch(\Exception $e){
             return back()->with('danger',  $e->getMessage());
@@ -274,11 +280,11 @@ class QR {
 
         echo $alias;
 
-        echo $request->data['text'];
 
+/*
         if(!in_array($request->type, ['text', 'sms','wifi','staticvcard'])){       
       
-            /*           
+                       
             $url = DB::url()->create();
             $url->userid = Auth::user()->rID();
             $url->url = $data;
