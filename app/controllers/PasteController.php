@@ -46,13 +46,13 @@ class Paste {
 	public function paste_text(Request $request){		
 	
 
-		View::set('title', e('Paste'));
+		//View::set('title', e('Paste'));
 
-        View::set('description', e('Easy archive and share your text simply'));
+        //View::set('description', e('Easy archive and share your text simply'));
 
 		echo 'This is the confirmation';
 
-		
+
 
 
 
