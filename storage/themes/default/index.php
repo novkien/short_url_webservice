@@ -194,61 +194,6 @@
         <div class="container">
             <div class="section-process-step">
                 <div class="row row-grid justify-content-between align-items-center">
-                    <div class="col-lg-5">
-                        <h5 class="h3"><?php ee('Powerful tools that work') ?></h5>
-                        <p class="lead my-4">
-                            <?php ee('Our product lets your target your users to better understand their behavior and provide them a better overall experience through smart re-targeting. We provide you many powerful tools to reach them better.') ?>
-                        </p>
-                        <ul class="list-unstyled mb-0">
-                            <li class="py-2">
-                                <div class="d-flex align-items-center">
-                                    <div>
-                                        <div class="icon icon-shape bg-success text-white icon-sm rounded-circle mr-3">
-                                            <i class="fas fa-lock"></i>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <span class="h6 mb-0"><?php ee('Link Management') ?></span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="py-2">
-                                <div class="d-flex align-items-center">
-                                    <div>
-                                        <div class="icon icon-shape bg-success text-white icon-sm rounded-circle mr-3">
-                                            <i class="fas fa-user-secret"></i>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <span class="h6 mb-0"><?php ee('Privacy Control') ?></span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="py-2">
-                                <div class="d-flex align-items-center">
-                                    <div>
-                                        <div class="icon icon-shape bg-success text-white icon-sm rounded-circle mr-3">
-                                            <i class="fas fa-tachometer-alt"></i>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <span class="h6 mb-0"><?php ee('Powerful Dashboard') ?></span>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="card mb-0 ml-lg-5">
-                            <div class="card-body p-2">
-                                <img src="<?php echo assets('images/filters.png') ?>" alt="<?php ee('Powerful tools that work') ?>" class="img-responsive w-100 py-5">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section-process-step">
-                <div class="row row-grid justify-content-between align-items-center">
                     <div class="col-lg-6">
                         <div class="card mb-0 ml-lg-5">
                             <div class="card-body p-2">
