@@ -272,6 +272,8 @@ class QR {
 
         $alias = \substr(md5(rand(0,100).Helper::rand(12)), 0, 8);
 
+        echo $alias;
+
 
 /*
         if(!in_array($request->type, ['text', 'sms','wifi','staticvcard'])){                        
