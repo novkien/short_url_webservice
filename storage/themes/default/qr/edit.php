@@ -174,21 +174,19 @@
                         </div>                    
                     <?php endif ?>
                 </div>
-                <div class="card hide">	
-                    <div class="card-body collapse" id="colors">
-                        <div id="singlecolor" class="collapse <?php echo isset($qr->data->color) ? 'hide' : '' ?>">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group mb-3">
-                                        <label class="form-label" for="bg"><?php ee("Background") ?></label><br>
-                                        <input type="text" name="bg" id="bg" value="<?php echo isset($qr->data->color) ? $qr->data->color->bg : '' ?>">
-                                    </div>
-                                </div>	
-                                <div class="col-md-6">
-                                    <div class="form-group mb-3">
-                                        <label class="form-label" for="fg"><?php ee("Foreground") ?></label><br>
-                                        <input type="text" name="fg" id="fg" value="<?php echo isset($qr->data->color) ? $qr->data->color->fg : '' ?>">
-                                    </div>
+                <div class="card-body collapse" id="colors">
+                    <div id="singlecolor" class="collapse <?php echo isset($qr->data->color) ? 'hide' : '' ?>">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label class="form-label" for="bg"><?php ee("Background") ?></label><br>
+                                    <input type="text" name="bg" id="bg" value="<?php echo isset($qr->data->color) ? $qr->data->color->bg : '' ?>">
+                                </div>
+                            </div>	
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label class="form-label" for="fg"><?php ee("Foreground") ?></label><br>
+                                    <input type="text" name="fg" id="fg" value="<?php echo isset($qr->data->color) ? $qr->data->color->fg : '' ?>">
                                 </div>
                             </div>
                         </div>
