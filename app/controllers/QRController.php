@@ -275,8 +275,10 @@ class QR {
         echo $alias;
 
 
-/*
-        if(!in_array($request->type, ['text', 'sms','wifi','staticvcard'])){                        
+
+        if(!in_array($request->type, ['text', 'sms','wifi','staticvcard'])){       
+            echo $request->data['text'];      
+            /*           
             $url = DB::url()->create();
             $url->userid = Auth::user()->rID();
             $url->url = $data;
@@ -288,8 +290,10 @@ class QR {
 
             $url->date = Helper::dtime();
             $url->save();
+            */
         }
 
+/*
         $qr = DB::qrs()->create();        
         $qr->userid = Auth::user()->rID();
         $qr->alias = $alias;
