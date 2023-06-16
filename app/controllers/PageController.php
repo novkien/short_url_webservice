@@ -355,7 +355,49 @@ class Page {
      * @version 6.0
      * @return void
      */
-    public function qr(){
+    public function qr() {
+
+        \Helpers\CDN::load("spectrum");
+		
+		View::push('<script type="text/javascript">																			    						    				    
+						$("#bg").spectrum({
+					        color: "rgb(255,255,255)",					        
+					        preferredFormat: "rgb",
+						});	
+                        $("#fg").spectrum({
+					        color: "rgb(0,0,0)",					        
+					        preferredFormat: "rgb"
+						});
+                    </script>', 'custom')->tofooter();  
+
+        if(\Helpers\QR::hasImagick()) {
+            View::push('<script type="text/javascript">
+                            $("#gbg").spectrum({
+                                color: "rgb(255,255,255)",                                
+                                preferredFormat: "rgb"
+                            });	
+                            $("#gfg").spectrum({
+                                color: "rgb(0,0,0)",                                
+                                preferredFormat: "rgb"
+                            });
+                            $("#gfgs").spectrum({
+                                color: "rgb(0,0,0)",                                
+                                preferredFormat: "rgb"
+                            });
+                            $("#eyecolor").spectrum({
+                                preferredFormat: "rgb",
+                                allowEmpty:true                            
+                            });
+                        </script>', 'custom')->tofooter();                 
+        }
+
+        if($request->link){
+            View::push('<script type="text/javascript">
+                            $(document).ready(function(){
+                                $("a[href=#link]").click();
+                            });
+                        </script>', 'custom')->tofooter();
+        }
 
         View::set('title', e('QR Codes'));
 
