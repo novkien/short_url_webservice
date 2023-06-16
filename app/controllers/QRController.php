@@ -337,6 +337,7 @@ class QR {
         } else {
             echo $results[0]['alias'];
         }
+        
 
         //echo $results->data;
         //echo $results->name;
