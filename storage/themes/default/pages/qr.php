@@ -1,3 +1,10 @@
+<script src="https://www.rutgonurl.click/static/backend/js/app.js"></script>
+<script src="https://www.rutgonurl.click/static/frontend/libs/jquery/dist/jquery.min.js"></script>
+<script src="https://www.rutgonurl.click/static/frontend/libs/select2/dist/js/select2.min.js"></script>
+<script src="https://www.rutgonurl.click/static/frontend/libs/bootstrap-notify/bootstrap-notify.min.js"></script>
+<script src="https://www.rutgonurl.click/static/custom.min.js"></script>
+
+
 <h1 class="h3 pt-10 pb-5"><div class="text-center"><?php ee('Create QR') ?></div></h1>
 <section class="m-5">
     <form action="<?php echo route('qr.save') ?>" data-trigger="saveqr" method="post" enctype="multipart/form-data">
