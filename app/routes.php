@@ -89,7 +89,7 @@ Gem::group('/user', function(){
 
     Gem::get('/login/sso/{token}', 'Users@sso')->middleware('CheckDomain')->middleware('UserLogged')->name('login.sso');
 
-    //Gem::get('/register', 'Users@register')->middleware('CheckDomain')->middleware('UserLogged')->name('register');
+    Gem::get('/register', 'Users@register')->middleware('CheckDomain')->middleware('UserLogged')->name('register');
     Gem::post('/register/validate', 'Users@registerValidate')->middleware('BlockBot')->middleware('UserLogged')->middleware('ValidateCaptcha')->name('register.validate');
 
     Gem::get('/login/forgot', 'Users@forgot')->middleware('CheckDomain')->name('forgot');
