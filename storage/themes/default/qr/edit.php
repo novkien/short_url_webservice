@@ -1,5 +1,5 @@
 <h1 class="h3 pt-10 pb-5"><div class="text-center"><?php ee('Edit QR') ?></div></h1>
-
+<?php sleep(3) ?>
 <section class="slice slice-lg bg-section-dark p-7">
     <form action="<?php echo route('qr.update', [$qr->id]) ?>" method="post" enctype="multipart/form-data">
         <?php echo csrf() ?>

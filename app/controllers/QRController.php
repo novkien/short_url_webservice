@@ -328,7 +328,7 @@ class QR {
      */
     public function edit(int $id){
 
-        sleep(3);
+
 
         if(!$qr = DB::qrs()->where('id', $id)->where('userid', 1)->first()){
             return back()->with('danger', 'QR does not exist.');
