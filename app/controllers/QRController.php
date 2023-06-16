@@ -230,7 +230,6 @@ class QR {
 
         $qrdata['data'] = $input;
 
-        echo $qrdata['type'].'<br>'.$qrdata['data'].'<br>';
 
 
         if($request->mode == 'gradient'){
@@ -240,7 +239,8 @@ class QR {
                 clean($request->gradient['direction'])
             ];
         } else {
-            $qrdata['color'] = ['bg' => clean($request->bg), 'fg' => clean($request->fg)];
+            echo $qrdata['color'] = ['bg' => clean($request->bg), 'fg' => clean($request->fg)];
+            
         }
 
 
