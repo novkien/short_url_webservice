@@ -165,7 +165,6 @@
                             </div> 
                             <div class="btn-group ms-auto">
                                 <button type="button" class="btn btn-primary btn-sm text-white" data-bs-toggle="collapse" data-bs-target="#vcard-address">+ <?php ee('Address') ?></button>
-                                <button type="button" class="btn btn-primary btn-sm text-white" data-bs-toggle="collapse" data-bs-target="#vcard-social">+ <?php ee('Social') ?></button>
                             </div>
                             <div id="vcard-address" class="collapse">
                                 <hr>
@@ -242,7 +241,6 @@
                             </div> 
                             <div class="btn-group ms-auto">
                                 <button type="button" class="btn btn-primary btn-sm text-white" data-bs-toggle="collapse" data-bs-target="#vcard-address">+ <?php ee('Address') ?></button>
-                                <button type="button" class="btn btn-primary btn-sm text-white" data-bs-toggle="collapse" data-bs-target="#vcard-social">+ <?php ee('Social') ?></button>
                             </div>
                             <div id="vcard-address" class="collapse">
                                 <hr>
