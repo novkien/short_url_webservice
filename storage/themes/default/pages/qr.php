@@ -526,7 +526,7 @@
             </div>
             <div class="col-md-3">
                 <div class="card">
-                    <div class="card-header">
+                    <div class="card-header text-center">
                         <h5 class="card-title fw-bold"><?php ee('QR Code') ?></h5>
                     </div>
                     <div class="card-body">
