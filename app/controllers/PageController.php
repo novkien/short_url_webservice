@@ -368,7 +368,7 @@ class Page {
 					        color: "rgb(0,0,0)",					        
 					        preferredFormat: "rgb"
 						});
-                    </script>', 'custom')->tofooter();  
+                    </script><!---2--->', 'custom')->tofooter();  
 
         if(\Helpers\QR::hasImagick()) {
             View::push('<script type="text/javascript">
@@ -388,7 +388,7 @@ class Page {
                                 preferredFormat: "rgb",
                                 allowEmpty:true                            
                             });
-                        </script>', 'custom')->tofooter();                 
+                        </script><!---1--->', 'custom')->tofooter();                 
         }
 
         if($request->link){
@@ -396,7 +396,8 @@ class Page {
                             $(document).ready(function(){
                                 $("a[href=#link]").click();
                             });
-                        </script>', 'custom')->tofooter();
+                        </script><!---3--->', 'custom')->tofooter();
+
         }
 
         View::set('title', e('QR Codes'));
