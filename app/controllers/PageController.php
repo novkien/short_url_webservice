@@ -355,7 +355,7 @@ class Page {
      * @version 6.0
      * @return void
      */
-    public function qr() {
+    public function qr(Request $request) {
 
         \Helpers\CDN::load("spectrum");
 		
