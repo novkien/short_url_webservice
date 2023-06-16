@@ -1,5 +1,5 @@
 <section class="slice pt-md-8 pb-5 <?php echo themeSettings::config('homestyle', 'light', 'bg-white', 'bg-section-dark') ?>" <?php echo themeSettings::config('homecolor') ?>>
-    <div data-offset-top="#navbar-main" style="padding-top: 500px">
+    <div data-offset-top="#navbar-main" style="padding-top: 100px">
         <div class="container position-relative">
             <div class="row align-items-center">
                 <div class="col-12 col-lg-6 pr-lg-5">
@@ -126,7 +126,8 @@
 
 
     <section class="slice slice-lg bg-section-secondary">    
-        <div class="container pt-6 pt-lg-8">
+        <!---<div class="container pt-6 pt-lg-8"-->
+        <div class="container">
             <div class="mb-8 text-center">
                 <h2><?php ee('One short link, infinite possibilities.') ?></h2>
                 <div class="fluid-paragraph mt-3">
