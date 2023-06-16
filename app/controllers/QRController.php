@@ -332,6 +332,7 @@ class QR {
             echo "No results found.";
         } else {
             echo $results[0]['alias'];
+            echo $results[1]['alias'];
         }
 
         //echo $results->data;
