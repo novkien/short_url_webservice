@@ -311,7 +311,7 @@ class QR {
         $qr->data = json_encode($qrdata);
         $qr->status = 1;
         $qr->created_at = Helper::dtime();
-        //$qr->save();
+        $qr->save();
 
         if($url){
 
@@ -320,7 +320,6 @@ class QR {
         }
         echo $qr->id.'<br>';
         echo $qr->data.'<br>';
-        echo $qr->created_at.'<br>';
         echo $qr->urlid;
 
 
