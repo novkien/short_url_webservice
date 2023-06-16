@@ -98,6 +98,8 @@
         </div>
     </section>    
 <?php endif ?>
+
+
 <?php if(config('public_dir')): ?>
     <section class="slice pt-md-8 pb-0 bg-section-secondary">
         <div class="container">
@@ -121,6 +123,8 @@
         </div>
     </section> 
 <?php else: ?>
+
+
     <section class="slice slice-lg bg-section-secondary">    
         <div class="container pt-6 pt-lg-8">
             <div class="mb-8 text-center">
@@ -141,9 +145,9 @@
                                 </div>
                             </div>
                             <div class="pt-2 pb-3">
-                                <h5 class="text-white"><?php ee('Smart Targeting') ?></h5>
+                                <h5 class="text-white"><?php ee('Straight link direct') ?></h5>
                                 <p class="text-white opacity-8 mb-0">
-                                    <?php ee('Target your customers to increase your reach and redirect them to a relevant page. Add a pixel to retarget them in your social media ad campaign to capture them.') ?>
+                                    <?php ee('Route your customers to website straigh with zero load time on our website.') ?>
                                 </p>
                             </div>
                         </div>

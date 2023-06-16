@@ -1,5 +1,5 @@
-<?php
- return [
+<?php 
+return [
   'code' => 'vi',
   'region' => 'vi',
   'name' => 'Tieng viet',
@@ -359,9 +359,10 @@
     'Tweet' => 'Tweet',
     'Close' => 'Đóng',
     'One short link, infinite possibilities.' => 'Một liên kết ngắn, khả năng vô tận.',
-    'A short link is a powerful marketing tool when you use it carefully. It is not just a link but a medium between your customer and their destination. A short link allows you to collect so much data about your customers and their behaviors.' => 'Một liên kết ngắn là một công cụ tiếp thị mạnh mẽ khi được sử dụng cẩn thận. Nó không chỉ là một liên kết mà còn là một phương tiện giữa khách hàng của bạn và điểm đến của họ. Liên kết ngắn cho phép bạn thu thập rất nhiều dữ liệu về khách hàng và hành vi của họ.',
+    'A short link is a powerful marketing tool when you use it carefully. It is not just a link but a medium between your customer and their destination. A short link allows you to collect so much data about your customers and their behaviors.' => 'Một liên kết được rút gọn là một công cụ tiếp thị mạnh mẽ khi được sử dụng cẩn thận. Nó không chỉ là một liên kết mà còn là một phương tiện giữa khách hàng của bạn và điểm đến của họ. Liên kết ngắn cho phép bạn thu thập rất nhiều dữ liệu đường dẫn của bạn.',
     'Target. Re-target.' => 'Mục tiêu. Nhắm mục tiêu lại.',
     'Target your customers to increase your reach and redirect them to a relevant page. Add a pixel to retarget them in your social media ad campaign to capture them.' => 'Nhắm mục tiêu khách hàng của bạn để tăng phạm vi tiếp cận của bạn và chuyển hướng họ đến một trang có liên quan. Thêm pixel để nhắm mục tiêu lại chúng trong chiến dịch quảng cáo trên mạng xã hội của bạn để thu hút chúng.',
+    'Route your customers to website straigh with zero load time on our website.' => 'Đưa người dùng tới trang web đích ngay lập tức, không mất thời gian tải trang, không mất tài nguyên băng thông, đi tới trang web đích một cách nhanh chóng',
     'Measure. Optimize.' => 'Đo lường. Để tối ưu hóa.',
     'Share your links to your network and measure data to optimize your marketing campaign\'s performance. Reach an audience that fits your needs.' => 'Chia sẻ các liên kết của bạn với mạng của bạn và đo lường dữ liệu để tối ưu hóa hiệu suất của chiến dịch tiếp thị của bạn. Tiếp cận đối tượng phù hợp với nhu cầu của bạn.',
     'Reach & increase sales.' => 'Tiếp cận và tăng doanh số.',
@@ -1161,6 +1162,7 @@
     'Want more options to customize the link, QR codes, branding and advanced metrics?' => 'Muốn có thêm tùy chọn để tùy chỉnh liên kết, mã QR, thương hiệu và các chỉ số nâng cao?',
     'Latest links' => 'Liên kết cuối cùng',
     'Smart Targeting' => 'Nhắm mục tiêu thông minh',
+    'Straight link direct' => 'Đường dẫn trực tiếp không reload',
     'In-Depth Analytics' => 'Phân tích sâu',
     'Digital Experience' => 'Trải nghiệm kỹ thuật số',
     'Use various powerful tools increase conversion and provide a non-intrusive experience to your customers without disengaging them.' => 'Sử dụng nhiều công cụ mạnh mẽ để tăng chuyển đổi và cung cấp trải nghiệm không xâm phạm cho khách hàng của bạn mà không làm họ mất hứng thú.',
