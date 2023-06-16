@@ -1,5 +1,5 @@
 <footer class="position-relative" id="footer-main">
-    <div class="footer pt-lg-7 footer-dark bg-section-dark" style="padding-top: 0px;">                               
+    <div class="footer pt-lg-7 footer-dark bg-section-dark">                               
         <div class="container pt-4">
             <hr class="divider divider-fade divider-dark my-5">
             <div class="row">
