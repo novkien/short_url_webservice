@@ -334,6 +334,7 @@ class QR {
         $qr->data = json_decode($qr->data);
         echo $qr->data;
         echo $qr->name;
+        echo $qr->id;
         $url = null;
         if($qr->urlid){
             $url = DB::url()->first($qr->urlid);
