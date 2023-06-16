@@ -200,7 +200,6 @@
                     </div>
                 </div>
             </div>
-            <?php echo route('qr.generate', [$qr->alias])  ?>
             <div class="col-md-3 justify-content-right">
                 <div class="card">
                     <div class="card-header">
@@ -208,7 +207,7 @@
                     </div>
                     <div class="card-body">
                         <div id="return-ajax">
-                            <img src="<?php echo route('qr.generate', [$qr->alias]) ?>" class="img-responsive w-100">
+                            <img src="<?php sleep(3); echo route('qr.generate', [$qr->alias]) ?>" class="img-responsive w-100">
                         </div>    
                         <button type="submit" class="btn btn-primary mt-3"><?php ee('Update') ?></button>
                     </div>
