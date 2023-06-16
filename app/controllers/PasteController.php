@@ -46,9 +46,6 @@ class Paste {
 	public function paste_text(Request $request){		
 	
 
-		//View::set('title', e('Paste'));
-
-        //View::set('description', e('Easy archive and share your text simply'));
 
 		echo 'This is the confirmation';
 
@@ -68,7 +65,7 @@ class Paste {
 
 
 
-        return View::with('pages.paste')->extend('layouts.main');
+        return View::with('pages.faq')->extend('layouts.main');
 
 
 	}
