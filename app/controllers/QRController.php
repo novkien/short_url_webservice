@@ -183,7 +183,7 @@ class QR {
 
 		}
     
-        if(!\Helpers\QR::typeExists($request->type)) echo 'False'; //return  back()->with('danger',  e('Invalid QR format or missing data'));
+        if(!\Helpers\QR::typeExists($request->type)) echo 'False 2'; //return  back()->with('danger',  e('Invalid QR format or missing data'));
 
         if(!$request->name) return back()->with('danger', e('Please enter a name for your QR code.'));
 
