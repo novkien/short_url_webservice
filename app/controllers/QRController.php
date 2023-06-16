@@ -25,7 +25,7 @@ use Core\View;
 use Models\User;
 
 class QR {
-
+    use \Traits\Links;
     /**
      * Generate QR
      *
