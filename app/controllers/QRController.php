@@ -421,7 +421,7 @@ class QR {
             }
             $margin = is_numeric($request->margin) && $request->margin <= 10 ? $request->margin : 0;
 
-            echo var_dump($margin);
+            echo var_dump($margin).die();
 
             $data = \Helpers\QR::factory($request, 1000, $margin)->format('png');
             
