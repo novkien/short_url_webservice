@@ -40,9 +40,15 @@ Gem::get('/checkout/{id}/{type}/tax', 'Subscription@tax')->middleware('Auth')->n
 
 // Custom Page
 Gem::get('/page/{page}', 'Page@index')->name('page')->middleware('CheckDomain')->middleware('CheckMaintenance');
-Gem::get('/qr-codes', 'Page@qr')->name('page.qr')->middleware('CheckDomain')->middleware('CheckMaintenance');
 
-Gem::get('/qr/create', 'User\QR@create')->name('qr.create');
+
+//qr form
+Gem::get('/qr-codes', 'Page@qr')->name('page.qr')->middleware('CheckDomain')->middleware('CheckMaintenance');
+Gem::get('/qr/create', 'QR@create')->name('qr.create');
+Gem::post('/qr/save', 'QR@save')->name('qr.save');
+
+
+
 
 //// paste form
 Gem::get('/paste', 'Page@paste')->name('paste')->middleware('CheckDomain')->middleware('CheckMaintenance');
@@ -189,7 +195,8 @@ Gem::group('/user', function(){
     Gem::get('/teams/{id}/edit', 'User\Teams@edit')->name('team.edit');
     Gem::post('/teams/{id}/update', 'User\Teams@update')->name('team.update');
 
-
+///qr old
+/*
     Gem::get('/qr/', 'User\QR@index')->name('qr');
     Gem::get('/qr/create', 'User\QR@create')->name('qr.create');
     Gem::post('/qr/preview', 'User\QR@preview')->name('qr.preview');
@@ -198,6 +205,8 @@ Gem::group('/user', function(){
     Gem::post('/qr/{id}/update', 'User\QR@update')->name('qr.update');
     Gem::get('/qr/{id}/delete/{nonce}', 'User\QR@delete')->name('qr.delete');
     Gem::get('/qr/{id}/duplicate', 'User\QR@duplicate')->name('qr.duplicate');
+*/
+
 
     Gem::get('/bio/', 'User\Bio@index')->name('bio');
     Gem::get('/bio/create', 'User\Bio@create')->name('bio.create');
