@@ -295,11 +295,20 @@ class QR {
             
         }
 
-        $qr = DB::qrs()->create();        
-        $qr->userid = Auth::user()->rID();
+        $qr = DB::qrs()->create();
+
+
+        if (Auth::user() !== null) {
+            $url->userid = Auth::user()->rID();
+        } else {
+            $url->userid = 0;
+        }
+
+
         $qr->alias = $alias;
         $qr->urlid = $url ? $url->id : null;
         $qr->name = clean($request->name);
+        echo clean($request->name);
         $qr->data = json_encode($qrdata);
         $qr->status = 1;
         $qr->created_at = Helper::dtime();
