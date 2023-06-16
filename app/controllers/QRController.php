@@ -332,7 +332,7 @@ class QR {
         }    
         
         $qr->data = json_decode($qr->data);
-        echo json_decode($qr->data);
+        echo $qr->data;
         
         $url = null;
         if($qr->urlid){
