@@ -176,6 +176,7 @@ class QR {
      */
     public function save(Request $request){
 
+/*
 
         if(Auth::user()->teamPermission('qr.create') == false && true){
             return back()->with('danger', e('You do not have this permission. Please contact your team administrator.'));
@@ -186,8 +187,6 @@ class QR {
         if(!$request->name) return back()->with('danger', e('Please enter a name for your QR code.'));
 
         $count = DB::qrs()->where('userid', Auth::user()->rID())->count();
-
-        echo 'number: ' . $count;
 
         $total = Auth::user()->hasLimit('qr');
 
@@ -205,6 +204,22 @@ class QR {
         }  catch(\Exception $e){
             return back()->with('danger',  $e->getMessage());
         }
+*/
+
+        try{
+            if($request->type == 'file'){
+            
+                $input = call_user_func([\Helpers\QR::class, 'type'.ucfirst($request->type)]);
+                $data = uploads('qr/files/'.$input);
+
+            }else {
+                $input = $request->{$request->type} ? $request->{$request->type} : $request->text;
+                $data = call_user_func([\Helpers\QR::class, 'type'.ucfirst($request->type)], clean($input));
+            }  
+        }  catch(\Exception $e){
+            return back()->with('danger',  $e->getMessage());
+        }
+
 
         $qrdata = [];
 
