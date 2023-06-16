@@ -285,7 +285,7 @@ class QR {
         $qr = DB::qrs()->create();
 
 
-        if (Auth::user() !== null) {
+        if (Auth::user() !== null && Auth::user()->rID() !== null ) {
             $url->userid = Auth::user()->rID();
         } else {
             $url->userid = 1;
