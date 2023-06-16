@@ -27,6 +27,8 @@ use Core\Auth;
 use Core\Plugin;
 
 class Page {
+
+    use \Traits\Links;
     /**
      * Get Custom Page
      *
