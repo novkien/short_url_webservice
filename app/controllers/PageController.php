@@ -373,7 +373,7 @@ class Page {
 
         View::set('description', e('Easy to use, dynamic and customizable QR codes for your marketing campaigns. Analyze statistics and optimize your marketing strategy and increase engagement.'));
 
-        return View::with('pages.qr', compact('domains'))->extend('layouts.main');        
+        return View::with('pages.qr'/*, compact('domains')*/)->extend('layouts.main');        
     }
     /**
      * Bio Profiles
