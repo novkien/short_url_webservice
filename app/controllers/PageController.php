@@ -101,7 +101,14 @@ class Page {
         return View::with('pages.paste')->extend('layouts.main');        
     }
 
-    /**
+    /**\
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
      * Send Contact Form
      *
      * @author GemPixel <https://gempixel.com> 
