@@ -165,4 +165,122 @@ class QR {
 			return $data->string();
 		});
 	}
+
+        /**
+     * Generate and Save QR Code
+     *
+     * @author GemPixel <https://gempixel.com> 
+     * @version 6.3
+     * @param \Core\Request $request
+     * @return void
+     */
+    public function save(Request $request){
+
+        if(Auth::user()->teamPermission('qr.create') == false){
+			return back()->with('danger', e('You do not have this permission. Please contact your team administrator.'));
+		}
+    
+        if(!\Helpers\QR::typeExists($request->type)) return back()->with('danger',  e('Invalid QR format or missing data'));
+
+        if(!$request->name) return back()->with('danger', e('Please enter a name for your QR code.'));
+
+        $count = DB::qrs()->where('userid', Auth::user()->rID())->count();
+
+        $total = Auth::user()->hasLimit('qr');
+
+        \Models\Plans::checkLimit($count, $total);
+        try{
+            if($request->type == 'file'){
+            
+                $input = call_user_func([\Helpers\QR::class, 'type'.ucfirst($request->type)]);
+                $data = uploads('qr/files/'.$input);
+    
+            }else {
+                $input = $request->{$request->type} ? $request->{$request->type} : $request->text;
+                $data = call_user_func([\Helpers\QR::class, 'type'.ucfirst($request->type)], clean($input));
+            }  
+        }  catch(\Exception $e){
+            return back()->with('danger',  $e->getMessage());
+        }
+
+        $qrdata = [];
+
+        $qrdata['type'] = clean($request->type);
+
+        $qrdata['data'] = $input;
+
+        if($request->mode == 'gradient'){
+            $qrdata['gradient'] = [
+                [clean($request->gradient['start']), clean($request->gradient['stop'])], 
+                clean($request->gradient['bg']), 
+                clean($request->gradient['direction'])
+            ];
+        } else {
+            $qrdata['color'] = ['bg' => clean($request->bg), 'fg' => clean($request->fg)];
+        }
+
+
+        if($request->selectlogo){
+            $qrdata['definedlogo'] = $request->selectlogo.'.png';
+        }
+        
+
+        if($image = $request->file('logo')){
+            
+            if(!$image->mimematch || !in_array($image->ext, ['jpg', 'png'])) return Helper::redirect()->back()->with('danger', e('Logo must be either a PNG or a JPEG (Max 500kb).'));
+
+            $filename = "qr_logo".Helper::rand(6).$image->name;
+
+			$request->move($image, appConfig('app.storage')['qr']['path'], $filename);
+
+            $qrdata['custom'] = $filename;
+        }
+
+        if($request->matrix){
+            $qrdata['matrix'] = clean($request->matrix);
+        }
+
+        if($request->eye){
+            $qrdata['eye'] = clean($request->eye);
+            $qrdata['eyecolor'] = $request->eyecolor ?? null;
+        }
+
+        if($request->margin && is_numeric($request->margin) && $request->margin <= 10){
+            $qrdata['margin'] = $request->margin;
+        }
+
+        $url = null;
+        $alias = \substr(md5(Auth::user()->rID().$data.Helper::rand(12)), 0, 8);
+
+        if(!in_array($request->type, ['text', 'sms','wifi','staticvcard'])){                        
+            $url = DB::url()->create();
+            $url->userid = Auth::user()->rID();
+            $url->url = $data;
+            $url->alias = \substr(md5(Auth::user()->rID().$data), 0, 6);
+
+            if($request->domain && $this->validateDomainNames(trim($request->domain), Auth::user(), false)){
+                $url->domain = clean($request->domain);
+            }
+
+            $url->date = Helper::dtime();
+            $url->save();
+        }
+
+        $qr = DB::qrs()->create();        
+        $qr->userid = Auth::user()->rID();
+        $qr->alias = $alias;
+        $qr->urlid = $url ? $url->id : null;
+        $qr->name = clean($request->name);
+        $qr->data = json_encode($qrdata);
+        $qr->status = 1;
+        $qr->created_at = Helper::dtime();
+        $qr->save();
+
+        if($url){
+            $url->qrid = $qr->id;
+            $url->save();
+        }
+        
+        return Helper::redirect()->to(route('qr.edit', [$qr->id]))->with('success',  e('QR Code has been successfully generated.'));
+    }
 }
