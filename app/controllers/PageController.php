@@ -359,7 +359,6 @@ class Page {
      */
     public function qr() {
 
-        //\Helpers\CDN::load("spectrum");
 
 
             View::push('<script src="https://www.rutgonurl.click/static/backend/js/app.js"></script>
