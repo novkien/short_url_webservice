@@ -334,9 +334,9 @@ class QR {
             echo $results[0]['alias'];
         }
 
-        echo $results->data;
-        echo $results->name;
-        echo $results->id;
+        //echo $results->data;
+        //echo $results->name;
+        //echo $results->id;
 
         if(!$qr = DB::qrs()->where('id', $id)->where('userid', 1)->first()){
             //return back()->with('danger', 'QR does not exist.');
