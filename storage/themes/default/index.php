@@ -191,8 +191,8 @@
             </div>
         </div>
     </section>
-    <section class="slice">
-        <div class="container" style="padding-top: 1rem; padding-bottom: 1rem;">
+    <section class="slice" style="padding-top: 1rem; padding-bottom: 1rem;">
+        <div class="container">
             <div class="section-process-step">
                 <div class="row row-grid justify-content-between align-items-center">
                     <div class="col-lg-6">
