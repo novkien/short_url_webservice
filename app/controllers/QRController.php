@@ -268,8 +268,12 @@ class QR {
         }
 
         $url = null;
-        $alias = \substr(md5(Auth::user()->rID().$data.Helper::rand(12)), 0, 8);
 
+
+        $alias = \substr(md5(rand(100).$data.Helper::rand(12)), 0, 8);
+
+
+/*
         if(!in_array($request->type, ['text', 'sms','wifi','staticvcard'])){                        
             $url = DB::url()->create();
             $url->userid = Auth::user()->rID();
@@ -300,6 +304,7 @@ class QR {
         }
         
         return Helper::redirect()->to(route('qr.edit', [$qr->id]))->with('success',  e('QR Code has been successfully generated.'));
+*/
     }
 
         /**
