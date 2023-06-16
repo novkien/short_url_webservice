@@ -61,11 +61,11 @@
             </div>
         </div>
     </div>    
-    <div class="shape-container shape-line shape-position-bottom zindex-102">
+    <!----<div class="shape-container shape-line shape-position-bottom zindex-102">
         <svg width="2560px" height="100px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 2560 100" style="enable-background:new 0 0 2560 100;" xml:space="preserve" class="fill-section-secondary">
             <polygon points="2560 0 2560 100 0 100"></polygon>
         </svg>
-    </div>
+    </div>---->
 </section>
 <?php if(config('user_history') && !\Core\Auth::logged() && $urls = \Helpers\App::userHistory()): ?>
     <section class="slice pt-md-8 pb-0 bg-section-secondary">

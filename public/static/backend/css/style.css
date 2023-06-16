@@ -697,7 +697,6 @@ body.dark .form-control {
     background: #1a2127;
     color: #fff;
     border-color: #4e5e71 !important;
-    pointer-events: none;
 }
 body.dark .form-control:focus{
     background: #1a2127;
