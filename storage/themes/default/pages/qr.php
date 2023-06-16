@@ -335,6 +335,22 @@
                         </div>
                     </div>                    
                 </div>
+                <div id="singlecolor" class="collapse show">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label class="form-label" for="bg"><?php ee("Background") ?></label><br>
+                                    <input type="text" name="bg" id="bg" value="rgb(255,255,255)">
+                                </div>
+                            </div>	
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label class="form-label" for="fg"><?php ee("Foreground") ?></label><br>
+                                    <input type="text" name="fg" id="fg" value="rgb(0,0,0)">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 <p class="mt-4 text-center"><button type="submit" class="btn btn-primary"><?php ee('Generate QR') ?></button></p>
             </div>
             <div class="col-md-3">
