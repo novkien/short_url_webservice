@@ -388,7 +388,8 @@ class QR {
                 $domains[] = $domain;
             }  
         }
-        return View::with('page.qr', compact('qr', 'url', 'domains'))->extend('layouts.dashboard');
+        
+        return View::with('qr.edit', compact('qr', 'url', 'domains'))->extend('layouts.dashboard');
     }
 
 }
