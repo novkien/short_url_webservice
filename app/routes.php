@@ -43,7 +43,7 @@ Gem::get('/page/{page}', 'Page@index')->name('page')->middleware('CheckDomain')-
 Gem::get('/qr-codes', 'Page@qr')->name('page.qr')->middleware('CheckDomain')->middleware('CheckMaintenance');
 
 //// paste form
-Gem::get('/paste', 'Paste@paste')->name('paste')->middleware('CheckDomain')->middleware('CheckMaintenance');
+Gem::get('/paste', 'Page@paste')->name('paste')->middleware('CheckDomain')->middleware('CheckMaintenance');
 Gem::post('/paste', 'Paste@paste_text')->name('paste_text')->middleware('ValidateLoggedCaptcha');
 
 

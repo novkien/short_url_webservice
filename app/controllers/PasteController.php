@@ -43,25 +43,6 @@ class Paste {
 	 * @param \Core\Request $request
 	 * @return void
 	 */
-	public function paste(Request $request){		
-	
-		View::set('title', e('Paste'));
-
-        View::set('description', e('Easy archive and share your text simply'));
-
-        return View::with('paste.paste')->extend('layouts.main');
-
-
-	}
-
-	/**
-	 * Add paste text
-	 *
-	 * @author GemPixel <https://gempixel.com> 
-	 * @version 6.0
-	 * @param \Core\Request $request
-	 * @return void
-	 */
 	public function paste_text(Request $request){		
 	
 		View::set('title', e('Paste'));
