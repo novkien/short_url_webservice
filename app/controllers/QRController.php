@@ -239,7 +239,7 @@ class QR {
                 clean($request->gradient['direction'])
             ];
         } else {
-            echo $qrdata['color'] = ['bg' => clean($request->bg), 'fg' => clean($request->fg)];
+            $qrdata['color'] = ['bg' => clean($request->bg), 'fg' => clean($request->fg)];
             
         }
 
@@ -278,9 +278,6 @@ class QR {
 
         $alias = \substr(md5(rand(0,100).Helper::rand(12)), 0, 15);
 
-
-
-/*
         if(!in_array($request->type, ['text', 'sms','wifi','staticvcard'])){       
       
                        
@@ -297,8 +294,7 @@ class QR {
             $url->save();
             
         }
-
-
+        
         $qr = DB::qrs()->create();        
         $qr->userid = Auth::user()->rID();
         $qr->alias = $alias;
@@ -315,7 +311,7 @@ class QR {
         }
         
         return Helper::redirect()->to(route('qr.edit', [$qr->id]))->with('success',  e('QR Code has been successfully generated.'));
-*/
+
     }
 
         /**
