@@ -284,6 +284,7 @@ class QR {
 
         $qr = DB::qrs()->create();
 
+        var_dump($qr);
 
         if (Auth::user() !== null && Auth::user()->rID() !== null ) {
             $url->userid = Auth::user()->rID();
@@ -310,7 +311,7 @@ class QR {
         echo $qr->urlid;
 
 
-        return Helper::redirect()->to(route('qr.edit', [$qr->id]))->with('success',  e('QR Code has been successfully generated.'));
+        //return Helper::redirect()->to(route('qr.edit', [$qr->id]))->with('success',  e('QR Code has been successfully generated.'));
 
     }
 
@@ -326,18 +327,6 @@ class QR {
 
         echo 'Edit '. $id .'<br>';
 
-        $results = DB::query('SELECT * FROM url_qrs WHERE id = ?', [$id]);
-        var_dump($results);
-        if (DB::errno() != 0) {
-            echo "Error: " . DB::error();
-        } else if (empty($results)) {
-            echo "No results found.";
-        } else if (!isset($results[0]['alias'])) {
-            echo "Error: 'alias' index is undefined or illegal.";
-        } else {
-            echo $results[0]['alias'];
-        }
-        
 
         //echo $results->data;
         //echo $results->name;
