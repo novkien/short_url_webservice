@@ -29,7 +29,7 @@
                     </div>
                 </div>                  
                 <div class="card" id="qrbuilder">
-                    <div class="collapse show" id="text">
+                    <div class="collapse" id="text">
                         <div class="card-header">
                             <h5 class="card-title fw-bold"><i class="me-2" data-feather="type"></i> <?php ee('Text') ?></h5>
                         </div>
@@ -39,7 +39,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="collapse" id="link">
+                    <div class="collapse show" id="link">
                         <div class="card-header">
                             <h5 class="card-title fw-bold"><i class="me-2" data-feather="link"></i> <?php ee('Link') ?></h5>
                         </div>
