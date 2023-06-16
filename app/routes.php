@@ -42,6 +42,8 @@ Gem::get('/checkout/{id}/{type}/tax', 'Subscription@tax')->middleware('Auth')->n
 Gem::get('/page/{page}', 'Page@index')->name('page')->middleware('CheckDomain')->middleware('CheckMaintenance');
 Gem::get('/qr-codes', 'Page@qr')->name('page.qr')->middleware('CheckDomain')->middleware('CheckMaintenance');
 
+Gem::get('/qr/create', 'User\QR@create')->name('qr.create');
+
 //// paste form
 Gem::get('/paste', 'Page@paste')->name('paste')->middleware('CheckDomain')->middleware('CheckMaintenance');
 Gem::post('/paste', 'Paste@paste_text')->name('paste_text')->middleware('ValidateLoggedCaptcha');
