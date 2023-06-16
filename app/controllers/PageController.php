@@ -28,7 +28,6 @@ use Core\Plugin;
 
 class Page {
 
-    use \Traits\Links;
     /**
      * Get Custom Page
      *
@@ -362,14 +361,14 @@ class Page {
 
         \Helpers\CDN::load("spectrum");
 
-        if($request->link){
+
             View::push('<script type="text/javascript">
                             $(document).ready(function(){
                                 $("a[href=#link]").click();
                             });
                         </script><!---has link--->', 'custom')->tofooter();
 
-        }
+
 
         View::set('title', e('QR Codes'));
 
