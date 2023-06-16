@@ -520,7 +520,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 justify-content-right">
                 <div class="card">
                     <div class="card-header">
                         <h5 class="card-title fw-bold"><?php ee('QR Code') ?></h5>
