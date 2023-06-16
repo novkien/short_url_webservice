@@ -527,7 +527,7 @@
                     </div>
                     <div class="card-body">
                         <div id="return-ajax">
-                            <img src="<?php echo route('qr.generate', [$qr->alias]) ?>" class="img-responsive w-100 mw-50">
+                            <img src="<?php echo route('qr.generate', [$qr->alias]) ?>" class="img-responsive w-100">
                         </div>    
                         <button type="submit" class="btn btn-primary mt-3"><?php ee('Update') ?></button>
                     </div>
