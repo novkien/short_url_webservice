@@ -326,15 +326,13 @@ class QR {
 
         echo 'Edit<br>';
 
-        if(Auth::user()->teamPermission('qr.edit') == false){
-			return back()->with('danger', e('You do not have this permission. Please contact your team administrator.'));
-		}
 
-        if(!$qr = DB::qrs()->where('id', $id)->where('userid', Auth::user()->rID())->first()){
+        if(!$qr = DB::qrs()->where('id', $id)->first()){
             return back()->with('danger', 'QR does not exist.');
         }    
         
         $qr->data = json_decode($qr->data);
+        echo json_decode($qr->data);
         
         $url = null;
         if($qr->urlid){
