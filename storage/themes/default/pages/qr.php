@@ -1,5 +1,5 @@
 <h1 class="h3 pt-10 pb-5"><div class="text-center"><?php ee('Create QR') ?></div></h1>
-<section style="m-5">
+<section class="m-5">
     <form action="<?php echo route('qr.save') ?>" data-trigger="saveqr" method="post" enctype="multipart/form-data">
         <?php echo csrf() ?>
         <input type="hidden" name="type" value="text">
@@ -531,9 +531,9 @@
                     </div>
                     <div class="card-body">
                         <div id="return-ajax">
-                            <img src="<?php echo \Helpers\QR::factory('Sample QR', 400, 0)->format('png')->create('uri') ?>" class="img-responsive w-100 mw-50">
+                            <img src="<?php echo \Helpers\QR::factory('Sample QR', 400, 0)->format('png')->create('uri') ?>" class="img-responsive w-100">
                         </div>    
-                        <p class="mt-2"><button type="submit" class="btn btn-primary"><?php ee('Generate QR') ?></button>
+                        <p class="mt-4 text-center"><button type="submit" class="btn btn-primary"><?php ee('Generate QR') ?></button>
                     </div>
                 </div>
                 <div class="card card-body">
