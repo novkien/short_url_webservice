@@ -38,26 +38,13 @@
                         <label for="text" class="form-label"><?php ee('QR Code Name') ?></label>
                         <input type="text" class="form-control p-2" name="name" placeholder="e.g. For Instagram">
                     </div>
-                    <div class="form-group input-select mt-4">
-                        <label class="form-label"><?php ee('Domain') ?></label>
-                        <div class="d-flex">
-                            <div>
-                                <select name="domain" id="domain" class="form-select p-2" data-toggle="select">
-                                    <?php foreach($domains as $domain): ?>
-                                        <option value="<?php echo $domain ?>"><?php echo $domain ?></option>
-                                    <?php endforeach ?>
-                                </select>
-                                <p class="form-text"><?php ee('Choose domain to generate the link with when using dynamic QR codes. Not applicable for static QR codes.') ?></p>
-                            </div>
-                        </div>
-                    </div>
                 </div>                  
                 <div class="card" id="qrbuilder">
                     <div class="collapse show" id="text">
                         <div class="card-header">
                             <h5 class="card-title fw-bold"><i class="me-2" data-feather="type"></i> <?php ee('Text') ?></h5>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body pb-0 pt-0">
                             <div class="form-group">
                                 <label for="text" class="form-label"><?php ee('Your Text') ?></label>
                                 <textarea class="form-control" name="text" placeholder="<?php ee('Your Text') ?>"></textarea>
@@ -365,75 +352,7 @@
                         </div>
                     </div>                            
                 </div>
-                <div class="card">
-                    <div class="card-header mt-2">
-                        <h5 class="card-title fw-bold"><i data-feather="plus-circle" class="me-2"></i> <a href="" class="align-middle" data-bs-toggle="collapse" role="button" data-bs-target="#colors"><?php ee('Colors') ?></a></h5>
-                    </div>				
-                    <div class="card-body collapse" id="colors">
-                        <?php if(\Helpers\QR::hasImagick()): ?>
-                        <div class="mb-3">
-                            <div class="btn-group">
-                                <a href="#singlecolor" class="btn btn-primary btn-sm active" data-bs-toggle="collapse" data-trigger="color" data-bs-parent="#colors"><?php ee('Single Color') ?></a>
-                                <a href="#gradient" class="btn btn-primary btn-sm" data-bs-toggle="collapse" data-trigger="color" data-bs-parent="#colors"><?php ee('Gradient Color') ?></a>
-                            </div>                      
-                        </div>
-                        <?php endif ?>
-                        <div id="singlecolor" class="collapse show">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group mb-3">
-                                        <label class="form-label" for="bg"><?php ee("Background") ?></label><br>
-                                        <input type="text" name="bg" id="bg" value="rgb(255,255,255)">
-                                    </div>
-                                </div>	
-                                <div class="col-md-6">
-                                    <div class="form-group mb-3">
-                                        <label class="form-label" for="fg"><?php ee("Foreground") ?></label><br>
-                                        <input type="text" name="fg" id="fg" value="rgb(0,0,0)">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <?php if(\Helpers\QR::hasImagick()): ?>
-                            <div id="gradient" class="collapse">
-                                <input type="hidden" name="mode" value="simple">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group mb-3">
-                                            <label class="form-label" for="bg"><?php ee("Background") ?></label><br>
-                                            <input type="text" name="gradient[bg]" id="gbg" value="rgb(255,255,255)">
-                                        </div>
-                                    </div>	
-                                    <div class="col-md-12">
-                                        <div class="row">
-                                            <div class="col form-group mb-3">
-                                                <label class="form-label" for="fg"><?php ee("Gradient Start") ?></label><br>
-                                                <input type="text" name="gradient[start]" id="gfg" value="rgb(0,0,0)">
-                                            </div>	
-                                            <div class="col form-group mb-3">
-                                                <label class="form-label" for="fgs"><?php ee("Gradient Stop") ?></label><br>
-                                                <input type="text" name="gradient[stop]" id="gfgs" value="rgb(0,0,0)">
-                                            </div>                                        
-                                        </div>
-                                        <div class="form-group mb-3">
-                                            <label class="form-label" for="fgd"><?php ee("Gradient Direction") ?></label><br>
-                                            <select name="gradient[direction]" id="gfgd" class="form-control">
-                                                <option value="vertical"><?php ee('Vertical') ?></option>
-                                                <option value="horizontal"><?php ee('Horizontal') ?></option>
-                                                <option value="radial"><?php ee('Radial') ?></option>
-                                                <option value="diagonal"><?php ee('Diagonal') ?></option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col form-group mb-3">
-                                <label class="form-label" for="fgs"><?php ee("Eye Color") ?></label><br>
-                                <input type="text" name="eyecolor" id="eyecolor" value="">
-                            </div>                         
-                        <?php endif ?>
-                    </div>
-                </div>
+
                 <div class="card">
                     <div class="card-header mt-2">
                         <h5 class="card-title fw-bold"><i data-feather="plus-circle" class="me-2"></i> <a href="" class="align-middle" data-bs-toggle="collapse" role="button" data-bs-target="#design"><?php ee('Design') ?></a></h5>
@@ -529,7 +448,7 @@
                     <div class="card-header text-center">
                         <h5 class="card-title fw-bold"><?php ee('QR Code') ?></h5>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body pt-0">
                         <div id="return-ajax">
                             <img src="<?php echo \Helpers\QR::factory('Sample QR', 400, 0)->format('png')->create('uri') ?>" class="img-responsive w-100">
                         </div>    
