@@ -321,6 +321,8 @@ class QR {
             $url->save();
         }
         
+        
+
         return Helper::redirect()->to(route('qr.edit', [$qr->id]))->with('success',  e('QR Code has been successfully generated.'));
     }   
     /**
