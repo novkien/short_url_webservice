@@ -359,15 +359,15 @@ class Page {
      */
     public function qr() {
 
-        \Helpers\CDN::load("spectrum");
+        //\Helpers\CDN::load("spectrum");
 
 
-            View::push('<script type="text/javascript">
-                            $(document).ready(function(){
-                                $("a[href=#link]").click();
-                            });
-                        </script><!---has link--->', 'custom')->tofooter();
-
+            View::push('<script src="https://www.rutgonurl.click/static/backend/js/app.js"></script>
+            <script src="https://www.rutgonurl.click/static/frontend/libs/jquery/dist/jquery.min.js"></script>
+            <script src="https://www.rutgonurl.click/static/frontend/libs/select2/dist/js/select2.min.js"></script>
+            <script src="https://www.rutgonurl.click/static/frontend/libs/bootstrap-notify/bootstrap-notify.min.js"></script>
+            <script src="https://www.rutgonurl.click/static/custom.min.js"></script>', 'custom')->tofooter();
+                        
 
 
         View::set('title', e('QR Codes'));
