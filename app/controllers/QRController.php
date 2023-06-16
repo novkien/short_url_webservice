@@ -284,7 +284,7 @@ class QR {
             $url = DB::url()->create();
             $url->userid = Auth::user()->rID();
             $url->url = $data;
-            $url->alias = \substr(md5(Auth::user()->rID().$data), 0, 6);
+            $url->alias = \substr(md5(rand(0,100)), 0, 6);
 
             if($request->domain && $this->validateDomainNames(trim($request->domain), Auth::user(), false)){
                 $url->domain = clean($request->domain);
@@ -294,7 +294,7 @@ class QR {
             $url->save();
             
         }
-        
+
         $qr = DB::qrs()->create();        
         $qr->userid = Auth::user()->rID();
         $qr->alias = $alias;
