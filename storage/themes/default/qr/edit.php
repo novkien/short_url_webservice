@@ -200,7 +200,7 @@
                     </div>
                     <div class="card-body">
                         <div id="return-ajax">
-                            <a href="https://www.bing.com">
+                            <a href="<?php echo route('qr.generate', [$qr->alias]) ?>">
                                 <img src="<?php echo route('qr.generate', [$qr->alias]) ?>" class="img-responsive w-100" />
                             </a>
                         </div>    
