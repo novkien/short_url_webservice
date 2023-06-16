@@ -325,7 +325,7 @@ class QR {
     public function edit(int $id){
 
         echo 'Edit '. $id .'<br>';
-
+        var_dump($id);
         $results = DB::query('SELECT * FROM url_qrs WHERE id = ?', [$id]);
 
         if (DB::errno() != 0) {
