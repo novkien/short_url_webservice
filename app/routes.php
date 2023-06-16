@@ -49,6 +49,7 @@ Gem::post('/qr/save', 'QR@save')->name('qr.save');
 Gem::get('/qr/{id}/edit', 'QR@edit')->name('qr.edit');
 
 
+
 //// paste form
 Gem::get('/paste', 'Page@paste')->name('paste')->middleware('CheckDomain')->middleware('CheckMaintenance');
 Gem::post('/paste', 'Paste@paste_text')->name('paste_text')->middleware('ValidateLoggedCaptcha');
