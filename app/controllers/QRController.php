@@ -296,10 +296,10 @@ class QR {
 
             $url->date = Helper::dtime();
             $url->save();
-            */
+            
         }
 
-/*
+        
         $qr = DB::qrs()->create();        
         $qr->userid = Auth::user()->rID();
         $qr->alias = $alias;
