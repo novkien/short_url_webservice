@@ -421,7 +421,7 @@ class QR {
             }
             $margin = is_numeric($request->margin) && $request->margin <= 10 ? $request->margin : 0;
 
-            return \Core\Response::factory('<div class="alert alert-danger p-3">'.var_dump($margin).'</div>')->send(); 
+            echo var_dump($margin);
 
             $data = \Helpers\QR::factory($request, 1000, $margin)->format('png');
             
