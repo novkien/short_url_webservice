@@ -326,14 +326,16 @@ class QR {
 
         echo 'Edit '. $id .'<br>';
 
-        $results = DB::query('SELECT * FROM short_url_db.url_qrs WHERE id = ?', [$id]);
+        $results = DB::query('SELECT * FROM url_qrs WHERE id = ?', [$id]);
 
-        if (empty($results)) {
+        if (DB::errno() != 0) {
+            echo "Error: " . DB::error();
+        } else if (empty($results)) {
             echo "No results found.";
         } else {
             echo $results[0]['alias'];
-            echo $results[1]['alias'];
         }
+        
 
         //echo $results->data;
         //echo $results->name;
