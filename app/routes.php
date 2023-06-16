@@ -47,7 +47,6 @@ Gem::get('/qr-codes', 'Page@qr')->name('page.qr')->middleware('CheckDomain')->mi
 Gem::get('/qr/create', 'QR@create')->name('qr.create');
 Gem::post('/qr/save', 'QR@save')->name('qr.save');
 Gem::get('/qr/{id}/edit', 'QR@edit')->name('qr.edit');
-Gem::post('/qr/preview', 'QR@preview')->name('qr.preview');
 
 
 //// paste form

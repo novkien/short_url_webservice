@@ -391,74 +391,7 @@ class QR {
         return View::with('qr.edit', compact('qr', 'url', 'domains'))->extend('layouts.main');     
     }
 
-    /**
-     * Preview QR Codes
-     *
-     * @author GemPixel <https://gempixel.com> 
-     * @version 6.0
-     * @param \Core\Request $request
-     * @return void
-     */
-    public function preview(Request $request){
-        
-        if(!$request->name) return \Core\Response::factory('<div class="alert alert-danger p-3">'.e('Please enter a name for your QR code.').'</div>')->send(); 
-
-        if(!\Helpers\QR::typeExists($request->type)) return \Core\Response::factory('<div class="alert alert-danger p-3">'.e('Invalid QR format or missing data').'</div>')->send(); 
- 
-        try{
-
-            if($request->type == "file"){
-                try{
-                    
-                    \Helpers\QR::validateFile();
-
-                    $request->type = "text";
-                    $request->text = "Preview not available for file uploads. You can save the QR code to create it.";
-
-                } catch(\Exception $e){
-                    return \Core\Response::factory('<div class="alert alert-danger p-3">'.$e->getMessage().'</div>')->send(); 
-                }
-            }
-            $margin = is_numeric($request->margin) && $request->margin <= 10 ? $request->margin : 0;
-
-            echo var_dump($margin).die();
-
-            $data = \Helpers\QR::factory($request, 1000, $margin)->format('png');
-            
-            if($request->mode == 'gradient'){
-                $data->gradient([$request->gradient['start'], $request->gradient['stop']], $request->gradient['bg'], $request->gradient['direction'], $request->eyecolor ?? null);
-            } else {
-                $data->color($request->fg, $request->bg, $request->eyecolor ?? null);
-            }
-
-            if($request->matrix){
-                $data->module($request->matrix);
-            }
-
-            if($request->eye){
-                $data->eye($request->eye);
-            }
-
-            if($request->selectlogo){
-                $data->withLogo(PUB.'/static/images/'.$request->selectlogo.'.png', 150);
-            }
-
-            if($image = $request->file('logo')){
-                $data->withLogo($image->location, 150);
-            }
-
-            $qr = $data->create('uri');
-
-        } catch(\Exception $e){
-            return \Core\Response::factory('<div class="alert alert-danger p-3">'.$e->getMessage().'</div>')->send();
-        }
-
-        $response = '<img src="'.$qr.'" class="img-responsive w-100">';
-
-        return \Core\Response::factory($response)->send();
-    }
-
-
+    
 
 
 

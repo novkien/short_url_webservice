@@ -333,12 +333,7 @@
                                 <input class="form-control p-2" name="crypto[wallet]" placeholder="e.g. <?php ee('Enter your public wallet address') ?>">
                             </div>
                         </div>
-                    </div>  
-                    <div class="d-flex m-3">
-                        <div class="ms-auto">
-                            <button type="button" data-trigger="preview" data-url="<?php echo route("qr.preview") ?>" class="btn btn-primary"><?php ee('Preview') ?></button>
-                        </div>
-                    </div>                            
+                    </div>                    
                 </div>
 
             </div>
