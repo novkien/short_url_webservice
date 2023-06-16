@@ -316,10 +316,14 @@ class QR {
         if($url){
 
             $url->qrid = $qr->id;
-            echo $qr->id;
             //$url->save();
         }
-        
+        echo $qr->id.'<br>';
+        echo $qr->data.'<br>';
+        echo $qr->created_at.'<br>';
+        echo $qr->urlid;
+
+
         //return Helper::redirect()->to(route('qr.edit', [$qr->id]))->with('success',  e('QR Code has been successfully generated.'));
 
     }
