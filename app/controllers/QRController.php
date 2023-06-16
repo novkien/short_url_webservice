@@ -340,8 +340,9 @@ class QR {
 
         \Helpers\CDN::load("spectrum");
 		
-		View::push('<script type="text/javascript">																			    						    				    
-						$("#bg").spectrum({
+		View::push('<script type="text javascript">
+
+	    				$("#bg").spectrum({
 					        color: "'.(isset($qr->data->color->bg) ? $qr->data->color->bg : 'rba(255,255,255)').'",
 					        showInput: true,
 					        preferredFormat: "rgb"
