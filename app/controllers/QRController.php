@@ -178,16 +178,16 @@ class QR {
 
 
         if(Auth::user()->teamPermission('qr.create') == false && true){
-            echo 'False';
-			//return back()->with('danger', e('You do not have this permission. Please contact your team administrator.'));
-
+            return back()->with('danger', e('You do not have this permission. Please contact your team administrator.'));
 		}
     
-        if(!\Helpers\QR::typeExists($request->type)) echo 'False 2'; //return  back()->with('danger',  e('Invalid QR format or missing data'));
+        if(!\Helpers\QR::typeExists($request->type)) return  back()->with('danger',  e('Invalid QR format or missing data'));
 
         if(!$request->name) return back()->with('danger', e('Please enter a name for your QR code.'));
 
         $count = DB::qrs()->where('userid', Auth::user()->rID())->count();
+
+        echo 'number: ' . $count;
 
         $total = Auth::user()->hasLimit('qr');
 
