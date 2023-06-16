@@ -18,10 +18,14 @@
  */
 
 use Core\Request;
+use Core\Response;
 use Core\DB;
-use Core\Auth;
 use Core\Helper;
+use Core\Localization;
 use Core\View;
+use Core\Email;
+use Core\Auth;
+use Core\Plugin;
 use Models\User;
 
 class QR {
