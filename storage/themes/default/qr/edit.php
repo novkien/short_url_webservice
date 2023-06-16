@@ -1,4 +1,4 @@
-<h1 class="h3 mb-5"><div style="text-align: center"><?php ee('Edit QR') ?></div></h1>
+<h1 class="h3 pt-10 pb-5"><div class="text-center"><?php ee('Edit QR') ?></div></h1>
 
 <section class="slice slice-lg bg-section-dark p-7">
     <form action="<?php echo route('qr.update', [$qr->id]) ?>" method="post" enctype="multipart/form-data">

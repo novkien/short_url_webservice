@@ -1,4 +1,4 @@
-<h1 class="h3 mb-5"><?php ee('Create QR') ?></h1>
+<h1 class="h3 pt-10 pb-5"><div class="text-center"><?php ee('Create QR') ?></div></h1>
 <form action="<?php echo route('qr.save') ?>" data-trigger="saveqr" method="post" enctype="multipart/form-data">
     <?php echo csrf() ?>
     <input type="hidden" name="type" value="text">
