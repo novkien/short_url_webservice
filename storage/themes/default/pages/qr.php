@@ -335,7 +335,7 @@
                         </div>
                     </div>                    
                 </div>
-
+                <p class="mt-4 text-center"><button type="submit" class="btn btn-primary"><?php ee('Generate QR') ?></button></p>
             </div>
             <div class="col-md-3">
                 <div class="card">
@@ -346,7 +346,6 @@
                         <div id="return-ajax">
                             <img src="<?php echo \Helpers\QR::factory('Sample QR', 400, 0)->format('png')->create('uri') ?>" class="img-responsive w-100">
                         </div>    
-                        <p class="mt-4 text-center"><button type="submit" class="btn btn-primary"><?php ee('Generate QR') ?></button>
                     </div>
                 </div>
                 <div class="card card-body">
