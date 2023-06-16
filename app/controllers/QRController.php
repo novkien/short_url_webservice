@@ -379,7 +379,7 @@ class QR {
                         </script>', 'custom')->tofooter();                 
         }
 
-        //View::set('title', e("Edit QR").' '. $qr->name);
+        View::set('title', e("Edit QR").' '. $qr->name);
 
         $domains = false;
         if(!in_array($qr->data->type, ['text', 'sms','wifi','staticvcard'])){      
@@ -389,7 +389,7 @@ class QR {
             }  
         }
         
-        return View::with('qr.edit', compact('qr', 'url', 'domains'))->extend('layouts.dashboard');
+        return View::with('qr.edit', compact('qr', 'url', 'domains'))->extend('layouts.dashboard2');
     }
 
 }
