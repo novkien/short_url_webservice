@@ -301,7 +301,7 @@ class QR {
         if (Auth::user() !== null) {
             $url->userid = Auth::user()->rID();
         } else {
-            $url->userid = 0;
+            $url->userid = 1;
         }
 
 
@@ -311,7 +311,6 @@ class QR {
         $qr->data = json_encode($qrdata);
         $qr->status = 1;
         $qr->created_at = Helper::dtime();
-        echo $url ? $url->id : null;
         //$qr->save();
 
         if($url){
