@@ -389,7 +389,7 @@ class QR {
             }  
         }
         
-        return View::with('qr.edit', compact('qr', 'url', 'domains'));
+        return View::with('qr.edit', compact('qr', 'url', 'domains'))->extend('layouts.main');     
     }
 
 }
