@@ -201,7 +201,7 @@
                     <div class="card-body">
                         <div id="return-ajax">
                             <a href="<?php echo route('qr.generate', [$qr->alias]) ?>">
-                                <img src="<?php echo route('qr.generate', [$qr->alias]) ?>" class="img-responsive w-100" />
+                                <img src="<?php echo route('qr.generate', [$qr->alias]) ?>" class="img-responsive w-100" onerror="this.src='https://via.placeholder.com/200'">
                             </a>
                         </div>    
                         <button type="submit" class="btn btn-primary mt-3"><?php ee('Update') ?></button>
