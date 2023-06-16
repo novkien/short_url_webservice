@@ -11,7 +11,7 @@
                         <label for="text" class="form-label"><?php ee('QR Code Name') ?></label>
                         <input type="text" class="form-control p-2" name="name" value="<?php echo $qr->name ?>" placeholder="e.g. For Instagram">
                     </div>
-                    <?php if($domains): ?>
+                    <?php /* if($domains): ?>
                     <div class="form-group input-select mt-4">
                         <label class="form-label"><?php ee('Domain') ?> <small class="text-danger"><?php ee('If you change the domain name, the QR code will change!') ?></small></label>
                         <div class="d-flex">
@@ -25,7 +25,7 @@
                             </div>
                         </div>
                     </div>       
-                    <?php endif ?>         
+                    <?php endif */ ?>         
                 </div>                  
                 <div class="card" id="qrbuilder">
                     <?php if($qr->data->type == 'text'): ?>
@@ -527,7 +527,7 @@
                     </div>
                     <div class="card-body">
                         <div id="return-ajax">
-                            <img src="<?php echo route('qr.generate', [$qr->alias]) ?>" class="img-responsive w-100">
+                            <img src="<?php echo route('qr.generate', [$qr->alias]) ?>" class="img-responsive w-100 mw-50">
                         </div>    
                         <button type="submit" class="btn btn-primary mt-3"><?php ee('Update') ?></button>
                     </div>
