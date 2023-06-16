@@ -284,12 +284,11 @@ class QR {
 
         $qr = DB::qrs()->create();
 
-        var_dump($qr);
 
         if (Auth::user() !== null && Auth::user()->rID() !== null ) {
-            $url->userid = Auth::user()->rID();
+            $qr->userid = Auth::user()->rID();
         } else {
-            $url->userid = 1;
+            $qr->userid = 1;
         }
 
 
@@ -304,7 +303,7 @@ class QR {
         if($url){
 
             $url->qrid = $qr->id;
-            //$url->save();
+            $url->save();
         }
         
         echo $qr->data.'<br>';
@@ -327,7 +326,9 @@ class QR {
 
         echo 'Edit '. $id .'<br>';
 
-
+        if(!$qr = DB::qrs()->where('id', $id)->where('userid', 1)->first()){
+            return back()->with('danger', 'QR does not exist.');
+        }    
         //echo $results->data;
         //echo $results->name;
         //echo $results->id;
