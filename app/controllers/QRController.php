@@ -328,7 +328,10 @@ class QR {
 
 
         if(!$qr = DB::qrs()->where('id', $id)->where('userid', null)->first()){
-            return back()->with('danger', 'QR does not exist.');
+            //return back()->with('danger', 'QR does not exist.');
+            echo $qr->data;
+        echo $qr->name;
+        echo $qr->id;
         }
         
         $qr->data = json_decode($qr->data);
