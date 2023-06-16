@@ -213,10 +213,12 @@ class QR {
                 $data = uploads('qr/files/'.$input);
 
             }else {
-                $input = $request->{$request->type} ? $request->{$request->type} : $request->text;
+                $input = $request->{$request->type} ? $request->{$request->type} : $request->text; //$input = text da nhap vao
 
-                echo $input.'<br />';
+                
                 $data = call_user_func([\Helpers\QR::class, 'type'.ucfirst($request->type)], clean($input));
+
+                echo $data.'<br>';
 
 
 
@@ -276,7 +278,7 @@ class QR {
         $url = null;
 
 
-        $alias = \substr(md5(rand(0,100).Helper::rand(12)), 0, 8);
+        $alias = \substr(md5(rand(0,100).Helper::rand(12)), 0, 15);
 
         echo $alias;
 
@@ -299,7 +301,7 @@ class QR {
             
         }
 
-        
+
         $qr = DB::qrs()->create();        
         $qr->userid = Auth::user()->rID();
         $qr->alias = $alias;
