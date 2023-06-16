@@ -1,5 +1,5 @@
 <section class="slice pt-md-8 pb-5 <?php echo themeSettings::config('homestyle', 'light', 'bg-white', 'bg-section-dark') ?>" <?php echo themeSettings::config('homecolor') ?>>
-    <div data-offset-top="#navbar-main" style="padding-top: 100px"><!--adsdas ->
+    <div data-offset-top="#navbar-main" style="padding-top: 500px">
         <div class="container position-relative">
             <div class="row align-items-center">
                 <div class="col-12 col-lg-6 pr-lg-5">
