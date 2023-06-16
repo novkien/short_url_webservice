@@ -22,21 +22,6 @@
         </a>
     </li>
 
-<?php
-    /* 
-    <?php if($user->has('channels')): ?>
-        <li class="sidebar-header"><?php ee('Channels') ?></li>
-        <?php foreach($channels = \Core\DB::channels()->where('userid', $user->rID())->where('starred', 1)->orderByAsc('name')->findMany() as $channel): ?>
-            <li class="sidebar-item"><a class="sidebar-link" href="<?php echo route('channel', [$channel->id]) ?>"><span class="badge me-2 roundeds px-2" style="background:<?php echo $channel->color ?>">&nbsp;</span> <?php echo $channel->name ?></a></li>
-        <?php endforeach ?>
-        <li class="sidebar-item">
-            <a class="sidebar-link" href="<?php echo route('channels') ?>">
-                <i data-feather="package"></i> <span class="align-middle"><?php ee('My Channels') ?></span>
-            </a>
-        </li>
-    <?php endif ?>
-    */
-?>
 
     <li class="sidebar-item">
         <a class="sidebar-link" href="<?php echo route('links') ?>">

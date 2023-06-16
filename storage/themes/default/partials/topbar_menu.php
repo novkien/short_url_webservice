@@ -58,12 +58,16 @@
                 <?php if($user->username): ?>
                 <a class="dropdown-item" href="<?php echo route('profile', $user->username) ?>"><i class="align-middle me-1" data-feather="user"></i> <?php ee('Public Profile') ?></a>
                 <?php endif ?>
+<?php           
+                /*
                 <?php if(config('pro') && !$user->teamid): ?>
                     <a class="dropdown-item" href="<?php echo route('billing') ?>"><i class="align-middle me-1" data-feather="credit-card"></i> <?php ee('Billing') ?></a>
                 <?php endif ?>
                 <?php if(config('pro') && config('affiliate')->enabled): ?>
                     <a class="dropdown-item" href="<?php echo route('user.affiliate') ?>"><i class="align-middle me-1" data-feather="box"></i> <?php ee('Affiliate') ?></a>
                 <?php endif ?>
+                */
+?>
                 <?php if(!$user->verified): ?>
                     <a class="dropdown-item" href="<?php echo route('user.verification') ?>"><i class="align-middle me-1" data-feather="user-check"></i> <?php ee('Get Verified') ?></a>
                 <?php endif ?>

@@ -118,15 +118,20 @@
             <a class="nav-link" href="<?php echo route('login') ?>"><?php ee('Login') ?></a>        
         </li>    
     <?php endif ?>
+
+<? //register config ?>
     <li class="nav-item">
-        <?php if(!\Core\Auth::logged()): ?>
+        <?php if(!\Core\Auth::logged() && false): ?>
             <?php if(config("user") && !config("private") && !config("maintenance")): ?>
                 <a href="<?php echo route('register') ?>" class="btn btn-sm btn-success btn-icon ml-3">
                     <span class="btn-inner--text"><?php ee('Get Started') ?></span>
                 </a>
             <?php endif ?>
         <?php endif ?>
-    </li>    
+    </li> 
+    
+    
+    
 </ul>
 <?php if(config("user") && !config("private") && !config("maintenance")): ?>
     <div class="d-lg-none px-4 text-center">    

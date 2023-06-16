@@ -716,7 +716,7 @@
     'One link to all your links' => 'Một liên kết tới tất cả các liên kết của bạn',
     'Create your Public Profile' => 'Tạo hồ sơ công khai của bạn',
     'Create your profile with our simple profile builder and add your all of your links. Share a single link on social networks like instagram, twitter and TikTok and monitor clicks on your links.' => 'Tạo hồ sơ của bạn với trình tạo hồ sơ đơn giản của chúng tôi và thêm tất cả các liên kết của bạn. Chia sẻ một liên kết duy nhất trên các mạng xã hội như instagram, twitter và TikTok, đồng thời theo dõi các lần nhấp vào liên kết của bạn.',
-    'Get started' => 'Bắt đầu',
+    'Get started' => 'Đăng ký',
     'Plan Name' => 'Tên kế hoạch',
     'Plan Limits' => 'Giới hạn kế hoạch',
     'Shopify Campaign' => 'Chiến dịch Shopify',
