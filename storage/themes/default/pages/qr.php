@@ -3,7 +3,7 @@
 
 <h1 class="h3 pt-10 pb-5"><div class="text-center"><?php ee('Create QR') ?></div></h1>
 <section class="m-5">
-    <form action="<?php echo route('qr.edit') ?>" data-trigger="saveqr" method="post" enctype="multipart/form-data">
+    <form action="<?php echo route('qr.save') ?>" data-trigger="saveqr" method="post" enctype="multipart/form-data">
         <?php echo csrf() ?>
         <input type="hidden" name="type" value="link">
         <div class="row">
