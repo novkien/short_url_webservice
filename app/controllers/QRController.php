@@ -327,9 +327,9 @@ class QR {
         echo 'Edit '. $id .'<br>';
 
 
-        if(!$qr = DB::qrs()->where('id', $id)){
+        if(!$qr = DB::qrs()->where('id', $id)->where('userid', null)->first()){
             return back()->with('danger', 'QR does not exist.');
-        }    
+        }
         
         $qr->data = json_decode($qr->data);
         echo $qr->data;
