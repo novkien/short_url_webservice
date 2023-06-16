@@ -5,7 +5,7 @@
 <section class="m-5">
     <form action="<?php echo route('qr.save') ?>" data-trigger="saveqr" method="post" enctype="multipart/form-data">
         <?php echo csrf() ?>
-        <input type="hidden" name="type" value="text">
+        <input type="hidden" name="type" value="link">
         <div class="row">
             <div class="col-md-3">           
                 <div class="card">
