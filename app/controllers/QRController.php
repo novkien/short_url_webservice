@@ -327,7 +327,10 @@ class QR {
         echo 'Edit '. $id .'<br>';
 
         $results = DB::query('SELECT * FROM url_qrs WHERE id = ?', [$id]);
-
+        
+        foreach ($results as $row) {
+            echo $row['alias'];
+        }
         echo $results->data;
         echo $results->name;
         echo $results->id;
