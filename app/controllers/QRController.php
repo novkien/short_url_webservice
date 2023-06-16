@@ -324,6 +324,8 @@ class QR {
      */
     public function edit(int $id){
 
+        echo 'Edit<br>';
+
         if(Auth::user()->teamPermission('qr.edit') == false){
 			return back()->with('danger', e('You do not have this permission. Please contact your team administrator.'));
 		}
