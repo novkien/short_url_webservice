@@ -238,7 +238,11 @@ class Users {
     public function register(){
 
         //config register
-        if(true && !config("user") || config("private") || config("maintenance")) return Helper::redirect()->to(route('login'))->with("danger", e("We are not accepting users at this time."));
+        if(true) return Helper::redirect()->to(route('login'))->with("danger", e("We are not accepting users at this time."));
+        
+        
+        
+        if(!config("user") || config("private") || config("maintenance")) return Helper::redirect()->to(route('login'))->with("danger", e("We are not accepting users at this time."));
 
         View::set('title', e('Register and manage your urls'));
         View::set("description", e('Register an account and gain control over your urls. Manage them, edit them or remove them without hassle.'));
