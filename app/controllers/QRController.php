@@ -308,7 +308,6 @@ class QR {
         $qr->alias = $alias;
         $qr->urlid = $url ? $url->id : null;
         $qr->name = clean($request->name);
-        echo clean($request->name);
         $qr->data = json_encode($qrdata);
         $qr->status = 1;
         $qr->created_at = Helper::dtime();
