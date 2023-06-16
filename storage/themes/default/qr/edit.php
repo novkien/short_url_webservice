@@ -85,7 +85,6 @@
                             </div> 
                             <div class="btn-group ms-auto">
                                 <button type="button" class="btn btn-primary btn-sm text-white" data-bs-toggle="collapse" data-bs-target="#staticvcard-address">+ <?php ee('Address') ?></button>
-                                <button type="button" class="btn btn-primary btn-sm text-white" data-bs-toggle="collapse" data-bs-target="#staticvcard-social">+ <?php ee('Social') ?></button>
                             </div>
                             <div id="staticvcard-address" class="collapse">
                                 <hr>
@@ -175,10 +174,7 @@
                         </div>                    
                     <?php endif ?>
                 </div>
-                <div class="card">
-                    <div class="card-header mt-2">
-                        <h5 class="card-title fw-bold"><i data-feather="plus-circle" class="me-2"></i> <a href="" class="align-middle" data-bs-toggle="collapse" role="button" data-bs-target="#colors"><?php ee('Colors') ?></a></h5>
-                    </div>				
+                <div class="card">	
                     <div class="card-body collapse" id="colors">
                         <div id="singlecolor" class="collapse <?php echo isset($qr->data->color) ? 'hide' : '' ?>">
                             <div class="row">
