@@ -175,7 +175,7 @@ class QR {
      * @return void
      */
     public function save(Request $request){
-
+        echo 'running save';
         if(Auth::user()->teamPermission('qr.create') == false){
 			return back()->with('danger', e('You do not have this permission. Please contact your team administrator.'));
             echo 'False';
