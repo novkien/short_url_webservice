@@ -46,7 +46,6 @@
                         </div>
                         <div class="card-body pb-0 pt-0">
                             <div class="form-group">
-                                <label for="text" class="form-label"><?php ee('Your Text') ?></label>
                                 <textarea class="form-control" name="text" placeholder="<?php ee('Your Text') ?>"></textarea>
                             </div>
                         </div>
