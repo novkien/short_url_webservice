@@ -324,7 +324,7 @@ class QR {
      */
     public function edit(int $id){
 
-        echo 'Edit<br>';
+        echo 'Edit '. $id .'<br>';
 
 
         if(!$qr = DB::qrs()->where('id', $id)->first()){
