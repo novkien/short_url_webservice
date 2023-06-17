@@ -1354,7 +1354,7 @@ return [
     'Eye Style' => 'Kiểu mắt',
     'Circle' => 'Vòng tròn',
     'QR Code' => 'Mã QR',
-    'You will be able to download the QR code in PDF or SVG after it has been generated.' => 'Bạn sẽ có thể tải xuống mã QR ở định dạng PDF hoặc SVG sau khi được tạo.',
+    'You will be able to download the QR code in PDF or SVG after it has been generated.' => 'Bạn sẽ có thể tải xuống mã QR ở định dạng PDF sau khi được tạo.',
     'Download as PNG' => 'Tải xuống dưới dạng PNG',
     'Download as SVG' => 'Tải xuống ở định dạng SVG',
     'Download as PDF' => 'Tải xuống dưới dạng PDF',
