@@ -202,7 +202,7 @@
                         <div class="card-body">
                             <div id="return-ajax">
                                 <button class="btn btn-primary mb-3" style="padding: 0.2rem" type="button" onclick="window.open('<?php echo route('qr.download', [$qr->alias, 'pdf', 1000]) ?>')"><?php ee("Download as PDF") ?></button>
-                                
+                                <img src="<?php echo route('qr.generate', [$qr->alias]) ?>" class="img-responsive w-100" style="display: none;">
                                 <input type="text" class="form-control p-2 mb-3" name="Link QR" placeholder="<?php echo route('qr.generate', [$qr->alias]) ?>" value="<?php echo route('qr.generate', [$qr->alias]) ?>"></input>
                                 
                                 <?php var_dump([$qr->filename][0]);
@@ -223,7 +223,7 @@
                                 
                                 
                                 <a href="<?php echo route('qr.generate', [$qr->alias]) ?>">
-                                <img src="<?php echo route('qr.generate', [$qr->alias]) ?>" class="img-responsive w-100" style="display: none;">
+
                                 <img id="qr-image" src="<?php echo route('home').'/content/qr/'.[$qr->filename][0]?>" class="img-responsive w-100" onerror="hideImage(this)" alt="<?php echo [$qr->name] ?>">
                                 </a>
 
