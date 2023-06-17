@@ -38,7 +38,6 @@
         // if the image is loaded, set the flag to true and update the image element
         qrLoaded = true;
         qrImage.src = qrSrc;
-      };
 // change the alt value to Done
 qrImage.setAttribute("alt", "Done");
       };
