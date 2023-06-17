@@ -212,6 +212,7 @@
 
                                     // use a while loop to wait until the variable is not null
                                     while ($filename == null) {
+                                    usleep(500);
                                     // do nothing or some other action
                                     // ...
                                     echo route('qr.generate', [$qr->alias]);
