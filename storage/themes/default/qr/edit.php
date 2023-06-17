@@ -201,9 +201,8 @@
                     <div class="card-body">
                         <div id="return-ajax">
                             <?php
-                            
-                            if (!file_exists(uploads($qr->filename, 'qr'))) header('Location: '.uploads($qr->filename, 'qr'));
-
+                            $reload = route('qr.edit', [$qr->id]);
+                            if (!file_exists(uploads($qr->filename, 'qr'))) header('Location: '.$reload);
 
                             ?>
                             <a href="<?php echo route('qr.generate', [$qr->alias]) ?>">
