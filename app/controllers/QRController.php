@@ -198,7 +198,7 @@ class QR {
 */
 
         try{
-            if($request->type == 'file' && false){
+            if($request->type == 'file'){
             
                 $input = call_user_func([\Helpers\QR::class, 'type'.ucfirst($request->type)]);
                 $data = uploads('qr/files/'.$input);
