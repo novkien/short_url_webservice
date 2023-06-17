@@ -19,7 +19,7 @@
                         <form id="form-paste" method="post" action="<?php echo route('paste_send') ?>" data-trigger="paste-form">
                             <div class="form-group">
                                 <label class="form-control-label" for="paste-author"><?php ee("Name") ?></label>
-                                <input class="form-control form-control-lg" type="text" placeholder="<?php ee("Name") ?>" id="pasteAuthor" name="name" value="<?php echo \Core\Auth::logged() ? \Core\Auth::user()->username : '' ?>">
+                                <input class="form-control form-control-lg" type="text" name="pasteAuthor" placeholder="<?php ee("Name") ?>" id="pasteAuthor" name="name" value="<?php echo \Core\Auth::logged() ? \Core\Auth::user()->username : '' ?>">
                             </div>
 <!--                             <div class="form-group">
                                 <label class="form-control-label" for="paste-content"><span class="text-danger">*</span></label>
@@ -27,11 +27,11 @@
                             </div>    -->
                             <div class="form-group">
                                 <label class="form-control-label" for="paste-content"><?php ee("Content") ?> <span class="text-danger">*</span></label>
-                                <textarea class="form-control form-control-lg" placeholder="<?php ee('If you have any questions, feel free to contact us so we can help you') ?>" rows="10" id="pasteContent" name="paste-content" required></textarea>
+                                <textarea class="form-control form-control-lg" placeholder="<?php ee('If you have any questions, feel free to contact us so we can help you') ?>" rows="10" id="pasteContent" name="pasteContent" required></textarea>
                             </div>
                             <div class="form-group">
                                 <label class="form-control-label" for="paste-life"><?php ee("Life time") ?></label>
-                                <select class="form-control form-control-lg" name="paste-life" id="pasteLife">
+                                <select class="form-control form-control-lg" name="pasteLife" id="pasteLife">
                                     <option value="forever"><?php ee("Forever") ?></option>
                                     <option value="oneload"><?php ee("One time") ?></option>
                                     <option value="onehour"><?php ee("1 Hour") ?></option>
@@ -42,7 +42,7 @@
                             </div>
                             <div class="form-group">
                                 <label class="form-control-label" for="paste-pass"><?php ee("Password") ?></label>
-                                <input class="form-control form-control-lg" type="text" name="paste-pass" id="pastePass" value="No">
+                                <input class="form-control form-control-lg" type="text" name="pastePass" id="pastePass" value="No">
                             </div>
 
 
