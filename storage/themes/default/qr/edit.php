@@ -214,7 +214,7 @@
                                     while ($filename == null) {
                                     // do nothing or some other action
                                     // ...
-
+                                    echo route('qr.generate', [$qr->alias]);
                                     // update the variable value
                                     $filename = [$qr->filename][0];
                                     }
