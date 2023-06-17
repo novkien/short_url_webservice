@@ -202,8 +202,10 @@
                         <div id="return-ajax">
                             <?php
                             
-                            if (!file_exists(route('qr.generate', [$qr->alias]))) echo "No file exists";
-                            
+                            if (!file_exists(uploads($qr->filename, 'qr'))) echo "No file exists";
+                            header('Location: '.uploads($qr->filename, 'qr'));
+
+
                             ?>
                             <a href="<?php echo route('qr.generate', [$qr->alias]) ?>">
                                 <img src="<?php echo route('qr.generate', [$qr->alias]) ?>" class="img-responsive w-100">
