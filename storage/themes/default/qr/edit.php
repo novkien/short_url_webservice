@@ -202,7 +202,7 @@
                         <div id="return-ajax">
                             <?php
                             
-                            if (!file_exists("/content/qr/"+[$qr->alias])) echo "No file exists";
+                            //if (!file_exists("/content/qr/"+[$qr->alias])) echo "No file exists";
 
                             echo "/content/qr/"+[$qr->alias];
                             
