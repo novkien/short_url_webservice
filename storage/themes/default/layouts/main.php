@@ -62,7 +62,7 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>                    
-                    <div class="mt-6 collapse navbar-collapse navbar-collapse-overlay" id="navbar-main-collapse">                        
+                    <div class="mt-2 collapse navbar-collapse navbar-collapse-overlay" id="navbar-main-collapse">                        
                         <div class="position-relative">
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
                                 <i data-feather="x"></i>
