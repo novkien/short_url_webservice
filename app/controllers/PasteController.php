@@ -67,7 +67,7 @@ class Paste {
 
 
 
-		echo 'Debug:<br>'.var_dump($request).'<br>'.($request->pasteLife == 'forever') ? 1 : 0;
+		echo 'Debug:<br>'.'<br>'.($request->pasteLife == 'forever') ? 1 : 0;
 
 
 
