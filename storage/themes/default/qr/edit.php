@@ -202,7 +202,7 @@
                         <div id="return-ajax">
                             <?php
                             
-                            if (!file_exists(View::storage($qr->filename, 'qr'))) echo "No file exists";
+                            if (!file_exists(route('qr.generate', [$qr->alias]))) echo "No file exists";
                             
                             ?>
                             <a href="<?php echo route('qr.generate', [$qr->alias]) ?>">
