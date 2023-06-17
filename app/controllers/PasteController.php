@@ -74,7 +74,7 @@ class Paste {
 
 
 
-		echo $pass.'<br>'.$pasteLife.'<br>'.$pasteContent.'<br>'.$name;
+		echo 'Debug:<br>'.$pass.'<br>'.$pasteLife.'<br>'.$pasteContent.'<br>'.$name;
 
 
 
