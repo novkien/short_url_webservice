@@ -202,8 +202,10 @@
                         <div class="card-body">
                             <div id="return-ajax">
                                 <button class="btn btn-primary mb-3" style="padding: 0.2rem" type="button" onclick="window.open('<?php echo route('qr.download', [$qr->alias, 'pdf', 1000]) ?>')"><?php ee("Download as PDF") ?></button>
-<?php echo route('qr.generate', [$qr->alias]) ?>
-                                <?php var_dump([$qr->filename])?>
+                                
+                                <input type="text" class="form-control p-2" name="Link QR" placeholder="<?php echo route('qr.generate', [$qr->alias]) ?>" value="<?php echo route('qr.generate', [$qr->alias]) ?>"></input>
+                                
+                                
                                 
                                 <a href="<?php echo route('qr.generate', [$qr->alias]) ?>">
                                 <img id="qr-image" src="<?php echo route('qr.generate', [$qr->alias]) ?>" class="img-responsive w-100" onerror="hideImage(this)" alt="<?php echo [$qr->name] ?>">
@@ -215,7 +217,7 @@
                     </div>
                     <div class="card card-body">
                         <div class="form-text">
-                            <?php ee("You will be able to download the QR code in PDF or SVG after it has been generated.") ?>
+                            <?php ee("You will be able to  in PDF or SVG after it has been generated.") ?>
                         </div>
                     </div>
                 </div>
