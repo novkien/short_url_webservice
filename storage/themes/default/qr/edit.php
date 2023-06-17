@@ -210,7 +210,7 @@
 
                                     // get the variable value
                                     $filename = [$qr->filename][0];
-
+                                    var_dump([$qr->filename][0]);
                                     // use a while loop to wait until the variable is not null
                                     while ($filename == null && false) {
                                     usleep(500);
