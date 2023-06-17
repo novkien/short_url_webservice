@@ -1,9 +1,9 @@
-<h1 class="h3 pt-10 pb-5"><div class="text-center"><?php ee('QR Code has been successfully generated') ?></div></h1>
-<section class="slice slice-lg bg-section-dark">
+<h1 class="h3 pt-8  pb-5"><div class="text-center"><?php ee('QR Code has been successfully generated') ?></div></h1>
+<section class="slice slice-lg bg-section-dark pt-4">
     <?php ///<form action="<?php echo route('qr.update', [$qr->id]) ?" method="post" enctype="multipart/form-data"> ?>
         <?php echo csrf() ?>
         <input type="hidden" name="type" value="<?php echo $qr->data->type ?>">
-        <div class="row" style="justify-content: space-evenly; flex-wrap: wrap">        
+        <div class="row pd-1" style="justify-content: space-around; flex-wrap: wrap">        
             <div class="col-md-9" style="max-width: 500px">
                 <div class="card card-body">
                     <div class="form-group">
