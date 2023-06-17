@@ -93,7 +93,7 @@ class Paste {
 
 
 
-        //return View::with('pages.paste_box')->extend('layouts.main');
+        return View::with('pages.paste')->extend('layouts.main');
 
 	}
     /**
