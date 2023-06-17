@@ -11,7 +11,7 @@
                 <div class="col-lg-3">           
                     <div class="card">
                         <div class="card-header">
-                            <h5 class="card-title fw-bold"><?php ee('Static QR') ?> - <?php ee('Non-Trackable') ?></h5>
+                            <h5 class="card-title fw-bold"><?php ee('Basic Features') ?></h5>
                         </div>                
                         <div class="list-group list-group-flush list-group-dynamic">
                             <a class="list-group-item list-group-item-action active" data-bs-toggle="collapse" data-bs-parent="#qrbuilder" href="#link"><i class="me-2" data-feather="link"></i> <?php ee('Link') ?></a>
