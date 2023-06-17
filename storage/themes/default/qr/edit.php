@@ -4,7 +4,7 @@
         <?php echo csrf() ?>
         <input type="hidden" name="type" value="<?php echo $qr->data->type ?>">
         <div class="row">        
-            <div class="col-md-9">
+            <div class="col-md-9" style="max-width: 40%">
                 <div class="card card-body">
                     <div class="form-group">
                         <label for="text" class="form-label"><?php ee('QR Code Name') ?></label>
@@ -196,7 +196,7 @@
             <div class="col-md-3 justify-content-right">
                 <div class="card">
                     <div class="card-header">
-                        <h5 class="card-title fw-bold"><?php ee('QR Code') ?></h5>
+                        <h5 class="card-title fw-bold mb-0"><?php ee('QR Code') ?></h5>
                     </div>
                     <div class="card-body">
                         <div id="return-ajax">
