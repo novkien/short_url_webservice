@@ -200,13 +200,12 @@
                     </div>
                     <div class="card-body">
                         <div id="return-ajax">
+                            <a href="<?php echo route('qr.generate', [$qr->alias]) ?>"><?php ee("Download the qr code: ") ?></a>
+                            
                             <?php
 
-                                try {
-                                    echo route('qr.generate', [$qr->alias]);
-                                } catch (Exception $e) {
-                                    header('Location: '.route('qr.edit', [$qr->id]));
-                                }
+
+                                echo route('qr.generate', [$qr->alias]);
 
 
 
