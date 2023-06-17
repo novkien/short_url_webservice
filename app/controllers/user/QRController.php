@@ -202,7 +202,7 @@ class QR {
             return \Core\Response::factory('<div class="alert alert-danger p-3">'.$e->getMessage().'</div>')->send();
         }
 
-        $response = '<img src="'.$qr.'" class="img-responsive w-100 mw-50">';
+        $response = '<img src="'.$qr.'" class="img-responsive w-100">';
 
         return \Core\Response::factory($response)->send();
     }
