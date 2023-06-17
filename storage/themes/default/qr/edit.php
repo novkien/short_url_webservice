@@ -203,7 +203,7 @@
                             <div id="return-ajax">
                                 <button class="btn btn-primary mb-3" style="padding: 0.2rem" type="button" onclick="window.open('<?php echo route('qr.download', [$qr->alias, 'pdf', 1000]) ?>')"><?php ee("Download as PDF") ?></button>
                                 <?php //if ([$qr->$isReload][0] == 0) echo 'test' 
-                                var_dump([$qr->$isReload][0]);
+                                var_dump([$qr->isReload][0]);
                                 
                                 ?>
                                 <a href="<?php echo route('qr.generate', [$qr->alias]) ?>">
