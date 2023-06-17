@@ -200,8 +200,15 @@
                     </div>
                     <div class="card-body">
                         <div id="return-ajax">
+                            <?php
+                            
+                            if (!file_exists("/content/qr/"+[$qr->alias])) {
+                                echo "No file exists";
+                              }
+                            
+                            ?>
                             <a href="<?php echo route('qr.generate', [$qr->alias]) ?>">
-                                <img src="<?php echo route('qr.generate', [$qr->alias]) ?>" class="img-responsive w-100" onerror="this.src='https://via.placeholder.com/200'">
+                                <img src="<?php echo route('qr.generate', [$qr->alias]) ?>" class="img-responsive w-100">
                             </a>
                         </div>    
                         <button type="submit" class="btn btn-primary mt-3"><?php ee('Update') ?></button>
