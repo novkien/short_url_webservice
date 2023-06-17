@@ -207,13 +207,17 @@
                                 
                                 <?php var_dump([$qr->filename][0]);
                                 
-                                while ([$qr->filename][0] == null) {
+                                    // get the variable value
+                                    $filename = [$qr->filename][0];
+
+                                    // use a while loop to wait until the variable is not null
+                                    while ($filename == null) {
                                     // do nothing or some other action
                                     // ...
-                                  
+
                                     // update the variable value
-                                    return [$qr->filename][0];
-                                  }
+                                    $filename = [$qr->filename][0];
+                                    }
 
                                 ?>
                                 
