@@ -203,7 +203,7 @@
                             <?php
                             
                             if (!file_exists(uploads($qr->filename, 'qr'))) echo "No file exists";
-                            header('Location: '.uploads($qr->filename, 'qr'));
+                            //header('Location: '.uploads($qr->filename, 'qr'));
 
 
                             ?>
