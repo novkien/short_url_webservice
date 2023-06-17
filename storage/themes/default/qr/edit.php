@@ -1,4 +1,4 @@
-<h1 class="h3 pt-10 pb-5"><div class="text-center"><?php ee('Edit QR') ?></div></h1>
+<h1 class="h3 pt-10 pb-5"><div class="text-center"><?php ee('QR Code has been successfully generated') ?></div></h1>
 <section class="slice slice-lg bg-section-dark p-7">
     <form action="<?php echo route('qr.update', [$qr->id]) ?>" method="post" enctype="multipart/form-data">
         <?php echo csrf() ?>
@@ -200,16 +200,10 @@
                     </div>
                     <div class="card-body">
                         <div id="return-ajax">
-                            <a href="<?php echo route('qr.generate', [$qr->alias]) ?>"><?php ee("Download the qr code: ") ?></a>
                             
-                            <?php
-
-
-                                echo route('qr.generate', [$qr->alias]);
-
-
-
-                            ?>
+                            <button type="button" class="btn btn-default bg-white" data-bs-toggle="dropdown" aria-expanded="false"><i data-feather="more-vertical"></i><?php ee("Download the qr code: ") ?></button>
+                            <li><a class="dropdown-item" href="<?php echo route('qr.download', [$qr->alias, 'png', 1000]) ?>"><i data-feather="download"></i><?php ee('Download as PNG') ?></a></li>
+                            <li><a class="dropdown-item" href="<?php echo route('qr.download', [$qr->alias, 'pdf', 1000]) ?>"><i data-feather="download"></i><?php ee('Download as PDF') ?></a></li>
 
                             <a href="<?php echo route('qr.generate', [$qr->alias]) ?>">
                                 <img src="<?php echo route('qr.generate', [$qr->alias]) ?>" class="img-responsive w-100" onerror="hideImage(this)" alt="<?php echo [$qr->name] ?>">

@@ -383,7 +383,7 @@ class QR {
                         </script>', 'custom')->tofooter();                 
         }
 
-        View::set('title', e("Edit QR").' '. $qr->name);
+        View::set('title', e("Complete create QR").' '. $qr->name);
 
         /*
         $domains = false;
