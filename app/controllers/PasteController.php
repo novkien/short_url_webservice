@@ -64,25 +64,19 @@ class Paste {
 	 */
 	public function paste_send(Request $request){		
 	
-		$pass = $request->pastePass;
-		$pasteLife = $request->pasteLife;
-		$pasteContent = $request->pasteContent;
-		$name = $request->pasteAuthor;
 
 
 
-
-
-
-		echo 'Debug:<br>'.var_dump($request).'<br>'.$pass.'<br>'.$pasteLife.'<br>'.$pasteContent.'<br>'.$name;
+		echo 'Debug:<br>'.var_dump($request).'<br>'.($request->pasteLife == 'forever') ? 1 : 0;
 
 
 
 		$data = DB::paste()->create();
 		$data->name = clean($request->pasteAuthor);
-		$data->password = $pass;
-		$data->content =
-		$data-> lifetime =
+		$data->password = clean($request->pastePass);
+		$data->content = $request->pasteContent;
+		$data->lifetime = $request->pasteLife;
+		$data->isOneTimeOpen = ($request->pasteLife == 'forever') ? 1 : 0;
 		$data->alias = \substr(md5(rand(0,100)), 0, 6);
 
 
