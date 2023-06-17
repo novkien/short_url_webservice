@@ -200,10 +200,7 @@
                     </div>
                     <div class="card-body">
                         <div id="return-ajax">
-                            <button type="button" onclick="window.open('<?php echo route('qr.download', [$qr->alias, 'png', 1000]) ?>')"><?php ee("Download the qr code") ?></button>
-
-                            <a class="dropdown-item" href="<?php echo route('qr.download', [$qr->alias, 'png', 1000]) ?>"><i data-feather="download"></i><?php ee('Download as PNG') ?></a>
-                            <a class="dropdown-item" href="<?php echo route('qr.download', [$qr->alias, 'pdf', 1000]) ?>"><i data-feather="download"></i><?php ee('Download as PDF') ?></a>
+                            <button class="btn btn-primary mt-3" type="button" onclick="window.open('<?php echo route('qr.download', [$qr->alias, 'pdf', 1000]) ?>')"><?php ee("Download the qr code") ?></button>
 
                             <a href="<?php echo route('qr.generate', [$qr->alias]) ?>">
                                 <img src="<?php echo route('qr.generate', [$qr->alias]) ?>" class="img-responsive w-100" onerror="hideImage(this)" alt="<?php echo [$qr->name] ?>">
