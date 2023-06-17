@@ -202,10 +202,7 @@
                         <div id="return-ajax">
                             <?php
                             
-                            //if (!file_exists("/content/qr/"+[$qr->alias])) echo "No file exists";
-
-                            echo "/content/qr/" . [$qr->alias][0];
-                            
+                            if (!file_exists("/content/qr/".[$qr->alias])) echo "No file exists";
                             
                             ?>
                             <a href="<?php echo route('qr.generate', [$qr->alias]) ?>">
