@@ -202,7 +202,7 @@
                         <div class="card-body">
                             <div id="return-ajax">
                                 <button class="btn btn-primary mb-3" style="padding: 0.2rem" type="button" onclick="window.open('<?php echo route('qr.download', [$qr->alias, 'pdf', 1000]) ?>')"><?php ee("Download as PDF") ?></button>
-
+                                <?php if ($qr->$isReload == 0) echo 'test' ?>
                                 <a href="<?php echo route('qr.generate', [$qr->alias]) ?>">
                                     <img src="<?php echo route('qr.generate', [$qr->alias]) ?>" class="img-responsive w-100" onerror="hideImage(this)" alt="<?php echo [$qr->name] ?>">
                                 </a>

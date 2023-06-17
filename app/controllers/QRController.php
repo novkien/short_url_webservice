@@ -302,6 +302,7 @@ class QR {
         $qr->data = json_encode($qrdata);
         $qr->status = 1;
         $qr->created_at = Helper::dtime();
+        //$qr->isReload = 0;
         $qr->save();
 
         if($url){
@@ -309,9 +310,7 @@ class QR {
             $url->qrid = $qr->id;
             $url->save();
         }
-        
-        echo $qr->data.'<br>';
-        echo $qr->urlid;
+
 
 
         return Helper::redirect()->to(route('qr.edit', [$qr->id]))->with('success',  e('QR Code has been successfully generated.'));
