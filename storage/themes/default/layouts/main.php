@@ -16,7 +16,12 @@
     <!-- Google ads -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8159182794520687"
      crossorigin="anonymous"></script>
-
+    <!-- Server custom script -->
+    <script>
+    function hideImage(img) {
+        img.style.display = "none";
+    }
+    </script>
 
 
 
