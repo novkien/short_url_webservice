@@ -207,7 +207,7 @@
                             </a>
 
                         </div>    
-                        <button type="submit" class="btn btn-primary mt-3"><?php ee('Update') ?></button>
+                        <!---<button type="submit" class="btn btn-primary mt-3"><?php ee('Update') ?></button>-->
                     </div>
                 </div>
                 <div class="card card-body">
