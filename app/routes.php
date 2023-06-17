@@ -55,7 +55,7 @@ Gem::get('/qr/{id}/download/{format}[/{size}]', 'QR@download')->name('qr.downloa
 
 //// paste form
 Gem::get('/paste', 'Page@paste')->name('paste')->middleware('CheckDomain')->middleware('CheckMaintenance');
-Gem::post('/paste', 'Paste@paste_text')->name('paste_text')->middleware('ValidateLoggedCaptcha');
+Gem::post('/paste_send', 'Paste@paste_send')->name('paste_send')
 
 
 

@@ -2,11 +2,15 @@
 
     <?php
     //config paste
-    if (false): ?>
-    <li class="nav-item nav-item-spaced d-lg-block">
+    /* <li class="nav-item nav-item-spaced d-lg-block">
         <a class="nav-link" href="<?php echo route('paste') ?>"><?php ee('Paste') ?></a>
-    </li>   
-    <?php endif ?>
+    </li> */
+    ?>
+
+    <li class="nav-item nav-item-spaced d-lg-block">
+        <a class="nav-link" href="<?php echo route('qr-codes') ?>"><?php ee('Create a QR Code') ?></a>
+    </li>
+
 <?php ///dropdown menu example
 
 /*
