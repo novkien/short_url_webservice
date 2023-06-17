@@ -206,12 +206,13 @@
                                 <input type="text" class="form-control p-2 mb-3" name="Link QR" placeholder="<?php echo route('qr.generate', [$qr->alias]) ?>" value="<?php echo route('qr.generate', [$qr->alias]) ?>"></input>
                                 
                                 <?php  var_dump([$qr->filename][0]);
-                                
+                                    echo '<img src='.route('qr.generate', [$qr->alias]).'" class="img-responsive w-100" style="display: none;">';
+
                                     // get the variable value
                                     $filename = [$qr->filename][0];
 
                                     // use a while loop to wait until the variable is not null
-                                    while ($filename == null) {
+                                    while ($filename == null && false) {
                                     usleep(500);
                                     // do nothing or some other action
                                     // ...
