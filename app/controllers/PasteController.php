@@ -79,6 +79,7 @@ class Paste {
 		$data->isOneTimeOpen = ($request->pasteLife == 'forever') ? 1 : 0;
 		$data->alias = \substr(md5(rand(0,100)), 0, 6);
 
+		var_dump($data);
 
 
 		View::set('title', e('Paste'));
