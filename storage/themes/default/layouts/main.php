@@ -14,13 +14,53 @@
   		gtag('config', 'G-158D4YFWGM');
 	</script>
     <!-- Google ads -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8159182794520687"
-     crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8159182794520687" crossorigin="anonymous"></script>
     <!-- Server custom script -->
     <script>
-    function hideImage(img) {
-        img.style.display = "none";
-    }
+        var qrImage = document.getElementById("qr-image"); // get the image element by its id
+        var qrSrc = qrImage.src; // get the initial image source
+        var qrLoaded = false; // set a flag to indicate if the image is loaded or not
+
+
+
+
+
+        function hideImage(img) {
+            img.style.display = "none";
+        }
+
+
+        // define a function to check the image source
+        function checkImage() {
+            // create a new image object
+            var img = new Image();
+
+            // set the onload event handler
+            img.onload = function() {
+                // if the image is loaded, set the flag to true and update the image element
+                qrLoaded = true;
+                qrImage.src = qrSrc;
+            };
+
+        
+            img.onerror = function() { // set the onerror event handler
+                // if the image is not loaded, set the flag to false and hide the image element
+                qrLoaded = false;
+                hideImage(qrImage);
+            };
+
+            // set the image source to the initial source
+            img.src = qrSrc;
+        }
+
+        // call the checkImage function every second until the image is loaded
+        var interval = setInterval(function() {
+            if (!qrLoaded) {
+            checkImage();
+            } else {
+            clearInterval(interval);
+            }
+        }, 500);
     </script>
 
 
