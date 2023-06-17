@@ -204,8 +204,8 @@
                                 <button class="btn btn-primary mb-3" style="padding: 0.2rem" type="button" onclick="window.open('<?php echo route('qr.download', [$qr->alias, 'pdf', 1000]) ?>')"><?php ee("Download as PDF") ?></button>
 
 
-                                <a href="<?php ///echo route('qr.generate', [$qr->alias]) ?>">
-                                <img id="qr-image" src="<?php echo route('home').'/content/qr/'.[$qr->filename][0]?>" class="img-responsive w-100" onerror="hideImage(this)" alt="<?php echo [$qr->name] ?>">
+                                <a href="<?php echo route('qr.generate', [$qr->alias]) ?>">
+                                <img id="qr-image" src="<?php echo route('home').'/content/qr/'.[$qr->filename][0]?>" class="img-responsive w-100" onerror="hideImage(this)" alt="<?php echo [$qr->name][0] ?>">
                                 </a>
 
                             </div>    
