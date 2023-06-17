@@ -1,4 +1,4 @@
-<h1 class="h3 pt-8  pb-5"><div class="text-center"><?php ee('QR Code has been successfully generated') ?></div></h1>
+<h1 class="h3 pt-9  pb-5"><div class="text-center"><?php ee('QR Code has been successfully generated') ?></div></h1>
 <section class="slice slice-lg bg-section-dark pt-4">
     <div class="container">
         <?php ///<form action="<?php echo route('qr.update', [$qr->id]) ?" method="post" enctype="multipart/form-data"> ?>
@@ -201,7 +201,7 @@
                         </div>
                         <div class="card-body">
                             <div id="return-ajax">
-                                <button class="btn btn-primary mb-3" style="padding: 0.2rem" type="button" onclick="window.open('<?php echo route('qr.download', [$qr->alias, 'pdf', 1000]) ?>')"><?php ee("Download the qr code") ?></button>
+                                <button class="btn btn-primary mb-3" style="padding: 0.2rem" type="button" onclick="window.open('<?php echo route('qr.download', [$qr->alias, 'pdf', 1000]) ?>')"><?php ee("Download as PDF") ?></button>
 
                                 <a href="<?php echo route('qr.generate', [$qr->alias]) ?>">
                                     <img src="<?php echo route('qr.generate', [$qr->alias]) ?>" class="img-responsive w-100" onerror="hideImage(this)" alt="<?php echo [$qr->name] ?>">

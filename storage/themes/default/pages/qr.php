@@ -1,7 +1,7 @@
 
 
 
-<h1 class="h3 pt-10 pb-5"><div class="text-center"><?php ee('Create QR') ?></div></h1>
+<h1 class="h3 pt-9 pb-5"><div class="text-center"><?php ee('Create QR') ?></div></h1>
 <section class="slice slice-lg bg-section-secondary">
     <div class="container">
         <form action="<?php echo route('qr.save') ?>" data-trigger="saveqr" method="post" enctype="multipart/form-data">
