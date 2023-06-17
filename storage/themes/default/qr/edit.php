@@ -205,7 +205,17 @@
                                 
                                 <input type="text" class="form-control p-2 mb-3" name="Link QR" placeholder="<?php echo route('qr.generate', [$qr->alias]) ?>" value="<?php echo route('qr.generate', [$qr->alias]) ?>"></input>
                                 
-                                <?php var_dump([$qr->filename][0]); ?>
+                                <?php var_dump([$qr->filename][0]);
+                                
+                                while ([$qr->filename][0] == null) {
+                                    // do nothing or some other action
+                                    // ...
+                                  
+                                    // update the variable value
+                                    return [$qr->filename][0];
+                                  }
+
+                                ?>
                                 
                                 
                                 <a href="<?php echo route('qr.generate', [$qr->alias]) ?>">
