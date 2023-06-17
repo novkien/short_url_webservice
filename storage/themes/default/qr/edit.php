@@ -209,7 +209,7 @@
                                 try {
                                     echo route('qr.generate', [$qr->alias]);
                                 } catch (Exception $e) {
-                                    header('Location: '.route('qr.edit', [$qr->id]))
+                                    header('Location: '.route('qr.edit', [$qr->id]));
                                 }
   
 
