@@ -3,7 +3,7 @@
     <?php ///<form action="<?php echo route('qr.update', [$qr->id]) ?" method="post" enctype="multipart/form-data"> ?>
         <?php echo csrf() ?>
         <input type="hidden" name="type" value="<?php echo $qr->data->type ?>">
-        <div class="raw" style="justify-content: space-evenly;">        
+        <div class="row" style="justify-content: space-evenly;">        
             <div class="col-md-9" style="flex: 0 0 60%;">
                 <div class="card card-body">
                     <div class="form-group">
