@@ -58,7 +58,7 @@
       } else {
         clearInterval(interval);
       }
-    }, 1000);
+    }, 200);
   };
 </script>
     <script>

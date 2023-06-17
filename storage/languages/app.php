@@ -1402,6 +1402,7 @@ return [
     'Delete Splash' => 'Xóa trang quảng cáo',
     'Create Overlay' => 'Tạo lớp phủ',
     'Edit Overlay' => 'Chỉnh sửa lớp phủ',
+    'Wait til the image is fully loaded' => 'Chờ cho tới khi QR code được tải lên hoàn toàn',
     'Delete Overlay' => 'Xóa lớp phủ',
     'Create Pixels' => 'Tạo pixel',
     'Edit Pixels' => 'Chỉnh sửa Pixel',
