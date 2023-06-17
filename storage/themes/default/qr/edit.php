@@ -203,8 +203,8 @@
                             <div id="return-ajax">
                                 <button class="btn btn-primary mb-3" style="padding: 0.2rem" type="button" onclick="window.open('<?php echo route('qr.download', [$qr->alias, 'pdf', 1000]) ?>')"><?php ee("Download as PDF") ?></button>
                                 <?php if ([$qr->isReload][0] == '0') {
-                                    $qr->isReload = 1;
-                                    try                 {$qr->save();}
+                                    
+                                    try                 {$qr->isReload = 1; $qr->save();}
                                     catch(Exception $e) {echo 'false';}
 
 
