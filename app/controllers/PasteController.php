@@ -54,6 +54,48 @@ class Paste {
 
 	}
 
+	/**
+	 * Add paste send data
+	 *
+	 * @author GemPixel <https://gempixel.com> 
+	 * @version 6.0
+	 * @param \Core\Request $request
+	 * @return void
+	 */
+	public function paste_send(Request $request){		
+	
+		$pass = $request->pastePass;
+		$pasteLife = $request->pasteLife;
+		$pasteContent = $request->pasteContent;
+		$name = $request->pasteAuthor;
+
+
+
+
+
+
+		echo $pass.'<br>'.$pasteLife.'<br>'.$pasteContent.'<br>'.$name;
+
+
+
+		$data = DB::paste()->create();
+		$data->name = clean($request->pasteAuthor);
+		$data->password = $pass;
+		$data->content =
+		$data-> lifetime =
+		$data->alias = \substr(md5(rand(0,100)), 0, 6);
+
+
+
+		View::set('title', e('Paste'));
+
+        View::set('description', e('Easy archive and share your text simply'));
+
+
+
+        //return View::with('pages.paste_box')->extend('layouts.main');
+
+	}
     /**
      * Redirect Link
      *
