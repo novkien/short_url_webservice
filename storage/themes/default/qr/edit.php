@@ -203,7 +203,7 @@
                             <div id="return-ajax">
                                 <button class="btn btn-primary mb-3" style="padding: 0.2rem" type="button" onclick="window.open('<?php echo route('qr.download', [$qr->alias, 'pdf', 1000]) ?>')"><?php ee("Download as PDF") ?></button>
                                 
-                                <input type="text" class="form-control p-2" name="Link QR" placeholder="<?php echo route('qr.generate', [$qr->alias]) ?>" value="<?php echo route('qr.generate', [$qr->alias]) ?>"></input>
+                                <input type="text" class="form-control p-2 mb-3" name="Link QR" placeholder="<?php echo route('qr.generate', [$qr->alias]) ?>" value="<?php echo route('qr.generate', [$qr->alias]) ?>"></input>
                                 
                                 
                                 
