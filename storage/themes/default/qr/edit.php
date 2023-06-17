@@ -206,7 +206,7 @@
                             </a>
                             <?php
                                 $reload = route('qr.edit', [$qr->id]);
-                                if (!file_exists(uploads($qr->filename, 'qr'))) header('Location: '.$reload);
+                                if (!file_exists(uploads($qr->filename, 'qr'))) echo uploads($qr->filename, 'qr') //header('Location: '.$reload);
                             ?>
                         </div>    
                         <button type="submit" class="btn btn-primary mt-3"><?php ee('Update') ?></button>
