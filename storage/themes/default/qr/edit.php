@@ -208,7 +208,7 @@
                                 
                                 <a href="<?php echo route('qr.generate', [$qr->alias]) ?>">
 
-                                <img id="qr-image" src="<?php echo route('qr.generate', [$qr->alias]) ?>" class="img-responsive w-100" alt="<?php echo $qr->name ?>">
+                                <img id="qr-image" src="<?php echo route('qr.generate', [$qr->alias]) ?>" class="img-responsive w-100" alt="<?php echo $qr->name ?>" onerror="hideImage(this)">
                                 </a>
 
                             </div>    
