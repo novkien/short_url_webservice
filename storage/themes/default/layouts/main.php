@@ -39,7 +39,9 @@
         qrLoaded = true;
         qrImage.src = qrSrc;
       };
-
+// change the alt value to Done
+qrImage.setAttribute("alt", "Done");
+      };
       // set the onerror event handler
       img.onerror = function() {
         // if the image is not loaded, set the flag to false and hide the image element

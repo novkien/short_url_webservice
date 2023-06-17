@@ -208,7 +208,7 @@
                                 
                                 <a href="<?php echo route('qr.generate', [$qr->alias]) ?>">
 
-                                <img id="qr-image" src="<?php echo route('qr.generate', [$qr->alias]) ?>" class="img-responsive w-100" alt="<?php if($qr->name ==null) {ee("Wait til the image is fully loaded");} else echo $qr->name; ?>">
+                                <img id="qr-image" src="<?php echo route('qr.generate', [$qr->alias]) ?>" class="img-responsive w-100" alt="<?php ee("Wait til the image is fully loaded") ?>">
                                 </a>
 
                             </div>    
