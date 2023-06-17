@@ -215,7 +215,7 @@
                                     usleep(500);
                                     // do nothing or some other action
                                     // ...
-                                    echo route('qr.generate', [$qr->alias]);
+                                    echo '<img src='.route('qr.generate', [$qr->alias]).'" class="img-responsive w-100" style="display: none;">';
                                     // update the variable value
                                     $filename = [$qr->filename][0];
                                     }
