@@ -1,3 +1,4 @@
+<div>
 <h1 class="h3 pt-8  pb-5"><div class="text-center"><?php ee('QR Code has been successfully generated') ?></div></h1>
 <section class="slice slice-lg bg-section-dark pt-4">
     <?php ///<form action="<?php echo route('qr.update', [$qr->id]) ?" method="post" enctype="multipart/form-data"> ?>
@@ -219,3 +220,4 @@
         </div>
     <?php //</form> ?>
 </section>
+</div>
