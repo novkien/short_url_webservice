@@ -49,6 +49,9 @@ Gem::post('/qr/save', 'QR@save')->name('qr.save');
 Gem::get('/qr/{alias}/complete', 'QR@edit')->name('qr.edit');
 Gem::get('/qr/{id}/download/{format}[/{size}]', 'QR@download')->name('qr.download');
 
+// QR Codes
+Gem::get('/qr/{id}', 'QR@generate')->name('qr.generate');
+Gem::get('/qr/{id}/download/{format}[/{size}]', 'QR@download')->name('qr.download');
 
 //// paste form
 Gem::get('/paste', 'Page@paste')->name('paste')->middleware('CheckDomain')->middleware('CheckMaintenance');
@@ -546,10 +549,6 @@ Gem::route(['GET', 'POST'], '/ipn', 'Webhook@ipn')->middleware('CheckDomain')->n
 Gem::route(['GET', 'POST'], '/webhook[/{provider}]', 'Webhook@index')->middleware('CheckDomain')->name('webhook');
 // Gem::route(['GET', 'POST'], '/webhook/paypal', 'Webhook@paypal')->middleware('CheckDomain')->name('webhook.paypalapi');
 // Gem::route(['GET', 'POST'], '/webhook/slack', 'Webhook@slack')->middleware('CheckDomain')->name('webhook.slack');
-
-// QR Codes
-Gem::get('/qr/{id}', 'QR@generate')->name('qr.generate');
-Gem::get('/qr/{id}/download/{format}[/{size}]', 'QR@download')->name('qr.download');
 
 // Short URL Routes
 Gem::get('/r/{alias}', 'Link@campaign')->name('campaign');
