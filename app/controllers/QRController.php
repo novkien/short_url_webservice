@@ -312,7 +312,7 @@ class QR {
 
 
 
-        return Helper::redirect()->to(route('qr.edit', [$qr->alias]))->with('success',  e('QR Code has been successfully generated.'));
+        return Helper::redirect()->to(route('qr.edit', [$qr->alias]))/* ->with('success',  e('QR Code has been successfully generated.')) */;
 
     }
 
