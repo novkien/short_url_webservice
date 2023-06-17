@@ -74,7 +74,7 @@ class Paste {
 
 
 
-		echo 'Debug:<br>'.$pass.'<br>'.$pasteLife.'<br>'.$pasteContent.'<br>'.$name;
+		echo 'Debug:<br>'.var_dump($request).'<br>'.$pass.'<br>'.$pasteLife.'<br>'.$pasteContent.'<br>'.$name;
 
 
 
