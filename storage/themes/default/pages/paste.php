@@ -29,6 +29,24 @@
                                 <label class="form-control-label" for="paste-content"><?php ee("Content") ?> <span class="text-danger">*</span></label>
                                 <textarea class="form-control form-control-lg" placeholder="<?php ee('If you have any questions, feel free to contact us so we can help you') ?>" rows="10" id="paste-content" name="message" required></textarea>
                             </div>
+                            <div class="form-group">
+                                <label class="form-control-label" for="paste-life"><?php ee("Life time") ?></label>
+                                <select name="paste-life" id="paste-life">
+                                    <option value="forever"><?php ee("Forever") ?></option>
+                                    <option value="oneload"><?php ee("One time") ?></option>
+                                    <option value="onehour"><?php ee("1 Hour") ?></option>
+                                    <option value="oneday"><?php ee("1 Day") ?></option>
+                                    <option value="oneweek"><?php ee("1 Week") ?></option>
+                                    <option value="onemonth"><?php ee("1 Month") ?></option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-control-label" for="paste-pass"><?php ee("Password") ?></label>
+                                <input class="form-control form-control-lg" type="text" name="paste-pass" value="No">
+                            </div>
+
+
+
 
                             <?php echo \Helpers\Captcha::display() ?>
                             <div class="text-center">
