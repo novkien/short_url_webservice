@@ -952,7 +952,7 @@ return [
     'Create QR' => 'Tạo QR',
     'Please enter a name for your QR code.' => 'Vui lòng nhập tên cho mã QR của bạn.',
     'Invalid QR format or missing data' => 'Định dạng QR không hợp lệ hoặc thiếu dữ liệu',
-    'QR Code has been successfully generated.' => 'Mã QR đã được tạo thành công.',
+    'QR Code has been successfully generated' => 'Mã QR đã được tạo thành công',
     'Edit QR' => 'Chỉnh sửa QR',
     'Complete create QR' => 'Tạo QR thành công',
     'QR Code has been successfully updated.' => 'Mã QR đã được cập nhật thành công.',

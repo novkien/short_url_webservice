@@ -200,10 +200,10 @@
                     </div>
                     <div class="card-body">
                         <div id="return-ajax">
-                            
-                            <button type="button" class="btn btn-default bg-white" data-bs-toggle="dropdown" aria-expanded="false"><i data-feather="more-vertical"></i><?php ee("Download the qr code: ") ?></button>
-                            <li><a class="dropdown-item" href="<?php echo route('qr.download', [$qr->alias, 'png', 1000]) ?>"><i data-feather="download"></i><?php ee('Download as PNG') ?></a></li>
-                            <li><a class="dropdown-item" href="<?php echo route('qr.download', [$qr->alias, 'pdf', 1000]) ?>"><i data-feather="download"></i><?php ee('Download as PDF') ?></a></li>
+
+                            <button type="button" class="" data-bs-toggle="dropdown" aria-expanded="false"><i data-feather="more-vertical"></i><?php ee("Download the qr code: ") ?></button>
+                            <a class="dropdown-item" href="<?php echo route('qr.download', [$qr->alias, 'png', 1000]) ?>"><i data-feather="download"></i><?php ee('Download as PNG') ?></a>
+                            <a class="dropdown-item" href="<?php echo route('qr.download', [$qr->alias, 'pdf', 1000]) ?>"><i data-feather="download"></i><?php ee('Download as PDF') ?></a>
 
                             <a href="<?php echo route('qr.generate', [$qr->alias]) ?>">
                                 <img src="<?php echo route('qr.generate', [$qr->alias]) ?>" class="img-responsive w-100" onerror="hideImage(this)" alt="<?php echo [$qr->name] ?>">
