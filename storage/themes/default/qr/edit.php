@@ -205,8 +205,15 @@
                                 <img src="<?php echo route('qr.generate', [$qr->alias]) ?>" class="img-responsive w-100">
                             </a>
                             <?php
-                                $reload = route('qr.edit', [$qr->id]);
-                                if (!file_exists(uploads($qr->filename, 'qr'))) echo uploads($qr->filename, 'qr') //header('Location: '.$reload);
+
+                                try {
+                                    echo route('qr.generate', [$qr->alias]);
+                                } catch (Exception $e) {
+                                    header('Location: '.route('qr.edit', [$qr->id]))
+                                }
+  
+
+
                             ?>
                         </div>    
                         <button type="submit" class="btn btn-primary mt-3"><?php ee('Update') ?></button>
