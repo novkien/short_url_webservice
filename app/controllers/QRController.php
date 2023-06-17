@@ -312,7 +312,7 @@ class QR {
 
 
 
-        return Helper::redirect()->to(route('qr.edit', [$qr->id]))->with('success',  e('QR Code has been successfully generated.'));
+        return Helper::redirect()->to(route('qr.edit', [$qr->alias]))->with('success',  e('QR Code has been successfully generated.'));
 
     }
 
@@ -324,11 +324,11 @@ class QR {
      * @param integer $id
      * @return void
      */
-    public function edit(int $id){
+    public function edit(string $alias){
 
 
 
-        if(!$qr = DB::qrs()->where('id', $id)->where('userid', 1)->first()){
+        if(!$qr = DB::qrs()->where('alias', $alias)->where('userid', 1)->first()){
             return back()->with('danger', 'QR does not exist.');
         }    
 
