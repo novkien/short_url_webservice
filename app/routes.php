@@ -46,7 +46,7 @@ Gem::get('/page/{page}', 'Page@index')->name('page')->middleware('CheckDomain')-
 Gem::get('/qr-codes', 'Page@qr')->name('page.qr')->middleware('CheckDomain')->middleware('CheckMaintenance');
 Gem::get('/qr/create', 'QR@create')->name('qr.create');
 Gem::post('/qr/save', 'QR@save')->name('qr.save');
-Gem::get('/qr/{id}', 'QR@edit')->name('qr.edit');
+Gem::get('/qr/{id}/edit', 'QR@edit')->name('qr.edit');
 Gem::get('/qr/{id}/download/{format}[/{size}]', 'QR@download')->name('qr.download');
 
 
