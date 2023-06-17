@@ -21,53 +21,52 @@
                 function hideImage(img) {
             img.style.display = "none";
         }
+  // get the image element by its id
+  var qrImage = document.getElementById("qr-image");
 
-        // get the image element by its id
-var qrImage = document.getElementById("qr-image");
+  // get the loading message element by its id
+  var loadingMessage = document.getElementById("loading-message");
 
-// get the initial image source
-var qrSrc = qrImage.src;
+  // get the initial image source
+  var qrSrc = qrImage.src;
 
-// set a flag to indicate if the image is loaded or not
-var qrLoaded = false;
+  // set a flag to indicate if the image is loaded or not
+  var qrLoaded = false;
 
-// define a function to check the image source
-function checkImage() {
-  // create a new image object
-  var img = new Image();
+  // define a function to check the image source
+  function checkImage() {
+    // create a new image object
+    var img = new Image();
 
-  // set the onload event handler
-  img.onload = function() {
-    // if the image is loaded, set the flag to true and update the image element
-    qrLoaded = true;
-    qrImage.src = qrSrc;
-  };
+    // set the onload event handler
+    img.onload = function() {
+      // if the image is loaded, set the flag to true and update the image element
+      qrLoaded = true;
+      qrImage.src = qrSrc;
 
-  // set the onerror event handler
-  img.onerror = function() {
-    // if the image is not loaded, set the flag to false and hide the image element
-    qrLoaded = false;
-    hideImage(qrImage);
-  };
+      // hide the loading message
+      loadingMessage.style.display = "none";
+    };
 
-  // set the image source to the initial source
-  img.src = qrSrc;
+    // set the onerror event handler
+    img.onerror = function() {
+      // if the image is not loaded, set the flag to false and hide the image element
+      qrLoaded = false;
+      hideImage(qrImage);
+    };
 
-  // check if the image is already complete
-  if (img.complete) {
-    // call the onload handler directly
-    img.onload();
+    // set the image source to the initial source
+    img.src = qrSrc;
   }
-}
 
-// call the checkImage function every second until the image is loaded
-var interval = setInterval(function() {
-  if (!qrLoaded) {
-    checkImage();
-  } else {
-    clearInterval(interval);
-  }
-}, 500);
+  // call the checkImage function every second until the image is loaded
+  var interval = setInterval(function() {
+    if (!qrLoaded) {
+      checkImage();
+    } else {
+      clearInterval(interval);
+    }
+  }, 1000);
 
     </script>
 
