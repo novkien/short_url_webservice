@@ -77,7 +77,7 @@ class Paste {
 		$data->content = $request->pasteContent;
 		$data->lifetime = $request->pasteLife;
 		$data->isOneTimeOpen = ($request->pasteLife == 'forever') ? 1 : 0;
-		$data->alias = \substr(md5(rand(0,100)), 0, 6);
+		$data->alias = \substr(md5(rand(0,100)), 0, 8);
 
 		var_dump($data);
 
