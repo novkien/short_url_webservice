@@ -328,7 +328,7 @@ return [
     'Zip/Postal code' => 'Mã Zip / Mã bưu chính',
     'Pay with PayPal' => 'Thanh toán bằng PayPal',
     'Home' => 'Trang chủ',
-    'Paste' => 'Paste box',
+    'Paste' => 'Ghi chú online',
     'Paste box' => 'Lưu trữ đoạn văn bản lớn của bạn',
     'Paste box help you to save a huge of text, easy to share.' => 'Nếu bạn cần lưu trữ một đoạn văn bản, code lớn để chia sẻ hoặc đơn giản lưu trữ chúng chia sẻ lên internet.<br />Giải pháp tuyệt vời để lưu lại những đoạn văn bản một cách đơn giản',
     'Contact us' => 'Liên hệ chúng tôi',
