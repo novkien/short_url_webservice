@@ -4,8 +4,8 @@
     <?php ///<form action="<?php echo route('qr.update', [$qr->id]) ?" method="post" enctype="multipart/form-data"> ?>
         <?php echo csrf() ?>
         <input type="hidden" name="type" value="<?php echo $qr->data->type ?>">
-        <div class="row pd-1" style="justify-content: space-around; flex-wrap: wrap">        
-            <div class="col-md-9" style="max-width: 500px">
+        <div class="row row-grid" style="/*justify-content: space-around; flex-wrap: wrap*/">        
+            <div class="col-lg-6" style="/*max-width: 500px*/">
                 <div class="card card-body">
                     <div class="form-group">
                         <label for="text" class="form-label"><?php ee('QR Code Name') ?></label>
