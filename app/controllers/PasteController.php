@@ -161,23 +161,28 @@ class Paste {
 
 		$datas = DB::paste()->where('alias', $alias)->first();
 
-
-		$text = base64_decode($datas->content);
-		header("Content-Type: text/plain");
-		header("Content-Disposition: attachment; filename=" . $alias.".txt");
-		header("Content-Length: " . strlen($text));
-		echo $text;
-
-		/* if ($pass == $datas->password) echo htmlspecialchars(base64_decode($datas->content)); 
+		if ($pass == $datas->password) echo htmlspecialchars(base64_decode($datas->content)); 
 		else View::with('paste.paste_box_pass', compact('datas'))->extend('layouts.main');
- */
+
 
 	}
 
 
 
+	public function paste_download(Request $request, string $alias, string $pass){
+
+		$datas = DB::paste()->where('alias', $alias)->first();
 
 
+		$text = base64_decode($datas->content);
+		header("Content-Type: text/plain");
+		header("Content-Disposition: attachment; filename=" . $alias.".txt");
+		header("Content-Length: " . strlen($text));
+
+		if ($pass == $datas->password) echo $text;
+		else View::with('paste.paste_box_pass', compact('datas'))->extend('layouts.main');
+
+	}
 
 
 
