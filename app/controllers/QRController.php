@@ -267,15 +267,25 @@ class QR {
         $url = null;
 
 
-        $alias = \substr(md5(rand(0,100).Helper::rand(12)), 0, 15);
+        $alias = \bin2hex(openssl_random_pseudo_bytes(8));
+
+        while(DB::qrs()->where('alias', $alias)->first()){
+            $alias = \bin2hex(openssl_random_pseudo_bytes(8));
+        }
 
         if(!in_array($request->type, ['text', 'sms','wifi','staticvcard'])){       
       
+
+            $alias_url = \bin2hex(openssl_random_pseudo_bytes(3));
+
+            while(DB::url()->where('alias', $alias_url)->first()){
+                $alias_url = \bin2hex(openssl_random_pseudo_bytes(3));
+            }
                        
             $url = DB::url()->create();
             $url->userid = 1;
             $url->url = $data;
-            $url->alias = \substr(md5(rand(0,100)), 0, 6);
+            $url->alias = $alias_url;
 
             if($request->domain && $this->validateDomainNames(trim($request->domain), Auth::user(), false)){
                 $url->domain = clean($request->domain);
