@@ -70,7 +70,7 @@ class Paste {
 
 
 
-		echo 'Test<br>';
+		echo 'Test<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>';
 
 		echo 'Debug:<br>'.'<br>'. var_dump($data);
 
