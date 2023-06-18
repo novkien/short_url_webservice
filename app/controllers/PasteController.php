@@ -67,16 +67,43 @@ class Paste {
 
 
 
-		echo 'Debug:<br>'.'<br>'.($request->pasteLife == 'forever') ? 1 : 0;
 
+		$timestamp = Helper::dtime();
+
+
+		$pasteLife = $request->pasteLife; // get the value of the selected option
+		switch ($pasteLife) {
+		  case 'forever':
+			$timestamp = null; // no expiration
+			break;
+		  case 'onehour':
+			$timestamp = strtotime('+1 hour'); // add one hour to current time
+			break;
+		  case 'oneday':
+			$timestamp = strtotime('+1 day'); // add one day to current time
+			break;
+		  case 'oneweek':
+			$timestamp = strtotime('+1 week'); // add one week to current time
+			break;
+		  case 'onemonth':
+			$timestamp = strtotime('+1 month'); // add one month to current time
+			break;
+		  default:
+			$timestamp = null; // invalid option
+		}
+		// insert $timestamp into database
+		
+
+
+		echo 'Debug:<br>'.'<br>'.$timestamp;
 
 
 		$data = DB::paste()->create();
 		$data->name = clean($request->pasteAuthor);
 		$data->password = clean($request->pastePass);
 		$data->content = $request->pasteContent;
-		$data->lifetime = $request->pasteLife;
-		$data->isOneTimeOpen = ($request->pasteLife == 'forever') ? 1 : 0;
+		//$data->lifetime = $request->pasteLife;
+		$data->isOneTimeOpen = ($request->pasteLife == 'oneload') ? 1 : 0;
 		$data->alias = \substr(md5(rand(0,100)), 0, 8);
 
 		var_dump($data);
