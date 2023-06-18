@@ -60,8 +60,7 @@ class Paste {
         }    
 
 
-		$data->data = json_decode($data->data);
-
+		
 
 
 
@@ -74,7 +73,7 @@ class Paste {
 
 		echo 'Debug:<br>'.'<br>'. var_dump($data);
 
-		echo 'Data->name'.$data->name;
+		echo 'Data->name '.$data->name;
 
 
 
