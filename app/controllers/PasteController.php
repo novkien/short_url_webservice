@@ -162,7 +162,8 @@ class Paste {
 
 
 		if ($pass == $datas->password) echo htmlspecialchars(base64_decode($datas->content)); 
-		else View::with('paste.paste_box_pass', compact('datas'))->extend('layouts.main');
+		else //View::with('paste.paste_box_pass', compact('datas'))->extend('layouts.main');
+			echo 'else';
 
 
 	}
