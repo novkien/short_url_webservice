@@ -1237,6 +1237,7 @@ return [
     'Getting Started' => 'Bắt đầu',
     'Authentication' => 'Xác thực',
     'Rate Limit' => 'Giới hạn tỷ lệ',
+    'Author' => 'Chủ sở hữu',
     'Response Handling' => 'Quản lý phản hồi',
     'An API key is required for requests to be processed by the system. Once a user registers, an API key is automatically generated for this user. The API key must be sent with each request (see full example below). If the API key is not sent or is expired, there will be an error. Please make sure to keep your API key secret to prevent abuse.' => 'Cần có khóa API để hệ thống xử lý các yêu cầu. Sau khi người dùng đăng ký, khóa API sẽ tự động được tạo cho người dùng đó. Khóa API phải được gửi cùng với mỗi yêu cầu (xem ví dụ đầy đủ bên dưới). Nếu khóa API không được gửi hoặc đã hết hạn, sẽ xảy ra lỗi. Đảm bảo giữ bí mật khóa API của bạn để tránh lạm dụng.',
     'If you proceed, your current applications will not work anymore. You will need to change your api key for it to work again.' => 'Nếu bạn tiếp tục, các ứng dụng hiện tại của bạn sẽ không hoạt động nữa. Bạn sẽ cần phải thay đổi khóa API của mình để khóa này hoạt động trở lại.',

@@ -17,8 +17,7 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="form-group">
-                            <label class="form-control-label" for="paste-author"><?php ee("Name") ?></label>
-                            <input class="form-control form-control-lg" type="text" name="pasteAuthor" id="pasteAuthor" name="name" value="<?php echo $datas->name ?>">
+                            <label class="form-control-label" for="paste-author"><?php ee("Author") ?>: <?php echo $datas->name ?></label>
                         </div>
 
                         <div class="form-group">
