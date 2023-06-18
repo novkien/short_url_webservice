@@ -13,7 +13,7 @@
 <section class="slice slice-lg pt-0 bg-section-secondary" id="sct-form-paste">
     <div class="container position-relative zindex-100">
         <div class="row justify-content-center">
-            <div class="col-lg-6">
+            <div class="col-lg-10">
                 <div class="card">
                     <div class="card-body">
                         <div class="form-group">
