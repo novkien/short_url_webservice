@@ -60,7 +60,7 @@ class Paste {
         }    
 
 
-
+		$data->data = json_decode($data->data);
 
 
 
