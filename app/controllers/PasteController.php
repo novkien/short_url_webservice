@@ -68,7 +68,7 @@ class Paste {
 
 
 
-		echo 'Test';
+		echo 'Test<br>';
 
 		echo 'Debug:<br>'.'<br>'. Helper::dtime();;
 
