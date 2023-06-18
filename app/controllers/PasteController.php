@@ -72,7 +72,7 @@ class Paste {
         View::set('description', e('Easy archive and share your text simply'));
 
 		$alias = $request->pasteAlias;
-		$pass = $request->pastePass;
+		$pass = md5($request->pastePass);
 
 
 		$datas = DB::paste()->where('alias', $alias)->first();
@@ -134,7 +134,7 @@ class Paste {
 
 		$data = DB::paste()->create();
 		$data->name = clean($request->pasteAuthor);
-		$data->password = $request->pastePass ?? null;
+		$data->password = md5($request->pastePass) ?? null;
 		$data->content = base64_encode($request->pasteContent);
 		$data->lifetime =  date('Y-m-d H:i:s', $timestamp);
 		$data->isOneTimeOpen = ($request->pasteLife == 'oneload') ? 1 : 0;
@@ -160,6 +160,7 @@ class Paste {
 
 		$datas = DB::paste()->where('alias', $alias)->first();
 
+		
 
 		if ($pass == $datas->password) echo htmlspecialchars(base64_decode($datas->content)); 
 		else View::with('paste.paste_box_pass', compact('datas'))->extend('layouts.main');
