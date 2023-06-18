@@ -98,7 +98,7 @@ class Paste {
 		$data->name = clean($request->pasteAuthor);
 		$data->password = clean($request->pastePass);
 		$data->content = $request->pasteContent;
-		$data->lifetime = $timestamp;
+		$data->lifetime = $datetime = date('Y-m-d H:i:s', $timestamp);
 		$data->isOneTimeOpen = ($request->pasteLife == 'oneload') ? 1 : 0;
 		$data->alias = \substr(md5(rand(0,100)), 0, 8);
 		$data->save();
