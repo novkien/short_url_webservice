@@ -75,6 +75,31 @@ class Paste {
 
 	}
 
+	public function paste_pass(Request $request){		
+	
+		View::set('title', e('Paste'));
+
+        View::set('description', e('Easy archive and share your text simply'));
+
+		$alias = $request->pasteAlias;
+		$pass = $request->pastePass;
+
+		if(!$datas = DB::paste()->where('password', $pass)->first()){
+            return back()->with('danger', 'You are not allowed.');
+        }
+
+		//$data = DB::paste()->where('alias', $alias)->first();
+
+
+        if(!$datas = DB::paste()->where('alias', $alias)->first()){
+            return back()->with('danger', 'Paste does not exist.');
+        }
+
+	  
+		return View::with('paste.paste_box', compact('datas'))->extend('layouts.main');     
+
+	}
+
 	/**
 	 * Add paste send data
 	 *

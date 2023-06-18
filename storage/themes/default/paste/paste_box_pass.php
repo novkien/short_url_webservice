@@ -1,4 +1,3 @@
-<?php echo 'pass' ?>
 
 <section class="slice pb-0 slice-lg <?php echo \Helpers\App::themeConfig('homestyle', 'light', 'bg-white', 'bg-section-dark') ?>" <?php echo themeSettings::config('homecolor') ?>>
     <div class="container d-flex align-items-center" data-offset-top="#navbar-main">
@@ -20,13 +19,15 @@
                     <div class="card-body">
                         <div class="form-group">
                             <label class="form-control-label" for="paste-author"><?php ee("Name") ?></label>
-                            <input class="form-control form-control-lg" type="text" name="pasteAuthor" id="pasteAuthor" name="name" value="<?php echo $datas->name ?>">
+                            <input class="form-control form-control-lg" type="text" name="pasteAlias" id="pasteAlias" value="<?php echo $datas->alias ?>" hidden>
                         </div>
+                        <form id="form-paste-pass" method="post" action="<?php echo route('paste.paste_pass') ?>" data-trigger="paste-form-pass">
+                            <div class="form-group">
+                                <label class="form-control-label" for="paste-content"><?php ee("Password") ?></label>
+                                <input class="form-control form-control-lg" type="text" id="pastePass" name="pastePass" placeholder="<?php ee("Password protection") ?>">
+                            </div>
+                        </form>
 
-                        <div class="form-group">
-                            <label class="form-control-label" for="paste-content"><?php ee("Content") ?></label>
-                            <textarea class="form-control form-control-lg" rows="10" id="pasteContent" name="pasteContent"><?php echo base64_decode($datas->content) ?></textarea>
-                        </div>
                     </div>
                 </div>
             </div>
