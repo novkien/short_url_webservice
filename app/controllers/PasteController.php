@@ -52,19 +52,11 @@ class Paste {
 
 
 
-		//$data = DB::paste()->where('alias', $alias)->first();
-
-
         if(!$datas = DB::paste()->where('alias', $alias)->first()){
             return back()->with('danger', 'Paste does not exist.');
         }
 
 
-		echo 'Test<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>';
-
-		//echo 'Debug:<br>'.'<br>'. var_dump($data);
-
-		echo 'Debug: '.$datas->password;
 
 	  
 		if ($datas->password != null) return View::with('paste.paste_box_pass', compact('datas'))->extend('layouts.main');   
