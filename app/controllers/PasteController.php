@@ -119,7 +119,7 @@ class Paste {
 
 		$data = DB::paste()->create();
 		$data->name = clean($request->pasteAuthor);
-		$data->password = $request->pastePass;
+		$data->password = $request->pastePass ?? null;
 		$data->content = base64_encode($request->pasteContent);
 		$data->lifetime =  date('Y-m-d H:i:s', $timestamp);
 		$data->isOneTimeOpen = ($request->pasteLife == 'oneload') ? 1 : 0;
