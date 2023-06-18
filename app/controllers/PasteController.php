@@ -28,7 +28,7 @@ use Models\User;
 
 class Paste {
 	
-	use Traits\Paste;
+	use \Traits\Links;
 	
 	/**
 	* Static path to grab favicon
