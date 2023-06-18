@@ -160,9 +160,9 @@ class Paste {
 	public function paste_raw(Request $request, string $alias, string $pass){
 
 		$datas = DB::paste()->where('alias', $alias)->first();
-
-		if ($pass == $datas->password) echo htmlspecialchars(base64_decode($datas->content));
-		elseif ($datas->password == null) echo htmlspecialchars(base64_decode($datas->content));
+		$text = htmlspecialchars(base64_decode($datas->content));
+		if ($pass == $datas->password) $text;
+		elseif ($datas->password == null) $text;
 		else View::with('paste.paste_box_pass', compact('datas'))->extend('layouts.main');
 
 
@@ -181,7 +181,8 @@ class Paste {
 		header("Content-Disposition: attachment; filename=" . $alias.".txt");
 		header("Content-Length: " . strlen($text));
 
-		if ($pass == $datas->password) echo $text;
+		if ($pass == $datas->password) $text;
+		elseif ($datas->password == null) $text;
 		else View::with('paste.paste_box_pass', compact('datas'))->extend('layouts.main');
 
 	}
