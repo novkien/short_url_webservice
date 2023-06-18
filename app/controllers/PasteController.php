@@ -75,7 +75,7 @@ class Paste {
 
 		echo 'Data->name '.$data->name;
 
-
+		$data[] = $data;
 
 
 
