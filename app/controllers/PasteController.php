@@ -75,11 +75,8 @@ class Paste {
 
 		echo 'Data->name '.$data->name;
 
-		$datas[] = $data;
 
-
-
-		return View::with('paste.paste_box', compact('datas'))->extend('layouts.main');     
+		return View::with('paste.paste_box', 'data')->extend('layouts.main');     
 
 	}
 
