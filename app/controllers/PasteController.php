@@ -64,12 +64,12 @@ class Paste {
 
 		//echo 'Debug:<br>'.'<br>'. var_dump($data);
 
-		echo 'Data->name '.$datas->password;
+		echo 'Debug: '.$datas->password;
 
 		//$data = $datas["data"];
 
 	  
-		if ($datas->password != 'No') return View::with('paste.paste_box', compact('datas'))->extend('layouts.main');   
+		if ($datas->password != 'No') return View::with('paste.paste_box_pass', compact('datas'))->extend('layouts.main');   
 
 		return View::with('paste.paste_box', compact('datas'))->extend('layouts.main');     
 
