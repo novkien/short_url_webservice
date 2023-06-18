@@ -68,13 +68,13 @@ class Paste {
 
 
 
-		$timestamp = Helper::dtime();
+		//$timestamp = Helper::dtime();
 
 
 		$pasteLife = $request->pasteLife; // get the value of the selected option
 		switch ($pasteLife) {
 		  case 'forever':
-			$timestamp = null; // no expiration
+			$timestamp = strtotime('+10 year'); // no expiration
 			break;
 		  case 'onehour':
 			$timestamp = strtotime('+1 hour'); // add one hour to current time
@@ -89,9 +89,10 @@ class Paste {
 			$timestamp = strtotime('+1 month'); // add one month to current time
 			break;
 		  default:
-			$timestamp = null; // invalid option
+			
 		}
-		// insert $timestamp into database
+
+
 		
 
 
