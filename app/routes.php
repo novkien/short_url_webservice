@@ -48,12 +48,13 @@ Gem::get('/qr/create', 'QR@create')->name('qr.create');
 Gem::post('/qr/save', 'QR@save')->name('qr.save');
 Gem::get('/qr/{alias}/complete', 'QR@edit')->name('qr.edit');
 Gem::get('/qr/{id}/download/{format}[/{size}]', 'QR@download')->name('qr.download');
-
 // QR Codes
 Gem::get('/qr/{id}', 'QR@generate')->name('qr.generate');
 Gem::get('/qr/{id}/download/{format}[/{size}]', 'QR@download')->name('qr.download');
 
-//// paste form
+
+
+
 Gem::get('/paste', 'Page@paste')->name('paste')->middleware('CheckDomain')->middleware('CheckMaintenance');
 Gem::post('/paste_send', 'Paste@paste_send')->name('paste_send');
 

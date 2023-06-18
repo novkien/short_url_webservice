@@ -19,7 +19,7 @@
                         <form id="form-paste" method="post" action="<?php echo route('paste_send') ?>" data-trigger="paste-form">
                             <div class="form-group">
                                 <label class="form-control-label" for="paste-author"><?php ee("Name") ?></label>
-                                <input class="form-control form-control-lg" type="text" name="pasteAuthor" placeholder="<?php echo $data->name ?>" id="pasteAuthor" name="name" value="<?php echo \Core\Auth::logged() ? \Core\Auth::user()->username : '' ?>">
+                                <input class="form-control form-control-lg" type="text" name="pasteAuthor" id="pasteAuthor" name="name" value="<?php echo $data->name ?>">
                             </div>
 <!--                             <div class="form-group">
                                 <label class="form-control-label" for="paste-content"><span class="text-danger">*</span></label>
@@ -27,7 +27,7 @@
                             </div>    -->
                             <div class="form-group">
                                 <label class="form-control-label" for="paste-content"><?php ee("Content") ?> <span class="text-danger">*</span></label>
-                                <textarea class="form-control form-control-lg" placeholder="<?php echo $data->content ?>" rows="10" id="pasteContent" name="pasteContent" required></textarea>
+                                <textarea class="form-control form-control-lg" rows="10" id="pasteContent" name="pasteContent" value="<?php echo $data->name ?>"></textarea>
                             </div>
                         </form>
                     </div>
