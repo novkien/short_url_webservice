@@ -68,6 +68,9 @@ class Paste {
 
 		//$data = $datas["data"]; */
 
+		if ($datas->password != 'No') return View::with('paste.paste_box', compact('datas'))->extend('layouts.main');     
+
+
 		return View::with('paste.paste_box', compact('datas'))->extend('layouts.main');     
 
 	}
