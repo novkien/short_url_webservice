@@ -156,12 +156,13 @@ class Paste {
 
 
 
-	public function paste_raw(Request $request, string $alias){
+	public function paste_raw(Request $request, string $alias, string $pass){
 
-		$data = DB::paste()->where('alias', $alias)->first();
+		$datas = DB::paste()->where('alias', $alias)->first();
 
 
-		echo htmlspecialchars(base64_decode($data->content));
+		if ($pass == $datas->password) echo htmlspecialchars(base64_decode($data->content)); 
+		else View::with('paste.paste_box_pass', compact('datas'))->extend('layouts.main');
 
 
 	}
