@@ -84,7 +84,7 @@ class Paste {
 			$timestamp = strtotime('+1 month'); // add one month to current time
 			break;
 		  default:
-		   	//$timestamp = Helper::dtime();
+		   	$timestamp = strtotime(Helper::dtime());
 		}
 
 
