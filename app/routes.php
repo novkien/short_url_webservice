@@ -61,7 +61,7 @@ Gem::get('/paste/{alias}', 'Paste@paste_box')->name('paste.paste_box');
 Gem::post('/paste/paste_pass', 'Paste@paste_pass')->name('paste.paste_pass');
 
 Gem::get('/paste/{alias}/{pass}/text', 'Paste@paste_raw')->name('paste.paste_raw');
-Gem::get('/paste/{alias}/{pass}', 'Paste@paste_download')->name('paste.paste_download');
+Gem::get('/paste/{alias}/{pass}/download', 'Paste@paste_download')->name('paste.paste_download');
 
 
 
