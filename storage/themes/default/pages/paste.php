@@ -1,4 +1,4 @@
-<section class="slice slice-lg py-7 <?php echo \Helpers\App::themeConfig('homestyle', 'light', 'bg-white', 'bg-section-dark') ?>" <?php echo themeSettings::config('homecolor') ?>>
+<section class="slice slice-lg <?php echo \Helpers\App::themeConfig('homestyle', 'light', 'bg-white', 'bg-section-dark') ?>" <?php echo themeSettings::config('homecolor') ?>>
     <div class="container d-flex align-items-center" data-offset-top="#navbar-main">
         <div class="col py-5">
             <div class="row align-items-center justify-content-center">
@@ -10,7 +10,7 @@
         </div>
     </div>
 </section>
-<section class="slice slice-lg bg-section-secondary" id="sct-form-paste">
+<section class="slice slice-lg pt-0 bg-section-secondary" id="sct-form-paste">
     <div class="container position-relative zindex-100">
         <div class="row justify-content-center">
             <div class="col-lg-6">
