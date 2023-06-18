@@ -70,7 +70,7 @@ class Paste {
 
 		echo 'Test<br>';
 
-		echo 'Debug:<br>'.'<br>'. Helper::dtime();;
+		echo 'Debug:<br>'.'<br>'. $data;
 
 
 
