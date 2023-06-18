@@ -152,6 +152,35 @@ class Paste {
         return Helper::redirect()->to(route('paste.paste_box', [$data->alias]))/* ->with('success',  e('QR Code has been successfully generated.')) */;
 
 	}
+
+
+
+
+	public function raw(Request $request, string $alias){
+
+		$data = DB::paste()->where('alias', $alias)->first();
+
+
+		echo htmlspecialchars(base64_decode($data->content));
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /**
      * Redirect Link
      *

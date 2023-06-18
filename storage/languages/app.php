@@ -775,6 +775,7 @@ return [
     'Pending Approval' => 'Đang chờ xác thực',
     'We are currently manually approving links. As soon as the link is approved, you will be able to start using it.' => 'Chúng tôi hiện đang phê duyệt các liên kết theo cách thủ công. Ngay sau khi liên kết được phê duyệt, bạn có thể bắt đầu sử dụng nó.',
     'Account' => 'Tài khoản',
+    'Raw' => 'Văn bản thô',
     'Get Account' => 'Nhận một tài khoản',
     'To get information on the account, you can send a request to this endpoint and it will return data on the account.' => 'Để lấy thông tin tài khoản, bạn có thể gửi yêu cầu đến điểm cuối này và nó sẽ trả về dữ liệu tài khoản.',
     'Update Account' => 'Tài khoản được cập nhật',
