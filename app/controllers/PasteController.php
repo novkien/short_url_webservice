@@ -52,7 +52,7 @@ class Paste {
 
 
 
-		$data = DB::paste()->where('alias', $alias)->first();
+		//$data = DB::paste()->where('alias', $alias)->first();
 
 
         if(!$data = DB::paste()->where('alias', $alias)->first()){
@@ -79,7 +79,7 @@ class Paste {
 
 
 
-		return View::with('paste.paste_box', compact('data'))->extend('layouts.main');     
+		return View::with('paste.paste_box', compact($data))->extend('layouts.main');     
 
 	}
 
