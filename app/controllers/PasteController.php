@@ -97,7 +97,7 @@ class Paste {
 		$data = DB::paste()->create();
 		$data->name = clean($request->pasteAuthor);
 		$data->password = clean($request->pastePass);
-		$data->content = $request->pasteContent;
+		$data->content = base64_encode($request->pasteContent);
 		$data->lifetime =  date('Y-m-d H:i:s', $timestamp);
 		$data->isOneTimeOpen = ($request->pasteLife == 'oneload') ? 1 : 0;
 		$data->alias = \substr(md5(rand(0,100)), 0, 8);
