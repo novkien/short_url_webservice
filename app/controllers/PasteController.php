@@ -66,11 +66,6 @@ class Paste {
 	
 
 
-
-
-		//$timestamp = Helper::dtime();
-
-
 		$pasteLife = $request->pasteLife; // get the value of the selected option
 		switch ($pasteLife) {
 		  case 'forever':
@@ -96,18 +91,18 @@ class Paste {
 		
 
 
-		echo 'Debug:<br>'.'<br>'.$timestamp;
+		echo 'Debug:<br>'.'<br>';
 
 
 		$data = DB::paste()->create();
 		$data->name = clean($request->pasteAuthor);
 		$data->password = clean($request->pastePass);
 		$data->content = $request->pasteContent;
-		//$data->lifetime = $request->pasteLife;
+		$data->lifetime = $timestamp;
 		$data->isOneTimeOpen = ($request->pasteLife == 'oneload') ? 1 : 0;
 		$data->alias = \substr(md5(rand(0,100)), 0, 8);
 
-		//var_dump($data);
+		var_dump($data);
 
 
 		View::set('title', e('Paste'));
