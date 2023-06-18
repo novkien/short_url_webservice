@@ -18,9 +18,8 @@
                     <div class="card-body">
                         <div class="form-group">
                             <label class="form-control-label" for="paste-author"><?php ee("Author") ?>: <?php echo $datas->name ?></label>
-                            <a href="<?php echo route('paste.paste_raw', [$datas->alias, $datas->password]) ?>"><button class="btn btn-primary mt-3"><?php ee('Raw') ?></button></a>
-                        
                         </div>
+                        <a href="<?php echo route('paste.paste_raw', [$datas->alias, $datas->password]) ?>"><button class="btn btn-primary mt-3"><?php ee('Raw') ?></button></a>
                         <div class="form-group">
                             <label class="form-control-label" for="paste-content"><?php ee("Content") ?></label>
                             <textarea class="form-control form-control-lg" rows="10" id="pasteContent" name="pasteContent"><?php echo htmlspecialchars(base64_decode($datas->content)) ?></textarea>
