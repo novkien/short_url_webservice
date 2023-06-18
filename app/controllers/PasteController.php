@@ -85,14 +85,13 @@ class Paste {
 	 */
 	public function paste_send(Request $request){		
 	
-		$alias = \substr(md5(rand(0,100)), 0, 8); // get unique alias for url
+		//$alias = \substr(md5(rand(0,100)), 0, 8);
+		$alias = \bin2hex(openssl_random_pseudo_bytes(4)); // get unique alias for url
 		$pasteLife = $request->pasteLife; // get the value of the selected option
 		
 		
 		
-		
-		
-		
+
 		switch ($pasteLife) {
 		  case 'forever':
 			$timestamp = strtotime('+10 year'); // no expiration
