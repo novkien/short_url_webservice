@@ -82,19 +82,24 @@ class Paste {
 		$alias = $request->pasteAlias;
 		$pass = $request->pastePass;
 
-		if(!$datas = DB::paste()->where('password', $pass)->first()){
+/* 		if(!$datas = DB::paste()->where('password', $pass)->first()){
             return back()->with('danger', 'You are not allowed.');
         }
-
+ */
 		//$data = DB::paste()->where('alias', $alias)->first();
 		echo 'Debug:<br>'.'<br>'. var_dump($request);
+		$datas = DB::paste()->where('alias', $alias)->first();
 
-        if(!$datas = DB::paste()->where('alias', $alias)->first()){
-            //return back()->with('danger', 'Paste does not exist.');
-        }
+        if(!$datas){
+            return back()->with('danger', 'Paste does not exist.');
+        } elseif ($datas->password == $pass) {
+			return View::with('paste.paste_box', compact('datas'))->extend('layouts.main');     
+		} else {
+			return back()->with('danger', 'Wrong password');
+		}
 
-	  
-		return View::with('paste.paste_box', compact('datas'))->extend('layouts.main');     
+
+	
 
 	}
 
