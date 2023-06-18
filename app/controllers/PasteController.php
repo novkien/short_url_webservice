@@ -106,7 +106,7 @@ class Paste {
 		$data->isOneTimeOpen = ($request->pasteLife == 'oneload') ? 1 : 0;
 		$data->alias = \substr(md5(rand(0,100)), 0, 8);
 
-		var_dump($data);
+		//var_dump($data);
 
 
 		View::set('title', e('Paste'));
