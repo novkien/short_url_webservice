@@ -59,7 +59,6 @@ Gem::get('/paste', 'Page@paste')->name('page.paste')->middleware('CheckDomain')-
 Gem::post('/paste/paste_send', 'Paste@paste_send')->name('paste.paste_send');
 Gem::get('/paste/{alias}', 'Paste@paste_box')->name('paste.paste_box');
 
-
 Gem::get('/bio-profiles', 'Page@bio')->name('page.bio')->middleware('CheckDomain')->middleware('CheckMaintenance');
 
 
