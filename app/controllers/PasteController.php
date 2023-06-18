@@ -161,7 +161,7 @@ class Paste {
 		$datas = DB::paste()->where('alias', $alias)->first();
 
 
-		if ($pass == $datas->password) echo htmlspecialchars(base64_decode($data->content)); 
+		if ($pass == $datas->password) echo htmlspecialchars(base64_decode($datas->content)); 
 		else View::with('paste.paste_box_pass', compact('datas'))->extend('layouts.main');
 
 
