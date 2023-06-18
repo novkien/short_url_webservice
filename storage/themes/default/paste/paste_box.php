@@ -1,6 +1,6 @@
 
 
-
+<?php echo is_object($datas) ?>
 
 <section class="slice slice-lg py-7 <?php echo \Helpers\App::themeConfig('homestyle', 'light', 'bg-white', 'bg-section-dark') ?>" <?php echo themeSettings::config('homecolor') ?>>
     <div class="container d-flex align-items-center" data-offset-top="#navbar-main">
