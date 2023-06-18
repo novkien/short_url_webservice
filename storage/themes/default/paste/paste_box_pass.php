@@ -18,7 +18,7 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="form-group">
-                            <input class="form-control form-control-lg" type="text" name="pasteAlias" id="pasteAlias" value="<?php echo $datas->alias ?>" hidden>
+                            <input class="form-control form-control-lg" type="text" name="pasteAlias" id="pasteAlias" value="<?php echo $datas->alias ?>" readonly>
                         </div>
                         <form id="form-paste-pass" method="post" action="<?php echo route('paste.paste_pass') ?>" data-trigger="paste-form-pass">
                             <div class="form-group">
