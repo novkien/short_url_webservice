@@ -165,7 +165,7 @@ class Paste {
 
 		header("Content-Type: text/plain");
 		header("Content-Disposition: attachment; filename=" . $alias.".txt");
-		header("Content-Length: " . strlen($datas->content));
+		header("Content-Length: " . strlen(base64_decode($datas->content)));
 
 		/* if ($pass == $datas->password) echo htmlspecialchars(base64_decode($datas->content)); 
 		else View::with('paste.paste_box_pass', compact('datas'))->extend('layouts.main');
