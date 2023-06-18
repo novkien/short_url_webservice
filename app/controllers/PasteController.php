@@ -89,7 +89,9 @@ class Paste {
 		$alias = \bin2hex(openssl_random_pseudo_bytes(4)); // get unique alias for url
 		$pasteLife = $request->pasteLife; // get the value of the selected option
 		
-		
+		while(DB::paste()->where('alias', $alias)->first()){
+            $alias = \bin2hex(openssl_random_pseudo_bytes(4));
+        }
 		
 
 		switch ($pasteLife) {
