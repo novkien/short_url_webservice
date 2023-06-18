@@ -68,9 +68,9 @@ class Paste {
 
 
 
+		echo 'Test';
 
-
-
+		echo 'Debug:<br>'.'<br>'. Helper::dtime();;
 
 
 
@@ -119,8 +119,6 @@ class Paste {
 		}
 
 
-
-		echo 'Debug:<br>'.'<br>'. Helper::dtime();;
 		
 
 		$data = DB::paste()->create();
