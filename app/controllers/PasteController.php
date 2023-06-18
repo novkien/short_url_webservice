@@ -101,8 +101,7 @@ class Paste {
 		$data->lifetime = $timestamp;
 		$data->isOneTimeOpen = ($request->pasteLife == 'oneload') ? 1 : 0;
 		$data->alias = \substr(md5(rand(0,100)), 0, 8);
-
-		var_dump($data);
+		$data->save();
 
 
 		View::set('title', e('Paste'));
