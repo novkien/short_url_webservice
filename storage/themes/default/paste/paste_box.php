@@ -1,5 +1,5 @@
 
-<?php var_dump($data); ?>
+
 
 
 <section class="slice slice-lg py-7 <?php echo \Helpers\App::themeConfig('homestyle', 'light', 'bg-white', 'bg-section-dark') ?>" <?php echo themeSettings::config('homecolor') ?>>
