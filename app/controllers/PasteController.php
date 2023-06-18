@@ -71,7 +71,7 @@ class Paste {
 
 		echo 'Test<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>';
 
-		echo 'Debug:<br>'.'<br>'. var_dump($data);
+		//echo 'Debug:<br>'.'<br>'. var_dump($data);
 
 		echo 'Data->name '.$data->name;
 
