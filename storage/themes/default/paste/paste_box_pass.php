@@ -18,13 +18,17 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="form-group">
-                            <label class="form-control-label" for="paste-author"><?php ee("Name") ?></label>
                             <input class="form-control form-control-lg" type="text" name="pasteAlias" id="pasteAlias" value="<?php echo $datas->alias ?>" hidden>
                         </div>
                         <form id="form-paste-pass" method="post" action="<?php echo route('paste.paste_pass') ?>" data-trigger="paste-form-pass">
                             <div class="form-group">
                                 <label class="form-control-label" for="paste-content"><?php ee("Password") ?></label>
                                 <input class="form-control form-control-lg" type="text" id="pastePass" name="pastePass" placeholder="<?php ee("Password protection") ?>">
+                            </div>
+                            <?php echo \Helpers\Captcha::display() ?>
+                            <div class="text-center">
+                                <?php echo csrf() ?>
+                                <button type="submit" class="btn btn-block btn-lg btn-primary mt-4"><?php ee('Send') ?></button>
                             </div>
                         </form>
 
