@@ -1,4 +1,4 @@
-
+<?php message() ?>
 <section class="slice pb-0 slice-lg <?php echo \Helpers\App::themeConfig('homestyle', 'light', 'bg-white', 'bg-section-dark') ?>" <?php echo themeSettings::config('homecolor') ?>>
     <div class="container d-flex align-items-center" data-offset-top="#navbar-main">
         <div class="col py-5">
