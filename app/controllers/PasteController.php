@@ -52,6 +52,8 @@ class Paste {
 
 
 
+		$data = DB::paste()->where('alias', $alias)->first();
+
 
         if(!$data = DB::paste()->where('alias', $alias)->first()){
             return back()->with('danger', 'Paste does not exist.');
