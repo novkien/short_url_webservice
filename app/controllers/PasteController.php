@@ -84,14 +84,14 @@ class Paste {
 			$timestamp = strtotime('+1 month'); // add one month to current time
 			break;
 		  default:
-		   $timestamp = Helper::dtime();
+		   	//$timestamp = Helper::dtime();
 		}
 
 
 		
 
 
-		echo 'Debug:<br>'.'<br>';
+		echo 'Debug:<br>'.'<br>'. Helper::dtime();;
 
 
 		$data = DB::paste()->create();
