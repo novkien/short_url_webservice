@@ -1,5 +1,5 @@
 
-<?php var_dump($data); ?>
+
 
 
 <section class="slice slice-lg py-7 <?php echo \Helpers\App::themeConfig('homestyle', 'light', 'bg-white', 'bg-section-dark') ?>" <?php echo themeSettings::config('homecolor') ?>>
@@ -22,7 +22,7 @@
                     <div class="card-body">
                         <div class="form-group">
                             <label class="form-control-label" for="paste-author"><?php ee("Name") ?></label>
-                            <input class="form-control form-control-lg" type="text" name="pasteAuthor" id="pasteAuthor" name="name" value="<?php ///echo $data->name ?>">
+                            <input class="form-control form-control-lg" type="text" name="pasteAuthor" id="pasteAuthor" name="name" value="<?php echo $data->name ?>">
                         </div>
 <!--                             <div class="form-group">
                             <label class="form-control-label" for="paste-content"><span class="text-danger">*</span></label>
@@ -30,7 +30,7 @@
                         </div>    -->
                         <div class="form-group">
                             <label class="form-control-label" for="paste-content"><?php ee("Content") ?> <span class="text-danger">*</span></label>
-                            <textarea class="form-control form-control-lg" rows="10" id="pasteContent" name="pasteContent" value="<?php //echo $data->name ?>"></textarea>
+                            <textarea class="form-control form-control-lg" rows="10" id="pasteContent" name="pasteContent" value="<?php echo $data->name ?>"></textarea>
                         </div>
                     </div>
                 </div>
