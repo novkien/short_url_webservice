@@ -156,7 +156,7 @@ class Paste {
 
 
 
-	public function raw(Request $request, string $alias){
+	public function paste_raw(Request $request, string $alias){
 
 		$data = DB::paste()->where('alias', $alias)->first();
 
