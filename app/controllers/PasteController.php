@@ -55,7 +55,7 @@ class Paste {
 		//$data = DB::paste()->where('alias', $alias)->first();
 
 
-        if(!$data = DB::paste()->where('alias', $alias)->first()){
+        if(!$datas = DB::paste()->where('alias', $alias)->first()){
             return back()->with('danger', 'Paste does not exist.');
         }    
 
@@ -73,9 +73,10 @@ class Paste {
 
 		//echo 'Debug:<br>'.'<br>'. var_dump($data);
 
-		echo 'Data->name '.$data->name;
+		echo 'Data->name '.$datas->name;
 
 
+		$data[] = $datas;
 		return View::with('paste.paste_box', compact('data'))->extend('layouts.main');     
 
 	}
