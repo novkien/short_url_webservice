@@ -69,7 +69,7 @@ class Paste {
 		//$data = $datas["data"];
 
 	  
-		if ($datas->password != 'No') return View::with('paste.paste_box_pass', compact('datas'))->extend('layouts.main');   
+		if ($datas->password != null) return View::with('paste.paste_box_pass', compact('datas'))->extend('layouts.main');   
 
 		return View::with('paste.paste_box', compact('datas'))->extend('layouts.main');     
 
@@ -119,7 +119,7 @@ class Paste {
 
 		$data = DB::paste()->create();
 		$data->name = clean($request->pasteAuthor);
-		$data->password = clean($request->pastePass);
+		$data->password = $request->pastePass;
 		$data->content = base64_encode($request->pasteContent);
 		$data->lifetime =  date('Y-m-d H:i:s', $timestamp);
 		$data->isOneTimeOpen = ($request->pasteLife == 'oneload') ? 1 : 0;

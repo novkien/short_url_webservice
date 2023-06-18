@@ -42,7 +42,7 @@
                             </div>
                             <div class="form-group">
                                 <label class="form-control-label" for="paste-pass"><?php ee("Password") ?></label>
-                                <input class="form-control form-control-lg" type="text" name="pastePass" id="pastePass" value="No">
+                                <input class="form-control form-control-lg" type="text" name="pastePass" id="pastePass" placeholder="<?php ee("Empty for no password protection") ?>">
                             </div>
 
 
