@@ -1,7 +1,5 @@
 
 
-<?php echo is_object($datas) ?>
-
 <section class="slice slice-lg py-7 <?php echo \Helpers\App::themeConfig('homestyle', 'light', 'bg-white', 'bg-section-dark') ?>" <?php echo themeSettings::config('homecolor') ?>>
     <div class="container d-flex align-items-center" data-offset-top="#navbar-main">
         <div class="col py-5">
@@ -30,7 +28,7 @@
                         </div>    -->
                         <div class="form-group">
                             <label class="form-control-label" for="paste-content"><?php ee("Content") ?> <span class="text-danger">*</span></label>
-                            <textarea class="form-control form-control-lg" rows="10" id="pasteContent" name="pasteContent" value="<?php echo $datas->name ?>"></textarea>
+                            <textarea class="form-control form-control-lg" rows="10" id="pasteContent" name="pasteContent"><?php echo $datas->content ?></textarea>
                         </div>
                     </div>
                 </div>
