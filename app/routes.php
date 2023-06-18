@@ -57,7 +57,7 @@ Gem::get('/qr/{id}/download/{format}[/{size}]', 'QR@download')->name('qr.downloa
 
 Gem::get('/paste', 'Page@paste')->name('paste')->middleware('CheckDomain')->middleware('CheckMaintenance');
 Gem::post('/paste_send', 'Paste@paste_send')->name('paste_send');
-
+Gem::get('/paste_box/{alias}', 'Paste@paste_box')->name('paste_box');
 
 
 Gem::get('/bio-profiles', 'Page@bio')->name('page.bio')->middleware('CheckDomain')->middleware('CheckMaintenance');

@@ -43,14 +43,40 @@ class Paste {
 	 * @param \Core\Request $request
 	 * @return void
 	 */
-	public function paste_text(Request $request){		
+	public function paste_box(string $alias){		
 	
 		View::set('title', e('Paste'));
 
         View::set('description', e('Easy archive and share your text simply'));
 
-        return View::with('pages.paste_box')->extend('layouts.main');
 
+
+
+
+        if(!$data = DB::paste()->where('alias', $alias)->first()){
+            return back()->with('danger', 'Paste does not exist.');
+        }    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		return View::with('pages.paste_box', compact('data'))->extend('layouts.main');     
 
 	}
 
@@ -111,9 +137,9 @@ class Paste {
 
         View::set('description', e('Easy archive and share your text simply'));
 
-		$data = DB::paste()->where('alias', $alias)->first();
+		//$data = DB::paste()->where('alias', $alias)->first();
 
-        return View::with('paste.paste_box', compact('data'))->extend('layouts.main');
+        return Helper::redirect()->to(route('paste.paste_box', [$data->alias]))/* ->with('success',  e('QR Code has been successfully generated.')) */;
 
 	}
     /**
