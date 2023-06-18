@@ -64,9 +64,14 @@ class Paste {
 	 */
 	public function paste_send(Request $request){		
 	
-
-
+		$alias = \substr(md5(rand(0,100)), 0, 8); // get unique alias for url
 		$pasteLife = $request->pasteLife; // get the value of the selected option
+		
+		
+		
+		
+		
+		
 		switch ($pasteLife) {
 		  case 'forever':
 			$timestamp = strtotime('+10 year'); // no expiration
@@ -88,11 +93,9 @@ class Paste {
 		}
 
 
-		
-
 
 		echo 'Debug:<br>'.'<br>'. Helper::dtime();;
-
+		
 
 		$data = DB::paste()->create();
 		$data->name = clean($request->pasteAuthor);
@@ -100,7 +103,7 @@ class Paste {
 		$data->content = base64_encode($request->pasteContent);
 		$data->lifetime =  date('Y-m-d H:i:s', $timestamp);
 		$data->isOneTimeOpen = ($request->pasteLife == 'oneload') ? 1 : 0;
-		$data->alias = \substr(md5(rand(0,100)), 0, 8);
+		$data->alias = $alias;
 		$data->save();
 
 
@@ -108,9 +111,9 @@ class Paste {
 
         View::set('description', e('Easy archive and share your text simply'));
 
+		$data = DB::paste()->where('alias', $alias)->first();
 
-
-        return View::with('pages.paste')->extend('layouts.main');
+        return View::with('paste.paste_box', compact('data'))->extend('layouts.main');
 
 	}
     /**
