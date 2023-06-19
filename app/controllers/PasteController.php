@@ -59,7 +59,8 @@ class Paste {
 
 
 	  
-		if ($datas->password != null) return View::with('paste.paste_box_pass', compact('datas'))->extend('layouts.main');   
+		if ($datas->password != null) return View::with('paste.paste_box_pass', compact('datas'))->extend('layouts.main');
+		if (strtotime($datas->lifetime) < null) return View::with('paste.paste_box_pass', compact('datas'))->extend('layouts.main');
 
 		return View::with('paste.paste_box', compact('datas'))->extend('layouts.main');     
 
@@ -126,7 +127,7 @@ class Paste {
 			$timestamp = strtotime('+1 month'); // add one month to current time
 			break;
 		  default:
-		   	$timestamp = strtotime(Helper::dtime());
+		   	$timestamp = null;
 		}
 
 
@@ -137,7 +138,7 @@ class Paste {
 		$data->password = md5($request->pastePass) ?? null;
 		$data->password = empty($request->pastePass) ? null : md5($request->pastePass);
 		$data->content = base64_encode($request->pasteContent);
-		$data->lifetime =  date('Y-m-d H:i:s', $timestamp);
+		$data->lifetime =  ($timestamp == null) ? null : date('Y-m-d H:i:s', $timestamp);
 		$data->isOneTimeOpen = ($request->pasteLife == 'oneload') ? 1 : 0;
 		$data->alias = $alias;
 		$data->save();
