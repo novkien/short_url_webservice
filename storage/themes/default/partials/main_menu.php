@@ -1,11 +1,11 @@
 <ul class="navbar-nav ml-lg-auto">
 
-    <?php
-    //config paste
-    /* <li class="nav-item nav-item-spaced d-lg-block">
+
+
+    <li class="nav-item nav-item-spaced d-lg-block">
         <a class="nav-link" href="<?php echo route('paste') ?>"><?php ee('Paste') ?></a>
-    </li> */
-    ?>
+    </li>
+
 
     <li class="nav-item nav-item-spaced d-lg-block">
         <a class="nav-link" href="<?php echo route('qr-codes') ?>"><?php ee('Create a QR Code') ?></a>
