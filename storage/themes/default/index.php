@@ -3,9 +3,9 @@
         <div class="container position-relative">
             <div class="row align-items-center">
                 <div class="col-12 col-lg-6 pr-lg-5">
-                    <h1 class="display-4 <?php echo themeSettings::config('homestyle', 'light', 'text-dark', 'text-white') ?> font-weight-bolder mb-4">
+                    <h2 class="display-4 <?php echo themeSettings::config('homestyle', 'light', 'text-dark', 'text-white') ?> font-weight-bolder mb-4">
                         <?php echo themeSettings::config('title') ?>
-                    </h1>                    
+                    </h2>                    
                     <div class="lead <?php echo themeSettings::config('homestyle', 'light', 'text-dark', 'text-white') ?> opacity-8">
                         <?php echo themeSettings::config('description') ?>
                     </div>                 
