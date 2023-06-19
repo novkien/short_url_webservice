@@ -198,13 +198,13 @@ final class View extends Gem {
       echo "<meta property=\"og:updated_time\" content=\"".date(DATE_ATOM, strtotime(self::$metaData["lastmod"]))."\" />\n\t";
     }
 
-    echo "<meta name=\"twitter:card\" content=\"summary_large_image\">\n\t"; 
+    /* echo "<meta name=\"twitter:card\" content=\"summary_large_image\">\n\t"; 
     echo "<meta name=\"twitter:site\" content=\"@".str_replace("https://twitter.com/","",str_replace("https://www.twitter.com/", "", self::$Config->twitter))."\">\n\t"; 
     echo "<meta name=\"twitter:title\" content=\"".self::title()."\">\n\t"; 
     echo "<meta name=\"twitter:description\" content=\"".self::description()."\">\n\t"; 
     echo "<meta name=\"twitter:creator\" content=\"@".str_replace("https://twitter.com/","",str_replace("https://www.twitter.com/", "", self::$Config->twitter))."\">\n\t"; 
     if(!empty(self::$image)) echo "<meta name=\"twitter:image\" content=\"".self::image()."\">\n\t"; 
-    echo "<meta name=\"twitter:domain\" content=\"".str_replace("http://", "", self::$Config->url)."\">\n\t"; 
+    echo "<meta name=\"twitter:domain\" content=\"".str_replace("http://", "", self::$Config->url)."\">\n\t";  */
 
     if(self::$Config->favicon){
       if(Helper::extension(self::$Config->favicon) == "ico"){
