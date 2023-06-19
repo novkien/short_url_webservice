@@ -33,7 +33,6 @@
                                 <label class="form-control-label" for="paste-life"><?php ee("Life time") ?></label>
                                 <select class="form-control form-control-lg" name="pasteLife" id="pasteLife">
                                     <option value="forever"><?php ee("Forever") ?></option>
-                                    <option value="oneload"><?php ee("One time") ?></option>
                                     <option value="onehour"><?php ee("1 Hour") ?></option>
                                     <option value="oneday"><?php ee("1 Day") ?></option>
                                     <option value="oneweek"><?php ee("1 Week") ?></option>
