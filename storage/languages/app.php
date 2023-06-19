@@ -463,7 +463,7 @@ return [
     'Advanced Options' => 'Tùy chọn nâng cao',
     'Custom Alias' => 'Bí danh tùy chỉnh',
     'If you need a custom alias, you can enter it below.' => 'Nếu bạn cần url tùy chỉnh, bạn có thể nhập tên tùy chọn đó bên dưới.',
-    'Type your custom alias here' => 'Nhập vào định dạng urls',
+    'Type your custom alias here' => 'Nhập vào định dạng url',
     'Link Expiration' => 'Liên kết đã hết hạn',
     'Set an expiration date to disable the URL after this date.' => 'Đặt ngày hết hạn để hủy kích hoạt URL sau ngày này.',
     'MM/DD/YYYY' => 'MM/DD/YYYY',
