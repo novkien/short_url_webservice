@@ -91,7 +91,7 @@ Gem::group('/blog', function(){
     Gem::get('/{post}', 'Blog@post')->name('blog.post');
 });
 
-Gem::post('/shorten', 'Link@shorten')->name('shorten')->middleware('BlockBot')->middleware('ShortenThrottle')->middleware('ValidateLoggedCaptcha');
+Gem::post('/shorten', 'Link@shorten')->name('shorten')->middleware('BlockBot')->middleware('ShortenThrottle');
 
 Gem::get('/faq', 'Page@faq')->name('faq')->middleware('CheckDomain');
 

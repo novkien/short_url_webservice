@@ -21,20 +21,13 @@ use Core\Middleware;
 use Core\Request;
 use Core\Helper;
 use Helpers\Captcha;
-
+/*
 final class ValidateLoggedCaptcha extends Middleware {
 
-	/**
-	 * Do not un Captcha for these routes
-	 * @var array
-	 */
+
 	protected $_exempt = [];
 
-	/**
-	 * Validate Captcha
-	 * @author GemPixel <https://gempixel.com>
-	 * @version 1.0
-	 */
+
 	public function handle(Request $request) {
 
 		if(self::check($request) === false) return true;
@@ -60,3 +53,5 @@ final class ValidateLoggedCaptcha extends Middleware {
 		}
 	}
 }
+
+*/
