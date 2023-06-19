@@ -166,7 +166,6 @@ trait Overlays {
 							<label for="contact-message" class="form-label">'.$overlay->data->lang->message.'</label>
 							<textarea data-required class="form-control" name="message" id="contact-message" placeholder="..." style="color:'.$overlay->data->inputcolor.';background-color:'.$overlay->data->inputbg.' !important"></textarea>
 						</div>
-						'.\Helpers\Captcha::display().'
 						'.csrf().'
 						<input type="hidden" name="integrity" value="'.str_replace("=", "", base64_encode(\Core\Helper::rand(5).".".$overlay->id)).'">
 						<button type="submit" class="contact-btn mt-3" style="color:'.$overlay->data->btncolor.';background-color:'.$overlay->data->btnbg.' !important">'.$overlay->data->lang->button.'</button>
@@ -321,7 +320,6 @@ trait Overlays {
 								<button type="submit" class="btn btn-dark btn-lg" style="color:'.$overlay->data->btncolor.';background-color:'.$overlay->data->btnbg.' !important">'.$overlay->data->button.'</button>																
 							</div>
 						</div>    
-						<p>'.\Helpers\Captcha::display().'</p>
 						'.csrf().'
 						<input type="hidden" name="integrity" value="'.str_replace("=", "", base64_encode(\Core\Helper::rand(5).".".$overlay->id)).'">                                    
 					</form>
