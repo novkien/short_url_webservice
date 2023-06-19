@@ -75,7 +75,7 @@
                             </div>                
                         <?php endif ?>
                         <div class="mt-4">
-                            <?php echo \Helpers\Captcha::display() ?>
+                            <?php //echo \Helpers\Captcha::display() ?>
                             <?php echo csrf() ?>
                             <button type="submit" class="btn btn-block btn-primary"><?php ee('Register') ?></button>
                         </div>

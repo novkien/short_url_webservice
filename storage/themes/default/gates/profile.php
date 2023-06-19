@@ -140,7 +140,7 @@
                                 <?php csrf() ?>
                                 <input type="hidden" name="action" value="contact">
                                 <input type="hidden" name="blockid" value="<?php echo $id ?>">
-                                <?php echo \Helpers\Captcha::display(); ?>
+                                <?php //echo \Helpers\Captcha::display(); ?>
                                 <button type="submit" class="btn btn-custom"><?php echo ee('Send') ?></button>
                             </form>
                         <?php endif ?>

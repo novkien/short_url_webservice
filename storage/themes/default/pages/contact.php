@@ -29,7 +29,7 @@
                                 <label class="form-control-label" for="contact-message"><?php ee("Message") ?> <span class="text-danger">*</span></label>
                                 <textarea class="form-control form-control-lg" placeholder="<?php ee('If you have any questions, feel free to contact us so we can help you') ?>" rows="10" min="10" data-error="<?php ee('The message is empty or too short.') ?>" id="content-message" name="message" required></textarea>
                             </div>
-                            <?php echo \Helpers\Captcha::display() ?>
+                            <?php //echo \Helpers\Captcha::display() ?>
                             <div class="text-center">
                                 <?php echo csrf() ?>
                                 <button type="submit" class="btn btn-block btn-lg btn-primary mt-4"><?php ee('Send') ?></button>

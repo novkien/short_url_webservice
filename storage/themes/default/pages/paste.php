@@ -54,7 +54,7 @@
 
 
 
-                            <?php echo \Helpers\Captcha::display() ?>
+                            <?php //echo \Helpers\Captcha::display() ?>
                             <div class="text-center">
                                 <?php echo csrf() ?>
                                 <button type="submit" class="btn btn-block btn-lg btn-primary mt-4"><?php ee('Send') ?></button>

@@ -27,7 +27,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <?php echo \Helpers\Captcha::display() ?>
+                                <?php //echo \Helpers\Captcha::display() ?>
                                 <div class="mt-4">
                                     <button type="submit" class="btn btn-block btn-primary"><?php ee('Reset Password') ?></button>
                                 </div>

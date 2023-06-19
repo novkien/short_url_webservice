@@ -29,7 +29,7 @@
                                 <label class="form-control-label" for="paste-content"><?php ee("Password") ?></label>
                                 <input class="form-control form-control-lg" type="text" id="pastePass" name="pastePass" placeholder="<?php ee("Password protection") ?>">
                             </div>
-                            <?php echo \Helpers\Captcha::display() ?>
+                            <?php //echo \Helpers\Captcha::display() ?>
                             <div class="text-center">
                                 <?php echo csrf() ?>
                                 <?php message() ?>
