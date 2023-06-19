@@ -5091,6 +5091,8 @@ input[type='button'].btn-block
     padding-left: 1.25rem;
 }
 
+.grecaptcha-badge { visibility: hidden; }
+
 .custom-select-lg
 {
     font-size: 1rem; 

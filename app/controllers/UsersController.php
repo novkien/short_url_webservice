@@ -238,7 +238,7 @@ class Users {
     public function register(){
 
         //config register
-        if(true) return Helper::redirect()->to(route('login'))->with("danger", e("We are not accepting users at this time."));
+        if(false) return Helper::redirect()->to(route('login'))->with("danger", e("We are not accepting users at this time."));
         
         
         
