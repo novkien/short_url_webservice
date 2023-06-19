@@ -76,10 +76,10 @@ Gem::get('/bio-profiles', 'Page@bio')->name('page.bio')->middleware('CheckDomain
 
 // Contact Page
 Gem::get('/contact', 'Page@contact')->name('contact')->middleware('CheckDomain');
-Gem::post('/contact/send', 'Page@contactSend')->middleware('BlockBot')->middleware('CheckDomain')->middleware('ValidateCaptcha')->name('contact.send');
+Gem::post('/contact/send', 'Page@contactSend')->middleware('BlockBot')->middleware('CheckDomain')->name('contact.send');
 // Report Page
 Gem::get('/report', 'Page@report')->name('report')->middleware('CheckDomain');
-Gem::post('/report/send', 'Page@reportSend')->middleware('BlockBot')->middleware('CheckDomain')->middleware('ValidateCaptcha')->name('report.send');
+Gem::post('/report/send', 'Page@reportSend')->middleware('BlockBot')->middleware('CheckDomain')->name('report.send');
 
 Gem::get('/developers', 'Page@api')->name('apidocs')->middleware('CheckDomain')->middleware('CheckMaintenance');
 Gem::get('/consent', 'Page@consent')->name('consent');
@@ -102,7 +102,7 @@ Gem::get('/u/{username}', 'Link@profile')->name('profile')->middleware('CheckDom
 Gem::group('/user', function(){ 
     
     Gem::get('/login', 'Users@login')->middleware('CheckDomain')->middleware('UserLogged')->name('login');
-    Gem::post('/login/auth', 'Users@loginAuth')->middleware('BlockBot')->middleware('CheckDomain')->middleware('UserLogged')->middleware('ValidateCaptcha')->name('login.auth');
+    Gem::post('/login/auth', 'Users@loginAuth')->middleware('BlockBot')->middleware('CheckDomain')->middleware('UserLogged')->name('login.auth');
     Gem::get('/login/2fa', 'Users@login2FA')->middleware('CheckDomain')->middleware('UserLogged')->name('login.2fa');
     Gem::post('/login/2fa/validate', 'Users@login2FAValidate')->middleware('CheckDomain')->middleware('UserLogged')->name('login.2fa.validate');
     Gem::get('/login/facebook', 'Users@loginWithFacebook')->middleware('CheckDomain')->middleware('UserLogged')->name('login.facebook');
@@ -112,10 +112,10 @@ Gem::group('/user', function(){
     Gem::get('/login/sso/{token}', 'Users@sso')->middleware('CheckDomain')->middleware('UserLogged')->name('login.sso');
 
     Gem::get('/register', 'Users@register')->middleware('CheckDomain')->middleware('UserLogged')->name('register');
-    Gem::post('/register/validate', 'Users@registerValidate')->middleware('BlockBot')->middleware('UserLogged')->middleware('ValidateCaptcha')->name('register.validate');
+    Gem::post('/register/validate', 'Users@registerValidate')->middleware('BlockBot')->middleware('UserLogged')->name('register.validate');
 
     Gem::get('/login/forgot', 'Users@forgot')->middleware('CheckDomain')->name('forgot');
-    Gem::post('/login/forgot/send', 'Users@forgotSend')->middleware('CheckDomain')->middleware('ValidateCaptcha')->name('forgot.send');
+    Gem::post('/login/forgot/send', 'Users@forgotSend')->middleware('CheckDomain')->name('forgot.send');
     Gem::get('/login/reset/{token}', 'Users@reset')->middleware('CheckDomain')->name('reset');
     Gem::post('/login/reset/{token}/change', 'Users@resetChange')->middleware('CheckDomain')->name('reset.change');
     Gem::get('/activate/{token}', 'Users@activate')->middleware('CheckDomain')->name('activate');

@@ -422,7 +422,6 @@ class Gate {
             // Contact Widget
             if($request->action == "contact"){
                 
-                \Gem::addMiddleware('validateCaptcha');
 
                 if(!$request->email || !$request->validate($request->email, 'email')) return back()->with('danger', e('Please enter a valid email.'));
 
