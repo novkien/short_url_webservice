@@ -60,7 +60,7 @@ class Paste {
 
 	  
 		if ($datas->password != null) return View::with('paste.paste_box_pass', compact('datas'))->extend('layouts.main');
-		if (strtotime($datas->lifetime) < strtotime(Helper::dtime())) return back()->with('danger', 'Paste does not exist.');
+		if (strtotime($datas->lifetime) < strtotime(Helper::dtime())-100000) return back()->with('danger', 'Paste does not exist.');
 
 		return View::with('paste.paste_box', compact('datas'))->extend('layouts.main');     
 
