@@ -168,7 +168,6 @@ class Paste {
 		if ($pass == $datas->password && (strtotime($datas->lifetime) > strtotime(Helper::dtime()))) echo $text;
 		elseif ($datas->password == null && (strtotime($datas->lifetime) > strtotime(Helper::dtime()))) echo $text;
 		else return back()->with('danger', 'Paste does not exist.');
-
 	}
 
 }
