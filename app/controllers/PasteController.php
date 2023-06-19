@@ -126,7 +126,7 @@ class Paste {
 			$timestamp = strtotime('+1 month'); // add one month to current time
 			break;
 		  default:
-		   	$timestamp = strtotime(Helper::dtime());
+		   	$timestamp = strtotime('+10 year');
 		}
 
 
@@ -177,6 +177,8 @@ class Paste {
 	public function paste_download(Request $request, string $alias, string $pass){
 
 		$datas = DB::paste()->where('alias', $alias)->first();
+
+		if (!$datas || $datas->isOneTimeOpen == 2) return back()->with('danger', 'Paste does not exist.');
 
 
 		$text = base64_decode($datas->content);
