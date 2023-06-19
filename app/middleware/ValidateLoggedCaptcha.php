@@ -20,7 +20,7 @@ namespace Middleware;
 use Core\Middleware;
 use Core\Request;
 use Core\Helper;
-use Helpers\Captcha;
+//use Helpers\Captcha;
 /*
 final class ValidateLoggedCaptcha extends Middleware {
 
