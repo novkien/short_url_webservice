@@ -768,7 +768,6 @@ return [
     'Transparent pricing for everyone. Always know what you will pay.' => 'Giá cả minh bạch cho tất cả mọi người. Luôn biết bạn sẽ trả bao nhiêu.',
     'Custom Aliases' => 'Bí danh tùy chỉnh',
     'Day' => 'ban ngày',
-    'Forever' => 'Cho tất cả thời điểm',
     'Upon request, we will issue a refund at the moment of the request for all <strong>upcoming</strong> periods. If you are on a monthly plan, we will stop charging you at the end of your current billing period. If you are on a yearly plan, we will refund amounts for the remaining months.' => 'Nếu được yêu cầu, chúng tôi sẽ hoàn lại tiền tại thời điểm yêu cầu cho tất cả <strong>các khoảng thời gian trong tương lai</strong>. Nếu bạn đang sử dụng gói hàng tháng, chúng tôi sẽ ngừng tính phí cho bạn khi kết thúc thời hạn thanh toán hiện tại của bạn. Nếu bạn đang sử dụng gói hàng năm, chúng tôi sẽ hoàn lại số tiền cho các tháng còn lại.',
     'Upon request, we will issue a refund at the moment of the request for all <strong>upcoming</strong> periods. You will just need to contact us and we will take care of everything.' => 'Nếu được yêu cầu, chúng tôi sẽ hoàn lại tiền tại thời điểm yêu cầu cho tất cả <strong>các khoảng thời gian trong tương lai</strong>. Chỉ cần liên hệ với chúng tôi và chúng tôi sẽ lo mọi thứ.',
     'Archive all' => 'Lưu trữ tất cả',
