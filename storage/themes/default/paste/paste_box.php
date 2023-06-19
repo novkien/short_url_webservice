@@ -20,7 +20,7 @@
                             <label class="form-control-label" for="paste-author"><?php ee("Author") ?>: <?php echo $datas->name ?></label>
                         </div>
                         <a href="<?php echo route('paste.paste_raw', [$datas->alias, $datas->password]) ?>"><button class="btn btn-primary mb-3"><?php ee('Raw') ?></button></a>
-                        <a href="<?php echo route('paste.paste_download', [$datas->alias, $datas->password ? 0 : $datas->password]) ?>"><button class="btn btn-primary mb-3"><?php ee('Download') ?></button></a>
+                        <a href="<?php echo route('paste.paste_download', [$datas->alias, $datas->password]) ?>"><button class="btn btn-primary mb-3"><?php ee('Download') ?></button></a>
 
                         
                         <div class="form-group">
