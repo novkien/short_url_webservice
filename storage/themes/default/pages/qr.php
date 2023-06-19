@@ -1,6 +1,3 @@
-
-
-
 <h1 class="h3 pt-9 pb-5"><div class="text-center"><?php ee('Create QR') ?></div></h1>
 <section class="slice slice-lg bg-section-secondary">
     <div class="container">
@@ -238,5 +235,3 @@
         </form>
     </div>
 </section>
-
-

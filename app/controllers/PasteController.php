@@ -136,7 +136,6 @@ class Paste {
 
 		$data = DB::paste()->create();
 		$data->name = clean($request->pasteAuthor);
-		//$data->password = md5($request->pastePass) ?? null;
 		if ($request->pastePass == null) $data->password = null;
 			else $data->password = md5($request->pastePass);
 		$data->content = base64_encode($request->pasteContent);
@@ -187,10 +186,6 @@ class Paste {
 		header("Content-Disposition: attachment; filename=" . $alias.".txt");
 		header("Content-Length: " . strlen($text));
 
-/* 		if ($pass == $datas->password) echo $text;
-		elseif ($datas->password == null) echo $text;
-		else View::with('paste.paste_box_pass', compact('datas'))->extend('layouts.main');
- */
 		if ($pass == $datas->password && (strtotime($datas->lifetime) > strtotime(Helper::dtime()))) echo $text;
 		elseif ($datas->password == null && (strtotime($datas->lifetime) > strtotime(Helper::dtime()))) echo $text;
 		else return back()->with('danger', 'Paste does not exist.');
@@ -199,22 +194,7 @@ class Paste {
 
 
 
-
-
-
-
-
-
-
-
-    /**
-     * Redirect Link
-     *
-     * @author GemPixel <https://gempixel.com> 
-     * @version 6.0
-     * @param string $alias
-     * @return void
-     */
+/* 
     public function redirect(Request $request, string $alias){
 
 		if(!$url = $this->getURL($request, $alias)){
@@ -440,15 +420,7 @@ class Paste {
 		$methods = array("0" => "direct", "1" => "frame", "2" => "splash", "3" =>  "splash");		
 		$fn = $methods[config("frame")];
 		return Gate::$fn($url, $user);
-    }    	
-    /**
-     * Capture Screenshot
-     *
-     * @author GemPixel <https://gempixel.com> 
-     * @version 6.0
-     * @param string $alias
-     * @return void
-     */
+    }
     public function image(Request $request, string $alias){
 		if(!$url = $this->getURL($request, $alias)){
 			stop(404);
@@ -477,15 +449,6 @@ class Paste {
 		header("Location: $api_url");	
 		exit;
     }
-
-    /**
-     * Generate Favicon
-     *
-     * @author GemPixel <https://gempixel.com> 
-     * @version 6.0
-     * @param string $alias
-     * @return void
-     */
     public function icon(int $id){
 
       	if(!$url = DB::url()->where('id', $id)->first()){
@@ -512,15 +475,6 @@ class Paste {
 		header("Location: ".str_replace('{{url}}', trim($host), self::ICOPATH));	
 		exit;			      
     }
-
-    /**
-     * Generate QR Code
-     *
-     * @author GemPixel <https://gempixel.com> 
-     * @version 6.0
-     * @param string $alias
-     * @return void
-     */
     public function qr(Request $request, string $alias, int $size = 300, $action = "view"){		
 
 		if(!$url = $this->getURL($request, $alias)){
@@ -535,17 +489,6 @@ class Paste {
 		
 		return \Helpers\QR::factory($url, $qrsize)->format('png')->create();
     }
-	/**
-	 * Download QR
-	 *
-	 * @author GemPixel <https://gempixel.com> 
-	 * @version 6.0
-	 * @param \Core\Request $request
-	 * @param string $alias
-	 * @param string $format
-	 * @param integer $size
-	 * @return void
-	 */
 	public function qrDownload(Request $request, string $alias, string $format, int $size = 300){
 		
 		if(!$url = $this->getURL($request, $alias)){
@@ -564,15 +507,6 @@ class Paste {
 			return $qr->string();
 		});
 	}
-	/**
-	 * Delete Link
-	 *
-	 * @author GemPixel <https://gempixel.com> 
-	 * @version 6.0
-	 * @param integer $id
-	 * @param string $nonce
-	 * @return void
-	 */
 	public function delete(int $id, string $nonce){
 
 		if(Auth::user()->teamPermission('links.delete') == false){
@@ -589,14 +523,6 @@ class Paste {
 
 		return Helper::redirect()->back()->with('success', e('Link has been deleted.'));
 	}
-	/**
-	 * Delete Many
-	 *
-	 * @author GemPixel <https://gempixel.com> 
-	 * @version 6.0
-	 * @param \Core\Request $request
-	 * @return void
-	 */
 	public function deleteMany(Request $request){
 
 		if(Auth::user()->teamPermission('links.delete') == false){
@@ -613,13 +539,6 @@ class Paste {
         
         return Helper::redirect()->back()->with('success', e('Selected Links have been deleted.'));
 	}
-	/**
-	 * Archive Selected
-	 *
-	 * @author GemPixel <https://gempixel.com> 
-	 * @version 6.0
-	 * @return void
-	 */
 	public function archiveSelected(Request $request){
 
 		if(Auth::user()->teamPermission('links.edit') == false){
@@ -641,14 +560,6 @@ class Paste {
 
 		return Response::factory(['error' => false, 'message' => e('Selected links have been archived.')])->json();
 	}
-	/**
-	 * UnArchive Selected
-	 *
-	 * @author GemPixel <https://gempixel.com> 
-	 * @version 6.0
-	 * @param \Core\Request $request
-	 * @return void
-	 */
 	public function unarchiveSelected(Request $request){
 		
 		if(Auth::user()->teamPermission('links.edit') == false){
@@ -669,13 +580,6 @@ class Paste {
 
 		return Response::factory(['error' => false, 'message' => e('Selected links have been removed from archive.')])->json();
 	}
-	/**
-	 * Public Selected
-	 *
-	 * @author GemPixel <https://gempixel.com> 
-	 * @version 6.0
-	 * @return void
-	 */
 	public function publicSelected(Request $request){
 
 		if(Auth::user()->teamPermission('links.edit') == false){
@@ -697,14 +601,6 @@ class Paste {
 
 		return Response::factory(['error' => false, 'message' => e('Selected links have been set to public.')])->json();
 	}
-	/**
-	 * Private Selected
-	 *
-	 * @author GemPixel <https://gempixel.com> 
-	 * @version 6.0
-	 * @param \Core\Request $request
-	 * @return void
-	 */
 	public function privateSelected(Request $request){
 		
 		if(Auth::user()->teamPermission('links.edit') == false){
@@ -725,14 +621,6 @@ class Paste {
 
 		return Response::factory(['error' => false, 'message' => e('Selected links have been set to private.')])->json();
 	}
-	 /**
-     * Edit Link
-     *
-     * @author GemPixel <https://gempixel.com> 
-     * @version 6.0
-     * @param integer $id
-     * @return void
-     */
     public function edit(int $id){
 
 		if(Auth::user()->teamPermission('links.edit') == false){
@@ -779,15 +667,6 @@ class Paste {
 
         return View::with('user.edit', compact('url', 'locations', 'channels'))->extend('layouts.dashboard');
     }
-    /**
-     * Update Link
-     *
-     * @author GemPixel <https://gempixel.com> 
-     * @version 6.0
-     * @param \Core\Request $request
-     * @param integer $id
-     * @return void
-     */
     public function update(Request $request, int $id){
 
         \Gem::addMiddleware('DemoProtect');
@@ -834,14 +713,6 @@ class Paste {
 
         return Helper::redirect()->back()->with('success', e('Link has been updated successfully.'));
     }
-	/**
-	 * Add to campaign
-	 *
-	 * @author GemPixel <https://gempixel.com> 
-	 * @version 6.0
-	 * @param \Core\Request $request
-	 * @return void
-	 */
 	public function addtocampaign(Request $request){
 		
 		if(!is_numeric($request->campaigns)) return Response::factory(['error' => true, 'message' => e('Invalid campaign. Please choose a valid campaign.'), 'token' => csrf_token()])->json();
@@ -865,14 +736,6 @@ class Paste {
 		return Response::factory(['error' => false, 'message' => $campaignid ? e('Selected links have been added to the {c} campaign.', null, ['c' => $campaign->name]) : e('Selected links have been removed from campaigns.'), 'token' => csrf_token(), 'html' => '<script>refreshlinks('.json_encode($ids).')</script>'])->json();
 
 	}	
-	/**
-	 * Bookmark
-	 *
-	 * @author GemPixel <https://gempixel.com> 
-	 * @version 6.0
-	 * @param \Core\Request $request
-	 * @return void
-	 */	
 	public function bookmark(Request $request){
 
 		if(_STATE == 'DEMO') return Response::factory(["error" => 1, "msg" => "This has been disabled in demo."])->json();
@@ -889,14 +752,6 @@ class Paste {
 
 		return Response::factory(clean($request->callback).'('.json_encode(['error' => 0, 'short' => $link['shorturl']]).')')->send();
 	}
-	/**
-	 * Script Js
-	 *
-	 * @author GemPixel <https://gempixel.com> 
-	 * @version 6.0
-	 * @param \Core\Request $request
-	 * @return void
-	 */
 	public function scriptjs(Request $request){
 		
 		if(_STATE == 'DEMO') return Response::factory(["error" => 1, "msg" => "This has been disabled in demo."])->json();
@@ -910,15 +765,6 @@ class Paste {
 		echo $js;
 		ob_end_flush(); 
 	}
-
-	/**
-     * Full Page Script
-     *
-     * @author GemPixel <https://gempixel.com> 
-     * @version 6.0
-     * @param \Core\Request $request
-     * @return void
-     */
     public function fullpage(Request $request){
 
 		if(!$request->key || !$request->url) return Response::factory(['error' => 1, 'message' => 'Invalid Request. Please try again.'])->json();
@@ -934,14 +780,6 @@ class Paste {
 		}
         return Response::factory(clean($request->callback).'('.json_encode(['error' => 0, 'short' => $link['shorturl']]).')')->send();
     }
-	/**
-	 * Quick Shortening
-	 *
-	 * @author GemPixel <https://gempixel.com> 
-	 * @version 6.3.3
-	 * @param \Core\Request $request
-	 * @return void
-	 */
 	public function quick(Request $request){
 
 		if(_STATE == 'DEMO') return  Helper::redirect()->to(route('home'))->with('danger', e("This has been disabled in demo."));
@@ -960,14 +798,6 @@ class Paste {
 
 		return Helper::redirect()->to($request->u);
 	}
-	/**
-	 * Not Found
-	 *
-	 * @author GemPixel <https://gempixel.com> 
-	 * @version 6.0
-	 * @param \Core\Request $request
-	 * @return void
-	 */
 	protected function notFound(Request $request){
 
 		$currenturi = trim(str_replace($request->path(), '', $request->uri(false)), '/');
@@ -986,13 +816,6 @@ class Paste {
 
 		return stop(404);
 	}
-	/**
-	 * Redirect Rotator
-	 *
-	 * @author GemPixel <https://gempixel.com> 
-	 * @version 6.0
-	 * @return void
-	 */
 	public function campaign($alias){
 		if(!$bundle = DB::bundle()->where('slug', clean($alias))->first()){
 			stop(404);
@@ -1009,15 +832,6 @@ class Paste {
 
 		return Helper::redirect()->to(\Helpers\App::shortRoute($url->domain, $url->alias.$url->custom));
 	}
-	/**
-	 * Campaign List
-	 *
-	 * @author GemPixel <https://gempixel.com> 
-	 * @version 6.0
-	 * @param string $username
-	 * @param string $alias
-	 * @return void
-	 */
 	public function campaignList(string $username, string $alias){
 
 		if(!$user = \Models\User::where("username", clean($username))->first()){
@@ -1046,15 +860,6 @@ class Paste {
 		
 		return \Helpers\Gate::bundle($profile, $bundle, $user);
 	}
-	/**
-	 * User Profile
-	 *
-	 * @author GemPixel <https://gempixel.com> 
-	 * @version 6.4.1
-	 * @param \Core\Request $request
-	 * @param string $username
-	 * @return void
-	 */
 	public function profile(Request $request, string $username){
         if(!$user = \Models\User::where("username", clean($username))->first()){
             stop(404);
@@ -1083,16 +888,6 @@ class Paste {
         $this->updateStats($request, $url, null);
         return \Helpers\Gate::profile($profile, $user);
     }
-	
-	/**
-	 * Reset Stats
-	 *
-	 * @author GemPixel <https://gempixel.com> 
-	 * @version 6.1.6
-	 * @param integer $id
-	 * @param string $nonce
-	 * @return void
-	 */
 	public function reset(int $id, string $nonce){
 		
 		if(!Helper::validateNonce($nonce, 'link.reset')){
@@ -1112,5 +907,5 @@ class Paste {
 
 		return Helper::redirect()->back()->with('success', e('Statistics have been successfully reset.'));
 
-	}
+	} */
 }
