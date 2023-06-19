@@ -8,11 +8,12 @@
                 </div>
             </div>
         </div>
-    </div>
-    <a href="<?php echo route('home') ?>" class="btn btn-white btn-icon-only rounded-circle zindex-101 left-4 d-none d-lg-inline-flex" style="top: -11rem!important;" data-toggle="tooltip" data-placement="right" title="Go back">
+        <a href="<?php echo route('home') ?>" class="btn btn-white btn-icon-only rounded-circle zindex-101 left-4 d-none d-lg-inline-flex" style="top: -11rem!important;" data-toggle="tooltip" data-placement="right" title="Go back">
     <span class="btn-inner--icon">
         <i data-feather="arrow-left"></i>
     </span>
+    </div>
+
 </section>
 <section class="slice slice-lg pt-0 bg-section-secondary" id="sct-form-paste">
     <div class="container position-relative zindex-100">
