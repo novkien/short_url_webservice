@@ -195,19 +195,14 @@
                 </div>
                 <div class="col-lg-3">
                     <div class="card">
-                        <div class="card-header text-center">
-                            <h5 class="card-title fw-bold"><?php ee('QR Code') ?></h5>
-                        </div>
-                        <div class="card-body pt-0">
-                            <div id="return-ajax">
-                                <img src="<?php echo \Helpers\QR::factory('Sample QR', 400, 0)->format('png')->create('uri') ?>" class="img-responsive w-100">
-                            </div>    
-                        </div>
-                    </div>
-                    <div class="card card-body">
-                        <div class="form-text">
-                            <?php ee("You will be able to download the QR code in PDF or SVG after it has been generated.") ?>
-                        </div>
+                        <div class="collapse" id="wifi">
+                            <div class="card-header">
+                                <h5 class="card-title fw-bold"><?php ee('WiFi') ?></h5>
+                            </div>
+                            <div class="card-body">
+                                <?php ee('WiFi') ?>
+                            </div>                     
+                        </div>  
                     </div>
                 </div>
             </div>
