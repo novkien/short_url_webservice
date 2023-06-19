@@ -1,5 +1,5 @@
 <h1 class="h3 pt-9"><div class="text-center"><?php ee('Create QR') ?></div></h1>
-<a href="<?php echo route('home') ?>" class="btn btn-white btn-icon-only rounded-circle zindex-101 left-4 top-4 d-none d-lg-inline-flex" data-toggle="tooltip" data-placement="right" title="Go back">
+<a href="<?php echo route('home') ?>" class="btn btn-white btn-icon-only rounded-circle zindex-101 left-4 d-none d-lg-inline-flex" style="top: -3rem!important;" data-toggle="tooltip" data-placement="right" title="Go back">
     <span class="btn-inner--icon">
         <i data-feather="arrow-left"></i>
     </span>
