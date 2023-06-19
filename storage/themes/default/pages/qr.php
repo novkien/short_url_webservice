@@ -1,4 +1,9 @@
 <h1 class="h3 pt-9 pb-5"><div class="text-center"><?php ee('Create QR') ?></div></h1>
+<a href="<?php echo route('home') ?>" class="btn btn-white btn-icon-only rounded-circle position-absolute zindex-101 left-4 top-4 d-none d-lg-inline-flex" data-toggle="tooltip" data-placement="right" title="Go back">
+    <span class="btn-inner--icon">
+        <i data-feather="arrow-left"></i>
+    </span>
+</a>
 <section class="slice slice-lg bg-section-secondary">
     <div class="container">
         <form action="<?php echo route('qr.save') ?>" data-trigger="saveqr" method="post" enctype="multipart/form-data">
