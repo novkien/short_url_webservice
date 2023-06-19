@@ -137,7 +137,7 @@ class Paste {
 		$data = DB::paste()->create();
 		$data->name = clean($request->pasteAuthor);
 		//$data->password = md5($request->pastePass) ?? null;
-		$data->password = empty($request->pastePass) ? null : md5($request->pastePass);
+		$data->password = empty($request->pastePass) ? md5($request->pastePass) : null;
 		$data->content = base64_encode($request->pasteContent);
 		$data->lifetime =  date('Y-m-d H:i:s', $timestamp);
 		$data->alias = $alias;
