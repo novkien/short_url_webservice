@@ -51,17 +51,16 @@ class Paste {
 
 
 
+		$datas = DB::paste()->where('alias', $alias)->first();
 
-        if(!$datas = DB::paste()->where('alias', $alias)->first()){
-            return back()->with('danger', 'Paste does not exist.');
-        }
-
-
-
+        if(!$datas || $datas->isOneTimeOpen == 2) return back()->with('danger', 'Paste does not exist.');
 	  
+		if (strtotime($datas->lifetime) < strtotime(Helper::dtime())) return back()->with('danger', 'Paste does not exist.');
+		
 		if ($datas->password != null) return View::with('paste.paste_box_pass', compact('datas'))->extend('layouts.main');
-		if (strtotime($datas->lifetime) < strtotime(Helper::dtime())+100000) return back()->with('danger', 'Paste does not exist.');
 
+
+		
 		return View::with('paste.paste_box', compact('datas'))->extend('layouts.main');     
 
 	}
@@ -162,11 +161,14 @@ class Paste {
 
 		$datas = DB::paste()->where('alias', $alias)->first();
 		$text = htmlspecialchars(base64_decode($datas->content));
-		if ($pass == $datas->password) echo $text;
-		elseif ($datas->password == null) echo $text;
-		else View::with('paste.paste_box_pass', compact('datas'))->extend('layouts.main');
 
 
+		if (!$datas || $datas->isOneTimeOpen == 2) return back()->with('danger', 'Paste does not exist.');
+		
+		if ($pass == $datas->password && (strtotime($datas->lifetime) > strtotime(Helper::dtime()))) echo $text;
+		elseif ($datas->password == null && (strtotime($datas->lifetime) > strtotime(Helper::dtime()))) echo $text;
+		elseif ($datas->password != null && (strtotime($datas->lifetime) > strtotime(Helper::dtime()))) View::with('paste.paste_box_pass', compact('datas'))->extend('layouts.main');
+		else return back()->with('danger', 'Paste does not exist.');
 
 	}
 
@@ -182,9 +184,14 @@ class Paste {
 		header("Content-Disposition: attachment; filename=" . $alias.".txt");
 		header("Content-Length: " . strlen($text));
 
-		if ($pass == $datas->password) echo $text;
+/* 		if ($pass == $datas->password) echo $text;
 		elseif ($datas->password == null) echo $text;
 		else View::with('paste.paste_box_pass', compact('datas'))->extend('layouts.main');
+ */
+		if ($pass == $datas->password && (strtotime($datas->lifetime) > strtotime(Helper::dtime()))) echo $text;
+		elseif ($datas->password == null && (strtotime($datas->lifetime) > strtotime(Helper::dtime()))) echo $text;
+		elseif ($datas->password != null && (strtotime($datas->lifetime) > strtotime(Helper::dtime()))) View::with('paste.paste_box_pass', compact('datas'))->extend('layouts.main');
+		else return back()->with('danger', 'Paste does not exist.');
 
 	}
 
