@@ -164,10 +164,11 @@ class Paste {
 
 
 		if (!$datas) return back()->with('danger', 'Paste does not exist.');
-		
+		if ($datas->password != null && $pass != $datas->password && (strtotime($datas->lifetime) > strtotime(Helper::dtime()))) View::with('paste.paste_box_pass', compact('datas'))->extend('layouts.main');
+
+
 		if ($pass == $datas->password && (strtotime($datas->lifetime) > strtotime(Helper::dtime()))) echo $text;
 		elseif ($datas->password == null && (strtotime($datas->lifetime) > strtotime(Helper::dtime()))) echo $text;
-		elseif ($datas->password != null && (strtotime($datas->lifetime) > strtotime(Helper::dtime()))) View::with('paste.paste_box_pass', compact('datas'))->extend('layouts.main');
 		else return back()->with('danger', 'Paste does not exist.');
 
 	}
