@@ -28,7 +28,7 @@
                             <label for="text" class="form-label"><?php ee('QR Code Name') ?></label>
                             <input type="text" class="form-control p-2" name="name" placeholder="e.g. For Something">
                         </div>
-                    </div>                  
+                    </div>
                     <div class="card" id="qrbuilder">
                         <div class="collapse" id="text">
                             <div class="card-header">
@@ -189,50 +189,50 @@
                                     </div>
                                 </div>
                             </div>
-                            <p class="mt-4 text-center"><button type="submit" class="btn btn-primary"><?php ee('Generate QR') ?></button></p>
-                        <div class="col-lg-3">
-                            <div class="card">
-                                <div class="collapse" id="wifi">
-                                    <div class="card-header">
-                                        <h5 class="card-title fw-bold"><?php ee('WiFi') ?></h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <?php ee('Fast connect with your wifi access point') ?>
-                                    </div>                     
-                                </div>  
-                                <div class="collapse" id="staticvcard">
-                                    <div class="card-header">
-                                        <h5 class="card-title fw-bold"><?php ee('vCard') ?></h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <?php ee('Easy to share your contact') ?>
-                                    </div>                     
-                                </div>
-                                <div class="collapse" id="text">
-                                    <div class="card-header">
-                                        <h5 class="card-title fw-bold"><?php ee('Text') ?></h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <?php ee('Using plain text format') ?>
-                                    </div>                     
-                                </div>
-                                <div class="collapse show" id="link">
-                                    <div class="card-header">
-                                        <h5 class="card-title fw-bold"><?php ee('Link') ?></h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <?php ee('Share your link') ?>
-                                    </div>  
-                                </div>
-                                <div class="collapse" id="file">
-                                    <div class="card-header">
-                                        <h5 class="card-title fw-bold"><?php ee('File') ?></h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <?php ee('QR code scan to access your file, accept images and pdf') ?>
-                                    </div>  
-                                </div>
+                        <p class="mt-4 text-center"><button type="submit" class="btn btn-primary"><?php ee('Generate QR') ?></button></p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" id="qrbuilder">
+                        <div class="collapse" id="wifi">
+                            <div class="card-header">
+                                <h5 class="card-title fw-bold"><?php ee('WiFi') ?></h5>
                             </div>
+                            <div class="card-body">
+                                <?php ee('Fast connect with your wifi access point') ?>
+                            </div>                     
+                        </div>  
+                        <div class="collapse" id="staticvcard">
+                            <div class="card-header">
+                                <h5 class="card-title fw-bold"><?php ee('vCard') ?></h5>
+                            </div>
+                            <div class="card-body">
+                                <?php ee('Easy to share your contact') ?>
+                            </div>                     
+                        </div>
+                        <div class="collapse" id="text">
+                            <div class="card-header">
+                                <h5 class="card-title fw-bold"><?php ee('Text') ?></h5>
+                            </div>
+                            <div class="card-body">
+                                <?php ee('Using plain text format') ?>
+                            </div>                     
+                        </div>
+                        <div class="collapse show" id="link">
+                            <div class="card-header">
+                                <h5 class="card-title fw-bold"><?php ee('Link') ?></h5>
+                            </div>
+                            <div class="card-body">
+                                <?php ee('Share your link') ?>
+                            </div>  
+                        </div>
+                        <div class="collapse" id="file">
+                            <div class="card-header">
+                                <h5 class="card-title fw-bold"><?php ee('File') ?></h5>
+                            </div>
+                            <div class="card-body">
+                                <?php ee('QR code scan to access your file, accept images and pdf') ?>
+                            </div>  
                         </div>
                     </div>
                 </div>
