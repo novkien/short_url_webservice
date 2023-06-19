@@ -53,11 +53,13 @@ class Paste {
 
 		$datas = DB::paste()->where('alias', $alias)->first();
 
-        if(!$datas || $datas->isOneTimeOpen == 2) return back()->with('danger', 'Paste does not exist.');
+        if(!$datas) return back()->with('danger', 'Paste does not exist.');
 	  
 		if (strtotime($datas->lifetime) < strtotime(Helper::dtime())) return back()->with('danger', 'Paste does not exist.');
 		
 		if ($datas->password != null) return View::with('paste.paste_box_pass', compact('datas'))->extend('layouts.main');
+
+
 
 
 		
@@ -138,7 +140,6 @@ class Paste {
 		$data->password = empty($request->pastePass) ? null : md5($request->pastePass);
 		$data->content = base64_encode($request->pasteContent);
 		$data->lifetime =  date('Y-m-d H:i:s', $timestamp);
-		$data->isOneTimeOpen = ($request->pasteLife == 'oneload') ? 1 : 0;
 		$data->alias = $alias;
 		$data->save();
 
@@ -163,7 +164,7 @@ class Paste {
 		$text = htmlspecialchars(base64_decode($datas->content));
 
 
-		if (!$datas || $datas->isOneTimeOpen == 2) return back()->with('danger', 'Paste does not exist.');
+		if (!$datas) return back()->with('danger', 'Paste does not exist.');
 		
 		if ($pass == $datas->password && (strtotime($datas->lifetime) > strtotime(Helper::dtime()))) echo $text;
 		elseif ($datas->password == null && (strtotime($datas->lifetime) > strtotime(Helper::dtime()))) echo $text;
@@ -178,7 +179,7 @@ class Paste {
 
 		$datas = DB::paste()->where('alias', $alias)->first();
 
-		if (!$datas || $datas->isOneTimeOpen == 2) return back()->with('danger', 'Paste does not exist.');
+		if (!$datas) return back()->with('danger', 'Paste does not exist.');
 
 
 		$text = base64_decode($datas->content);
