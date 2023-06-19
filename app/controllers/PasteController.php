@@ -137,7 +137,8 @@ class Paste {
 		$data = DB::paste()->create();
 		$data->name = clean($request->pasteAuthor);
 		//$data->password = md5($request->pastePass) ?? null;
-		$data->password = empty($request->pastePass) ? md5($request->pastePass) : null;
+		if ($request->pastePass == null) $data->password = null;
+			else $data->password = md5($request->pastePass);
 		$data->content = base64_encode($request->pasteContent);
 		$data->lifetime =  date('Y-m-d H:i:s', $timestamp);
 		$data->alias = $alias;
@@ -147,8 +148,6 @@ class Paste {
 		View::set('title', e('Paste'));
 
         View::set('description', e('Easy archive and share your text simply'));
-
-		//$data = DB::paste()->where('alias', $alias)->first();
 
 
         return Helper::redirect()->to(route('paste.paste_box', $alias))/* ->with('success',  e('QR Code has been successfully generated.')) */;
