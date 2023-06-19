@@ -1091,7 +1091,7 @@ return [
     'Gradient Stop' => 'Điểm dừng xuống cấp',
     'Button Color' => 'Nút màu',
     'Button text Color' => 'Màu chữ của nút',
-    'Text' => 'Chữ',
+    'Text' => 'Văn bản',
     'Youtube Video' => 'Video Youtube',
     'WhatsApp Call' => 'Cuộc gọi WhatsApp',
     'Spotify Embed' => 'Tích hợp Spotify',
