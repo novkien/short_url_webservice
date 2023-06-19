@@ -3,12 +3,12 @@
 
 
     <li class="nav-item nav-item-spaced d-lg-block">
-        <a class="nav-link" href="<?php echo route('paste') ?>"><?php ee('Paste') ?></a>
+        <a class="nav-link" href="<?php echo route('page.paste') ?>"><?php ee('Paste') ?></a>
     </li>
 
 
     <li class="nav-item nav-item-spaced d-lg-block">
-        <a class="nav-link" href="<?php echo route('qr-codes') ?>"><?php ee('Create a QR Code') ?></a>
+        <a class="nav-link" href="<?php echo route('page.qr') ?>"><?php ee('Create a QR Code') ?></a>
     </li>
 
 <?php ///dropdown menu example
