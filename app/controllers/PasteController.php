@@ -29,20 +29,8 @@ use Models\User;
 class Paste {
 	
 	use \Traits\Links;
-	
-	/**
-	* Static path to grab favicon
-	*/
-   	const ICOPATH = "https://icons.duckduckgo.com/ip3/{{url}}.ico";	
 
-	/**
-	 * Add paste text
-	 *
-	 * @author GemPixel <https://gempixel.com> 
-	 * @version 6.0
-	 * @param \Core\Request $request
-	 * @return void
-	 */
+
 	public function paste_box(string $alias){		
 	
 		View::set('title', e('Paste'));
@@ -92,14 +80,6 @@ class Paste {
 
 	}
 
-	/**
-	 * Add paste send data
-	 *
-	 * @author GemPixel <https://gempixel.com> 
-	 * @version 6.0
-	 * @param \Core\Request $request
-	 * @return void
-	 */
 	public function paste_send(Request $request){		
 	
 		//$alias = \substr(md5(rand(0,100)), 0, 8);
@@ -175,7 +155,6 @@ class Paste {
 
 
 	public function paste_download(Request $request, string $alias, string $pass){
-
 		$datas = DB::paste()->where('alias', $alias)->first();
 
 		if (!$datas) return back()->with('danger', 'Paste does not exist.');
@@ -191,5 +170,5 @@ class Paste {
 		else return back()->with('danger', 'Paste does not exist.');
 
 	}
-	
+
 }
