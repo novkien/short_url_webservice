@@ -35,7 +35,7 @@
                                 </div>                                
                             </div>
                         <?php endif ?>
-                        <?php if(!\Core\Auth::logged()) { //echo \Helpers\Captcha::display(); } ?>
+                        <?php //if(!\Core\Auth::logged()) { echo \Helpers\Captcha::display(); } ?>
                     </form>
                     <div id="output-result" class="border border-success p-3 rounded d-none">
                         <div class="row">
