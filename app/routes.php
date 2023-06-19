@@ -20,7 +20,7 @@
  * 
  * this route is following by a structure that
  *                              Gem::get('/paste', 'Page@paste')->name('paste')->middleware('CheckDomain')->middleware('CheckMaintenance');
- * will direct users to https://domain.name/paste but actual root/storage/themes/default/paste.php
+ * will direct users to https://domain.name/paste but actual root/storage/themes/default/paste.php function called by pagecontroller, see paste to further understand
  */
 use Core\Helper;
 use Core\Localization;
