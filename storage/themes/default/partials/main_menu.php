@@ -155,11 +155,6 @@
                 <div class="w-50 mr-1">
                     <a href="<?php echo route('login') ?>" class="btn btn-block btn-sm btn-primary"><?php ee('Login') ?></a>
                 </div>
-            <?php if(config("user") && !config("private") && !config("maintenance")): ?>
-                <div class="w-50 ml-1">
-                    <a href="<?php echo route('register') ?>" class="btn btn-block btn-sm btn-primary"><?php ee('Get Started') ?></a>
-                </div>
-            <?php endif ?> 
             </div>               
         <?php endif ?>          
     </div>    
