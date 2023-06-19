@@ -49,7 +49,7 @@ Gem::post('/qr/save', 'QR@save')->name('qr.save');
 Gem::get('/qr/{alias}', 'QR@edit')->name('qr.edit');
 Gem::get('/qr/{id}/download/{format}[/{size}]', 'QR@download')->name('qr.download');
 // QR Codes
-Gem::get('/qr/{id}', 'QR@generate')->name('qr.generate');
+Gem::get('/qr/id/{id}', 'QR@generate')->name('qr.generate');
 Gem::get('/qr/{id}/download/{format}[/{size}]', 'QR@download')->name('qr.download');
 
 
