@@ -37,11 +37,11 @@ class Server {
 
         $integrity = explode(".", base64_decode($request->integrity))[1];
         
-        $captcha = new \Helpers\Captcha;
+        //$captcha = new \Helpers\Captcha;
 
 		try{
 			
-            $captcha->validate($request);
+            //$captcha->validate($request);
 
         } catch(\Exception $e){
             return Response::factory(['error' => true, "danger" => $e->getMessage(), "csrf" => csrf_token()])->json();
@@ -98,11 +98,11 @@ class Server {
 
         if(!Helper::Email($request->email)) return Response::factory(['error' => true, "message" => e('Please enter a valid email.'), "csrf" => csrf_token()])->json();
         
-        $captcha = new \Helpers\Captcha;
+        //$captcha = new \Helpers\Captcha;
 
 		try{
 			
-            $captcha->validate($request);
+            //$captcha->validate($request);
 
         } catch(\Exception $e){
             return Response::factory(['error' => true, "message" => $e->getMessage(), "csrf" => csrf_token()])->json();
