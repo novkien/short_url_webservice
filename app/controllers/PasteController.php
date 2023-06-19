@@ -143,9 +143,6 @@ class Paste {
 		$data->alias = $alias;
 		$data->save();
 
-		echo $data->password.'<br>';
-		echo var_dump($request->pastePass);
-
 
 		View::set('title', e('Paste'));
 
@@ -154,7 +151,7 @@ class Paste {
 		//$data = DB::paste()->where('alias', $alias)->first();
 
 
-        //return Helper::redirect()->to(route('paste.paste_box', [$data->alias]))/* ->with('success',  e('QR Code has been successfully generated.')) */;
+        return Helper::redirect()->to(route('paste.paste_box', $alias))/* ->with('success',  e('QR Code has been successfully generated.')) */;
 
 	}
 
