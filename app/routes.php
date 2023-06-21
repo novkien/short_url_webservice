@@ -28,7 +28,7 @@ use Core\Localization;
 \Helpers\App::checkEncryption();
 
 // Homepage
-Gem::get('/', 'Home@index')->name('home')/* ->middleware('CheckDomain')->middleware('CheckMaintenance')->middleware('CheckPrivate') */;
+Gem::get('/', 'Home@index')->name('home')->middleware('CheckDomain')->middleware('CheckMaintenance')->middleware('CheckPrivate');
 
 
 // Pricing Page
