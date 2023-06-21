@@ -30,6 +30,8 @@ final class CheckDomain extends Middleware {
 	 */
 	public function handle(Request $request) {
 
+        return true;
+
         $currenturi = trim(str_replace($request->path(), '', $request->uri(false)), '/');    
 
         $currenturinoscheme = str_replace(['https://', 'http://'], '', $currenturi);
