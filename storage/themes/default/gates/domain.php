@@ -1,7 +1,7 @@
 <section>
     <meta http-equiv="Refresh" content="0; url='<?php echo route("home") ?>' />
     <?php
-//header("Location:" . route("home"));
+header("Location:" . route("home"));
 exit();
 ?>
     <div class="container d-flex flex-column">
