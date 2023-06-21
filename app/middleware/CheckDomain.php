@@ -30,7 +30,6 @@ final class CheckDomain extends Middleware {
 	 */
 	public function handle(Request $request) {
 
-        return true;
 
         $currenturi = trim(str_replace($request->path(), '', $request->uri(false)), '/');    
 
@@ -42,7 +41,7 @@ final class CheckDomain extends Middleware {
 
             if($domain = \Core\DB::domains()->whereRaw("domain = ? OR domain = ?", ["http://".$host, "https://".$host])->first()){
                 if($domain->redirect){
-                    header("Location: {$domain->redirect}");
+                    //header("Location: {$domain->redirect}");
                     exit;
                 }
             }
@@ -51,7 +50,7 @@ final class CheckDomain extends Middleware {
             $domains_names = array_map('trim', $domains_names);
             
             if(in_array($currenturi, $domains_names)){
-                header("Location: ".config('url'));
+                //header("Location: ".config('url'));
                 exit;
             }
 
