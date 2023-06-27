@@ -47,8 +47,8 @@
                 <div class="col-lg-4 col-6 col-sm-6 mb-5 mb-lg-0">
                     <h6 class="heading mb-3"><?php ee('Company') ?></h6>
                     <ul class="list-unstyled">
-                        <li class="nav-item"><a class="nav-link" href="<?php echo route('faq') ?>"><?php ee('Help') ?></a></li>
-                        <?php if(config('contact')): ?>
+                        <li class="nav-item"><a class="nav-link" href="<?php //echo route('faq') ?>">Báo lỗi: contact@hukistore.com<?php //ee('Help') ?></a></li>
+                        <?php if(config('contact') && false): ?>
                         <li class="nav-item"><a class="nav-link" href="<?php echo route('contact') ?>"><?php ee('Contact Us') ?></a></li>
                         <?php endif ?>
                     </ul>
